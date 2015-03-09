@@ -1,4 +1,4 @@
-\documentclass[twoside]{scrartcl}
+\documentclass{scrartcl}
 
 %%%%% BEGINN PACKAGES %%%%%
 
@@ -25,7 +25,8 @@
 
 %%%%% ENDE PACKAGES %%%%%
 
-\title{Titel}
+\title{Themenstellung}
+\subtitle{Vergleich von Ladesystemen für batteriebetriebene Omnibusse}
 \date{\today}
 \author{Ludger Heide}
 
@@ -39,9 +40,76 @@
 
 %%%%% BEGINN INHALT %%%%%
 
+In dieser Bachelorarbeit werden die existierenden Ladesysteme und Speichertechnologien für batteriebetriebene Busse im Innerstädtischen Linienverkehr verglichen. Grundfrage ist, welche Kombination von Ladesystem und Speichertechnologie auf welcher Strecke am wenigsten Energie verbraucht oder am wenigsten Infrastruktur benötigt.
+
+\section{Ladesysteme}
+
+In Anlehnung an Pahl/Beitz \cite[S. 258]{feldhusen2013pahl} kann das \emph{Ladesystem} als ein technisches System betrachtet werden, in dem hauptsächlich Energie umgesetzt wird mit dem Ziel, elektrische Energie vom öffentlichen Stromnetz zum Laderegler des Batteriesystems im Bus zu transportieren\footnote{Diese Definition gilt nicht bei den Batteriewechselsystemen. Hier wird die Energie über Stofftransport in den Bus gebracht und auch die fahrzeugseitige Systemgranze Ladregler kann nicht verwendet werden.}. Das System kann immer in stations- und fahrzeugseitige Teilsysteme unterteilt werden. Die vom Ladesystem verwendete \emph{Ladetechnologie} ist die Kombination von Methode der Energie- oder Stoffübertragung zwischen fahrzeugseitigem und stationsseitigem Teilsystem, Art der Einleitung des Ladevorgangs und Fahrzustand des Busses während des Ladevorgangs. Eine \emph{Ladestrategie} beschreibt die örtliche und zeitliche Verteilung der Ladevorgänge. Sie ist von der Ladetechnologie prinzipiell unabhängig, jedoch ist oft eine bestimmte Kombination von Ladestrategie und Ladetechnologie klar überlegen.
+
+\begin{quote}
+	\textbf{Beispiel:} Das \emph{Ladesystem} \textsc{primove} von Bombardier ist eine Anwendung der induktiven, automatischen und statischen \emph{Ladetechnologie}. Es ist am besten für die \emph{Ladestrategie} "`Opportunity Charging"' geeignet.
+\end{quote}
+
+In dieser Arbeit werden nur Ladesysteme betrachtet, die bereits im realen Linienbetrieb erprobt wurden. Die Ladesysteme werden den verschiedenen Ladetechnologien nach folgenden Kriterien zugeordnet:
+
+\begin{itemize}
+	\item Methode der Energiezuführung
+	\begin{itemize}
+		\item \textbf{Koduktiv}: Es werden mindestens zwei leitende Verbindungen hergestellt.
+		\item \textbf{Induktiv}: Der Ladevorgang erfolgt durch elektromagnetische Felder.
+		\item \textbf{Batteriewechsel}: Der Energiespeicher des Busses wird ausgewechselt und außerhalb der Busses aufgeladen.
+	\end{itemize}
+	\item Arbeitsaufwand
+	\begin{itemize}
+		\item \textbf{Manuell}: Die übertragenden Komponenten werden durch Menschenkraft bewegt.
+		\item \textbf{Automatisch}: Die übertragenden Komponenten werden auf Kommando durch Maschinenkraft bewegt oder müssen sich nicht bewegen.
+	\end{itemize}
+	\item Fahrzustand
+	\begin{itemize}
+		\item \textbf{Statisch}: Der Ladevorgang kann nur stattfinden, wenn der Bus unbewegt ist.
+		\item \textbf{Dynamisch}: Der Ladevorgang findet auch statt, wenn sich der Bus mit normaler Geschwindigkeit im Verkehr bewegt.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Betrachtete Systeme}
+
+\subsection{Kriterien}
+Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriterien. Die Kriterien werden in die vier Kategorien Mechanik, Elektrik, Sicherheit und Zuverlässigkeit eingeteilt. Insbesondere bei den meschanischen Eigenschaften ist oft eine Aufteilung in fahrzeugseitige und stationsseitige Werte sinnvoll.
+
+\begin{itemize}
+	\item Mechanik %TODO: Bessere Beschreibung (Zeit ist nicht mechanisch)
+	\begin{itemize}
+		\item \textbf{Abmaße, feste Position} \emph{Fahrzeug- uns Stationsseitig}\\
+		Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
+		Beispiel: Pantograph und Stromschiene
+		\item \textbf{Abmaße, freie Position} \emph{Fahrzeug- uns Stationsseitig}\\
+		Die Abmaße jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
+		Beispiel: Elektrische Wandler
+		\item \textbf{Masse} \emph{Fahrzeugseitig}\\
+		Gesamtmasse der fahrzeugseitigen Komponenten
+		\item \textbf{Freiheitsgrade} \emph{Fahrzeug- uns Stationsseitig}\\
+		Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. 0, wenn es keine beweglichen Teile gibt.
+		\item \textbf{Positionierungsgenauigkeit des Busses} \emph{Fahrzeugseitig} \\
+		Eforderliche Genaugkeit der Positionierung des Busses relativ zur Ladestation, so dass noch 80\% der Standardladeleistung verfügbar ist. Besteht aus zwei translatorischen und zwei rotatorischen Komponenten (X, Y, Richtung des Busses, Kneelingwinkel)
+		\item \textbf{Totzeit}\\
+		Summe aus Zeit zwischen Halt des Busses und Ladebeginn und Zeit zwischen Ladeschluss und Abfahrt. Ist die Zeit von der Position abhängig, so wird jeweils eine Abweichung um die Hälfte des maximalen Wertes angenommen.
+
+	\end{itemize}
+	\item Elektrik
+	\item Sicherheit
+	\item Zuverlässigkeit
+\end{itemize}
+
+\section{Speichertechnologien}
+
 %%%%% ENDE INHALT %%%%%
 
 %%%%% BEGINN BACK MATTER %%%%%
+
+\newpage
+%Bibliographie
+\bibliographystyle{alphadin}
+\bibliography{Quellen/Quellenliste} 
 
 %%%%% ENDE BACK MATTER %%%%%
 
