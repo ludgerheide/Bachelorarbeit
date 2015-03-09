@@ -1,0 +1,77 @@
+\documentclass[twoside]{scrreprt}
+
+%Packages, die für die deutsch Sprache erforderlich sind
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ngerman}
+
+%Packages für Graphik
+\usepackage[pdftex]{graphicx}
+
+%Package, damit Bibtex-URL klappt
+\usepackage{url}
+
+\begin{document}
+
+\title{Vergleich von Lade- und Speichertechnologien für Elektrobusse}
+\author{Ludger Heide}
+\date{\today}
+\maketitle
+
+%Inhaltsverzeichnis
+\tableofcontents
+
+%%%%% BEGINN INHALT %%%%%
+
+\chapter{Einleitung}
+\section{Anfang}
+\subsection{Blubb}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\begin{quote}
+	Das ist ein Zitat \cite{Association:2005}
+\end{quote}
+
+\begin{figure}[htbp]
+  \includegraphics[width=\textwidth]{Abbildungen/Nyika.jpg}
+  \caption{Test}
+\end{figure}
+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\subsection{Blabb}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\begin{table}[htbp]
+  \begin{tabular}[c]{|l|cc|}
+  	\hline
+    Test & Test & Test\\
+    \hline
+    Test &     Test     & Test \\
+    Test&Test&Test \\
+    \hline
+  \end{tabular}
+  \caption{Gedöns}
+\end{table}
+
+
+\section{Blobb}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+
+%%%%% ENDE INHALT %%%%%
+
+%Tabellenverzeichnis
+\listoftables
+
+%Abbildungsverzeichnis
+\listoffigures
+
+%Bibliographie
+\bibliographystyle{alphadin}
+\bibliography{Quellen/Quellenliste} 
+
+
+\end{document}
