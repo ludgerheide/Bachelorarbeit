@@ -17,8 +17,9 @@
 %Package für Hyperlinks im PDF
 \usepackage{hyperref}
 
-%Package für Tabellen mit avriabler Breite
+%Package für schöne Tabellen mit variabler Breite
 \usepackage{tabularx}
+\usepackage{booktabs}
 
 %Noch schönere Typographie
 \usepackage{microtype}
@@ -72,6 +73,20 @@ In dieser Arbeit werden nur Ladesysteme betrachtet, die bereits im realen Linien
 \end{itemize}
 
 \subsection{Betrachtete Systeme}
+Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In der folgenden Tabelle sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{Kursiv} geschrieben.
+\begin{table}[htbp]
+	\begin{tabularx}{\textwidth}{lXX}
+		\toprule
+		\multicolumn{2}{c}{Studium}\\ \cmidrule{1-2}
+		Fach & Dauer & Einkommen (\euro{})\\ 
+		\midrule 
+		Info & 2 & 12,75 \\
+		MST & 6 & 8,20 \\
+		VWL & 14 & 10,00\\ 
+		\bottomrule
+	\end{tabularx}
+	\caption{Übersicht Ladesysteme}
+\end{table}
 
 \subsection{Kriterien}
 Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriterien. Die Kriterien werden in die vier Kategorien Mechanik, Elektrik, Sicherheit und Zuverlässigkeit eingeteilt. Insbesondere bei den meschanischen Eigenschaften ist oft eine Aufteilung in fahrzeugseitige und stationsseitige Werte sinnvoll.
@@ -98,15 +113,38 @@ Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriteri
 	\begin{description}
 		\item \textbf{Anzahl der Wandler} \emph{Fahrzeug- und Stationsseitig}\\
 		Anzahl der Komponenten, die den Spannungsverlauf verändern (Gleichrichter, Transformatoren etc.)
-		\item \textbf{Leisetung}\\
-		Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leitung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz (400V Drehstrom in Europa) %TODO: Amerika
+		\item \textbf{Spannung}\\
+		Mit welcher Spannung wird geladen? Gleich- oder Wechselspannung? Nicht relevant bei induktiver Ladung und Batteriewechselsystemen.
+		\item \textbf{Leistung}\\
+		Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leitung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa) %TODO: Amerika
 		\item \textbf{Effizienz}\\
-		Prozentualer Anteil der Leistung, die im Fahrzeug am Laderegler ankommt.
-		\item \textbf{Isolierbedarf}\\
-		Stellt
+		Prozentualer Anteil der Leistung, die im Fahrzeug am Laderegler ankommt.		
 	\end{description}
 	\item Sicherheit
-	\item Zuverlässigkeit
+	\begin{description}
+		\item \textbf{Fehlerstromschutz}\\
+		Wie wird vor Fehlerströmen geschützt?\\
+		Beispiel: Fahrzeugseitige Isolationsüberwachung, RCD Typ B in Ladestation
+		\item \textbf{Exponierte Leiter}\\
+		Sind die spannungsführenden Leiter nur durch die umgebende Luft isoliert? Mögliche Antworten: nie, nur beim Ladevorgang, immer
+		\item \textbf{Zugänglichkeit der Schnittstelle}\\
+		Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?
+		\item \textbf{Strahlung – Gesundheitsaspekte}\\
+		%TODO: Wie beschriebt man das? Macht es Sinn?
+		\item \textbf{Strahlung – EMV-Aspekte}\\
+		%TODO: Wie beschriebt man das? Macht es Sinn?
+		\item \textbf{Position der Ladestation}\\
+		Ladesäule oder Unterflur? Im Depot oder an öffentlich zugänglicher Station?
+	\end{description}
+	\item Reife
+	\begin{description}
+		\item \textbf{Fahrzeugkilometer – Teststrecke}\\
+		Mit diesem Ladesystem zurückgelegte Fahrzeugkilometer außerhalb des normalen Verkehrs.
+		\item \textbf{Fahrzeugkilometer – Verkehr}\\
+		Mit diesem Ladesystem im normalen Verkehr zurückgelegte Fahrzeugkilometer.
+		\item \textbf{Erfahrungen der Vekehrsgesellschaften}\\
+		War das System zuverlässig oder fehleranfällig? Hat sich die Zuverlässigkeit während des Betriebes verbessert?%TODO: Macht das Sinn?
+	\end{description}
 \end{itemize}
 
 \section{Speichertechnologien}
