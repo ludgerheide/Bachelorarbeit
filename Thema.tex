@@ -78,7 +78,7 @@ Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriteri
 
 \begin{itemize}
 	\item Mechanik %TODO: Bessere Beschreibung (Zeit ist nicht mechanisch)
-	\begin{itemize}
+	\begin{description}
 		\item \textbf{Abmaße, feste Position} \emph{Fahrzeug- uns Stationsseitig}\\
 		Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
 		Beispiel: Pantograph und Stromschiene
@@ -93,9 +93,18 @@ Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriteri
 		Eforderliche Genaugkeit der Positionierung des Busses relativ zur Ladestation, so dass noch 80\% der Standardladeleistung verfügbar ist. Besteht aus zwei translatorischen und zwei rotatorischen Komponenten (X, Y, Richtung des Busses, Kneelingwinkel)
 		\item \textbf{Totzeit}\\
 		Summe aus Zeit zwischen Halt des Busses und Ladebeginn und Zeit zwischen Ladeschluss und Abfahrt. Ist die Zeit von der Position abhängig, so wird jeweils eine Abweichung um die Hälfte des maximalen Wertes angenommen.
-
-	\end{itemize}
+	\end{description}
 	\item Elektrik
+	\begin{description}
+		\item \textbf{Anzahl der Wandler} \emph{Fahrzeug- und Stationsseitig}\\
+		Anzahl der Komponenten, die den Spannungsverlauf verändern (Gleichrichter, Transformatoren etc.)
+		\item \textbf{Leisetung}\\
+		Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leitung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz (400V Drehstrom in Europa) %TODO: Amerika
+		\item \textbf{Effizienz}\\
+		Prozentualer Anteil der Leistung, die im Fahrzeug am Laderegler ankommt.
+		\item \textbf{Isolierbedarf}\\
+		Stellt
+	\end{description}
 	\item Sicherheit
 	\item Zuverlässigkeit
 \end{itemize}
