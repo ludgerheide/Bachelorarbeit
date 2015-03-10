@@ -1,4 +1,4 @@
-\documentclass{scrartcl}
+\documentclass[twoside]{scrartcl}
 
 %%%%% BEGINN PACKAGES %%%%%
 
@@ -20,6 +20,7 @@
 %Package für schöne Tabellen mit variabler Breite
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{multirow}
 
 %Noch schönere Typographie
 \usepackage{microtype}
@@ -73,20 +74,33 @@ In dieser Arbeit werden nur Ladesysteme betrachtet, die bereits im realen Linien
 \end{itemize}
 
 \subsection{Betrachtete Systeme}
-Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In der folgenden Tabelle sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{Kursiv} geschrieben.
-\begin{table}[htbp]
-	\begin{tabularx}{\textwidth}{lXX}
+Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In den folgenden Tabellen sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{Kursiv} geschrieben. Sollte das System keinen eigenen Namen haben, wird der name des Einstazortes idn \textsc{Kapitälchen} verwendet.
+\begin{table}[htbp]\centering %TODO: AUSFÜLLEn KonMan - KonAuto - IndDyn BatSwap
+	\begin{tabularx}{\linewidth}{lXXXX}
 		\toprule
-		\multicolumn{2}{c}{Studium}\\ \cmidrule{1-2}
-		Fach & Dauer & Einkommen (\euro{})\\ 
-		\midrule 
-		Info & 2 & 12,75 \\
-		MST & 6 & 8,20 \\
-		VWL & 14 & 10,00\\ 
-		\bottomrule
+		                           &                 \multicolumn{2}{c}{\textbf{Konduktiv}}                 & \textbf{Induktiv}             & \textbf{Batteriewechsel}                     \\
+		\cmidrule{2-3}             & Manuell                            & Automatisch                       & Automatisch                   & Automatisch                                  \\ \midrule
+		\multirow{5}{*}{Statisch}  & IEC62196-2 \emph{BYD}              & TOSA \emph{ABB}                   & primove \emph{Bombardier}     & \textsc{Qingdao} \emph{XJ Group Corporation} \\
+		                           & Teiuzt                             & Fast Charge \emph{Proterra}       & IPT \emph{Conductix-Wampfler} & \textsc{Chattanooga} \emph{AVS}              \\
+		                           & Teiuzt                             & \textsc{Wien} \emph{Siemens}      & WAVE \emph{WAVE}              &  \\
+		                           & Teiuzt                             & Busbaar \emph{Furrer+Frey/Opbrid} & kutfrze                       & sjfgdsjh                                     \\
+		                           & Teiuzt                             & \textsc{Shanghai} \emph{Sunwin}   & kutfrze                       & sjfgdsjh                                     \\ \midrule
+		\multirow{5}{*}{Dynamisch} & \textsc{Eberswalde} \emph{Solaris} & OLEV \emph{KAIST}                 & afkjdsagfkjds                 & dkjhfsfkjhdsgdf                              \\
+		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
+		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
+		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
+		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\ \bottomrule
 	\end{tabularx}
 	\caption{Übersicht Ladesysteme}
 \end{table}
+
+\subsubsection{Konduktive Ladeysteme}
+Es existieren auch konduktiv-dynamische Ladesysteme. Viele Trolleybusse besitzen einen Hilfsakku für Fahrten im Deport, in bererswalde wurde ein Trolleybus mit einer Reichweite von bis zu 18 Kilometern im Batteriebetieb erprobt. %TODO: BELEG
+Diese Technologie erfordert jedoch eine aufwändige Infrastruktur an Oberleitungsmasten und Unterverteilern und macht von daher nur in Städten Sinn, die ihr existierendes Trolleybus Netz auf kurzen bis mittleren Strecken erweitern wollen, ohne neue Oberleitungen zu bauen.
+
+\subsubsection{Induktive Ladesysteme}
+
+\subsubsection{Batteriewichelsysteme}
 
 \subsection{Kriterien}
 Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriterien. Die Kriterien werden in die vier Kategorien Mechanik, Elektrik, Sicherheit und Zuverlässigkeit eingeteilt. Insbesondere bei den meschanischen Eigenschaften ist oft eine Aufteilung in fahrzeugseitige und stationsseitige Werte sinnvoll.
