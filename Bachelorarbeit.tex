@@ -8,22 +8,79 @@
 
 %Packages für Graphik
 \usepackage[pdftex]{graphicx}
+\graphicspath{{Abbildungen/} }
 
 %Package, damit Bibtex-URL klappt
 \usepackage{url}
 
+
 \begin{document}
+%%%%% BEGINN TITELSEITE %%%%%
+\begin{titlepage}
 
-\title{Vergleich von Lade- und Speichertechnologien für Elektrobusse}
-\author{Ludger Heide}
-\date{\today}
-\maketitle
+% Oberer Teil der Titelseite:
+\begin{minipage}{0.4\textwidth}
+	\begin{flushleft}
+		\includegraphics[height=1.5cm]{TU_Logo}
+	\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+	\begin{flushright}
+		\includegraphics[height=1.5cm]{MPM_Logo}%TODO: Logo in HQ
+	\end{flushright}
+\end{minipage}
 
-%Inhaltsverzeichnis
+\begin{center}    
+\textbf{\LARGE Technische Universität Berlin}\\
+\large{Institut für Konstruktion, Mikro- und Medizintechnik}\\
+\large{Fachgebiet Methoden der Produktentwicklung und Mechatronik}\\
+\large{\textsc{Prof. Dr.-Ing. Dietmar Göhlich}}\\
+\vfill
+
+% Title
+\huge{\textbf{Vergleich von Ladesystemen und Speichertechnologien für batteriebetriebene Stadtbusse}}\\
+\rule{\linewidth}{1pt}
+\large{Zur Erlangung des akademischen Grades Bachelor of Science}\\
+\large{Im Studiengang Informationstechnik im Maschinenwesen}\\
+\vfill
+
+%Autor
+\large{\textsc{Ludger Heide}}\\
+\large{Matrikelnummer 338641}\\
+\vfill
+
+\large{Betreuerin: \textsc{M.Sc. Tu-Anh Ly}}\\
+\vfill
+
+\large{\today}
+\end{center}
+\end{titlepage}
+%%%%% ENDE TITELSEITE %%%%%
+
+\pagenumbering{Roman}
+\chapter*{Aufgabenstellung}
+
+\chapter*{Eidesstattliche Erklärung}
+Ich, Ludger Heide, versichere hiermit, dass ich meine Bachelorarbeit mit dem Thema
+\begin{quote}
+	\emph{Vergleich von Ladesystemen und Speichertechnologien für batteriebetriebene Stadtbusse}
+\end{quote}
+selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe, wobei ich alle wörtlichen und sinngemäßen Zitate als solche gekennzeichnet habe. Die Arbeit wurde bisher keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.\\[6ex]
+Berlin, \today\\
+\newline
+\rule{4cm}{0.5pt}\\
+\textsc{Ludger Heide} 
+
 \tableofcontents
 
-%%%%% BEGINN INHALT %%%%%
+\listoffigures
 
+\listoftables
+\newpage
+
+%%%%% BEGINN INHALT %%%%%
+\pagenumbering{arabic}
 \chapter{Einleitung}
 \section{Anfang}
 \subsection{Blubb}
@@ -33,7 +90,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 \end{quote}
 
 \begin{figure}[htbp]
-  \includegraphics[width=\textwidth]{Abbildungen/Nyika.jpg}
+  \includegraphics[width=\textwidth]{Nyika}
   \caption{Test}
 \end{figure}
 
@@ -62,12 +119,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 
 %%%%% ENDE INHALT %%%%%
-
-%Tabellenverzeichnis
-\listoftables
-
-%Abbildungsverzeichnis
-\listoffigures
 
 %Bibliographie
 \bibliographystyle{alphadin}
