@@ -1,4 +1,4 @@
-\documentclass[twoside]{scrartcl}
+\documentclass{scrreprt}
 
 %%%%% BEGINN PACKAGES %%%%%
 
@@ -44,9 +44,9 @@
 
 In dieser Bachelorarbeit werden die existierenden Ladesysteme und Speichertechnologien für batteriebetriebene Busse im Innerstädtischen Linienverkehr verglichen. Grundfrage ist, welche Kombination von Ladesystem und Speichertechnologie auf welcher Strecke am wenigsten Energie verbraucht oder am wenigsten Infrastruktur benötigt.
 
-\section{Ladesysteme}
+\chapter{Ladesysteme}
 
-In Anlehnung an Pahl/Beitz \cite[S. 258]{feldhusen2013pahl} kann das \emph{Ladesystem} als ein technisches System betrachtet werden, in dem hauptsächlich Energie umgesetzt wird mit dem Ziel, elektrische Energie vom öffentlichen Stromnetz zum Laderegler des Batteriesystems im Bus zu transportieren\footnote{Diese Definition gilt nicht bei den Batteriewechselsystemen. Hier wird die Energie über Stofftransport in den Bus gebracht und auch die fahrzeugseitige Systemgranze Ladregler kann nicht verwendet werden.}. Das System kann immer in stations- und fahrzeugseitige Teilsysteme unterteilt werden. Die vom Ladesystem verwendete \emph{Ladetechnologie} ist die Kombination von Methode der Energie- oder Stoffübertragung zwischen fahrzeugseitigem und stationsseitigem Teilsystem, Art der Einleitung des Ladevorgangs und Fahrzustand des Busses während des Ladevorgangs. Eine \emph{Ladestrategie} beschreibt die örtliche und zeitliche Verteilung der Ladevorgänge. Sie ist von der Ladetechnologie prinzipiell unabhängig, jedoch ist oft eine bestimmte Kombination von Ladestrategie und Ladetechnologie klar überlegen.
+In Anlehnung an Pahl/Beitz \cite[S. 258]{feldhusen2013pahl} kann das \emph{Ladesystem} als ein technisches System betrachtet werden, in dem hauptsächlich Energie umgesetzt wird mit dem Ziel, elektrische Energie vom öffentlichen Stromnetz zum Laderegler des Batteriesystems im Bus zu transportieren\footnote{diese Definition gilt nicht bei den Batteriewechselsystemen. Hier wird die Energie über Stofftransport in den Bus gebracht und auch die fahrzeugseitige Systemgrenze Laderegler kann nicht verwendet werden.}. Das System kann immer in stations- und fahrzeugseitige Teilsysteme unterteilt werden. Die vom Ladesystem verwendete \emph{Ladetechnologie} ist die Kombination von Methode der Energie- oder Stoffübertragung zwischen fahrzeugseitigem und stationsseitigem Teilsystem, Art der Einleitung des Ladevorgangs und Fahrzustand des Busses während des Ladevorgangs. Eine \emph{Ladestrategie} beschreibt die örtliche und zeitliche Verteilung der Ladevorgänge. Sie ist von der Ladetechnologie prinzipiell unabhängig, jedoch ist oft eine bestimmte Kombination von Ladestrategie und Ladetechnologie klar überlegen.
 
 \begin{quote}
 	\textbf{Beispiel:} Das \emph{Ladesystem} \textsc{primove} von Bombardier ist eine Anwendung der induktiven, automatischen und statischen \emph{Ladetechnologie}. Es ist am besten für die \emph{Ladestrategie} "`Opportunity Charging"' geeignet.
@@ -59,7 +59,7 @@ In dieser Arbeit werden nur Ladesysteme betrachtet, die bereits im realen Linien
 	\begin{itemize}
 		\item \textbf{Koduktiv}: Es werden mindestens zwei leitende Verbindungen hergestellt.
 		\item \textbf{Induktiv}: Der Ladevorgang erfolgt durch elektromagnetische Felder.
-		\item \textbf{Batteriewechsel}: Der Energiespeicher des Busses wird ausgewechselt und außerhalb der Busses aufgeladen.
+		\item \textbf{Batteriewechsel}: Der Energiespeicher des Busses wird ausgewechselt und außerhalb des Busses aufgeladen.
 	\end{itemize}
 	\item Arbeitsaufwand
 	\begin{itemize}
@@ -69,41 +69,37 @@ In dieser Arbeit werden nur Ladesysteme betrachtet, die bereits im realen Linien
 	\item Fahrzustand
 	\begin{itemize}
 		\item \textbf{Statisch}: Der Ladevorgang kann nur stattfinden, wenn der Bus unbewegt ist.
-		\item \textbf{Dynamisch}: Der Ladevorgang findet auch statt, wenn sich der Bus mit normaler Geschwindigkeit im Verkehr bewegt.
+		\item \textbf{Dynamisch}: Der Ladevorgang findet auch statt, während sich der Bus mit normaler Geschwindigkeit im Verkehr bewegt.
 	\end{itemize}
 \end{itemize}
 
-\subsection{Betrachtete Systeme}
-Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In den folgenden Tabellen sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{Kursiv} geschrieben. Sollte das System keinen eigenen Namen haben, wird der name des Einstazortes idn \textsc{Kapitälchen} verwendet.
-\begin{table}[htbp]\centering %TODO: AUSFÜLLEn KonMan - KonAuto - IndDyn BatSwap
-	\begin{tabularx}{\linewidth}{lXXXX}
+\section{Betrachtete Systeme}
+Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{übersichtLadesysteme} auf Seite \pageref{übersichtLadesysteme} sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{kursiv} geschrieben. Sollte das System keinen eigenen Namen haben, wird der Name des Einsatzortes in \textsc{Kapitälchen} verwendet.
+\begin{table}[htbp]\centering
+	\begin{tabularx}{\linewidth}{lp{2.1cm}p{2.1cm}XX}
 		\toprule
-		                           &                 \multicolumn{2}{c}{\textbf{Konduktiv}}                 & \textbf{Induktiv}             & \textbf{Batteriewechsel}                     \\
-		\cmidrule{2-3}             & Manuell                            & Automatisch                       & Automatisch                   & Automatisch                                  \\ \midrule
-		\multirow{5}{*}{Statisch}  & IEC62196-2 \emph{BYD}              & TOSA \emph{ABB}                   & primove \emph{Bombardier}     & \textsc{Qingdao} \emph{XJ Group Corporation} \\
-		                           & Teiuzt                             & Fast Charge \emph{Proterra}       & IPT \emph{Conductix-Wampfler} & \textsc{Chattanooga} \emph{AVS}              \\
-		                           & Teiuzt                             & \textsc{Wien} \emph{Siemens}      & WAVE \emph{WAVE}              &  \\
-		                           & Teiuzt                             & Busbaar \emph{Furrer+Frey/Opbrid} & kutfrze                       & sjfgdsjh                                     \\
-		                           & Teiuzt                             & \textsc{Shanghai} \emph{Sunwin}   & kutfrze                       & sjfgdsjh                                     \\ \midrule
-		\multirow{5}{*}{Dynamisch} & \textsc{Eberswalde} \emph{Solaris} & OLEV \emph{KAIST}                 & afkjdsagfkjds                 & dkjhfsfkjhdsgdf                              \\
-		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
-		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
-		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\
-		                           & Teiuzt                             & uztruze                           & kutfrze                       & sjfgdsjh                                     \\ \bottomrule
+		                           &                       \multicolumn{2}{c}{\textbf{Konduktiv}}                       & \textbf{Induktiv}                     & \textbf{Batteriewechsel}                \\
+		\cmidrule{2-3}             & Manuell                                   & Automatisch                            & Automatisch                           & Automatisch                             \\ \midrule
+		\multirow{12}{*}{Statisch} & IEC62196-2\newline\emph{BYD}              & Busbaar\newline\emph{Opbrid}           & IPT\newline\emph{Conductix"~Wampfler} & \textsc{Chattanooga}\newline\emph{AVS}  \\
+		                           &                                           & Fast Charge\newline\emph{Proterra}     & primove\newline\emph{Bombardier}      & \textsc{Qingdao}\newline\emph{XJ Group} \\
+		                           &                                           & \textsc{Hamburg}\newline\emph{Siemens} & WAVE\newline\emph{WAVE Inc.}          & \textsc{Shanghai}\newline\emph{Sunwin}  \\
+		                           &                                           & TOSA\newline\emph{ABB}                 &                                       &  \\
+		                           &                                           & \textsc{Shanghai}\newline\emph{Sunwin} &                                       &  \\
+		                           &                                           & \textsc{Wien}\newline\emph{Siemens}    &                                       &  \\ \midrule
+		\multirow{2}{*}{Dynamisch} & \textsc{Eberswalde}\newline\emph{Solaris} &                                        & OLEV\newline\emph{KAIST}              &  \\ \bottomrule
 	\end{tabularx}
 	\caption{Übersicht Ladesysteme}
+	\label{übersichtLadesysteme}
 \end{table}
 
-\subsubsection{Konduktive Ladeysteme}
-Es existieren auch konduktiv-dynamische Ladesysteme. Viele Trolleybusse besitzen einen Hilfsakku für Fahrten im Deport, in bererswalde wurde ein Trolleybus mit einer Reichweite von bis zu 18 Kilometern im Batteriebetieb erprobt. %TODO: BELEG
-Diese Technologie erfordert jedoch eine aufwändige Infrastruktur an Oberleitungsmasten und Unterverteilern und macht von daher nur in Städten Sinn, die ihr existierendes Trolleybus Netz auf kurzen bis mittleren Strecken erweitern wollen, ohne neue Oberleitungen zu bauen.
+\subsection{Konduktive Ladesysteme}
 
-\subsubsection{Induktive Ladesysteme}
+\subsection{Induktive Ladesysteme}
 
-\subsubsection{Batteriewichelsysteme}
+\subsection{Batteriewechselsysteme}
 
-\subsection{Kriterien}
-Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriterien. Die Kriterien werden in die vier Kategorien Mechanik, Elektrik, Sicherheit und Zuverlässigkeit eingeteilt. Insbesondere bei den meschanischen Eigenschaften ist oft eine Aufteilung in fahrzeugseitige und stationsseitige Werte sinnvoll.
+\section{Kriterien}
+Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriterien. Die Kriterien werden in die vier Kategorien Mechanik, Elektrik, Sicherheit und Zuverlässigkeit eingeteilt. Insbesondere bei den mechanischen Eigenschaften ist oft eine Aufteilung in fahrzeugseitige und stationsseitige Werte sinnvoll.
 
 \begin{itemize}
 	\item Mechanik %TODO: Bessere Beschreibung (Zeit ist nicht mechanisch)
@@ -161,7 +157,66 @@ Bei der Auswahl der Kriterien liegt Fokus auf quantitativ vergleichbaren Kriteri
 	\end{description}
 \end{itemize}
 
-\section{Speichertechnologien}
+\chapter{Speichertechnologien}
+Als Speichertechnologien werden sämtliche Möglichkeiten bezeichnet, die durch das Ladesystem zugeführte Energie zu speichern und später an den Motor abzugeben. Am haüfigsten verwendet werden Batterien, die die elektrische Energie in chemischer Form Speichern. Des weiteren gibt es Kondensatoren, die die Energie rein elektrisch Speichern. Schwungradspeicher, die mechanische Rotationsenergie verwenden wurden bereits in Stadtbussen eingesetzt, sind jedoch heutzutage nicht mehr relevant. In der Automobilindustrie gibt es Versuchsfahrzeuge mit Drucklufttanks, in denen die Energie durch Kompression und Expansion von Luft gespeichert wird.\\
+Im Gegensatz zu den Ladesystemen, die größtenteils nur für Busse ausgelegt sind gibt es bei den Speichertechnologien keine derartige Begrenzung. Dieselben Technologien werden auch in Lastwagen und Elektroautos eingesetzt. Kondensatoren und Batterien werden auch in elektronischen Geräten und zur Überbrückung von Stromausfällen eingesetzt.\\
+Aufgrund der vielfältigen Einsatzmöglichkeiten gibt es bei den Speichertechnologien unzählige Systeme verschiedener Hersteller, deren Aufzählung den Rahmen dieser Arbeit bei weitem sprengen würde. Insofern beschränkt sich der folgende Teil auf eine Betrachtung der Technologien im allgemeinen, die Daten sollen jeweils die bestmöglichen Werte wiedergeben, die mit den aktuellen Technologien und Herstellungsverfahren erreichbar sind.
+
+\section{Betrachtete Technologien}
+\subsection{Elektrisch}
+\subsubsection{Elektrolytkondensator}
+\subsubsection{Superkondensator}
+
+\subsection{Chemisch}
+\subsubsection{Blei-Säure}
+\subsubsection{Nickel-Metallhydrid}
+\subsubsection{Thermisch} %TODO: Name
+\subsubsection{Lithium-Ionen}
+\subsubsection{Lithium-Eisenphosphat}
+\subsubsection{Lithium-Titanat}
+
+\section{Mechanisch}
+\subsection{Schwungrad}
+\subsection{Druckluft}
+
+\section{Kriterien}
+%TODO: Methode für Kriterienauswahl
+\begin{itemize}
+	\item Spezifische Größen
+	\begin{description}
+		\item \textbf{Energiedichte}\\
+		Für eine Batterie, die diese technologie verwendet, d. h. inklusive Zellwände, Anschlüsse usw. Einheit: \(\frac{Wh}{m^3}\)
+		\item \textbf{Spezifische Energie}\\
+		Einheit: \(\frac{Wh}{kg}\)
+		\item \textbf{Leistungsdichte}\\
+		Einheit: \(\frac{W}{kg}\) %TODO: kw?
+		\item \textbf{Spezifische Leistung}\\
+		Einheit: \(\frac{W}{m^3}\)
+	\end{description}
+	\item Elektrische Parameter
+	\begin{description}
+		\item \textbf{Zellenspannung}
+		\item \textbf{Ladung}\\
+		Der Bereich von Ladungen (Einheit: mAh), die mit dieser Technologie gefertigt werden können. %TODO: Relevanz?
+		\item \textbf{Nennladestrom}\\
+		Ladestrom, mit dem im Bereich zwischen 20\% und 80\% der verfügbaren Kapazität geladen wird. Angabe in Teil an der Ladung\\
+		Beispiel: Wenn eine Batterie mit 1400mAh Ladung werden mit 140mA aufgeladen wird, entspricht dies einem Ladestrom von 0,1C.
+		\item \textbf{Besondere Ladeströme}\\
+		Ladeströme unter anderen Bedingungen, zum Beispiel bei geringem oder hohem Ladezustand oder besonderer Temperatur.
+		\item \textbf{Balancing}\\
+		Wenn eine Batterie aus mehreren Zellen aufgebaut ist, müssen die Ladezustände zwischen den Zellen angeglichen werden. Je nach Technologie kann das durch Überladen erfolgen oder erfordert eine Verbindung von jeder Zelle zum Ladegerät.
+		\item \textbf{Innenwiderstand} %TODO: Effizienz nur über Innenwiderstand?
+	\end{description}
+	\item Sicherheit und Zuverlässigkeit
+	\begin{description}
+		\item \textbf{Kapazitätsverlust, zeitlich}\\
+		Zeitabhängiger Kapazitätsverlust bei Normalbedingungen, Angabe in Prozent pro Jahr%TODO: Bedingungen
+		\item \textbf{Kapazitätsverlust, nutzungsabhängig}\\
+		Nutzungsabhängiger Kapazitätsverlust bei maximaler Lade- und Entladestaärke und vollen Ladezyklen, Angabe in Prozent pro Ladezyklus %TODO: Bedingungen
+		\item \textbf{Verhalten bei Übertemperatur}\\
+		\item \textbf{Unfallverhalten}\\
+	\end{description}
+\end{itemize}
 
 %%%%% ENDE INHALT %%%%%
 
