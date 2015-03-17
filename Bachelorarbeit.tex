@@ -58,9 +58,16 @@
 %%%%% ENDE TITELSEITE %%%%%
 
 \pagenumbering{Roman}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\section*{English}
+\section*{Deutsch}
+
 \chapter*{Aufgabenstellung}
+\addcontentsline{toc}{chapter}{Aufgabenstellung}
 
 \chapter*{Eidesstattliche Erklärung}
+\addcontentsline{toc}{chapter}{Eidesstattliche Erklärung}
 Ich, Ludger Heide, versichere hiermit, dass ich meine Bachelorarbeit mit dem Thema
 \begin{quote}
 	\emph{Vergleich von Ladesystemen und Speichertechnologien für batteriebetriebene Stadtbusse}
@@ -74,11 +81,11 @@ Berlin, \today\\
 \tableofcontents
 
 \listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 
 \listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \newpage
-
-%TODO: Abstract
 
 %%%%% BEGINN INHALT %%%%%
 \pagenumbering{arabic}
@@ -87,19 +94,17 @@ Berlin, \today\\
 \subsection{Geschichte}
 \subsection{Aktueller Stand}
 \section{Problem}
-%TODO: WIchtigste Aufgabe sind die Ladesysteme
 \subsection{Ziel} %TODO: Wegmachen?
-%Neues Kapitel: Methodenteil?
-\section{Vorgehen} %Methodik?
-\section{Überblick} %TODO Wirklich? (lutz sagt nein)
+\section{Methodik} %(Kurz))
 
 \chapter{Ladesysteme} %Zewitens
 \section{Bewertungskriterien} %TODO: Subsections
 % Mit welcher Methode ausgewählt?
 \section{Betrachtete Systeme} %TODO: Subsections
-\section{Vergleichstabelle}   %TODO: In den Anhang?
+\section{Vergleichstabelle}
 
 \chapter{Speichertechnologien} %Zuerst
+\cite{Lajunen20141}
 \section{Bewertungskriterien} %TODO: Subsections
 \section{Betrachtete Systeme} %TODO: Subsections
 \section{Vergleichstabelle}   %TODO: In den Anhang?
