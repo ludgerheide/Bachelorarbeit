@@ -46,7 +46,8 @@ $RECYCLE.BIN/
 #Texpad temp
 .texpadtmp/
 
-#PDFs in root
+#PDFs in root an Latex/
+Latex/*.pdf
 /*.pdf
 
 #Latex misc
@@ -73,3 +74,11 @@ $RECYCLE.BIN/
 *.mtc1
 *.out
 *.synctex.gz
+*.4ct
+*.4tc
+*.css
+*.html
+*.idv
+*.lg
+*.tmp
+*.xref

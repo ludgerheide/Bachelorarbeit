@@ -8,7 +8,7 @@
 
 %Packages für Graphik
 \usepackage{graphicx}
-\graphicspath{{Abbildungen/}}
+\graphicspath{{../Abbildungen/}}
 
 
 %Package, damit Bibtex-URL klappt
@@ -41,7 +41,7 @@
 		\includegraphics[height=1.5cm]{MPM_Logo}%TODO: Logo in HQ
 	\end{flushright}
 \end{minipage}
-
+\vfill
 \begin{center}    
 \textbf{\LARGE Technische Universität Berlin}\\
 \large{Institut für Konstruktion, Mikro- und Medizintechnik}\\
@@ -70,13 +70,8 @@
 %%%%% ENDE TITELSEITE %%%%%
 
 \pagenumbering{Roman}
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-\section*{English}
-\section*{Deutsch}
-
-\chapter*{Aufgabenstellung}
-\addcontentsline{toc}{chapter}{Aufgabenstellung}
+\include{Kapitel/00_Abstract}
+\include{Kapitel/00_Aufgabenstellung}
 
 \chapter*{Eidesstattliche Erklärung}
 \addcontentsline{toc}{chapter}{Eidesstattliche Erklärung}

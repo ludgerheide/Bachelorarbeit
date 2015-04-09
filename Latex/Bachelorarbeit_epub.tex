@@ -1,0 +1,61 @@
+\documentclass{report}
+
+%Packages, die für die deutsch Sprache erforderlich sind
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ngerman}
+
+%Packages für Graphik
+\usepackage{graphicx}
+\graphicspath{{../Abbildungen/}}
+\DeclareGraphicsExtensions{.jpg,.png,.gif,.svg}
+
+%Package, damit Bibtex-URL klappt
+\usepackage{url}
+
+%Package für Hyperlinks im PDF
+\usepackage{hyperref}
+
+%Package für schöne Tabellen mit variabler Breite
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+%Noch schönere Typographie
+\usepackage{microtype}
+
+\begin{document}
+%%%%% BEGINN TITELSEITE %%%%%
+
+%%%%% ENDE TITELSEITE %%%%%
+
+\pagenumbering{Roman}
+\include{Kapitel/00_Abstract}
+\include{Kapitel/00_Aufgabenstellung}
+
+\tableofcontents
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\newpage
+
+%%%%% BEGINN INHALT %%%%%
+\pagenumbering{arabic}
+
+\include{Kapitel/01_Einleitung}
+\include{Kapitel/02_Ladesysteme}
+\include{Kapitel/03_Speichertechnologien}
+\include{Kapitel/04_Effizienzberechnung}
+\include{Kapitel/05_Bewertung_und_Diskussion}
+
+%%%%% ENDE INHALT %%%%%
+
+%Bibliographie
+\bibliographystyle{alphadin}
+\bibliography{../Quellen/Quellenliste} 
+
+\end{document}
