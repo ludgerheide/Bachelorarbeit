@@ -1,4 +1,4 @@
-\documentclass{scrreprt}
+\documentclass[toc=listof,tc=bibliography]{scrreprt}
 
 %Packages, die für die deutsch Sprache erforderlich sind
 \usepackage[utf8]{inputenc}
@@ -72,6 +72,7 @@
 \end{titlepage}
 %%%%% ENDE TITELSEITE %%%%%
 
+%%%%% BEGINN FRONT MATTER %%%%%
 \pagenumbering{Roman}
 \include{Kapitel/00_Abstract}
 \include{Kapitel/00_Aufgabenstellung}
@@ -91,11 +92,9 @@ Berlin, \today\\
 \tableofcontents
 
 \listoffigures
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 
 \listoftables
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-\newpage
+%%%%% ENDE FRONT MATTER %%%%%
 
 %%%%% BEGINN INHALT %%%%%
 \pagenumbering{arabic}
