@@ -60,11 +60,33 @@ Die Nickel-Mettalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Ni
 \end{table}
 Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Er weist eine hohe spezifische Energie, Leistung und Lebensdauer auf. Für die Verwendung als primärer Energiespeicher in Bussen ist die spezifische Energie jedoch immer noch zu niedrig. %TODO: Beleg
 \subsubsection{Lithium-Ionen}
-In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus gelösten Salzen in organischen Lösungsmitteln wandern\footnote{Es können theoretisch acuh Polymere als Elektrolyt verwendet werden, die als Feststoff auch den mechanischen Aufbau der Batterie festlegen können. Dies ist bei den aktuellen kommerziellen }. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren, von daher werden für positive und negative Elektrode verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden \cite{KiehneBattery}[S. 408, 440ff].
-\paragraph{Lithium-Manganoxid}
+In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Das Elektrolyt ist häufig in ein Polymer eingelagert, das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jeoch noch nicht kommerziell eingesetzt.} \cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren, von daher werden für positive und negative Elektrode verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden \cite{KiehneBattery}[S. 408, 440ff].
+\paragraph{Geschichtete Oxide}
+\begin{figure}\centering
+	 \includegraphics[width=0.5\textwidth]{LiCoO2}
+	 \caption{Prinzipdarstellung eines Lithium-Inonen-Akkus mit Kobaltoxid in der positiven Elektrode. Quelle: Cepheiden (Own work) CC BY-SA 2.0, via Wikimedia Commons}
+	 \label{abb_LiCoO2}
+\end{figure}
+In kleinen und mittelgroßen Akkus werden meist positive Elektroden aus Lithium-Metalloxiden verwendet. Diese haben eine kubische Kristallstruktur, das Lithium wird zwischen den Sauerstoffatomen eingelagert. Positive Lektroden aus $LiCoO_2$ werden seit den 90er Jahren in kommerziellen Lithiumakkus verwendet. Daneben werden auch $LiMn_2O_4$, und $LiMnO_2$ verwendet, mit denen man günstigere Akkus auf Kosten der spezifischen Energie herstellen kann \cite{whittingham2004lithium}.\\ %TODO: Welche Busse?
+Die negative Elektrode besteht in allen Fällen aus Graphit, die Lithiumionen werden zwischen den verschiedenen Schichten der Graphitkristalle eingelagert. Es werden verschiedene Größen von Graphitkristallen und auch andere Modifikationen von Kohlenstoff verwendet \cite{Sterner:2014}[S. 252]. Ein Lithium-Kobaltoxid-Akku ist in Abbildung \ref{abb_LiCoO2} schematisch dargestellt.
 \paragraph{Lithium-Eisenphosphat}
+Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die theoretische spezifische Energie ist ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht \cite{Tie201382}. In der negativen Elektrode wird wieder Kohlenstoff verwendet. Aufgrund des neidrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet \cite{bydSpecs}.
 \paragraph{Lithium-Titanat}
-\subsubsection{Natrium-Schwefel} %TODO: Natrium-Nickelchlorid?
+Im Gegensatz zu den vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese technologie bietet eine niedrigere spezifische Nergie, aber eine weit höhere spezifische Lade- und Entladelesitung \cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung ineressant und wird zum Beispiel von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt.
+
+\subsubsection{Natrium-Nickelchlorid}
+Die Natrium-Nickelcloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Statt festen Elektroden und flüssigem Elektrolyt werden ein keramisches Elektrolyt und flüssiges Kochsalz sowie fester Nickel als Elektrodenmaterialien verwendet. Dabei sind auch die Kugeln aus festem Nickel in flüssigem Kochsalz gelagert. Das flüssige Kochsalz teilt sich in $Na^+$- und $Cl^-$-Ionen auf. In der negativen Elektrode befindet sich flüssiges Kochsalz und Nickel
+\begin{table}\centering
+  \begin{tabularx}{\linewidth}{XrcX}
+  	                   &              $geladen$ & $\rightleftarrows$ & $entladen$        \\
+  	Negative Elektrode &          $M(H) + OH^-$ & $\rightleftarrows$ & $M + H_2O + e^-$  \\
+  	Positive Elektrode &   $NiOOH + H_2O + e^-$ & $\rightleftarrows$ & $Ni(OH)_2 + OH^-$ \\ \midrule
+  	Zellenreaktion     & $2Na + NiCl_2$ & $\rightleftarrows$ & $Ni + 2NaCl$    \\
+  \end{tabularx}
+  \caption{Elektrodengleichungen der Natrium-Nickelchlorid-Batterie}
+  \label{ZEBRA}
+\end{table}
+
 \subsubsection{Zink-Luft}
 \section{Vergleichstabelle}   %TODO: AUSFÜLLEN!
 \begin{table}\centering
