@@ -17,28 +17,28 @@ In Shanghai werden Busse mit dieser Technologie seit 2008 im Linienverkehr einge
 \subsection{Elektrochemisch – Batterie} %TODO: Besser
 Batterien bestehen aus zwei Elektroden aus meist verschiedenen Metallen. Zwischen den Elektroden befindet sich ein Elektrolyt, in dem sich Ionen von der einen Elektrode zur anderen bewegen können. Durch die Bewegung der Ionen wird Ladung übertragen und an den Klemmen der Batterie entsteht eine Spannung. Batterien werden unterschieden in Primär- und Sekundärbatterien. Primärbatterien sind nicht wiederaufladbar und werden nicht weiter betrachtet \cite{KiehneBattery}[S. 1f].
 \subsubsection{Blei-Säure}
-Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Im entladenen Zustand bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} aufgeführt \cite{KiehneBattery}[S. 50].\\
+Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} aufgeführt \cite{KiehneBattery}[S. 50].\\
 \begin{table}\centering
   \begin{tabularx}{\linewidth}{XrcX}
-  	                   &                       $geladen$ & $\rightleftarrows$ & $entladen$            \\
+  	                   &                       $geladen$ & $\rightleftarrows$ & $entladen$             \\
   	Negative Elektrode & $PbO_2 + H_2SO_4 + 2H^+ + 2e^-$ & $\rightleftarrows$ & $PbSO_4 + 2H_2O$       \\
   	Positive Elektrode &                  $Pb + H_2SO_4$ & $\rightleftarrows$ & $PbSO_4 + 2H^+ + 2e^-$ \\ \midrule
-  	Zellenreaktion     &         $Pb + PbO_2 + 2H_2SO_4$ & $\rightleftarrows$ & $2PbSO_4 + 2H_2O$
+  	Zellenreaktion     &         $Pb + PbO_2 + 2H_2SO_4$ & $\rightleftarrows$ & $2PbSO_4 + 2H_2O$      \\
   \end{tabularx}
   \caption{Elektrodengleichungen der Blei-Säure-Batterie}
   \label{Pb}
 \end{table}
-Im Gegensatz zu den meisten anderen Batterien transportiert hier der Elektrolyt nicht nur die Ionen, sondern ist selbst an der Reaktion beteiligt.Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, das so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können \cite{tub_aleph001746639}[S. 182].\\
+Im Gegensatz zu den meisten anderen Batterien transportiert hier der Elektrolyt nicht nur die Ionen, sondern ist selbst an der Reaktion beteiligt. Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches Nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, das so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können, da die Energie des Überladevorgangs in die Wasserspaltung geführt wird \cite{tub_aleph001746639}[S. 182].\\
 Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) in Berlin erprobt wurde \cite{Risch:1957}[S. 8f].
 
-\subsubsection{Nickel-Cadmium} %TODO: Oder als Fußnote in NiMH?
+\subsubsection{Nickel-Cadmium}
 Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalischen, wässrigen Elektrolyt, dass nicht an der Reaktion beteiligt ist, sondern nur dem Ionentransport dient. Die Reaktionsgleichungen sind in Tabelle \ref{NiCd} aufgeführt\footnote{Dies ist eine vereinfachte Darstellung, der tatsächlich ablaufende Prozess ist noch nicht vollständig erforscht.} \cite{Sterner:2014}[S.233].\\
 \begin{table}\centering
   \begin{tabularx}{\linewidth}{XrcX}
-  	                   &                       $geladen$ & $\rightleftarrows$ & $entladen$            \\
-  	Negative Elektrode & $Cd + 2OH^-$ & $\rightleftarrows$ & $Cd(OH)_2 + 2e^-$       \\
-  	Positive Elektrode &                  $2NiOOH + 2H_2O + 2e^-$ & $\rightleftarrows$ & $2Ni(OH)_2 + 2OH^-$ \\ \midrule
-  	Zellenreaktion     &         $Cd + 2NiOOH + 2H_2O$ & $\rightleftarrows$ & $Cd(OH)_2 + 2Ni(OH)_2$
+  	                   &               $geladen$ & $\rightleftarrows$ & $entladen$             \\
+  	Negative Elektrode &            $Cd + 2OH^-$ & $\rightleftarrows$ & $Cd(OH)_2 + 2e^-$      \\
+  	Positive Elektrode & $2NiOOH + 2H_2O + 2e^-$ & $\rightleftarrows$ & $2Ni(OH)_2 + 2OH^-$    \\ \midrule
+  	Zellenreaktion     &   $Cd + 2NiOOH + 2H_2O$ & $\rightleftarrows$ & $Cd(OH)_2 + 2Ni(OH)_2$ \\
   \end{tabularx}
   \caption{Elektrodengleichungen der Nickel-Cadmium-Batterie}
   \label{NiCd}
@@ -47,19 +47,23 @@ Wie bei Blei-Säure-Batterien wird der Elektrolyt in Wasserstoff und Sauerstoff 
 Die Nickel-Cadmium Batterie weist eine weit höhere spezifische Energie als die Blei-Säure-Batterie auf, wird jedoch in elektrischen Bussen nicht verwendet.
 
 \subsubsection{Nickel-Metallhydrid}
-Die Nickel-Mettalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickel(oxy)hydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, das hier statt giftigem Cadmium(hydroxid) in der Negativen Elektrode Metall eingesetzt, in das $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Diese Hydrierung ist in mehreren Metallen möglich, in Batterien wird meist eine Mischung seltener Erden verwendet \cite{KiehneBattery}[S.85ff]. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt \cite{Sterner:2014}[S.245].\\
+Die Nickel-Mettalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickel(oxy)hydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, das hier statt giftigem Cadmium(hydroxid) in der negativen Elektrode Metall eingesetzt, in dem $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Dieser Hydrierung gennante Vorgang tritt in vielen verschiedenen Metallen und Legierungen auf. In diesen Batterien wird meist eine Legierung aus seltenen Erden und Nickel verwendet \cite{KiehneBattery}[S. 85ff]. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt \cite{Sterner:2014}[S. 245].\\
 \begin{table}\centering
   \begin{tabularx}{\linewidth}{XrcX}
-  	                   &                       $geladen$ & $\rightleftarrows$ & $entladen$            \\
-  	Negative Elektrode & $M(H) + OH^-$ & $\rightleftarrows$ & $M + H_2O + e^-$       \\
-  	Positive Elektrode &                  $NiOOH + H_2O + e^-$ & $\rightleftarrows$ & $Ni(OH)_2 + OH^-$ \\ \midrule
-  	Zellenreaktion     &         $M(H) + NiOOH + 2H_2O$ & $\rightleftarrows$ & $M + Ni(OH)_2$
+  	                   &              $geladen$ & $\rightleftarrows$ & $entladen$        \\
+  	Negative Elektrode &          $M(H) + OH^-$ & $\rightleftarrows$ & $M + H_2O + e^-$  \\
+  	Positive Elektrode &   $NiOOH + H_2O + e^-$ & $\rightleftarrows$ & $Ni(OH)_2 + OH^-$ \\ \midrule
+  	Zellenreaktion     & $M(H) + NiOOH + 2H_2O$ & $\rightleftarrows$ & $M + Ni(OH)_2$    \\
   \end{tabularx}
   \caption{Elektrodengleichungen der Nickel-Metallhydrid-Batterie}
   \label{NiMH}
 \end{table}
-Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Er weist eine hohe spezifische Energie, Leistung und Lebensdauer auf. Für die Verwendung als primärer Energiespeicher in Bussen ist die spezifische Energie jedoch immer noch zu niedrig.
-\subsubsection{Lithium}
+Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Er weist eine hohe spezifische Energie, Leistung und Lebensdauer auf. Für die Verwendung als primärer Energiespeicher in Bussen ist die spezifische Energie jedoch immer noch zu niedrig. %TODO: Beleg
+\subsubsection{Lithium-Ionen}
+In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus gelösten Salzen in organischen Lösungsmitteln wandern\footnote{Es können theoretisch acuh Polymere als Elektrolyt verwendet werden, die als Feststoff auch den mechanischen Aufbau der Batterie festlegen können. Dies ist bei den aktuellen kommerziellen }. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren, von daher werden für positive und negative Elektrode verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden \cite{KiehneBattery}[S. 408, 440ff].
+\paragraph{Lithium-Manganoxid}
+\paragraph{Lithium-Eisenphosphat}
+\paragraph{Lithium-Titanat}
 \subsubsection{Natrium-Schwefel} %TODO: Natrium-Nickelchlorid?
 \subsubsection{Zink-Luft}
 \section{Vergleichstabelle}   %TODO: AUSFÜLLEN!
