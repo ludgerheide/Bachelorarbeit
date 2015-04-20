@@ -1,15 +1,15 @@
-\documentclass{report} 
-\usepackage[margin=5mm,a6paper]{geometry}
+\documentclass{report}
+\usepackage[margin=5mm,a5paper]{geometry}
 
 %Packages, die für die deutsch Sprache erforderlich sind
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-%\usepackage{lmodern} (Gibts nicht in Latexml)
+\usepackage{lmodern}
 \usepackage{ngerman}
 
 %Packages für Graphik
 \usepackage{graphicx}
-\graphicspath{{../Abbildungen/}}
+\graphicspath{{Abbildungen/}}
 \DeclareGraphicsExtensions{.jpg,.png,.gif,.svg}
 
 %Package, damit Bibtex-URL klappt
@@ -29,8 +29,13 @@
 %Pfeile für Chemische Formeln
 \usepackage{amssymb}
 
+%EBook-Package für die Titelseite
+\usepackage{tex4ebook}
+
 \begin{document}
 %%%%% BEGINN TITELSEITE %%%%%
+
+\coverimage[width=1\textwidth]{Abbildungen/Titelseite.png} %TODO: Titelseite aktuell halten
 
 %%%%% ENDE TITELSEITE %%%%%
 \include{Kapitel/00_Abstract}
@@ -51,8 +56,8 @@
 %%%%% ENDE INHALT %%%%%
 
 %Bibliographie
-\bibliographystyle{alpha}
-\bibliography{{../Quellen/Quellenliste}} 
+\bibliographystyle{alphadin}
+\bibliography{../Quellen/Quellenliste} 
 
 \listoffigures
 \listoftables
