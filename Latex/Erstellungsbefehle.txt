@@ -1,0 +1,19 @@
+OpenOffice:
+htlatex Bachelorarbeit_html.tex "xhtml,ooffice" "ooffice/! -cmozhtf" "-coo -cvalidate"; bibtex Bachelorarbeit_html; htlatex Bachelorarbeit_html.tex "xhtml,ooffice" "ooffice/! -cmozhtf" "-coo -cvalidate";
+
+HTML für Moderne Browser:
+htlatex Bachelorarbeit_html "html,2,mathml" " -cunihtf" "-cvalidate"; bibtex Bachelorarbeit_html; htlatex Bachelorarbeit_html "html,2,mathml" " -cunihtf" "-cvalidate"
+
+HTML für alte Browser
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"\Hnewline
+></script>
+<style type="text/css">
+.MathJax_MathML {text-indent: 0;}
+</style>
+
+Epub2:
+tex4ebook -r 300 Bachelorarbeit_ebook.tex; bibtex Bachelorarbeit_ebook; tex4ebook -r 300 Bachelorarbeit_ebook.tex
+
+Mobi:
+tex4ebook -f mobi -r 300 Bachelorarbeit_ebook.tex; bibtex Bachelorarbeit_ebook; tex4ebook -f mobi -r 300 Bachelorarbeit_ebook.tex

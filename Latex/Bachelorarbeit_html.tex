@@ -15,7 +15,7 @@
 % Define new length
 \newlength{\myFigureStandardWidth}
 % Set the new length to a specific value
-\setlength{\myFigureStandardWidth}{\textwidth}
+\setlength{\myFigureStandardWidth}{1.0\textwidth}
 
 %Package, damit Bibtex-URL klappt
 \usepackage{url}
@@ -34,13 +34,8 @@
 %Package für Hyperlinks im PDF
 \usepackage{hyperref}
 
-%EBook-Package für die Titelseite
-\usepackage{tex4ebook}
-
 \begin{document}
 %%%%% BEGINN TITELSEITE %%%%%
-
-\coverimage[width=1\textwidth]{Abbildungen/Titelseite.png} %TODO: Titelseite aktuell halten
 
 %%%%% ENDE TITELSEITE %%%%%
 \include{Kapitel/00_Abstract}
