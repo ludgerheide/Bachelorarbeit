@@ -4,54 +4,64 @@ Nach den Ladesystemen werden in diesem Kapitel nun die Energiespeicher für Stad
 
 Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher werden hier keine konkreten Produkte verglichen, sondern es wurde versucht, die jeweils für den aktuellen Stand der Speichertechnologie relevanten Kenndaten zu finden.
 
-\section{Bewertungskriterien} %TODO: Wie wurden die ausgewählt?
-\begin{itemize}
-	\item Spezifische Größen
-	\begin{description}
-		\item \textbf{Energiedichte}
-		Für eine Batterie, die diese Technologie verwendet, d. h. inklusive Zellwände, Anschlüsse usw. Einheit: \(\frac{Wh}{l}\)
-		\item \textbf{Spezifische Energie}
-		Einheit: \(\frac{Wh}{kg}\)
-		\item \textbf{Leistungsdichte}
-		Einheit: \(\frac{W}{kg}\) %TODO: kw?
-		\item \textbf{Spezifische Leistung}
-		Einheit: \(\frac{W}{l}\)
-	\end{description}
-	\item Elektrische Parameter
-	\begin{description}
-		\item \textbf{Zellenspannung}
-		Spannung einer Zelle dieser Technologie bei 100\% Ladezustand.
-		\item \textbf{Ladung}
-		Der Bereich von Ladungen (Einheit: mAh), die mit dieser Technologie gefertigt werden können. %TODO: Relevanz?
-		\item \textbf{Nennladestrom}
-		Ladestrom, mit dem im Bereich zwischen 20\% und 80\% der verfügbaren Kapazität geladen wird. Angabe in Teil an der Ladung\\
-		Beispiel: Wenn eine Batterie mit 1400mAh Ladung werden mit 140mA aufgeladen wird, entspricht dies einem Ladestrom von 0,1C.
-		\item \textbf{Besondere Ladeströme}
-		Ladeströme unter anderen Bedingungen, zum Beispiel bei geringem oder hohem Ladezustand oder besonderer Temperatur.
-		\item \textbf{Balancing}
-		Wenn eine Batterie aus mehreren Zellen aufgebaut ist, müssen die Ladezustände zwischen den Zellen angeglichen werden. Je nach Technologie kann das durch Überladen erfolgen oder erfordert eine Verbindung von jeder Zelle zum Ladegerät.
-		\item \textbf{Innenwiderstand} %TODO: Effizienz nur über Innenwiderstand?
-	\end{description}
-	\item Sicherheit und Zuverlässigkeit
-	\begin{description}
-		\item \textbf{Kapazitätsverlust, zeitlich}
-		Zeitabhängiger Kapazitätsverlust bei Normalbedingungen, Angabe in Prozent pro Jahr%TODO: Bedingungen
-		\item \textbf{Kapazitätsverlust, nutzungsabhängig}
-		Nutzungsabhängiger Kapazitätsverlust bei maximaler Lade- und Entladestaärke und vollen Ladezyklen, Angabe in Prozent pro Ladezyklus %TODO: Bedingungen
-		\item \textbf{Verhalten bei Übertemperatur}
-		\item \textbf{Unfallverhalten}
-		\item \textbf{Verhalten bei Zellenfehler}
-		\item \textbf{Selbstentladung}
-	\end{description}
-\end{itemize}
+\section{Bewertungskriterien}
+\marginpar{Wie wurde ausgewählt?\\
+	       Saubere Definitionen}
+Die Batterien in Elektrobussen sollen möglichst viel Energie mit minimalem Gewicht und Bauraum speichern können, da große und schwere Batterien die Passagierkapazität verringern und den Verschleiß an Fahrzeug und Straße erhöhen. Die Entladeleistung muss hoch sein, um im Stadtverkehr schnell beschleunigen zu können. In System mit Gelegenheitsladen benötigt ist eine hohe Ladeleistung essentiell, auch bei langsamerem Aufladen ist sie wünschenswert, um möglichst viel Bremsenergie zurück zu gewinnen.
+
+Eine lange Lebensdauer, sowohl in Monaten als auch in Ladezyklen gemessen ist für einen wirtschaftlichen Betrieb wichtig. Die Batterien dürfen die hohe Sicherheit des Verkehrrsystems Bus nicht beinträchtigen. Hier muss besonders auf die Ausfallart "`Thermisches Durchgehen"' geachtet werden, bei der sich die Batterien sich so weit erhitzen, das chemische Reaktionen im inneren eine unumkehrbare Erhöhng der Temperatur und einen Brand zur Folge haben.
+
+Hier werden nur technische Anforderungen betrachtet. Im realen Einsatz müssen daneben auch Anforderungen an die Wirtschaftlichkeit erfüllt werden und in einigen Ländern gibt es auch politische Anforderungen an den Herstellungsort der Batterien.
+
+\subsection{Kenndaten}
+
+\subsubsection{Quantitative Kriterien}
+\begin{description}
+	\item[Zellenspannung] Die elektrische Spannung einer Zelle bei 100\% Ladezustand.\\
+	Einheit: $V$
+	\item[Ladung] Der Bereich von Ladungen, mit denen die Batterie gefertigt werden kann.\\
+	Einheit: $mAh$ \marginpar{oder $Ah$?}	
+\end{description}
+
+\subsubsection{Qualititive Kriterien}
+\begin{description}
+	\item[Balancing] Methode, durch die die Zellenspannungen angegelichen werden.\\
+	Möglichkeiten: Überladen, Separate Ansteuerung jeder Zelle
+\end{description}
+
+\subsection{Effizienz}
+Die Spezisichen Größen werden für eine gesamte Batterie bestimmt, das Gehäuse der Batterie und die interene Verkabelung hat also einen Einfluss auf diese Größen.
+\begin{description}
+	\item[Energiedichte] Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?} \marginpar{Energie hängt von der Leistung ab. Wie mache ich das?}
+	\item[Spezifische Energie] Einheit: $\frac{Wh}{kg}$
+	\item[Leistungsdichte] Einheit: $\frac{W}{kg}$
+	\item[Spezifische Leistung] Einheit: $\frac{W}{l}$
+	\item[Innenwiderstand beim Laden] Mit dem Innenwiderstand kann der Energieverlust innerhalb der Batterie berechnet werden\\
+	Einheit: $\Omega$ \marginpar{Innenwiderstand ungenau, eventuell KiBaM \cite{jongerden2008battery} besser. Dann Parameter oder Round-Trip-Effizienz?}
+	\item[Innenwiderstand beim Entladen] Einheit: $\Omega$
+	\item[Nennladestrom] Der maximale Ladestrom, mit dem im Bereich zwischen 20\% und 80\% Ladezustand geladen werden kann.\\
+	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
+	\item[Maximaler Pulsstrom] Der maximal mögliche Entladestrom für 30 Sekunden.\\
+	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
+\end{description}
+
+\subsection{Sicherheit und Zuverlässigkeit}
+\begin{description}
+	\item[Lebensdauer, kalendarisch] Die Zeitdauer, bis die Batterie nur noch 80\% der Anfangskapazität hat \cite{Sterner:2014}[S. 269]. \marginpar{Das ist auch wieder von Umweltbedingungen und Belastund abhängig…}\\
+	Einheit: $a$
+	\item[Zyklenfestigkeit] Die Anzahl an Ladezyklen, bis die Batterie nur noch 80\% der Anfangskapazität hat. Ein Ladezyklus entspricht einer Auf- und Entladung auf Nennkapazität.\\
+	Einheit: $1$
+	\item[Temperatur für thermisches durchgehen] Die Temperatur, ab dem eine weitere Temperaturerhöhung unumkehrbar ist.\\
+	Einheit: $^\circ C$
+\end{description}
 
 \section{Betrachtete Technologien}
 Im folgenden Abschnitt werden die Grundlagen und die Einsatzgeschichten der verschiedenen Speichertechnologien kurz erläutert. Die Technologien sind nach dem genutzten physikalischen Effekt aufgeteilt \cite{Sterner:2014}[S. 35f]. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
 
-\subsection{Mechanisch – Schwungradspeicher} %TODO: Quellen, warum endete die Gyrobuserprobung
+\subsection{Mechanisch – Schwungradspeicher}
 In Bussen kann mechanische Energie mit einem Schwungrad gespeichert werden\footnote{Es gibt auch Prototypen von Pressluftspeichern in kleineren Fahrzeugen, in Bussen werden sie jedoch nur als Teil eines Hybridantriebs eingesetzt und hier nicht weiter betrachtet \cite{Sebastian-Naumann:2014}[S. 14].}. Die Energieübertragung erfolgt durch eine elektrische Motor- und Generatoreinheit. Moderne Schwungräder werden aus gewickelten Karbonfasern hergestellt und in Vakuumgehäusen magnetisch gelagert, sie erreichen hohe Drehzahlen und geringe Reibungsverluste \cite{993788}. Im Falle eines berstenden Schwungrades muss das Gehäuse die gesamte Energie innerhalb von Sekundenbruchteilen aufnehmen, ohne selbst zu bersten. Dies erfordert sehr schwere Gehäuse, die die spezifische Energie und Leistung eines tatsächlichen Systems stark reduzieren. Der Schwungradspeicher wurde in den fünfziger Jahren im Gyrobus im schweizerischen Yverdon auf einer acht Kilometer langen Linie erprobt. Die Strecke wurde erfolgreich zurückgelegt, die damalige Technologie war jedoch sehr wartungsaufwändig und weniger effizient als ein Oberleitungsbus. Aktuell wird der Schwungradspeicher nur als Teil eines hybriden Antriebsstrangs eingesetzt \cite{tub_aleph001746639}[S. 216].
 
-\subsection{Elektrisch – Kondensator} %TODO: Quellen
+\subsection{Elektrisch – Kondensator}
 Der Kondensator ist ein rein elektrischer Energiespeicher. Im klassischen Plattenkondensator werden zwei durch einen festes Dielektrikum getrennte Platten elektrisch aufgeladen, die Ladung kann später in Strom umgewandelt werden. Kondensatoren haben eine hohe spezifische Leistung, aber eine sehr geringe spezifische Energie. In Bussen werden sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte un Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in den Leiterplatten erreicht \cite{Sterner:2014}[S. 167f].
 
 \begin{figure}\centering
@@ -156,29 +166,51 @@ Die Natrium-Nickelcloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoch
 
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt \cite{Electric-Transportation-Department:2004}.
 
-\section{Vergleichstabellen}   %TODO: AUSFÜLLEN!
+\section{Vergleichstabellen}
 \label{vergleichstabellen_speichertechnologien}
-
-Die meisten Daten stammen aus "`A review of energy sources and energy management system in electric vehicles"' \cite{Tie201382}, andere Quellen sind in der Tabelle jeweils für eine Technologie oder einen spezifischen Datenpunkt angegeben.
+\marginpar{Mehr Daten\\
+	       saubere Quellen}
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{lXXX}
+		\toprule
+		\multirow{2}{*}{Technologie} & Zellenspannung           & Ladung       & Balancing \\
+		                             & $V$                      & $mAh$        & $ $       \\ \midrule
+		\textbf{Mechanisch}          &                          &              &  \\
+		Schwungrad                   & k. A.                    & k. A.        & k. A.     \\
+		\textbf{Elektrostatisch}     &                          &              &  \\
+		Superkondensator             & ???                      & ???          & ???       \\
+		\textbf{Elektrochemisch}     &                          &              &  \\
+		Blei-Säure                   & 2,1 \cite{Sterner:2014}  & ???          & Überladen \\
+		Nickel-Cadmium               & 1,35 \cite{Sterner:2014} & ???          & Überladen \\
+		Nickel-Metallhydrid          & 1,35 \cite{Sterner:2014} & ???          & Überladen \\
+		Li-Ion -- $LiCoO_2$          & 4? \cite{Sterner:2014}   & ???          & Balancer  \\
+		Li-Ion -- $LiFePO_4$         & 3,2? \cite{Sterner:2014} & 2000 -- 4500 & Balancer  \\
+		Li-Ion -- $Li_4Ti_5O_{12}$   & 2,6? \cite{Sterner:2014} & 4000         & Balancer  \\
+		Ni-NaCl (ZEBRA)              & 2,58 \cite{Sterner:2014} & ???          & ???       \\ \bottomrule
+	\end{tabularx}
+	\caption{Kenndaten der Batterien}
+\end{table}
 
 \begin{table}\centering
-	\begin{tabularx}{\linewidth}{lXXXX}
-		%TODO: ??? bei Wh/l
+	\begin{tabularx}{\linewidth}{lllll}
 		\toprule
-		\multirow{2}{*}{Technologie} & spez. Energie   & spez. Leistung & Energiedichte  & Leistungsdichte \\
-		                             & $\frac{Wh}{kg}$ & $\frac{W}{kg}$ & $\frac{Wh}{l}$ & $\frac{W}{l}$   \\ \midrule
-		\textbf{Mechanisch}          &                 &                &                &  \\
-		Schwungrad                   & 10 -- 150       & 2 -- 10000     &                &  \\
-		\textbf{Elektrostatisch}     &                 &                &                &  \\
-		Superkondensator             & 10 -- 15        & 1000 -- 2000   &                &  \\
-		\textbf{Elektrochemisch}     &                 &                &                &  \\
-		Blei-Säure                   & 50              & 150            & 100            &  \\
-		Nickel-Cadmium               & 50 -- 80        & 200            & 300            &  \\
-		Nickel-Metallhydrid          & 70 -- 95        & 200 -- 300     & 180 -- 220     &  \\
-		Li-Ion -- $LiCoO_2$          & 118 -- 250      & 200 -- 430     & 200 -- 400     &  \\
-		Li-Ion -- $LiFePO_4$         & 120             & 2000 -- 4500   & 220            &  \\
-		Li-Ion -- $Li_4Ti_5O_{12}$   & 80 -- 100       & 4000           &                &  \\
-		Ni-NaCl (ZEBRA)              & 90 -- 120       & 155            & 160            &  \\ \bottomrule
+		\multirow{2}{*}{Technologie} & Energiedichte  & Spez. Energie   & Leistungsdichte & Spez. Leistung \\
+		                             & $\frac{Wh}{l}$ & $\frac{Wh}{kg}$ & $\frac{W}{l}$   & $\frac{W}{kg}$ \\ \midrule
+		\textbf{Mechanisch}          &                &                 &                 &  \\
+		Schwungrad                   & ???            & ???             & ???             & ???            \\
+		\textbf{Elektrostatisch}     &                &                 &                 & ?              \\
+		Superkondensator             & ???            & ???             & ???             & ???            \\
+		\textbf{Elektrochemisch}     &                &                 &                 &  \\
+		Blei-Säure                   & ???            & ???             & ???             & ???            \\
+		Nickel-Cadmium               & ???            & ???             & ???             & ???            \\
+		Nickel-Metallhydrid          & ???            & ???             & ???             & ???            \\
+		Li-Ion -- $LiCoO_2$          & ???            & ???             & ???             & ???            \\
+		Li-Ion -- $LiFePO_4$         & ???            & ???             & ???             & ???            \\
+		Li-Ion -- $Li_4Ti_5O_{12}$   & ???            & ???             & ???             & ???            \\
+		Ni-NaCl (ZEBRA)              & ???            & ???             & ???             & ???            \\ \bottomrule
+		                             &
 	\end{tabularx}
-	\caption{Übersicht Ladesysteme}
+	\caption{Spezifische Größen Batterien}
+	\label{hierdoof}
 \end{table}
+\marginpar{Typografie ist in \ref{hierdoof} doof}
