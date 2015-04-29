@@ -2,55 +2,70 @@
 
 Nach den Ladesystemen werden in diesem Kapitel nun die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die Bewertungskriterien und die betrachteten Technologien erläutert. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} werden die Werte aufgelistet.
 
-Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher können hier nicht alle Batterien verglichen werden, sondern es werden einzelne Produkte verglichen, die repräsentativ für die jeweilige Technologie sind.
+Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher können hier nicht alle Batterien verglichen werden, sondern es werden einzelne Produkte verglichen, die repräsentativ für die jeweilige Technologie sind.\marginpar{Wirklich?}
 
 \section{Bewertungskriterien}
 \marginpar{Wie wurde ausgewählt?\\
 	       Saubere Definitionen}
-Die Batterien in Elektrobussen sollen möglichst viel Energie mit minimalem Gewicht und Bauraum speichern können, da große und schwere Batterien die Passagierkapazität verringern und den Verschleiß an Fahrzeug und Straße erhöhen. Die Entladeleistung muss hoch sein, um im Stadtverkehr schnell beschleunigen zu können. In System mit Gelegenheitsladen benötigt ist eine hohe Ladeleistung essentiell, auch bei langsamerem Aufladen ist sie wünschenswert, um möglichst viel Bremsenergie zurück zu gewinnen.
+Die Bewertungskriterien wurden ausgewählt, um neben den \emph{Kenndaten} die technischen Anforderungen von hoher \emph{Effizienz}, langer \emph{Lebensdauer} und \emph{Sicherheit} widerzuspiegeln. Bei verschiedenen Ladestrategien könen sich die Energiespciher unterschieldlich verhalten. Von daher wird bei einigen Kriterien zwischen \emph{Gelegenheitsladung} und \emph{Nachtladung} unterschieden.
 
-Eine lange Lebensdauer, sowohl in Monaten als auch in Ladezyklen gemessen ist für einen wirtschaftlichen Betrieb wichtig. Die Batterien dürfen die hohe Sicherheit des Verkehrrsystems Bus nicht beinträchtigen. Hier muss besonders auf die Ausfallart "`Thermisches Durchgehen"' geachtet werden, bei der sich die Batterien sich so weit erhitzen, das chemische Reaktionen im inneren eine unumkehrbare Erhöhng der Temperatur und einen Brand zur Folge haben.
+\emph{Nachtladung} zeigt das Verhalten des Energiespeichers in einem Bus, der tagsüber 16 Stunden lang ohne Zwischenladen in Betrieb ist und dabei den Energiespeicher auf 20\% entlädt. Über Nacht im Depot wird der Energiespeicher über acht Stunden auf 100\% geladen.
 
-Hier werden nur technische Anforderungen betrachtet. Im realen Einsatz müssen daneben auch Anforderungen an die Wirtschaftlichkeit erfüllt werden und in einigen Ländern gibt es auch politische Anforderungen an den Herstellungsort der Batterien.
+\marginpar{Ist Tour der richtige Begriff? Es gibt den VBB GTFS Dump für exakte Daten, die muss man bloß rauskriegen}
+\emph{Gelegenheitsladung} zeigt das Verhalten des Energiespeichers, wenn der Bus am Ende jeder Tour aufgeladen wird. Im Laufe von einer Stunde wird der Energiespeicher auf 50\% entladen und dann mit maximaler Geschwindigkeit auf 90\% Ladezustand aufgeladen. Es wurde nur eine Entladung vo 40\% der Gesamtkapazität gewählt, da der Bus im Falle eines defektes der Ladestation noch genug Energie zur Verfügung haben soll, um die Ladestation am anderen Ende der Strecke zu erreichen.
+
+Diese Ladeprofile stellen Extremfälle dar, im realen Betrieb wird meist eine Kombination von Aufladung im Depot und Nachladen an den Endhaltestellen gewählt.
 
 \subsection{Kenndaten}
 
-\subsubsection{Quantitative Kriterien}
 \begin{description}
-	\item[Zellenspannung] Die elektrische Spannung einer Zelle bei 100\% Ladezustand.\\
+	\item[Zellenspannung] Die elektrische Spannung einer Zelle bei 100\% Ladezustand.\marginpar{Oder 0.2C oder 1C Last?}\\
 	Einheit: $V$
 	\item[Ladung] Der Bereich von Ladungen, mit denen die Batterie gefertigt werden kann.\\
 	Einheit: $mAh$ \marginpar{oder $Ah$?}	
-\end{description}
-
-\subsubsection{Qualititive Kriterien}
-\begin{description}
-	\item[Balancing] Methode, durch die die Zellenspannungen angegelichen werden.\\
-	Möglichkeiten: Überladen, Separate Ansteuerung jeder Zelle
+	\item[Balancing] Methode, durch die die Zellenspannungen angeglichen werden.\\
+	Möglichkeiten: Überladen, separate Ansteuerung jeder Zelle
 \end{description}
 
 \subsection{Effizienz}
-Die Spezisichen Größen werden für eine gesamte Batterie bestimmt, das Gehäuse der Batterie und die interene Verkabelung hat also einen Einfluss auf diese Größen.
+Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, das Gehäuse und interne Verkabelung haben einen Einfluss auf diese Größen.
 \begin{description}
-	\item[Energiedichte] Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?} \marginpar{Energie hängt von der Leistung ab. Wie mache ich das?}
-	\item[Spezifische Energie] Einheit: $\frac{Wh}{kg}$
-	\item[Leistungsdichte] Einheit: $\frac{W}{kg}$
-	\item[Spezifische Leistung] Einheit: $\frac{W}{l}$
-	\item[Innenwiderstand beim Laden] Mit dem Innenwiderstand kann der Energieverlust innerhalb der Batterie berechnet werden\\
-	Einheit: $\Omega$ \marginpar{Innenwiderstand ungenau, eventuell KiBaM \cite{jongerden2008battery} besser. Dann Parameter oder Round-Trip-Effizienz?}
-	\item[Innenwiderstand beim Entladen] Einheit: $\Omega$
-	\item[Nennladestrom] Der maximale Ladestrom, mit dem im Bereich zwischen 20\% und 80\% Ladezustand geladen werden kann.\\
-	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
-	\item[Maximaler Pulsstrom] Der maximal mögliche Entladestrom für 30 Sekunden.\\
+	\item[Energiedichte, Gelegenheitsladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird. Dies entspricht einer Entladung mit 0,5C\footnote{\emph{C} ist eine für Batterien übliche Einheit der Belastung. Sie ist definiert als $\frac{Strom\ (in\ A)}{Ladung\ (in\ Ah)}$}\\
+	Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?}
+	\item[Spezifische Energie, Gelegenheitsladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird..\\
+	Einheit: $\frac{Wh}{kg}$
+	\item[Energiedichte, Nachtladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in 16 Stunden auf 20\% entladen wird. Dies entspricht einer Entladung mit 0,05C\\
+	Einheit: $\frac{Wh}{l}$
+	\item[Spezifische Energie, Nachtladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in 16 Stunden auf 20\% entladen wird.\\
+	Einheit: $\frac{Wh}{kg}$
+	\item[Leistungsdichte, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
+	Einheit: $\frac{W}{kg}$
+	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
+	Einheit: $\frac{W}{l}$
+	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\marginpar{Warum 30s? Warum 20\% SOC?}\\
+	Einheit: $\frac{W}{kg}$
+	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\\
+	Einheit: $\frac{W}{l}$
+	%\item[Innenwiderstand beim Laden] Mit dem Innenwiderstand kann der Energieverlust innerhalb der Batterie berechnet werden\\
+	%Einheit: $\Omega$ \marginpar{Lieber Round-Trip-Effizienz KiBaM \cite{jongerden2008battery}.}
+	%\item[Innenwiderstand beim Entladen] Einheit: $\Omega$
+	\item[Effizienz, Gelegenheitsladung] Das Verhältnis zwischen verwendeter und abgerufener elektrischer Energie, wenn der Energiespeicher mit der maximalen Laderate auf von 40\% auf 90\% Ladezustand geladen wird und dann mit 0,5C auf 40\% Ladezustand entladen wird.\\
+	Einheit: 1
+	\item[Effizienz, Nachtladung] Das Verhältnis zwischen verwendeter und abrufbarer elektrischer Energie, wenn der Energiespeiche innerhalb von acht Stunden von 20\% Ladezustand auf 100\% Ladezustand aufgeladen wird und dann mit 0,05C auf 20\% Ladezustand entladen wird. Dies entspricht der Aufladung über Nacht im Depot oder der Aufladung von ausgewechselten Batterien in Batteriewechselsystemen.\\
+	Einheit: 1
+	\item[Nennladestrom] Der höchste Durchschnittliche Ladestrom, mit dem im Bereich zwischen 40\% und 90\% Ladezustand geladen werden kann\footnote{Der Kehrwert entspricht der Ladedauer zwischen 40\% und 90\% Ladezustand.}.\marginpar{Gleich den Kehrwert verwenden?}\\
 	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
 \end{description}
 
-\subsection{Sicherheit und Zuverlässigkeit}
+\subsection{Lebensdauer und Sicherheit}
 \begin{description}
-	\item[Lebensdauer, kalendarisch] Die Zeitdauer, bis die Batterie nur noch 80\% der Anfangskapazität hat \cite{Sterner:2014}[S. 269]. \marginpar{Das ist auch wieder von Umweltbedingungen und Belastund abhängig…}\\
+	\item[Lebensdauer, kalendarisch] Die Zeitdauer, bis die Batterie nur noch 80\% der Anfangskapazität hat \cite{Sterner:2014}[S. 269]. \marginpar{Temperatur?}\\
 	Einheit: $a$
-	\item[Zyklenfestigkeit] Die Anzahl an Ladezyklen, bis die Batterie nur noch 80\% der Anfangskapazität hat. Ein Ladezyklus entspricht einer Auf- und Entladung auf Nennkapazität.\\
+	\item[Zyklenfestigkeit, Gelegenheitsladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat. Ein Ladezyklus entspricht einer Auf- und Entladung um Nennkapazität\footnote{Also entspricht ein Ladezyklus \emph{zwei} Auf- und Entladungen zwischen 90\% und 40\%.}.\\
 	Einheit: $1$
+	\item[Zyklenfestigkeit, Nachtladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat.\\
+	Einheit: $1$
+	\item[Zyklenfestigkeit, Nachtladung] 
 	\item[Temperatur für thermisches durchgehen] Die Temperatur, ab dem eine weitere Temperaturerhöhung unumkehrbar ist.\\
 	Einheit: $^\circ C$
 \end{description}
@@ -136,7 +151,7 @@ In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch
 
 \begin{figure}\centering
 	 \includegraphics[width=\myFigureStandardWidth]{LiCoO2}
-	 \caption{Prinzipdarstellung eines Lithium-Inonen-Akkus mit Kobaltoxid in der positiven Elektrode. Quelle: Cepheiden (Own work) CC BY-SA 2.0, via Wikimedia Commons}
+	 \caption{Prinzipdarstellung eines Lithium-Ionen-Akkus mit Kobaltoxid in der positiven Elektrode. Quelle: Cepheiden (Own work) CC BY-SA 2.0, via Wikimedia Commons}
 	 \label{abb_LiCoO2}
 \end{figure}
 
