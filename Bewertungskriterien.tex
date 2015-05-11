@@ -1,0 +1,170 @@
+\documentclass{scrartcl}
+
+%%%%% BEGINN PACKAGES %%%%%
+
+%Packages, die für die deutsch Sprache erforderlich sind
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ngerman}
+
+%Packages für Graphik
+\usepackage{graphicx}
+
+%Package, damit Bibtex-URL klappt
+\usepackage{url}
+
+%Package für Hyperlinks im PDF
+\usepackage{hyperref}
+
+%Package für Tabellen mit avriabler Breite
+\usepackage{tabularx}
+
+%Noch schönere Typographie
+\usepackage{microtype}
+
+%%%%% ENDE PACKAGES %%%%%
+
+\title{Bewerungskriterien}
+\date{\today}
+\author{Ludger Heide}
+
+\begin{document}
+
+%%%%% BEGINN FRONT MATTER %%%%%
+
+\maketitle
+
+%%%%% ENDE FRONT MATTER %%%%%
+
+%%%%% BEGINN INHALT %%%%%
+
+\section{Ladeysteme}
+
+\subsection{Mechanische Kriterien}
+\marginpar{Bessere Beschreibung (Zeit ist nicht mechanisch)}
+\begin{description}
+	\item [Abmaße, feste Position] \emph{Fahrzeug- uns Stationsseitig}\\
+	Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
+	Beispiel: Pantograph und Stromschiene
+	\item [Abmaße, freie Position] \emph{Fahrzeug- uns Stationsseitig}\\
+	Die Abmaße jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
+	Beispiel: Elektrische Wandler
+	\item [Masse] \emph{Fahrzeugseitig}\\
+	Gesamtmasse der fahrzeugseitigen Komponenten
+	\item [Freiheitsgrade] \emph{Fahrzeug- uns Stationsseitig}\\
+	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. 0, wenn es keine beweglichen Teile gibt.
+	\item [Positionierungsgenauigkeit des Busses] \emph{Fahrzeugseitig} \\
+	Erforderliche Genaugkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus zwei translatorischen und zwei rotatorischen Komponenten (X, Y, Richtung des Busses, Kneelingwinkel)
+	\item [Totzeit]
+	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt. Ist die Zeit von der Position abhängig, so wird jeweils eine Abweichung um die Hälfte des maximalen Wertes angenommen.
+	 \item [Anzahl der Wandler] \emph{Fahrzeug- und Stationsseitig}\\
+		Anzahl der Komponenten, die den Spannungsverlauf verändern (Gleichrichter, Transformatoren etc.)
+\end{description}
+
+\subsection{Elektrische Kriterien}
+\begin{description}
+	\item [Spannung]
+	Mit welcher Spannung wird geladen? Gleich- oder Wechselspannung? Nicht relevant bei induktiver Ladung und Batteriewechselsystemen.
+	\item [Leistung]
+	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa)\marginpar{Amerika}
+	\item [Effizienz]
+		Prozentualer Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.		
+\end{description}
+
+\subsection{Sicherheit}
+\begin{description}
+	\item [Fehlerstromschutz]
+		Wie wird vor Fehlerströmen geschützt?\\
+		Beispiel: Fahrzeugseitige Isolationsüberwachung, RCD Typ B in Ladestation
+	\item [Exponierte Leiter]
+		Sind die spannungsführenden Leiter nur durch die umgebende Luft isoliert? Mögliche Antworten: nie, nur beim Ladevorgang, immer
+	\item [Zugänglichkeit der Schnittstelle]
+		Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?
+	\item [Strahlung – Gesundheitsaspekte]
+	\item [Strahlung – EMV-Aspekte]
+	\item [Position der Ladestation]
+		Ladesäule oder Unterflur? Im Depot oder an öffentlich zugänglicher Station?
+
+\end{description}
+
+\subsection{Reife}
+\begin{description}
+	\item [Fahrzeugkilometer – Teststrecke]
+	Mit diesem Ladesystem zurückgelegte Fahrzeugkilometer außerhalb des Linienbetriebs.\marginpar{Formulierung}
+	\item [Fahrzeugkilometer – Linienbetrieb]
+		Mit diesem Ladesystem im Linienbetrieb zurückgelegte Fahrzeugkilometer.
+	\item[Erfahrungen der Vekehrsgesellschaften]
+	War das System zuverlässig oder fehleranfällig? Hat sich die Zuverlässigkeit während des Betriebes verbessert?\marginpar{Macht es Sinn?}
+\end{description}
+
+\section{Speichertechnologien}
+Die Bewertungskriterien wurden ausgewählt, um neben den \emph{Kenndaten} die technischen Anforderungen von hoher \emph{Effizienz}, langer \emph{Lebensdauer} und hoher \emph{Sicherheit} widerzuspiegeln. Bei verschiedenen Ladestrategien können sich die Energiespeicher unterschiedlich verhalten. Von daher wird bei einigen Kriterien zwischen \emph{Gelegenheitsladung} und \emph{Nachtladung} unterschieden.
+
+\marginpar{Zahlen repräsenatativ?}
+\emph{Nachtladung} zeigt das Verhalten des Energiespeichers in einem Bus, der tagsüber 16 Stunden ohne Zwischenladen in Betrieb ist und dabei den Energiespeicher auf 20\% Ladezustand entlädt. Über Nacht wird der Energiespeicher innerhalb von acht Stunden vollständig aufgeladen.
+
+\marginpar{Ist Tour der richtige Begriff?}
+\emph{Gelegenheitsladung} zeigt das Verhalten des Energiespeichers, wenn der Bus am Ende jeder Tour aufgeladen wird. Im Laufe von einer Stunde wird der Energiespeicher auf 50\% entladen und mit maximaler Geschwindigkeit auf 90\% Ladezustand aufgeladen. Es wurde nur eine Entladung um 40\% der Gesamtkapazität gewählt, da der Bus im Falle eines defektes der Ladestation noch genug Energie zur Verfügung haben soll, um die Ladestation am anderen Ende der Strecke zu erreichen.
+
+Diese Ladeprofile stellen Extremfälle dar, im realen Betrieb wird meist eine Kombination von Aufladung im Depot und Nachladen an den Endhaltestellen gewählt. \marginpar{Beleg!, nicht nachladen, sclechtes Wort}
+
+\subsection{Kenndaten}
+
+\begin{description}
+	\item[Zellenspannung] Die elektrische Spannung einer unbelasteten Zelle bei 100\% Ladezustand.\\
+	Einheit: $V$
+	\item[Ladung] Der Bereich von Ladungen, mit denen die Batterie gefertigt werden kann.\\
+	Einheit: $mAh$
+	\item[Balancing] Methode, durch die die Zellenspannungen angeglichen werden.\\
+	Möglichkeiten: Überladen, separate Ansteuerung jeder Zelle
+\end{description}
+
+\subsection{Effizienz}
+Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, das Gehäuse und interne Verkabelung haben einen Einfluss auf diese Größen.
+\begin{description}
+	\item[Energiedichte, Gelegenheitsladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird. Dies entspricht einer Entladung mit 0,5C\footnote{\emph{C} ist eine für Batterien übliche Einheit der Belastung. Sie ist definiert als $\frac{Strom\ (in\ A)}{Ladung\ (in\ Ah)}$}\\
+	Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?}
+	\item[Spezifische Energie, Gelegenheitsladung] Die mit dieser Technologie erreichbare spezifische Energie, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird.\\
+	Einheit: $\frac{Wh}{kg}$
+	\item[Energiedichte, Nachtladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in 16 Stunden von 100\%auf 20\% entladen wird. Dies entspricht einer Entladung mit 0,05C\\
+	Einheit: $\frac{Wh}{l}$
+	\item[Spezifische Energie, Nachtladung] Die mit dieser Technologie erreichbare spezifische Energie, wenn der Energiespeicher in 16 Stunden von 100\% auf 20\% entladen wird.\\
+	Einheit: $\frac{Wh}{kg}$
+	\item[Leistungsdichte, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
+	Einheit: $\frac{W}{kg}$
+	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
+	Einheit: $\frac{W}{l}$
+	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\marginpar{Warum 30s? Warum 20\% SOC?}\\
+	Einheit: $\frac{W}{kg}$
+	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\\
+	Einheit: $\frac{W}{l}$
+	\item[Effizienz, Gelegenheitsladung] Das Verhältnis zwischen verwendeter und abgerufener elektrischer Energie, wenn der Energiespeicher mit der maximalen Laderate auf von 40\% auf 90\% Ladezustand geladen wird und dann mit 0,5C auf 40\% Ladezustand entladen wird.\\
+	Einheit: 1
+	\item[Effizienz, Nachtladung] Das Verhältnis zwischen verwendeter und abrufbarer elektrischer Energie, wenn der Energiespeiche innerhalb von acht Stunden von 20\% Ladezustand auf 100\% Ladezustand aufgeladen wird und dann mit 0,05C auf 20\% Ladezustand entladen wird. Dies entspricht der Aufladung über Nacht im Depot oder der Aufladung von ausgewechselten Batterien in Batteriewechselsystemen.\\
+	Einheit: 1
+	\item[Nennladestrom] Der höchste durchschnittliche Ladestrom, mit dem im Bereich zwischen 40\% und 90\% Ladezustand geladen werden kann\footnote{Der Kehrwert entspricht der Ladedauer zwischen 40\% und 90\% Ladezustand.}.
+	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
+\end{description}
+
+\subsection{Lebensdauer und Sicherheit}
+\begin{description}
+	\item[Lebensdauer, kalendarisch] Die Zeitdauer, bis die Batterie nur noch 80\% der Anfangskapazität hat \cite{Sterner:2014}[S. 269]. \marginpar{Umwelt?, Energiespeicher statt Batterie}\\
+	Einheit: $a$
+	\item[Zyklenfestigkeit, Gelegenheitsladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat. Ein Ladezyklus ist eine Auf- und Entladung um die Nennkapazität\footnote{Also entspricht ein Ladezyklus \emph{zwei} Auf- und Entladungen zwischen 90\% und 40\%.}.\\
+	Einheit: $1$
+	\item[Zyklenfestigkeit, Nachtladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat.\\
+	Einheit: $1$
+	\item[Temperatur für thermisches Durchgehen] Die Temperatur, ab der eine weitere Temperaturerhöhung unumkehrbar ist.\\
+	Einheit: $^\circ C$
+\end{description}
+
+\marginpar{Entsorgung + Subat}
+
+%%%%% ENDE INHALT %%%%%
+
+%%%%% BEGINN BACK MATTER %%%%%
+
+%%%%% ENDE BACK MATTER %%%%%
+
+\end{document}
