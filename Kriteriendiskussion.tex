@@ -1,0 +1,103 @@
+\documentclass{scrartcl}
+
+%%%%% BEGINN PACKAGES %%%%%
+
+%Packages, die für die deutsch Sprache erforderlich sind
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ngerman}
+
+%Packages für Graphik
+\usepackage{graphicx}
+
+%Package, damit Bibtex-URL klappt
+\usepackage{url}
+
+%Package für Hyperlinks im PDF
+\usepackage{hyperref}
+
+%Package für Tabellen mit avriabler Breite
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{geometry}
+
+%Noch schönere Typographie
+\usepackage{microtype}
+
+%%%%% ENDE PACKAGES %%%%%
+
+\title{Kriteriendiskussion}
+\date{\today}
+\author{Ludger Heide}
+
+\begin{document}
+
+%%%%% BEGINN FRONT MATTER %%%%%
+
+\maketitle
+
+%%%%% ENDE FRONT MATTER %%%%%
+
+%%%%% BEGINN INHALT %%%%%
+
+\section{Betrachtete Kombinationen}
+Die Frage war, ob Kombinationen von \emph{Ladesystem}, \emph{Speichertechnologie}, und \emph{Ladestrategie} (Gelegenheits- oder Nachtladung). Betrachtet werden. Es gibt keine erzwungene Zuordnung von Ladesystemen zu Ladestrategien (zum Beispiel kann ein induktives Ladesystem auch zur Nachtladung verwendet werden), jedoch gibt es bei den meisten Kombinationen eine klare Zuordnung, was betrieblich Sinn macht und was nicht.
+
+\paragraph{Ergebnis} Die Ladestrategie wird als Eigenschaft des Ladesystems betrachtet, nicht separat. Ladesysteme, die für beide Ladestrategien geeignet sind, werden in beiden Varianten betrachtet.
+
+\section{Simulation}
+In der Simulation soll der "`Berlin City Cycle"' verwendet werden, um den Energieverbrauch, die Batteriegröße und die Ladezeit sowie Ladeeffizienz zu ermitteln. Die Simulation geht von einem vorgegebenen Zeit- Geschwindigkeits-Verlauf aus, der eingehalten werden muss.
+
+\section{Bewertung}
+Die Kriterien sollen mit einer gewichteten Bewertung in Anlehnung an VDI 2225 bewertet werden. Dazu wurde eine Zuordnung der Kriterien zu Kategorien entworfen.
+
+\emph{Anmerkung:} Ich musste noch weiter über das Ziel der Bewertung nachdenken. Problematisch ist bei einer Bewertung aus technischer Sicht, das die beste technische Lösung fast zwangsweise unwirtschaftlich ist. Einziger Sinn einer rein technischen Bewertung kann es sein, technisch unsinnige Lösungen zu eliminieren, so dass in der wirtschaftlichen Betrachtung nur technisch sinnvolle Lösungen analysiert werden. Von daher sollte ich ein Cutoff definieren, unter dem eine Lösung nicht mehr als "`technisch sinnvoll"' gilt und drauf hinweisen, das alles mit einer höheren Bewertung technisch machbar, aber nicht unbedingt wirtschaftlich sinnvoll ist.
+
+\afterpage{%
+	\clearpage% Flush earlier floats (otherwise order might not be correct)
+	\thispagestyle{empty}% empty page style (?)
+	\newgeometry{margin=2cm}
+	\begin{landscape}% Landscape page
+		\centering % Center table
+		\begin{table}
+			\begin{tabularx}{\linewidth}{lllXl}
+				\toprule
+				Kriterium                        & Gewichtung & Einheit                                  & Anmerkung                                                         &  \\ \midrule
+				\textbf{Effizienz}               & hoch       &                                          &  \\
+				Energieverbrauch                 & 0,6        & $\frac{kWh}{km}$                         & aus Simulation                                                    &  \\
+				Effizienz Speicher               & 0,1        & $1$                                      & aus Simulation                                                    &  \\
+				Effizienz Ladesystem             & 0,1        & $1$                                      & aus Simulation                                                    &  \\
+				Ladedauer pro Betriebsstunde     & 0,2        & $1$                                      & aus Simulation, separate Skala für Nacht- und Gelegenheitsladung? &  \\ \midrule
+				\textbf{Reife}                   & niedrig    &                                          & niedrig da Datenqualität und -verfügbarkeit unklar                &  \\
+				Fahrzeugkilometer, Teststrecke   & 0,2        & $km$                                     &                                                                   &  \\
+				Fahrzeugkilometer, Linienbetrieb & 0,6        & $km$                                     &                                                                   &  \\
+				Erfahrungen im Probebetrieb      & 0,2        & qualtitaiv                               & Sinnvoll?                                                         &  \\ \midrule
+				\textbf{Sicherheit}              & hoch       &                                          & "`Safety"' jetzt ausgeblendet (?)                                 &  \\
+				Zugänglichkeit fahrzeugseitig    & 0,5        & qualitativ: unzugänglich, schwer, leicht &                                                                   &  \\
+				Zugänglichkeit statiosnseitig    & 0,5        & qualitativ: unzugänglich, schwer, leicht & Depot gilt als unzgänglich                                        &  \\ \midrule
+				\textbf{Packaging}               & mittel     &                                          &  \\
+				Volumen fahrzeugseitig           & 1          & $m^3$                                    & Batterie + Ladesystem                                             &  \\ \midrule
+				\textbf{Komplexität}             & hoch       &                                          &  \\
+				Freiheitsgrade gesamt            &            & $1$                                      & fahrzeug- + stationsseitig                                        &  \\
+				Positionierungsgenauigkeit trans &            & $m^2$                                    & x mal y (\emph{Richtung?})                                        &  \\
+				Kneelingfähig                    &            & ja/nein/irrelevant                       & irrelevant bei Nachtladung                                        &  \\
+				Anzahl der Wandler               &            & $1$                                      &                                                                   &  \\ \bottomrule
+			\end{tabularx}
+			\caption{Bewertungskriterien und Gewichtung}
+		\end{table} 
+	\end{landscape}
+	\restoregeometry
+	\clearpage% Flush page
+}
+
+%%%%% ENDE INHALT %%%%%
+
+%%%%% BEGINN BACK MATTER %%%%%
+
+%%%%% ENDE BACK MATTER %%%%%
+
+\end{document}

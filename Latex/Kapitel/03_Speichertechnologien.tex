@@ -1,8 +1,8 @@
 \chapter{Speichertechnologien}
 
-Nach den Ladesystemen werden nun die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die betrachteten Technologien und die Bewertungskriterien erläutert. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} sind die Werte aufgelistet.
+Nach den Ladesystemen werden nun die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die betrachteten Technologien erläutert. Die Parameter sind aufgeteilt in Parameter, die direkt bewertet werden und Eingabewerte für die Simulation. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} sind die Werte aufgelistet.
 
-Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher können hier nicht alle Technologien aufgelistet, sondern nur die für den Einsatz in Elektrobussen wichtigsten. \marginpar{Formulierung?}
+Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher werden hier nur Technologien aufgelistet, die bereits in elektrischen Stadtbussen eingesetzt wurden. Die Daten stammen von aktuell erhältlichen Produkten für elektrische Straßenfahrzeuge.
 
 \section{Untersuchte Technologien}
 Im folgenden Abschnitt werden die Grundlagen und die Einsatzgeschichten der verschiedenen Speichertechnologien kurz erläutert. Die Technologien sind nach dem genutzten physikalischen Effekt aufgeteilt \cite{Sterner:2014}[S. 35f]. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
@@ -14,8 +14,6 @@ Der Schwungradspeicher wurde in den fünfziger Jahren im Gyrobus im schweizerisc
 
 \subsection{Elektrisch – Kondensator}
 Der Kondensator ist ein rein elektrischer Energiespeicher. Im klassischen Plattenkondensator werden zwei durch einen festes Dielektrikum getrennte Platten elektrisch aufgeladen, die Ladung kann später in Strom umgewandelt werden. Kondensatoren haben eine hohe spezifische Leistung, aber eine sehr geringe spezifische Energie.
-
-\marginpar{Kris, sagt die Abbildungen sind so verwirrend}
 
 In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte un Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in die Leiterplatten erreicht \cite{Sterner:2014}[S. 167f].
 
@@ -50,13 +48,11 @@ Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsä
 	\label{Pb}
 \end{table}
 
-\marginpar{Warum sind Abbildungen nicht h!}
-
 Im Gegensatz zu den meisten anderen Batterien transportiert hier der Elektrolyt nicht nur die Ionen, sondern ist selbst an der Reaktion beteiligt.
 
 Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches Nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, dass so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können, da die Energie des Überladevorgangs in die Wasserspaltung geführt wird \cite{tub_aleph001746639}[S. 182].
 
-Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) \cite{Risch:1957}[S. 8f]. \marginpar{alteste\emph{,} wiederaufladbare}
+Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) \cite{Risch:1957}[S. 8f].
 
 \subsubsection{Nickel-Cadmium}
 Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalischen, wässrigen Elektrolyt, dass nicht an der Reaktion beteiligt ist, sondern nur dem Ionentransport dient. Die Reaktionsgleichungen sind in Tabelle \ref{NiCd} aufgeführt \cite{Sterner:2014}[S.233].
@@ -72,7 +68,7 @@ Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalisc
 	\label{NiCd}
 \end{table}
 
-Wie bei Blei-Säure-Batterien wird der Elektrolyt in Wasserstoff und Sauerstoff zerlegt. Es sind offene Bauformen und geschlossene Bauformen mit interner Rekombination vorhanden.\marginpar{holprig}
+Wie bei Blei-Säure-Batterien wird der Elektrolyt in Wasserstoff und Sauerstoff zerlegt. Es sind offene Bauformen und geschlossene Bauformen mit interner Rekombination vorhanden.
 
 Die Nickel-Cadmium-Batterie weist eine weit höhere spezifische Energie als die Blei-Säure-Batterie auf, wird jedoch in elektrischen Bussen nicht verwendet. \marginpar{Wirklich?}
 
@@ -93,7 +89,7 @@ Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nic
 Da die Hydrierung bei einem Druck von bis zu 10 Bar stattfindet, gibt es nur geschlossene Bauformen. Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. \marginpar{Und in welchen Bussen?}
 
 \subsubsection{Lithium-Ionen}
-In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.} \cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren, von daher werden für positive und negative Elektrode verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden \cite{KiehneBattery}[S. 408, 440ff]. \marginpar{Welche Gruppe ist bei ehcten LiPos am besten?}
+In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.} \cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren, von daher werden für positive und negative Elektrode verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden \cite{KiehneBattery}[S. 408, 440ff]. 
 
 \paragraph{Geschichtete Oxide}
 
@@ -111,7 +107,7 @@ Die negative Elektrode besteht in allen Fällen aus Graphit. Die Lithiumionen we
 Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die theoretische spezifische Energie ist ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht \cite{Tie201382}. In der negativen Elektrode wird Graphit verwendet. Aufgrund des niedrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geeignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet \cite{bydSpecs}.
 
 \paragraph{Lithium-Titanat}
-Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür eine weit höhere spezifische Lade- und Entladeleistung \cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird zum Beispiel von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt \cite{protCat}. \marginpar{Kris weiß nicht, wer Proterra ist.} \marginpar{und warum nicht BVG selbst.}
+Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür eine weit höhere spezifische Lade- und Entladeleistung \cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird zum Beispiel von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt \cite{protCat}. \marginpar{BCG-Elektrobus}
 
 \subsubsection{Natrium-Nickelchlorid}
 Die Natrium-Nickelcloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Alumiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen aus flüssigem Kochsalz und Nickel, der ebenfalls in flüssigem Kochsalz gelagert ist. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt \cite{KiehneBattery}[S. 257ff].
@@ -130,29 +126,13 @@ Die Natrium-Nickelcloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoch
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt \cite{Electric-Transportation-Department:2004}.
 
 \section{Bewertungskriterien}
-Die Bewertungskriterien wurden ausgewählt, um neben den \emph{Kenndaten} die technischen Anforderungen von hoher \emph{Effizienz}, langer \emph{Lebensdauer} und hoher \emph{Sicherheit} widerzuspiegeln. Bei verschiedenen Ladestrategien können sich die Energiespeicher unterschiedlich verhalten. Von daher wird bei einigen Kriterien zwischen \emph{Gelegenheitsladung} und \emph{Nachtladung} unterschieden.
+Die Bewertungskriterien wurden ausgewählt, um neben den \emph{Kenndaten} die technischen Anforderungen von hoher \emph{Effizienz}, langer \emph{Lebensdauer} und hoher \emph{Sicherheit} widerzuspiegeln.
 
-\marginpar{Zahlen repräsenatativ?}
-\emph{Nachtladung} zeigt das Verhalten des Energiespeichers in einem Bus, der tagsüber 16 Stunden ohne Zwischenladen in Betrieb ist und dabei den Energiespeicher auf 20\% Ladezustand entlädt. Über Nacht wird der Energiespeicher innerhalb von acht Stunden vollständig aufgeladen.
+\subsection{Gewertete Kriterien}
 
-\marginpar{Ist Tour der richtige Begriff?}
-\emph{Gelegenheitsladung} zeigt das Verhalten des Energiespeichers, wenn der Bus am Ende jeder Tour aufgeladen wird. Im Laufe von einer Stunde wird der Energiespeicher auf 50\% entladen und mit maximaler Geschwindigkeit auf 90\% Ladezustand aufgeladen. Es wurde nur eine Entladung um 40\% der Gesamtkapazität gewählt, da der Bus im Falle eines defektes der Ladestation noch genug Energie zur Verfügung haben soll, um die Ladestation am anderen Ende der Strecke zu erreichen.
+\subsection{Eingabewerte für die Simulation}
 
-Diese Ladeprofile stellen Extremfälle dar, im realen Betrieb wird meist eine Kombination von Aufladung im Depot und Nachladen an den Endhaltestellen gewählt. \marginpar{Beleg!, nicht nachladen, sclechtes Wort}
-
-\subsection{Kenndaten}
-
-\begin{description}
-	\item[Zellenspannung] Die elektrische Spannung einer unbelasteten Zelle bei 100\% Ladezustand.\\
-	Einheit: $V$
-	\item[Ladung] Der Bereich von Ladungen, mit denen die Batterie gefertigt werden kann.\\
-	Einheit: $mAh$
-	\item[Balancing] Methode, durch die die Zellenspannungen angeglichen werden.\\
-	Möglichkeiten: Überladen, separate Ansteuerung jeder Zelle
-\end{description}
-
-\subsection{Effizienz}
-Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, das Gehäuse und interne Verkabelung haben einen Einfluss auf diese Größen.
+Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, das Gehäuse und interne Verkabelung haben einen Einfluss auf diese Größen. \marginpar{Überarbeiten!}
 \begin{description}
 	\item[Energiedichte, Gelegenheitsladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird. Dies entspricht einer Entladung mit 0,5C\footnote{\emph{C} ist eine für Batterien übliche Einheit der Belastung. Sie ist definiert als $\frac{Strom\ (in\ A)}{Ladung\ (in\ Ah)}$}\\
 	Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?}
@@ -163,9 +143,9 @@ Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, d
 	\item[Spezifische Energie, Nachtladung] Die mit dieser Technologie erreichbare spezifische Energie, wenn der Energiespeicher in 16 Stunden von 100\% auf 20\% entladen wird.\\
 	Einheit: $\frac{Wh}{kg}$
 	\item[Leistungsdichte, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
-	Einheit: $\frac{W}{kg}$
-	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
 	Einheit: $\frac{W}{l}$
+	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
+	Einheit: $\frac{W}{kg}$
 	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\marginpar{Warum 30s? Warum 20\% SOC?}\\
 	Einheit: $\frac{W}{kg}$
 	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\\
@@ -194,72 +174,3 @@ Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, d
 
 \section{Vergleichstabellen}
 \label{vergleichstabellen_speichertechnologien}
-\marginpar{Mehr Daten\\
-	       saubere Quellen}
-\begin{table}\centering
-	\begin{tabularx}{\linewidth}{lXXX}
-		\toprule
-		\multirow{2}{*}{Technologie} & Zellenspannung           & Ladung       & Balancing \\
-		                             & $V$                      & $mAh$        & $ $       \\ \midrule
-		\textbf{Mechanisch}          &                          &              &  \\
-		Schwungrad                   & k. A.                    & k. A.        & k. A.     \\
-		\textbf{Elektrostatisch}     &                          &              &  \\
-		Superkondensator             & ???                      & ???          & ???       \\
-		\textbf{Elektrochemisch}     &                          &              &  \\
-		Blei-Säure                   & 2,1 \cite{Sterner:2014}  & ???          & Überladen \\
-		Nickel-Cadmium               & 1,35 \cite{Sterner:2014} & ???          & Überladen \\
-		Nickel-Metallhydrid          & 1,35 \cite{Sterner:2014} & ???          & Überladen \\
-		Li-Ion -- $LiCoO_2$          & 4? \cite{Sterner:2014}   & ???          & Balancer  \\
-		Li-Ion -- $LiFePO_4$         & 3,2? \cite{Sterner:2014} & 2000 -- 4500 & Balancer  \\
-		Li-Ion -- $Li_4Ti_5O_{12}$   & 2,6? \cite{Sterner:2014} & 4000         & Balancer  \\
-		Ni-NaCl (ZEBRA)              & 2,58 \cite{Sterner:2014} & ???          & ???       \\ \bottomrule
-	\end{tabularx}
-	\caption{Kenndaten der Energiespeicher}
-\end{table}
-
-\begin{table}\centering
-	\begin{tabularx}{\linewidth}{lllll}
-		\toprule
-		\multirow{2}{*}{Technologie} & Energiedichte  & Spez. Energie   & Leistungsdichte & Spez. Leistung \\
-		                             & $\frac{Wh}{l}$ & $\frac{Wh}{kg}$ & $\frac{W}{l}$   & $\frac{W}{kg}$ \\ \midrule
-		\textbf{Mechanisch}          &                &                 &                 &  \\
-		Schwungrad                   & ???            & ???             & ???             & ???            \\
-		\textbf{Elektrostatisch}     &                &                 &                 & ?              \\
-		Superkondensator             & ???            & ???             & ???             & ???            \\
-		\textbf{Elektrochemisch}     &                &                 &                 &  \\
-		Blei-Säure                   & ???            & ???             & ???             & ???            \\
-		Nickel-Cadmium               & ???            & ???             & ???             & ???            \\
-		Nickel-Metallhydrid          & ???            & ???             & ???             & ???            \\
-		Li-Ion -- $LiCoO_2$          & ???            & ???             & ???             & ???            \\
-		Li-Ion -- $LiFePO_4$         & ???            & ???             & ???             & ???            \\
-		Li-Ion -- $Li_4Ti_5O_{12}$   & ???            & ???             & ???             & ???            \\
-		Ni-NaCl (ZEBRA)              & ???            & ???             & ???             & ???            \\ \bottomrule
-		                             &
-	\end{tabularx}
-	\caption{Spezifische Größen der Energiespeicher}
-	\label{hierdoof}
-\end{table}
-\marginpar{Typografie ist in \ref{hierdoof} doof}
-\marginpar{Layout: Die Tabellen müssen irgendwie anders sortiert werden…}
-
-\begin{table}\centering
-	\begin{tabularx}{\linewidth}{XXXX}
-		\toprule
-		\multirow{2}{*}{Technologie} & Kal. Lebensdauer & Zyklenfestigkteit & Max. Temperatur \\
-		                             & a                        & 1                 & $^\circ C$      \\ \midrule
-		\textbf{Mechanisch}          &                          &                   &  \\
-		Schwungrad                   & ???                      & ???               & ???             \\
-		\textbf{Elektrostatisch}     &                          &                   &  \\
-		Superkondensator             & ???                      & ???               & ???             \\
-		\textbf{Elektrochemisch}     &                          &                   &  \\
-		Blei-Säure                   & ???                      & ???               & ???             \\
-		Nickel-Cadmium               & ???                      & ???               & ???             \\
-		Nickel-Metallhydrid          & ???                      & ???               & ???             \\
-		Li-Ion -- $LiCoO_2$          & ???                      & ???               & ???             \\
-		Li-Ion -- $LiFePO_4$         & ???                      & ???               & ???             \\
-		Li-Ion -- $Li_4Ti_5O_{12}$   & ???                      & ???               & ???             \\
-		Ni-NaCl (ZEBRA)              & ???                      & ???               & ???             \\ \bottomrule
-		                             &
-	\end{tabularx}
-	\caption{Lebensdauer und Sicherheit der Energiespeicher}
-\end{table}
