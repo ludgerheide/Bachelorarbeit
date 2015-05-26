@@ -1,4 +1,72 @@
 \chapter{Ladesysteme}
+In diesem Kapitel werden die Ladesysteme für elektrische Busse erläutert. Im ersten Abschnitt werden Funktionsweise und EInsatzgeschichte der verschiednen Systeme erläutert. Im nächsten Abschnitt werden die betrachteten technischen Parameter definiert und in Abschnitt \ref{sec_tabellen_ladesysteme} ab Seite \pageref{sec_tabellen_ladesysteme} sind die ermittelten Parameter aufgelistet.
+
+Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziwhungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"'). Rein technisch sind sehr viele Kombinationen von Ladesystem und Ladestrategie möglich, die betrieblich keinen Sinn machen – zum Beispiel der Einsatz eines aufwändigen Schnelladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
+
+Die Ladesysteme werden nach drei Kriterien aufgeteilt:
+\paragraph{Energietransport}
+\begin{itemize}
+	\item Konduktiv – es wird eine elektrisch Leitende Verbindung hergestellt
+	\item Induktiv – die Energie wird durch schwingende Magnetfelder übertragen
+	\item Batteriewechsel – die Batterie wird ausgewechselt
+\end{itemize}
+
+\paragraph{Fahrzustand}
+\begin{itemize}
+	\item Statisch – es wird nur geladen, während der Bus steht
+	\item Dynamisch – die Batterie kann auch während der Fahrt aufgeladen werden
+\end{itemize}
+
+\paragraph{Automatisierungsgrad}
+\begin{itemize}
+	\item Manuell – Der Busfahrer seinen Arbeitsplatz verlassen, um den Ladevorgang zu beginnen und zu beenden\footnote{Denkbar ist auch, das der Fahrer im Bus bleibt und eine andere Person den Ladevorgang steuert. Solche Systeme existieren jedoch in Europa nicht.}
+	\item Automatisch – Der Bus kann geladen werden, ohne das der Fahrer seinen Arbeitsplatz verlässt
+\end{itemize}
+
+\section{Untersuchte Systeme}
+Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{übersichtLadesysteme} sind die Namen der Systeme in normaler Schrift aufgeführt. Der Name des Herstellers ist \emph{kursiv} geschrieben. Sollte das System keinen eigenen Namen haben, wird der Name des Einsatzortes in \textsc{Kapitälchen} verwendet.
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{lp{2.1cm}p{2.1cm}XX}
+		\toprule
+		                           &                       \multicolumn{2}{c}{\textbf{Konduktiv}}                       & \textbf{Induktiv}                     & \textbf{Batteriewechsel}                \\
+		\cmidrule{2-3}             & Manuell                                   & Automatisch                            & Automatisch                           & Automatisch                             \\ \midrule
+		\multirow{12}{*}{Statisch} & IEC62196-2\newline\emph{BYD}              & Busbaar\newline\emph{Opbrid}           & IPT\newline\emph{Conductix"~Wampfler} & \textsc{Chattanooga}\newline\emph{AVS}  \\
+		                           &                                           & FastFill\newline\emph{Proterra}        & primove\newline\emph{Bombardier}      & \textsc{Qingdao}\newline\emph{XJ Group} \\
+		                           &                                           & \textsc{Hamburg}\newline\emph{Siemens} & WAVE\newline\emph{WAVE Inc.}          & \textsc{Shanghai}\newline\emph{Sunwin}  \\
+		                           &                                           & TOSA\newline\emph{ABB}                 &                                       &  \\
+		                           &                                           & \textsc{Shanghai}\newline\emph{Sunwin} &                                       &  \\
+		                           &                                           & \textsc{Wien}\newline\emph{Siemens}    &                                       &  \\ \midrule
+		\multirow{2}{*}{Dynamisch} & \textsc{Eberswalde}\newline\emph{Solaris} &                                        & OLEV\newline\emph{KAIST}              &  \\ \bottomrule
+	\end{tabularx}
+	\caption{Übersicht Ladesysteme}
+	\label{übersichtLadesysteme}
+\end{table}
+
+\subsection{Konduktive Ladesysteme} 
+
+\subsubsection{Manuell – Ladesteckdose}
+Die in Elektroautos verwendeten Ladegeräte werden auch in Elektrobussen eingesetzt. Die Ladesysteme bestehen aus einer Ladesäule und einem Kabel mit einem Stecker, der in eine fahrzeugseitige Steckdose gesteckt wird. Die Stecker sind standardisiert und mit Kommunikationspfaden ausgestattet, über die Spannung und Strom ausgehandelt wird. Es werden Wechselstromsysteme mit verschiedenen Steckern 
+
+\textsc{BYD} verkauft Europa einen Elektrobus mit Ladestecker nach IEC 62196-2 ("`Mennekes"'). Durch die Verwendung von zwei Ladesteckern kann dieser Bus mit bis zu 80 kW geladen werden \cite{bydSpecs4}.
+
+Vorteil dieses Ladesystems ist die weite Kompatibilität. Ladestation und Bus können von unterschiedlichen Herstellern stammen. Die Ladestationen können sowohl von Bussen als auch von Elektroautos benutzt werden. Durch die relativ niedrige Ladeleistung und die fehlende Automatisierung ist dieses Ladesystem nur für das Aufladen über Nacht geeignet.
+
+Viele Busse, die primär über andere Systeme geladen werden besitzen auch eine Ladesteckdose, um über Nacht oder abseits ihrer normalen Strecke geladen zu werden.\marginpar{Beleg!}
+
+\subsubsection{Automatisiert – Stromabnehmer}
+Um die elektrische Verbindung automatisch herzustellen werden ausfahrbare Stromabnehmer verwendet. Es gibt sowohl Systeme mit fahrzeugseitigem als auch mit stationsseitigem Stromabnehmer und jeweils unbeweglichen Kontakten auf der anderen Seite. Anders als Straßenbahnen, die immer durch die Schiene geerdet sind müssen bei Bussen zwei Pole verbunden werden. In den meisten Ladesystemen liegen sie auf demselben Stromabnehmer nebeneinander, \textsc{Opbrid} verwendet im \textsc{Bůsbaar}-System zwei Stromabnehmer vorne und hinten auf dem Bus und eine längs geteilte Stromschiene \cite{SchKonLade}.
+
+
+
+
+
+
+                                        
+
+\subsection{Induktive Ladesysteme}
+
+\subsection{Batteriewechselsysteme}
+
 \section{Bewertungskriterien} \marginpar{Subsections}
 \begin{itemize}
 	\item Mechanik \marginpar{Bessere Beschreibung (Zeit ist nicht mechanisch)}
@@ -55,5 +123,6 @@
 		War das System zuverlässig oder fehleranfällig? Hat sich die Zuverlässigkeit während des Betriebes verbessert?\marginpar{Macht es Sinn?}
 	\end{description}
 \end{itemize}
-\section{Untersuchte Systeme}
+
 \section{Vergleichstabelle}
+\label{sec_tabellen_ladesysteme}
