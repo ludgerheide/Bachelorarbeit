@@ -1,6 +1,6 @@
 \chapter{Speichertechnologien}
 
-Nach den Ladesystemen werden nun die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die betrachteten Technologien erläutert. Die Parameter sind aufgeteilt in Parameter, die direkt bewertet werden und Eingabewerte für die Simulation. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} sind die Werte aufgelistet.
+In diesem Kapitel werden die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die betrachteten Technologien erläutert. Die Parameter sind aufgeteilt in Parameter, die direkt bewertet werden und Eingabewerte für die Simulation. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} sind die Werte aufgelistet.
 
 Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher werden hier nur Technologien aufgelistet, die bereits in elektrischen Stadtbussen eingesetzt wurden. Die Daten stammen von aktuell erhältlichen Produkten für elektrische Straßenfahrzeuge.
 
@@ -19,7 +19,7 @@ In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eine
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureStandardWidth]{Doppelschicht-Prinzipdarstellung}
-	\caption[Prinzipdarstellung der Doppelschichtkapazität]{Prinzipdarstellung der Doppelschichtkapazität. Quelle: Elcap (Eigenes Werk) CC BY-SA 3.0, via Wikimedia Commons}
+	\caption[Prinzipdarstellung eines Superkondensators]{Prinzipdarstellung eines Superkondensators. Quelle: Elcap (Eigenes Werk) CC BY-SA 3.0, via Wikimedia Commons}
 	\label{abb_doppelschicht}
 \end{figure}
 
@@ -39,10 +39,11 @@ Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsä
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
+		\toprule
 		&                       $geladen$ & $\rightleftarrows$ & $entladen$             \\
 		Negative Elektrode & $PbO_2 + H_2SO_4 + 2H^+ + 2e^-$ & $\rightleftarrows$ & $PbSO_4 + 2H_2O$       \\
 		Positive Elektrode &                  $Pb + H_2SO_4$ & $\rightleftarrows$ & $PbSO_4 + 2H^+ + 2e^-$ \\ \midrule
-		Zellenreaktion     &         $Pb + PbO_2 + 2H_2SO_4$ & $\rightleftarrows$ & $2PbSO_4 + 2H_2O$      \\
+		Zellenreaktion     &         $Pb + PbO_2 + 2H_2SO_4$ & $\rightleftarrows$ & $2PbSO_4 + 2H_2O$      \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrodengleichungen der Blei-Säure-Batterie}
 	\label{Pb}
@@ -59,10 +60,11 @@ Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalisc
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
+		\toprule
 		&               $geladen$ & $\rightleftarrows$ & $entladen$             \\
 		Negative Elektrode &            $Cd + 2OH^-$ & $\rightleftarrows$ & $Cd(OH)_2 + 2e^-$      \\
-		Positive Elektrode & $2NiOOH + 2H_2O + 2e^-$ & $\rightleftarrows$ & $2Ni(OH)_2 + 2OH^-$    \\ \midrule
-		Zellenreaktion     &   $Cd + 2NiOOH + 2H_2O$ & $\rightleftarrows$ & $Cd(OH)_2 + 2Ni(OH)_2$ \\
+		Positive Elektrode & $2NiO(OH) + 2H_2O + 2e^-$ & $\rightleftarrows$ & $2Ni(OH)_2 + 2OH^-$    \\ \midrule
+		Zellenreaktion     &   $Cd + 2NiO(OH) + 2H_2O$ & $\rightleftarrows$ & $Cd(OH)_2 + 2Ni(OH)_2$ \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrodengleichungen der Nickel-Cadmium-Batterie}
 	\label{NiCd}
@@ -77,10 +79,11 @@ Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nic
 
 \begin{table}\centering %TODO: Rahmen für Tabellen
 	\begin{tabularx}{\linewidth}{XrcX}
+		\toprule
 		&              $geladen$ & $\rightleftarrows$ & $entladen$        \\
 		Negative Elektrode &          $M(H) + OH^-$ & $\rightleftarrows$ & $M + H_2O + e^-$  \\
-		Positive Elektrode &   $NiOOH + H_2O + e^-$ & $\rightleftarrows$ & $Ni(OH)_2 + OH^-$ \\ \midrule
-		Zellenreaktion     & $M(H) + NiOOH + 2H_2O$ & $\rightleftarrows$ & $M + Ni(OH)_2$    \\
+		Positive Elektrode &   $NiO(OH) + H_2O + e^-$ & $\rightleftarrows$ & $Ni(OH)_2 + OH^-$ \\ \midrule
+		Zellenreaktion     & $M(H) + NiO(OH) + 2H_2O$ & $\rightleftarrows$ & $M + Ni(OH)_2$    \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrodengleichungen der Nickel-Metallhydrid-Batterie}
 	\label{NiMH}
@@ -114,14 +117,17 @@ Die Natrium-Nickelcloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoch
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
+		\toprule
 		&       $geladen$ & $\rightleftarrows$ & $entladen$           \\
 		Negative Elektrode & $NiCl_2 + 2e^-$ & $\rightleftarrows$ & $2Cl^- + 2Na^+ + Ni$ \\
 		Positive Elektrode &           $2Na$ & $\rightleftarrows$ & $2e^-$               \\ \midrule
-		Zellenreaktion     &  $2Na + NiCl_2$ & $\rightleftarrows$ & $Ni + 2NaCl$
+		Zellenreaktion     &  $2Na + NiCl_2$ & $\rightleftarrows$ & $Ni + 2NaCl$ \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrodengleichungen der Natrium-Nickelchlorid-Batterie}
 	\label{ZEBRA}
+	%TODO: Formeln
 \end{table}
+\marginpar{Formeln in \ref{ZEBRA}}
 
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}.
 
