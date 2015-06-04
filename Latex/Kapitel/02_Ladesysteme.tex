@@ -2,7 +2,7 @@
 In diesem Kapitel werden die Ladesysteme für elektrische Busse erläutert. Im ersten Abschnitt werden Funktionsweise und Einsatzgeschichte der verschiedenen Systeme erläutert. Im nächsten Abschnitt werden die betrachteten technischen Parameter definiert und in Abschnitt \ref{sec_tabellen_ladesysteme} ab Seite \pageref{sec_tabellen_ladesysteme} sind die ermittelten Parameter aufgelistet.
 
 \paragraph{Begriffsdefinitionen}
-Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziwhungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"'). 
+Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"'). 
 
 Rein technisch sind sehr viele Kombinationen von Ladesystem und Ladestrategie möglich, die betrieblich keinen Sinn machen – zum Beispiel der Einsatz eines aufwändigen Schnelladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
 
@@ -79,7 +79,7 @@ Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abst
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureStandardWidth]{Resonant-Induktive_Kopplung}
-	\caption{Blockdiagram eines induktiven Ladesystems. Nach: Chetvorno (Eigenes Werk) CC0, via Wikimedia Commons}
+	\caption[Blockdiagramm eines induktiven Ladesystems]{Blockdiagramm eines induktiven Ladesystems. Nach: Chetvorno (Eigenes Werk) CC0, via Wikimedia Commons}
 	\label{abb_ResIndKopplung}
 \end{figure}
 
@@ -98,19 +98,20 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 \section{Parameter}
 \marginpar{Wie sind die Parameter entstanden?}
 
+\subsection{Mechanische Kriterien}
 \begin{description}
-	\item [Abmaße, feste Position] \emph{Fahrzeug- uns Stationsseitig}\\
+	\item [Abmaße, feste Position] \emph{Fahrzeug- und Stationsseitig}\\
 	Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
 	Beispiel: Pantograph und Stromschiene
-	\item [Abmaße, freie Position] \emph{Fahrzeug- uns Stationsseitig}\\
+	\item [Abmaße, freie Position] \emph{Fahrzeug- und Stationsseitig}\\
 	Die Abmaße jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
 	Beispiel: Elektrische Wandler
 	\item [Masse] \emph{Fahrzeugseitig}\\
 	Gesamtmasse der fahrzeugseitigen Komponenten
-	\item [Freiheitsgrade] \emph{Fahrzeug- uns Stationsseitig}\\
+	\item [Freiheitsgrade] \emph{Fahrzeug- und Stationsseitig}\\
 	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. 0, wenn es keine beweglichen Teile gibt.
 	\item [Positionierungsgenauigkeit des Busses] \emph{Fahrzeugseitig} \\
-	Erforderliche Genaugkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus zwei translatorischen und zwei rotatorischen Komponenten (X, Y, Richtung des Busses, Kneelingwinkel)
+	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus zwei translatorischen und zwei rotatorischen Komponenten (X, Y, Richtung des Busses, Kneelingwinkel)
 	\item [Totzeit]
 	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt. Ist die Zeit von der Position abhängig, so wird jeweils eine Abweichung um die Hälfte des maximalen Wertes angenommen.
 	\item [Anzahl der Wandler] \emph{Fahrzeug- und Stationsseitig}\\
