@@ -2,7 +2,7 @@
 In diesem Kapitel werden die Ladesysteme für elektrische Busse erläutert. Im ersten Abschnitt werden Funktionsweise und Einsatzgeschichte der verschiedenen Systeme erläutert. Im nächsten Abschnitt werden die betrachteten technischen Parameter definiert und in Abschnitt \ref{sec_tabellen_ladesysteme} ab Seite \pageref{sec_tabellen_ladesysteme} sind die ermittelten Parameter aufgelistet.
 
 \paragraph{Begriffsdefinitionen}
-Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"'). 
+Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"').\marginpar{Eventuell nochmal aufteilen in Ende der Tour – während der Fahrt?} 
 
 Rein technisch sind sehr viele Kombinationen von Ladesystem und Ladestrategie möglich, die betrieblich keinen Sinn machen – zum Beispiel der Einsatz eines aufwändigen Schnelladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
 
@@ -100,6 +100,7 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 
 \subsection{Mechanische Kriterien}
 \begin{description}
+	\item [Ladestrategie] Ladestrategie, für die dieses System geeignet ist.
 	\item [Abmaße, feste Position] \emph{Fahrzeug- und Stationsseitig}\\
 	Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
 	Beispiel: Pantograph und Stromschiene
@@ -120,8 +121,6 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 
 \subsection{Elektrische Kriterien}
 \begin{description}
-	\item [Spannung]
-	Mit welcher Spannung wird geladen? Gleich- oder Wechselspannung? Nicht relevant bei induktiver Ladung und Batteriewechselsystemen.
 	\item [Leistung]
 	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa)\marginpar{Amerika}
 	\item [Effizienz]
@@ -130,15 +129,10 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 
 \subsection{Sicherheit}
 \begin{description}
-	\item [Fehlerstromschutz]
-	Wie wird vor Fehlerströmen geschützt?\\
-	Beispiel: Fahrzeugseitige Isolationsüberwachung, RCD Typ B in Ladestation
 	\item [Exponierte Leiter]
 	Sind die spannungsführenden Leiter nur durch die umgebende Luft isoliert? Mögliche Antworten: nie, nur beim Ladevorgang, immer
 	\item [Zugänglichkeit der Schnittstelle]
 	Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?
-	\item [Strahlung – Gesundheitsaspekte]
-	\item [Strahlung – EMV-Aspekte]
 	\item [Position der Ladestation]
 	Ladesäule oder Unterflur? Im Depot oder an öffentlich zugänglicher Station?	
 \end{description}
@@ -146,3 +140,63 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 
 \section{Wertetabellen}
 \label{sec_tabellen_ladesysteme}
+\marginpar{Methodik!}
+
+\subsection{Mechanische Kriterien}
+
+\subsection{Elektrische Kriterien}
+
+\subsection{Zuverlässigkeit}
+
+%%%% MECHANISCHE TABELLEN %%%%
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{XXX}
+		\toprule
+		System & Ladestrategie & Totzeit \\
+		       &               & $s$     \\ \midrule
+	\end{tabularx}
+	\caption{Allgemeine mechanische Kriterien Ladesysteme}
+	\label{tab_mech_Ladesys_allg}
+\end{table}
+
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{Xllllll}
+		\toprule
+		System & Maße fest & Maße frei & Masse & Freiheitsgrade & Genauigkeit    & Wandler \\
+		       & $m^3$     & $m^3$     & $kg$  & $1$            & $m^2,^{\circ}$ & $1$     \\ \midrule
+	\end{tabularx}
+	\caption{Fahrzeugseitige mechanische Kriterien Ladesysteme}
+	\label{tab_mech_Ladesys_fzg}
+\end{table}
+
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{Xllll}
+		\toprule
+		System & Maße fest & Maße frei & Freiheitsgrade & Wandler \\
+		& $m^3$     & $m^3$     & $1$            & $1$     \\ \midrule
+	\end{tabularx}
+	\caption{Stationsseitige mechanische Kriterien Ladesysteme}
+	\label{tab_mech_Ladesys_stat}
+\end{table}
+
+%%%% ELEKTRISCHE TABELLE %%%%
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{XXX}
+		\toprule
+		System & Leistung & Effizienz \\
+		       & $W$      & $\%$       \\ \midrule
+	\end{tabularx}
+	\caption{Elektrische Kriterien Ladesysteme}
+	\label{tab_el_Ladesys}
+\end{table}
+
+%%%% SICHERHEIT %%%%
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{XXXX}
+		\toprule
+		System         & Exponierte Leiter & \multicolumn{2}{c}{Zugänglichkeit Schnittstelle} \\
+		\cmidrule{3-4} &           & Ladestation & Fahrzeug \\ \midrule
+	\end{tabularx}
+	\caption{Sicherheitskriterien Ladesysteme}
+	\label{tab_sich_Ladesys}
+\end{table}
