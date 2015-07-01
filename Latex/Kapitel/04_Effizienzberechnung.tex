@@ -1,10 +1,11 @@
 \chapter{Berechnung der Systemeigenschaften}
+\label{chap4}
 Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht ein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`\textsc{Primove} ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
 
 \section{Simulationsmodell}
 \marginpar{Gibt es dazu ne Quelle?} Ausgangspunkt ist das existierende Elektrobus-Simulationsmodell des Fachgebiets MPM der TU Berlin. Dieses Modell ermittelt aus einer aufgezeichneten Busstrecke sowie Busparametern und Naturkonstanten den Energieverbrauch des Busses auf dieser Strecke. Sowohl die nötige Antriebsenergie als auch die rekuperierbare Bremsenergie werden berechnet.
 
-Im Modell existierte nur eine Simulation für Lithium-Titanat-Batterien. Sie entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Titanat-batterie in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet. Daher wird für andere Batterietypen ein Modell nach Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Die Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Das Modell berechnet die kleinste Zellenzahl, die nötig ist um die Strecke mit einer definierbaren Reserve zu durchfahren.
+Im Modell existierte nur eine Simulation für Lithium-Titanat-Batterien. Sie entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Titanat-batterie\marginpar{LiFePO?} in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet. Daher wird für andere Batterietypen ein Modell nach Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Die Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Das Modell berechnet die kleinste Zellenzahl, die nötig ist um die Strecke mit einer definierbaren Reserve zu durchfahren.
 
 Die Ladezeit ist im Modell durch die aufgezeichnete Strecke festgelegt. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde ein separates Modell für den Ladevorgang erstellt. Es besteht aus der Batterie und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die gewünschten Ergebnisse können entnommen werden.
 
@@ -88,6 +89,7 @@ Es wird angenommen, das die Stromrichter in Ladesystem und fahrzeugseitiger Lade
 \begin{description}
 	\item[Effizienz] Definiert als das Verhältnis zwischen Energieverbrauch des Motors (aus der \emph{Verbrauchsrechnung}) und der aus dem Stromnetz entnommenen Energie (aus dem \emph{Ladeysytem}).
 	\item[Anteil Ladezeit] Die Ladezeit pro Betriebsstunde. \emph{Oder die Fahrstunden, die man pro Ladestunde kriegt?}
+	\item[Ladezyklen pro Kilometer] Wichtig für die Abschätzung der Lebensdauer.
 \end{description}
 
 \section{Ergebnisse}

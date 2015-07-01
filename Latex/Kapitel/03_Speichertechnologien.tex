@@ -110,7 +110,7 @@ Die negative Elektrode besteht in allen Fällen aus Graphit. Die Lithiumionen we
 Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die theoretische spezifische Energie ist ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht~\cite{Tie201382}. In der negativen Elektrode wird Graphit verwendet. Aufgrund des niedrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geeignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet~\cite{bydSpecs}.
 
 \paragraph{Lithium-Titanat}
-Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür aber eine weit höhere spezifische Lade- und Entladeleistung~\cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird zum Beispiel von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt~\cite{protCat}. \marginpar{BCG-Elektrobus}
+Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür aber eine weit höhere spezifische Lade- und Entladeleistung~\cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird zum Beispiel von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt~\cite{protCat}. \marginpar{BVG-Elektrobus}
 
 \subsubsection{Natrium-Nickelchlorid}
 Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Aluminiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen aus flüssigem Kochsalz und Nickel, der ebenfalls in flüssigem Kochsalz gelagert ist. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt~\cite{KiehneBattery}[S. 257ff].
@@ -132,47 +132,38 @@ Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoc
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}.
 
 \section{Parameter}
-Die Bewertungskriterien wurden ausgewählt, um neben den \emph{Kenndaten} die technischen Anforderungen von hoher \emph{Effizienz}, langer \emph{Lebensdauer} und hoher \emph{Sicherheit} widerzuspiegeln. \marginpar{Methodik?}
+Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchsimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert. 
 
-Die spezifischen Größen werden für einen gesamten Energiespeicher bestimmt, das Gehäuse und interne Verkabelung haben einen Einfluss auf diese Größen. \marginpar{Überarbeiten!}
+Elektrochemische Batterien werden mit einem Batteriemodell simuliert, Kondensator und Schwungrad werden als generische Energiespeicher mit konstanten Leistungsdaten und variabler Effizienz betrachtet.
+
+\subsection{Parameter für Batterien}
 \begin{description}
-	\item[Energiedichte, Gelegenheitsladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird. Dies entspricht einer Entladung mit 0,5C\footnote{\emph{C} ist eine für Batterien übliche Einheit der Belastung. Sie ist definiert als $\frac{Strom\ (in\ A)}{Ladung\ (in\ Ah)}$}\\
-	Einheit: $\frac{Wh}{l}$ \marginpar{$l$ oder $m^3$?}
-	\item[Spezifische Energie, Gelegenheitsladung] Die mit dieser Technologie erreichbare spezifische Energie, wenn der Energiespeicher in einer Stunde von 90\% auf 40\% entladen wird.\\
-	Einheit: $\frac{Wh}{kg}$
-	\item[Energiedichte, Nachtladung] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespeicher in 16 Stunden von 100\%auf 20\% entladen wird. Dies entspricht einer Entladung mit 0,05C\\
+	\item[Entladekurve] Graph von Spannung und Kapazität für verschiedene Ströme.
+	\item[Aufladung] Graph von Ladestrom in Abhängigkeit vom Ladezustand.
+	\item[Entladestrom] Der maximale Entladestrom.
+	\item[Gewicht] Das Gewicht einer Batterieinheit, inklusive Gehäuse und Verbindern.
+	\item[Volumen] Das Packvolumen einer Batterieinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.
+\end{description}
+
+\subsection{Parameter für Kondensatoren und Schwungräder}
+\begin{description}
+	\item[Energiedichte] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespiecher vollständig entladen und aufgeladen wird. Bei teilweiser Entladung lässt sich die Energiedichte durch Multiplikation mit der Entladetiefe (englisch: \emph{Depth of Discharge – DoD}) abschätzen.\\
 	Einheit: $\frac{Wh}{l}$
-	\item[Spezifische Energie, Nachtladung] Die mit dieser Technologie erreichbare spezifische Energie, wenn der Energiespeicher in 16 Stunden von 100\% auf 20\% entladen wird.\\
+	\item[Spezifische Energie] Die mit dieser Technologie erreichbare spezifische Energie.\\
 	Einheit: $\frac{Wh}{kg}$
 	\item[Leistungsdichte, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
 	Einheit: $\frac{W}{l}$
 	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
 	Einheit: $\frac{W}{kg}$
-	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\marginpar{Warum 30s? Warum 20\% SOC?}\\
+	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die für 10s erreicht werden kann.\\
 	Einheit: $\frac{W}{kg}$
-	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei 20\% Ladezustand für 30s erreicht werden kann.\\
+	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei für 10s erreicht werden kann.\\
 	Einheit: $\frac{W}{l}$
-	\item[Effizienz, Gelegenheitsladung] Das Verhältnis zwischen verwendeter und abgerufener elektrischer Energie, wenn der Energiespeicher mit der maximalen Laderate von 40\% auf 90\% Ladezustand geladen wird und dann mit 0,5C auf 40\% Ladezustand entladen wird.\\
+	\item[Effizienz] Das Verhältnis zwischen verwendeter und abgerufener elektrischer Energie, abhängig vom Ladezustand.\\
 	Einheit: 1
-	\item[Effizienz, Nachtladung] Das Verhältnis zwischen verwendeter und abrufbarer elektrischer Energie, wenn der Energiespeicher innerhalb von acht Stunden von 20\% Ladezustand auf 100\% Ladezustand aufgeladen wird und dann mit 0,05C auf 20\% Ladezustand entladen wird. Dies entspricht der Aufladung über Nacht im Depot oder der Aufladung von ausgewechselten Batterien in Batteriewechselsystemen.\\
-	Einheit: 1
-	\item[Nennladestrom] Der höchste durchschnittliche Ladestrom, mit dem im Bereich zwischen 40\% und 90\% Ladezustand geladen werden kann\footnote{Der Kehrwert entspricht der Ladedauer zwischen 40\% und 90\% Ladezustand.}.
-	Einheit: $C\hat{=} \frac{Strom}{Ladung}$
+	\item[Ladezeit] Die maximale Leistung, mit der kontinuierlich geladen werden kann.\\
+	Einheit: $\widetilde{C}\hat{=} \frac{W}{Wh}$
 \end{description}
-
-\subsection{Lebensdauer und Sicherheit}
-\begin{description}
-	\item[Lebensdauer, kalendarisch] Die Zeitdauer, bis die Batterie nur noch 80\% der Anfangskapazität hat~\cite{Sterner:2014}[S. 269]. \marginpar{Umwelt?, Energiespeicher statt Batterie}\\
-	Einheit: $a$
-	\item[Zyklenfestigkeit, Gelegenheitsladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat. Ein Ladezyklus ist eine Auf- und Entladung um die Nennkapazität\footnote{Also entspricht ein Ladezyklus \emph{zwei} Auf- und Entladungen zwischen 90\% und 40\%.}.\\
-	Einheit: $1$
-	\item[Zyklenfestigkeit, Nachtladung] Die Anzahl an Ladezyklen in diesem Ladeprofil, bis die Batterie nur noch 80\% der Anfangskapazität hat.\\
-	Einheit: $1$
-	\item[Temperatur für thermisches Durchgehen] Die Temperatur, ab der eine weitere Temperaturerhöhung unumkehrbar ist.\\
-	Einheit: $^\circ C$
-\end{description}
-
-\marginpar{Entsorgung + Subat}
 
 \section{Wertetabellen}
 \label{vergleichstabellen_speichertechnologien}
