@@ -147,37 +147,15 @@ Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoc
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}.
 
 \section{Parameter}
-Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchsimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert. 
-
-Elektrochemische Batterien werden mit einem Batteriemodell simuliert, Kondensator und Schwungrad werden als generische Energiespeicher mit konstanten Leistungsdaten und variabler Effizienz betrachtet.
+Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchsimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert.
 
 \subsection{Parameter für Batterien}
 \begin{description}
 	\item[Entladekurve] Graph von Spannung und Kapazität für verschiedene Ströme.
 	\item[Aufladung] Graph von Ladestrom in Abhängigkeit vom Ladezustand.
 	\item[Entladestrom] Der maximale Entladestrom.
-	\item[Gewicht] Das Gewicht einer Batterieinheit, inklusive Gehäuse und Verbindern.
-	\item[Volumen] Das Packvolumen einer Batterieinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.
-\end{description}
-
-\subsection{Parameter für Kondensatoren und Schwungräder}
-\begin{description}
-	\item[Energiedichte] Die mit dieser Technologie erreichbare Energiedichte, wenn der Energiespiecher vollständig entladen und aufgeladen wird. Bei teilweiser Entladung lässt sich die Energiedichte durch Multiplikation mit der Entladetiefe (englisch: \emph{Depth of Discharge – DoD}) abschätzen.\\
-	Einheit: $\frac{Wh}{l}$
-	\item[Spezifische Energie] Die mit dieser Technologie erreichbare spezifische Energie.\\
-	Einheit: $\frac{Wh}{kg}$
-	\item[Leistungsdichte, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
-	Einheit: $\frac{W}{l}$
-	\item[Spezifische Leistung, kontinuierlich] Für die Berechnung wird die maximale Dauerleistung verwendet.\\
-	Einheit: $\frac{W}{kg}$
-	\item[Leistungsdichte, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die für 10s erreicht werden kann.\\
-	Einheit: $\frac{W}{kg}$
-	\item[Spezifische Leistung, Anfahren] Für die Berechnung wird die maximale Leistung verwendet, die bei für 10s erreicht werden kann.\\
-	Einheit: $\frac{W}{l}$
-	\item[Effizienz] Das Verhältnis zwischen verwendeter und abgerufener elektrischer Energie, abhängig vom Ladezustand.\\
-	Einheit: 1
-	\item[Ladezeit] Die maximale Leistung, mit der kontinuierlich geladen werden kann.\\
-	Einheit: $\widetilde{C}\hat{=} \frac{W}{Wh}$
+	\item[Gewicht] Das Gewicht einer Batterieeinheit, inklusive Gehäuse und Verbindern.
+	\item[Volumen] Das Packvolumen einer Batterieeinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.
 \end{description}
 
 \section{Wertetabellen}

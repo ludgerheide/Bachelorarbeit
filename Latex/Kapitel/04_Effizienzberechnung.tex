@@ -1,108 +1,149 @@
-\chapter{Berechnung der Systemeigenschaften}
+\chapter{Simulation der Systemeigenschaften}
 \label{chap4}
 Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht ein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`\textsc{Primove} ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
 
 \section{Simulationsmodell}
-\marginpar{Gibt es dazu ne Quelle?} Ausgangspunkt ist das existierende Elektrobus-Simulationsmodell des Fachgebiets MPM der TU Berlin. Dieses Modell ermittelt aus einer aufgezeichneten Busstrecke sowie Busparametern und Naturkonstanten den Energieverbrauch des Busses auf dieser Strecke. Sowohl die nötige Antriebsenergie als auch die rekuperierbare Bremsenergie werden berechnet.
+\marginpar{Ausfüllen! Quelle?} Ausgangspunkt ist das existierende Elektrobus-Simulationsmodell des Fachgebiets MPM der TU Berlin. Es wurde im Rahneb einer xxx erstellt und 2010 um ein Klimamodell sowie xxx von yyy um ein Batteriemodell erweitert.
 
-Im Modell existierte nur eine Simulation für Lithium-Titanat-Batterien. Sie entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Titanat-batterie\marginpar{LiFePO?} in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet. Daher wird für andere Batterietypen ein Modell nach Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Die Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Das Modell berechnet die kleinste Zellenzahl, die nötig ist um die Strecke mit einer definierbaren Reserve zu durchfahren.
+\subsection{Energieverbrauch}
+Der erste Schritt der Simulation berechnet den Energieverbrauch aus einer aufgezeichneten Busfahrt. Dabei werden die Geschwindigkeit, Höhe und Passagierzahl als Vairablen sowie die Parameter des Busses als Konstanten verwendet. Mit den mechanischen Gesetzen zu Beschleunigung und Widerständen wird die zu jedem Zeitpunkt erforderliche Antriebsleistung mit einer Auflösung von einer Sekunde ermittelt. Über eine von xxx \marginpar{Quelle!} audgelegtes Motormodell wird aus der Wellenleistung die erforderliche elektrische Leistung und die verfügbare Rekuperationsleistung beim Bremsen berechnet.
 
-Die Ladezeit ist im Modell durch die aufgezeichnete Strecke festgelegt. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde ein separates Modell für den Ladevorgang erstellt. Es besteht aus der Batterie und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die gewünschten Ergebnisse können entnommen werden.
+\subsubsection{Nebenverbraucher}
+Neben Antrieb entfällt ein signifikanter Teil der Batterieleistung auf die sogenannten Nebenverbraucher. Der weitaus wichtigste Nebenverbraucher ist die Klimatisierung des Busses. Die Kühlung erfolgt wie in einem Dieselbus durch eine elektrische Klimaanlage\marginpar{korrekt?} mit einer maximalen Leistung von xx kW. Für die Heizung kann jedoch nicht die Abwärme des Motors benutzt werden, da der Elektromotor dafür viel zu effizient ist. Von daher wird der Bus direkt geheizt, was im Winter eine Heizleistung von durchschnittlich 10 kW erfordert. Da die Heizleistung im Winter über der Kühhleistung im Sommer leigt, wird für diese Simulation die Heizleistung verwendet.
 
-In Abbildung \ref{abb_sim} ist sind die Komponenten der Simulation als Flussdiagramm dargestellt.
+Für die anderen Nebenverbraucher wie Licht, Türen und Druckluft werden mit einer durchschnittlichen Leistung von 2 kW veranschlagt.
+
+\subsection{Batteriemodell}
+Da der Stromverbrauch durch, Strecke und Nebenverbraucher festgelegt ist, \emph{muss} die Batterie die geforderte Fahrleistung liefern. Sie \emph{kann} bis zu ihrer maximalen Ladeleistung Rekuperationsenergie nutzen. Darüber hinaus anfallende Bremsenergie wird in der Realität über einen Bremswiderstand auf dem Dach abgeleitet, in der Simulation wird sie ignoriert.
+
+Im Modell existierte nur eine Modell für Lithium-Einsenphosphat-Batterien. Es entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Eisenphosphat-batterie in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet.
+
+Daher in dieser Arbeit das empirische Modell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die Parameter der aus den Datenböättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst zu vermessen.
+
+\subsubsection{Dimensionierung}
+Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Durch iterative Optimierung wird die niedrigstmögliche Zellenzahl festgestellt. Als Randbedingung für die Optimierung wird ein maximaler und minimaler Ladezustand der Batterie verwendet. Daneben darf der maximale Entladestrom laut Datenblatt nicht überschritten werden.
+
+\subsubsection{Ladesystem}
+Im ursprünglichen Modell war die Ladezeit durch die aufgezeichnete Strecke festgelegt und nicht variabel. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde ein separates Modell für den Ladevorgang erstellt. Es besteht aus dem Batteriemodell und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die Ergebnisse können entnommen werden.
 
 \subsection{Wärmeberechnung}
-Der Abtransport der an der Batterie entstehenden Wärme stellt eine große Herausforderung bei der Auslagung eines Speichersystems dar. Durch Überhitzung kann die Batterie zerstört werden. Aber auch zulässige, aber innerhalb des Batteriepacks unterschiedliche Temperaturen führen zu einer unterschiedlichen Lebensdauer der verschiedenen Zellen und reduzieren so die Gesamtlebensdauer. Von daher wird in dieser Simulation auch die Größe des erforderlichen Kühlsystems abgeschätzt.
+Der Abtransport der an der Batterie entstehenden Wärme stellt eine große Herausforderung bei der Auslegung eines Speichersystems dar. Durch Überhitzung kann die Batterie zerstört werden. Aber auch zulässige, aber innerhalb des Batteriepacks unterschiedliche Temperaturen führen zu einer unterschiedlichen Lebensdauer der verschiedenen Zellen und reduzieren so die Gesamtlebensdauer. Von daher wird in dieser Simulation auch die Größe des erforderlichen Kühlsystems abgeschätzt.
 
-Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 1,5 verwendet.
+Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 2 verwendet. Die Erwärmung der Batterien wird mit der Batteriemasse aus dem entsprechenden Datenblatt und den von Pesaran ermittelten Wärmekapazizäten berechnet~\cite{pesaran2001battery}.
 
-Es wird eine parallele Luftkühlung verwendet, bei der die Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wurde wegen ihrer Einfachheit gewählt. Über 
+Es wird eine parallele Luftkühlung verwendet, bei der die jeweils Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wird von Pesaran als einfache Möglichkeit für eine gleichmäßige Temperatur im Batteriepack empfohlen~\cite{pesaran2001battery}. Es wird angenommen, das die Hälfte der Temperaturdifferenz zwischen Batterie und Umgebungsluft zur Kühlung verwendet werden kann. Als Umgebungstemperatur wird ein Wert von 40 $^{\circ}C$ angenommen, der noch eine kleine Reserve zur höchsten in Berlin gemessenen Temperatur von 38,1 $^{\circ}C$ bietet\cite{tempRekord}. Die benötigte Luftmenge wird mit durch einem PD-Regler berechnet und der Höchstwert in $\frac{g}{s}$ angegeben.
 
-
-
-
-
-
-
-\begin{figure}\centering
-	\includegraphics[height=18cm]{Simulation-Schaubild}
-	\caption[Flussdiagramm der Simulation]{Flussdiagramm der Simulation. Parallelogramme stellen Eingabedaten da, Rechtecke Prozesse. Rauten sind Ausgabedaten, orangene Rauten fließen in die Bewertung der Kombination ein. der \emph{orangene Pfeil}  zeigt die kreisförmige Abhängigkeit von Batteriemasse und Energieverbrauch.}
-	\label{abb_sim}
-\end{figure}
-
-\subsection{Verbrauchsrechung}
-Die Verbrauchsrechnung berechnet den Energieverbrauch des Antriebsstrangs auf einer bestimmten Strecke.
-
-Nebenverbraucher wie die Klimatisierung des Busses, Scheinwerfer, Druckluft etc. werden in dieses Simulation ausgeblendet. Sie sind unabhängig von Ladesystem und Speichertechnologie und von daher irrelevant für den Vergleich der Kombinationen.
-
-\subsubsection{Eingabedaten}
-\begin{description}
-	\item[Fahrstrecke] Die Fahrstrecke des Bussem bestehend aus Zeit, Geschwindigkeit und Passagierzahl. Beschleunigung und Strecke werden durch Differenzieren bzw. Integrieren der Geschwindigkeit bestimmt, nicht durch die direkt gemessene Strecke.
-	\item[Busparameter] Wirkungsrade für Antrieb und Rekuperation, Roll- und Luftwiderstände und Fahrzeugmasse.
-	\item[Batteriemasse] \emph{Wird vom Speichersystem berechnet.} Gesamtmasse der Batterie.\marginpar{fehlt}
-	\item[Ladesystemmasse] Gesamtmasse der busseitigen Komponenten des Ladesystems.
-\end{description}
-
-\subsubsection{Ausgabedaten}
-\begin{description}
-	\item[Energieverbrauch] Gesamtenergieverbrauch von Beginn der Strecke bis zum  Zeitpunkt \emph{t}.
-	\item[Leistungsprofil] Die zum Zeitpunkt \emph{t} geforderte Leistung. Der Wert kann positiv oder negativ sein. Die Batterie \emph{muss} die geforderte (positive) Traktionsleistung liefern, sie \emph{kann} die durch Rekuperation bereitgestellte (negative) Leistung bis zu ihrere maximalen Ladeleistung ausnutzen. Darüber hinausgehende Rekuperationsleistung wird in den Bremswiderständen in Hitze umgesetzt.
-\end{description}
-
-\subsection{Speichersystem}
-Das Speichersystem simuliert den Energiespeicher. Es kann eine bestimmte Energie (Einheit: $kWh$) speichern und abhängig vom Ladezustand eine begrenzte Leistung bereitstellen oder aufnehmen. Die Größe der Batterie wird durch eine Optimierung bestimmt. Intern besteht das Batteriemodell aus einer bestimmten Anzahl von Unterbatterien, die in Reihe oder parallel geschaltet sein können. Diese Unterbatterien können sowohl einzelne Zellen oder Batteriepacks sein.
-
-\subsubsection{Eingabedaten}
-\begin{description}
-	\item[Leistungsprofil] Die Energie, die das Speichersystem liefern muss. Die Spitzenleistung ist das Maximum des Leistungsprofils, die Energie ergibt sich durch integrieren und die Durchschnittsleistung durch Division der Energie durch die Zeit. 
-	\item[Parameter Unterbatterie] Gewicht, Volumen, Spannungskurven für verschiedene Ströme.
-\end{description}
-
-\subsubsection{Optimierung}
-Mithilfe der Optimierung soll die kleinste Batterie gefunden werden, die auf dieser Strecke verwendet werden kann. Als zu minimierende Kriterien können also austauschbar Anzahl der Unterbatterien, Masse, Energie und Volumen verwendet werden.
-\paragraph{Beschränkungen}
-\begin{itemize}
-	\item Pulsleistung
-	\item Dauerleistung
-	\item Ladezustand zu Beginn und Ende 
-\end{itemize}
-
-\subsubsection{Ausgabedaten}
-\begin{description}
-	\item[Batteriedaten] Gewicht und Größe der Batterie.
-	\item[Batteriebeschränkungen] Die maximale Dauer- und Pulsladeleistung der Batterie
-\end{description}
-
-\subsection{Ladesystem}
-Das Ladesystem modelliert den Ladevorgang, während der Bus an der Ladestation steht (dynamische Ladesysteme werden nicht berücksichtigt). Es erhält eine entladene Batterie und gibt eine aufgeladene Batterie sowie die verbrauchte Energie zurück.
-Es wird angenommen, das die Stromrichter in Ladesystem und fahrzeugseitiger Ladeelektrik Spannung und Strom immer an die gewünschte Ladekurve der Batterie anpassen können.
-
-\subsubsection{Eingabedaten}
-\begin{description}
-	\item[Ladekurve Batterie] Die Ladeleistung, die die Batterie bei einem bestimmten Ladezustand aufnehmen kann.
-	\item[Zustand der Batterie] Ladezustand der Batterie zu Beginn des Ladevorgangs.
-	\item[Spezifikation Ladesystem] Maximale Ladeleistung, Effizienz, Totzeiten.
-\end{description}
-
-\subsubsection{Ausgabedaten}
-\begin{description}
-	\item[Zustand der Batterie] Ladezustand der Batterie zum Ende des Ladevorgangs.
-	\item[Energieverbrauch] Energieverbrauch des Ladesystems.
-	\item[Zeitdauer] Dauer des Ladevorgangs.
-\end{description}
-
-\subsection{Kombination}
-
-\subsubsection{Eingabedaten}
-\begin{description}
-	\item[Ladestrategie] Die verwendete Ladestrategie. Dies beeinflusst die Anzahl Fahrzyklen, bevor geladen wird. \emph{Oder gehört das zum Ladesystem?}
-\end{description}
-
-\subsubsection{Ausgabedaten}
-\begin{description}
-	\item[Effizienz] Definiert als das Verhältnis zwischen Energieverbrauch des Motors (aus der \emph{Verbrauchsrechnung}) und der aus dem Stromnetz entnommenen Energie (aus dem \emph{Ladeysytem}).
-	\item[Anteil Ladezeit] Die Ladezeit pro Betriebsstunde. \emph{Oder die Fahrstunden, die man pro Ladestunde kriegt?}
-	\item[Ladezyklen pro Kilometer] Wichtig für die Abschätzung der Lebensdauer.
-\end{description}
+Es wird nicht unbedingt die ideale Kühlung für jede mögliche Batterie verwendet, sondern es werden vergleichbare Werte für verschiedene Batterien berechnet, in denen Masse, Wärmekapazität und Maximaltemperatur zusammengefasst sind.
 
 \section{Ergebnisse}
+
+Aus den unzähligen Ausgabedaten der Simulation wurden die folgenden ausgewählt, um die Kombinationen von Lade- und Speichersystem zu vergleichen:
+\begin{description}
+	\item[Batteriemasse] Einheit: $kg$
+	\item[Batterivolumen] Einheit: $l$
+	\item[Kühlluftmasse] Dieser Wert sollte nicht zur Auslegung eines Kühlsystems verwendet werden, sondern nur zum Vergleich der Lösungen untereinander.\\
+	Einheit: $\frac{g}{s}$
+	\item[Energieverbrauch] Einheit: $\frac{kWh}{km}$
+	\item[Zeiteffizienz] Der Anteil der Ladezeit an der Summe von Fahr- und Ladezeit. Kleinere Werte sind besser.
+	Einheit: $1$
+	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kobination auf die Lebensdauer der Batterie abgeschätzt werden.
+	Einheit: $1$
+\end{description}
+
+\subsection{Linie 204}
+\subsubsection{Nachtladung}
+Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 132 $km$. Nach Betriebsschluss wird der Bus über Nacht im Depot aufgeladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40kW gewählt.
+
+\begin{table}[h!]\centering
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Batterie    & Masse & Volumen &       Kühlung &          Energie & Ladezeit & Ladezyklen \\
+		            &  $kg$ &     $l$ & $\frac{g}{s}$ & $\frac{kWh}{km}$ &      $1$ &        $1$ \\ \midrule
+		Laptopzelle &  1122 &     405 &           264 &              1,9 &       0,33   & 0,0060 \\
+		Bleiakku    & 12249 &    4593 &           149 &              2,7 &       0,47   & 0,0061 \\
+		LiTiO       &  3636 &    2545 &             0 &              2,0 &       0,33   & 0,0059 \\
+		LiFePO      &  2086 &    1264 &          4945 &              1,9 &       0,32   & 0,0060 \\ \bottomrule
+	\end{tabular}
+	\caption{Simulationsergebnisse Nachtladung}
+\end{table}
+\FloatBarrier
+\subsubsection{Gelegenheitsladung}
+Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12 $km$. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachet.
+
+\begin{table}[h!]
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\begin{tabular}{lrrr}
+			\multicolumn{4}{c}{Batteriemassen in $kg$} \\ \toprule
+			Bat./LS     & 40kW & 200kW &         375kW \\ \midrule
+			Laptopzelle &  247 &   257 &           249 \\
+			Bleiakku    & 1944 &  1944 &          1944 \\
+			LiTiO       &  693 &   695 &           694 \\
+			LiFePO      &  434 &   434 &           434 \\ \bottomrule
+		\end{tabular} 
+		\caption{Batteriemassen Gelegnheitsladung}
+		
+		\begin{tabular}{lrrr}
+			 & & & \\
+			\multicolumn{4}{c}{Kühlbedarf in $\frac{g}{s}$} \\ \toprule
+			Bat./LS     & 40kW & 200kW &              375kW \\ \midrule
+			Laptopzelle &  206 &   197 &                207 \\
+			Bleiakku    & 1342 &  1381 &               1351 \\
+			LiTiO       &  504 &  1220 &               1217 \\
+			LiFePO      & 5096 &  5154 &               5110 \\ \bottomrule
+		\end{tabular} 
+		\caption{Kühlungsbedarf Gelegenheitsladung}
+		
+		\begin{tabular}{lrrr}
+			 & & & \\
+			\multicolumn{4}{c}{Anteil Ladezeit an Gesamtzeit} \\ \toprule
+			Bat./LS     & 40kW & 200kW &                375kW \\ \midrule
+			Laptopzelle & 0,38 &  0,37 &                 0,38 \\
+			Bleiakku    & 0,64 &  0,64 &                 0,64 \\
+			LiTiO       & 0,33 &  0,12 &                 0,12 \\
+			LiFePO      & 0,33 &  0,23 &                 0,23 \\ \bottomrule
+		\end{tabular} 
+		\caption{Ladezeitanteil Gelegenheitsladung}
+		
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\begin{tabular}{lrrr}
+			\multicolumn{4}{c}{Batterievolumina in $l$} \\ \toprule
+			Bat./LS     & 40kW & 200kW &          375kW \\ \midrule
+			Laptopzelle &   90 &    93 &             90 \\
+			Bleiakku    &  729 &   729 &            729 \\
+			LiTiO       &  485 &   487 &            486 \\
+			LiFePO      &  263 &   263 &            263 \\ \bottomrule
+		\end{tabular}
+		\caption{Batterievolumina Nachtladung}
+		
+		\begin{tabular}{lrrr}
+			 & & & \\
+			\multicolumn{4}{c}{Energieverbrauch in $\frac{kWh}{km}$} \\ \toprule
+			Bat./LS     & 40kW & 200kW &                       375kW \\ \midrule
+			Laptopzelle & 2.16 &  2.23 &                        2.16 \\
+			Bleiakku    & 2.66 &  2.77 &                        2.67 \\
+			LiTiO       & 1.98 &  2.21 &                        2.14 \\
+			LiFePO      & 2.02 &  2.12 &                        2.05 \\ \bottomrule
+		\end{tabular} 
+		\caption{Energieverbrauch Gelegenheitsladung}
+		
+		\begin{tabular}{lrrr}
+			 & & & \\
+			\multicolumn{4}{c}{Ladezyklen pro Kilometer} \\ \toprule
+			Bat./LS     &  40kW & 200kW &          375kW \\ \midrule
+			Laptopzelle & 0.030 & 0.029 &          0.030 \\
+			Bleiakku    & 0.036 & 0.037 &          0.037 \\
+			LiTiO       & 0.030 & 0.030 &          0.030 \\
+			LiFePO      & 0.030 & 0.030 &          0.030 \\ \bottomrule
+		\end{tabular} 
+		\caption{Ladezyklen pro Kilometer Gelegenheitsladung}	
+		
+	\end{minipage}
+	
+	
+\end{table}
+
+%\subsection{Linie M19}
+%Lipsumsdkjfgasdjkhf \marginpar{TODO!}
