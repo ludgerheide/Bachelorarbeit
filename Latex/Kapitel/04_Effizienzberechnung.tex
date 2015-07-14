@@ -11,6 +11,19 @@ Die Ladezeit ist im Modell durch die aufgezeichnete Strecke festgelegt. Da in di
 
 In Abbildung \ref{abb_sim} ist sind die Komponenten der Simulation als Flussdiagramm dargestellt.
 
+\subsection{Wärmeberechnung}
+Der Abtransport der an der Batterie entstehenden Wärme stellt eine große Herausforderung bei der Auslagung eines Speichersystems dar. Durch Überhitzung kann die Batterie zerstört werden. Aber auch zulässige, aber innerhalb des Batteriepacks unterschiedliche Temperaturen führen zu einer unterschiedlichen Lebensdauer der verschiedenen Zellen und reduzieren so die Gesamtlebensdauer. Von daher wird in dieser Simulation auch die Größe des erforderlichen Kühlsystems abgeschätzt.
+
+Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 1,5 verwendet.
+
+Es wird eine parallele Luftkühlung verwendet, bei der die Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wurde wegen ihrer Einfachheit gewählt. Über 
+
+
+
+
+
+
+
 \begin{figure}\centering
 	\includegraphics[height=18cm]{Simulation-Schaubild}
 	\caption[Flussdiagramm der Simulation]{Flussdiagramm der Simulation. Parallelogramme stellen Eingabedaten da, Rechtecke Prozesse. Rauten sind Ausgabedaten, orangene Rauten fließen in die Bewertung der Kombination ein. der \emph{orangene Pfeil}  zeigt die kreisförmige Abhängigkeit von Batteriemasse und Energieverbrauch.}

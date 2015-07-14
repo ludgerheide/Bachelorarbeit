@@ -34,6 +34,21 @@ Die Spannung einer einzelnen Batteriezelle ist durch die verwendeten chemischen 
 
 Die Bauformen sind sehr unterschiedlich, meist werden jedoch gewickelte oder ineinander geschachtelte, flache Elektroden verwendet um die Oberflächen und damit die Stromstärke zu maximieren~\cite{Sterner:2014}[S. 209ff].
 
+\subsubsection{Wärmeverluste} \label{sec_waermeverluste}
+In einer Batterie treten sowohl reversible als auch irreversible thermodynamische Prozesse auf. Die an den Elektroden ablaufenden Reaktionen sind je nach Materialpaarung und Reaktionsrichtung endotherm oder exotherm. Die reversible Erwärmung kann über die Summe der Entropieänderungen an beiden Elektroden berechnet werden~\cite{KiehneBattery}[S. 21ff].
+\begin{equation}\label{gl_entropie}
+	Q_{rev}=T(\Delta S_{Kat.~Reakt.} + \Delta S_{An.~Reakt.}) \frac{I}{nF}	
+\end{equation}
+In Gleichung \ref{gl_entropie} ist $I$ der Strom, $n$ die Anzahl der Elektronen pro Reaktion und $F$ die Faradaykonstante. 
+
+Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Innenwiderstand bestimmt ist. Im Innenwiderstand $R_i$ werden die Widerstände von ELektroden, Elektrolyt und der irreversible Anteil der Zellenraktion zusammengefasst.
+\begin{equation}\label{gl_innenwiderstand}
+Q_{irr}=-I^2\cdot R_i
+\end{equation}
+
+Das thermische Verhalten wir durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich beim langsamen laden oder entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entpricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
+
+
 \subsubsection{Blei-Säure}
 Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} auf Seite \pageref{Pb} aufgeführt~\cite{KiehneBattery}[S. 50].
 
