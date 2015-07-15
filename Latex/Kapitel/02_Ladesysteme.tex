@@ -29,7 +29,7 @@ Die Ladesysteme werden lassen sich nach den folgenden drei Kriterien kategorisie
 
 \section{Untersuchte Systeme}
 \label{untersuchte_Systeme}
-Für diese Arbeit wurden nur Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat\marginpar{Klarstellen!}. In Tabelle \ref{uebersichtLadesysteme} sind die Namen der Systeme in aufgeführt. 
+Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{uebersichtLadesysteme} sind sämtliche aktuell bekannten Systeme in aufgeführt. 
 \marginpar{Irgendwas fehlt in \ref{uebersichtLadesysteme}. was?}
 
 \begin{table}\centering %TODO: cmidrules
@@ -88,7 +88,7 @@ Der Trolleybus ist ein \emph{dynamisches} System, das die Aufladung während der
 \subsection{Induktive Ladesysteme}
 An einer elektrischen Leiterschleife fällt eine Spannung an, wenn sich das Magnetfeld um die Leiterschleife verändert – entweder durch eine Änderung der Feldstärke oder Drehung der Schleife im Feld. Durch die Kombination von zwei Spulen kann so Wechselstrom transportiert (und transformiert) werden. Im Transformator wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
 
-Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Daher geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
+\marginpar{holprig!}Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
 
 In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des Fahrzeugs angebracht, die Primärspule befindet sich unter dem Straßen- oder Haltestellenboden und kann befahren werden.
 
@@ -104,7 +104,7 @@ In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des F
 Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \emph{IPT} con \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}.
 
 \subsubsection{Dynamisch}
-Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen Vertikalen Abstand zwischen den Spulen. Da auch der minimale Abstand recht groß sein muss, um die Bodenfreiheit zu waren ist die Effizienz solcher Systeme niedrig~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
+Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen Vertikalen Abstand zwischen den Spulen. Um ein Aufestzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Dies führt zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
 
 \subsection{Batteriewechselsysteme}
 Im Gegensatz zu den anderen Systemen wird bei Batteriewechselsystemen keine elektrische Energie in das Fahrzeug übertragen sondern die komplette Batterie ausgewechselt. Statt Energietransport findet hier also Stofftransport zwischen Ladestation und Bus statt. 
@@ -159,62 +159,86 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 \section{Wertetabellen}
 \label{sec_tabellen_ladesysteme}
 \marginpar{Methodik!}
-
+\FloatBarrier
 \subsection{Mechanische Kriterien}
-
-\subsection{Elektrische Kriterien}
-
-\subsection{Zuverlässigkeit}
-
 %%%% MECHANISCHE TABELLEN %%%%
-\begin{table}\centering
-	\begin{tabularx}{\linewidth}{XXX}
+\begin{table}[h!]\centering
+	\begin{tabularx}{\textwidth}{lXlr}
 		\toprule
-		System & Ladestrategie & Totzeit \\
-		       &               & $s$     \\ \midrule
+		System                         & Kurzname & Ladestrategie        & Totzeit \\
+		                               &          &                      & $s$     \\ \midrule
+		1x \textsc{IEC 62196-2}        & 40kW     & Nacht \& Gelegenheit & \emph{60} \\
+		\textsc{primove}               & 200kW    & Gelegenheitsladen    & 4 \\
+		\textsc{Schunk Smart Charging} & 375kW    & Gelegenheitsladen    & 8 \\
+		Batteriewechsel                & Swap     & Nacht \& Gelegenheit & 420 \\ \bottomrule
 	\end{tabularx}
-	\caption{Allgemeine mechanische Kriterien Ladesysteme}
+	\caption[Allgemeine mechanische Kriterien Ladesysteme]{Allgemeine mechanische Kriterien Ladesysteme. \emph{Kursive} Werte sind geschätzt}
 	\label{tab_mech_Ladesys_allg}
 \end{table}
 
-\begin{table}\centering
+\begin{table}[h!]\centering
 	\begin{tabularx}{\linewidth}{Xllllll}
 		\toprule
-		System & Maße fest & Maße frei & Masse & Freiheitsgrade & Genauigkeit    & Wandler \\
-		       & $m^3$     & $m^3$     & $kg$  & $1$            & $m^2,^{\circ}$ & $1$     \\ \midrule
+		System & Maße fest & Maße frei  & Masse     & Freiheitsgrade & Genauigkeit            & Wandler \\
+		       & $l$       & $l$        & $kg$      & $1$            & $m^2,^{\circ}$         & $1$     \\ \midrule
+		40kW   & 0         & \emph{50}  & \emph{50} & 0              & 47$m^2$, 360$^{\circ}$ & ??      \\
+		200kW  & 198       & \emph{100} & 450       & 1              & ???                    & ??      \\
+		375kW  & 1000      & \emph{100} & 185       & 2              & 1,75$m^2$, 2$^{\circ}$ & ??      \\
+		Swap   & 0         & 0          & 0         & 0              & irrelevant             & ??      \\ \bottomrule
 	\end{tabularx}
-	\caption{Mechanische Kriterien der Ladesysteme – fahrzeugseitig}
+	\caption[Mechanische Kriterien der Ladesysteme – fahrzeugseitig]{Mechanische Kriterien der Ladesysteme – fahrzeugseitig. \emph{Kursive} Werte sind geschätzt}
 	\label{tab_mech_Ladesys_fzg}
 \end{table}
 
-\begin{table}\centering
-	\begin{tabularx}{\linewidth}{Xllll}
+\begin{table}[h!]\centering
+	\begin{tabularx}{\linewidth}{Xrrrr}
 		\toprule
-		System & Maße fest & Maße frei & Freiheitsgrade & Wandler \\
-		& $m^3$     & $m^3$     & $1$            & $1$     \\ \midrule
+		System & Maße fest &   Maße frei & Freiheitsgrade & Wandler \\
+		       &     $m^3$ &       $m^3$ &            $1$ &     $1$ \\ \midrule
+		40kW   &         0 &          88 &              0 &      ?? \\
+		200kW  &      1800 &        \emph{2000} &              0 &      ?? \\
+		375kW  &       325 & \emph{2000} &              0 &      ?? \\
+		Swap   &         0 &   $\gg10.000$ &             $>2$ &      ?? \\ \bottomrule
 	\end{tabularx}
 	\caption{Mechanische Kriterien der Ladesysteme – stationsseitig}
 	\label{tab_mech_Ladesys_stat}
 \end{table}
+\FloatBarrier
 
+\subsection{Elektrische Kriterien}
 %%%% ELEKTRISCHE TABELLE %%%%
-\begin{table}\centering
+\begin{table}[h!]\centering
 	\begin{tabularx}{\linewidth}{XXX}
 		\toprule
 		System & Leistung & Effizienz \\
-		       & $W$      & $\%$       \\ \midrule
+		       & $kW$     & $\%$      \\ \midrule
+		40kW   & 40       & \emph{98} \\
+		200kW  & 200      & 95 \\
+		375kW  & 375      & \emph{98} \\
+		Swap   & $\infty$ & \emph{99} \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrische Kriterien der Ladesysteme}
 	\label{tab_el_Ladesys}
 \end{table}
+\FloatBarrier
+
+\subsection{Zuverlässigkeit}
 
 %%%% SICHERHEIT %%%%
-\begin{table}\centering
+\begin{table}[h!]\centering
 	\begin{tabularx}{\linewidth}{XXXX}
 		\toprule
 		System         & Exponierte Leiter & \multicolumn{2}{c}{Zugänglichkeit Schnittstelle} \\
-		\cmidrule{3-4} &           & Ladestation & Fahrzeug \\ \midrule
+		\cmidrule{3-4} &                   & Ladestation  & Fahrzeug                          \\ \midrule
+		40kW           & nie               & Bodenhöhe    & Bodenhöhe \\
+		200kW          & nie               & Unterflur    & Unterseite \\
+		375kW          & nur beim Laden    & Eröht       & Dach \\
+		Swap           & nie               & Unzugänglich & Bodenhöhe \\ \bottomrule
 	\end{tabularx}
 	\caption{Sicherheitskriterien der Ladesysteme}
 	\label{tab_sich_Ladesys}
 \end{table}
+\FloatBarrier
+
+
+

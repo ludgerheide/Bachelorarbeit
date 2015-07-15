@@ -46,7 +46,7 @@ Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Inne
 Q_{irr}=-I^2\cdot R_i
 \end{equation}
 
-Das thermische Verhalten wir durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich beim langsamen laden oder entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entpricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
+Das thermische Verhalten wir durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich bei langsamen Laden oder Entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entspricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
 
 
 \subsubsection{Blei-Säure}
@@ -147,16 +147,41 @@ Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoc
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}.
 
 \section{Parameter}
-Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchsimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert.
+Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchssimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert.
 
-\subsection{Parameter für Batterien}
+Die Entlade- und Ladekurven der Batterien sind in Anhang \ref{an_Datenblaetter} zu finden. Wenn keine Kurve für das Verhältnis von Ladestrom zu Ladezustand verfügbar war, wurde sie mit einer simulierten CC-CV-Aufladung ermittelt.
 \begin{description}
 	\item[Entladekurve] Graph von Spannung und Kapazität für verschiedene Ströme.
 	\item[Aufladung] Graph von Ladestrom in Abhängigkeit vom Ladezustand.
-	\item[Entladestrom] Der maximale Entladestrom.
-	\item[Gewicht] Das Gewicht einer Batterieeinheit, inklusive Gehäuse und Verbindern.
-	\item[Volumen] Das Packvolumen einer Batterieeinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.
+\end{description}
+Die folgenden Paramter sind in Abschnitt \ref{vergleichstabellen_speichertechnologien} aufgelistet:
+\begin{description}
+	\item[Maximaler Entladestrom] Es wird er maximale Pulsstrom für einen ca. 30-sekündigen Stromstoß verwendet.\\
+	Einheit: $A$
+	\item[Innenwiderstand] Sollte kein Innenwiderstand dokumentiert sein, wird als Schätzwert 1\% der Nennleistung verwendet.\\
+	Einheit: $m\Omega$
+	\item[Gewicht] Einheit: $kg$
+	\item[Volumen] Das Packvolumen einer Batterieeinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.\\
+	Einheit: $l$
+	\item[Wärmekapazität] Die spezifische Wärmekapzität einer Batterie dieses Typs nach Pesaran~\cite{pesaran2001battery}.\\
+	Einheit: $\frac{kJ}{kg\cdot K}$
+	\item[Höchsttemperatur] Wenn sich Lade- und Entladetemperatur unterscheiden wird der jeweils kleinere Wert verwendet.
+	Einheit: $^{\circ}C$
 \end{description}
 
-\section{Wertetabellen}
+\section{Wertetabelle}
+\FloatBarrier
+\begin{table}[h!]\centering
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Batterie    & Strom & Widerstand & Gewicht & Volumen &                  $c_p$ &  Temperatur \\
+		            &   $A$ &  $m\Omega$ &    $kg$ &     $l$ & $\frac{kJ}{kg\cdot K}$ & $^{\circ}C$ \\ \midrule
+		Laptopzelle &   7,2 &        1,8 &  0,0485 &  0,0176 &                  0,795 &          45 \\
+		Bleiakku    &   180 &        3,5 &      21 &     7,9 &                  0,660 &          50 \\
+		LiTiO       &   133 &        1,2 &       2 &     1,4 &                  0,795 &          55 \\
+		LiFePO      &   160 &        2,0 &    0,99 &     0,6 &                  0,795 &          45 \\ \bottomrule
+	\end{tabular}
+	\caption{Parameter der Batterien}
+\end{table}
+\FloatBarrier
 \label{vergleichstabellen_speichertechnologien}

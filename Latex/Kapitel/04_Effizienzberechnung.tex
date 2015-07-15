@@ -55,7 +55,7 @@ Aus den unzähligen Ausgabedaten der Simulation wurden die folgenden ausgewählt
 Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 132 $km$. Nach Betriebsschluss wird der Bus über Nacht im Depot aufgeladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40kW gewählt.
 
 \begin{table}[h!]\centering
-	\begin{tabular}{lrrrrrr}
+	\begin{tabularx}{\textwidth}{Xrrrrrr}
 		\toprule
 		Batterie    & Masse & Volumen &       Kühlung &          Energie & Ladezeit & Ladezyklen \\
 		            &  $kg$ &     $l$ & $\frac{g}{s}$ & $\frac{kWh}{km}$ &      $1$ &        $1$ \\ \midrule
@@ -63,7 +63,7 @@ Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenlade
 		Bleiakku    & 12249 &    4593 &           149 &              2,7 &       0,47   & 0,0061 \\
 		LiTiO       &  3636 &    2545 &             0 &              2,0 &       0,33   & 0,0059 \\
 		LiFePO      &  2086 &    1264 &          4945 &              1,9 &       0,32   & 0,0060 \\ \bottomrule
-	\end{tabular}
+	\end{tabularx}
 	\caption{Simulationsergebnisse Nachtladung}
 \end{table}
 \FloatBarrier
@@ -116,7 +116,7 @@ Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von H
 			LiTiO       &  485 &   487 &            486 \\
 			LiFePO      &  263 &   263 &            263 \\ \bottomrule
 		\end{tabular}
-		\caption{Batterievolumina Nachtladung}
+		\caption{Batterievolumina Gelegenheitsladung}
 		
 		\begin{tabular}{lrrr}
 			 & & & \\
