@@ -9,28 +9,28 @@ Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem
 
 \begin{figure}\centering
 	\includegraphics[width=\textwidth]{Buslinien}
-	\caption[Verlauf und Geschwindigkeitsprofil der Buslinien]{Verlauf und Geschwindigkeitsprofil der Buslinien. Quelle: MPM TU Berlin}
+	\caption[Verlauf und Geschwindigkeitsprofil der Buslinien]{Verlauf und Geschwindigkeitsprofil der Buslinien. Quelle: Eigene Arbeit nach Daten von MPM TU Berlin}
 	\label{Buslinien}
 \end{figure}
 
-Der erste Schritt der Simulation berechnet den Energieverbrauch aus einer aufgezeichneten Busfahrt. Die beiden verwendeten Aufzeichnungen sind in Abbildung \ref{Buslinien} zu sehen. In dieser Arbeit werden die Buslinien 204 und 192 der BVG betrachtet. die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz, sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde. Sie führt durch den Stadtrand, wie in der Abbildung ersichtlich ist hier die Durchschnittsgeschwindigkeit höher und das Geschwindigkeitsprofil gleichmäßiger.
+Der erste Schritt der Simulation berechnet den Energieverbrauch aus einer aufgezeichneten Busfahrt. Die beiden verwendeten Aufzeichnungen sind in Abbildung \ref{Buslinien} zu sehen. Es werden die Buslinien 204 und 192 der BVG betrachtet. Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz, sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde. Sie führt durch den Stadtrand, wie in der Abbildung ersichtlich ist hier die Durchschnittsgeschwindigkeit höher und das Geschwindigkeitsprofil gleichmäßiger.
 
-Dabei werden die Geschwindigkeit, Höhe und Passagierzahl als Variablen sowie die Parameter des Busses als Konstanten verwendet. Mit den mechanischen Gesetzen zu Beschleunigung und Widerständen wird die zu jedem Zeitpunkt erforderliche Antriebsleistung mit einer Auflösung von einer Sekunde ermittelt. Über eine von xxx \marginpar{Quelle!} audgelegtes Motormodell wird aus der Wellenleistung die erforderliche elektrische Leistung und die verfügbare Rekuperationsleistung beim Bremsen berechnet.
+Dabei werden die Geschwindigkeit, Höhe und Passagierzahl als Variablen sowie die Parameter des Busses als Konstanten verwendet. Mit den mechanischen Gesetzen zu Beschleunigung und Widerständen wird die zu jedem Zeitpunkt erforderliche Antriebsleistung mit einer Auflösung von einer Sekunde ermittelt. Über eine von xxx \marginpar{Quelle!} ausgelegtes Motormodell wird aus der Wellenleistung die erforderliche elektrische Leistung und die verfügbare Rekuperationsleistung beim Bremsen berechnet.
 
 \subsubsection{Nebenverbraucher}
-Neben Antrieb entfällt ein signifikanter Teil der Batterieleistung auf die sogenannten Nebenverbraucher. Der weitaus wichtigste Nebenverbraucher ist die Klimatisierung des Busses. Die Kühlung erfolgt wie in einem Dieselbus durch eine elektrische Klimaanlage\marginpar{korrekt?} mit einer maximalen Leistung von xx kW. Für die Heizung kann jedoch nicht die Abwärme des Motors benutzt werden, da der Elektromotor dafür viel zu effizient ist. Von daher wird der Bus direkt geheizt, was im Winter eine Heizleistung von durchschnittlich 10 kW erfordert. Da die Heizleistung im Winter über der Kühhleistung im Sommer leigt, wird für diese Simulation die Heizleistung verwendet.
+Neben Antrieb entfällt ein signifikanter Teil der Batterieleistung auf die sogenannten Nebenverbraucher. Der weitaus wichtigste Nebenverbraucher ist die Klimatisierung des Busses. Die Kühlung erfolgt wie in einem Dieselbus durch eine elektrische Klimaanlage mit einer maximalen Leistung von 3 kW an heißen Tagen. Für die Heizung kann jedoch nicht die Abwärme des Motors benutzt werden, da der Elektromotor dafür viel zu effizient ist. Im Berliner Elektrobus sollte eine Wärmepumpe verwendet werden. Damit kann mehr Wärme in den Bus transportiert werden als elektrsiche Energie aufgewandt wird. Aufgrund von mangelnder Zuverlässigkeit wird aktuell eine direkte Heizung mit einer Leistung von durchschnittlich 10 kW an kalten Tagen verwendet. Es ist damit zu rechnen, das neue Elektrobusse auch eine Wärmepumpe zur Heizung verwenden werden. Daher wurde die Heiz- und Kühlleistung mit 3 kW abgeschätzt.
 
 Für die anderen Nebenverbraucher wie Licht, Türen und Druckluft werden mit einer durchschnittlichen Leistung von 2 kW veranschlagt.
 
 \subsection{Batteriemodell}
 Da der Stromverbrauch durch, Strecke und Nebenverbraucher festgelegt ist, \emph{muss} die Batterie die geforderte Fahrleistung liefern. Sie \emph{kann} bis zu ihrer maximalen Ladeleistung Rekuperationsenergie nutzen. Darüber hinaus anfallende Bremsenergie wird in der Realität über einen Bremswiderstand auf dem Dach abgeleitet, in der Simulation wird sie ignoriert.
 
-Im Modell existierte nur eine Modell für Lithium-Einsenphosphat-Batterien. Es entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Eisenphosphat-batterie in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet.
+Im Modell existierte nur ein Modell für Lithium-Einsenphosphat-Batterien. Es entspricht dem empirischen Model von Lam und Bauer \cite{lam2011practical}. Dieses Modell stellt eine Lithium-Eisenphosphat-Batterie in hoher Qualität dar, ist jedoch für andere Batterietypen ungeeignet.
 
-Daher in dieser Arbeit das empirische Modell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die Parameter der aus den Datenböättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst zu vermessen.
+Daher in dieser Arbeit das empirische Modell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses Modell liefert weniger exakte Daten, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die Parameter der aus den Datenblättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst zu vermessen.
 
 \subsubsection{Dimensionierung}
-Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Durch iterative Optimierung wird die niedrigstmögliche Zellenzahl festgestellt. Als Randbedingung für die Optimierung wird ein maximaler und minimaler Ladezustand der Batterie verwendet. Daneben darf der maximale Entladestrom laut Datenblatt nicht überschritten werden.
+Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Durch iterative Optimierung wird die niedrigst mögliche Zellenzahl festgestellt. Als Randbedingung für die Optimierung wird ein maximaler und minimaler Ladezustand der Batterie verwendet. Daneben darf der maximale Entladestrom laut Datenblatt nicht überschritten werden.
 
 \subsubsection{Ladesystem}
 Im ursprünglichen Modell war die Ladezeit durch die aufgezeichnete Strecke festgelegt und nicht variabel. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde ein separates Modell für den Ladevorgang erstellt. Es besteht aus dem Batteriemodell und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die Ergebnisse können entnommen werden.
@@ -38,7 +38,7 @@ Im ursprünglichen Modell war die Ladezeit durch die aufgezeichnete Strecke fest
 \subsection{Wärmeberechnung}
 Der Abtransport der an der Batterie entstehenden Wärme stellt eine große Herausforderung bei der Auslegung eines Speichersystems dar. Durch Überhitzung kann die Batterie zerstört werden. Aber auch zulässige, aber innerhalb des Batteriepacks unterschiedliche Temperaturen führen zu einer unterschiedlichen Lebensdauer der verschiedenen Zellen und reduzieren so die Gesamtlebensdauer. Von daher wird in dieser Simulation auch die Größe des erforderlichen Kühlsystems abgeschätzt.
 
-Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 2 verwendet. Die Erwärmung der Batterien wird mit der Batteriemasse aus dem entsprechenden Datenblatt und den von Pesaran ermittelten Wärmekapazizäten berechnet~\cite{pesaran2001battery}.
+Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 2 verwendet. Die Erwärmung der Batterien wird mit der Batteriemasse aus dem entsprechenden Datenblatt und den von Pesaran ermittelten Wärmekapazitäten berechnet~\cite{pesaran2001battery}.
 
 Es wird eine parallele Luftkühlung verwendet, bei der die jeweils Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wird von Pesaran als einfache Möglichkeit für eine gleichmäßige Temperatur im Batteriepack empfohlen~\cite{pesaran2001battery}. Es wird angenommen, das die Hälfte der Temperaturdifferenz zwischen Batterie und Umgebungsluft zur Kühlung verwendet werden kann. Als Umgebungstemperatur wird ein Wert von 40 $^{\circ}C$ angenommen, der noch eine kleine Reserve zur höchsten in Berlin gemessenen Temperatur von 38,1 $^{\circ}C$ bietet\cite{tempRekord}. Die benötigte Luftmenge wird mit durch einem PD-Regler berechnet und der Höchstwert in $\frac{g}{s}$ angegeben.
 
@@ -49,111 +49,213 @@ Es wird nicht unbedingt die ideale Kühlung für jede mögliche Batterie verwend
 Aus den unzähligen Ausgabedaten der Simulation wurden die folgenden ausgewählt, um die Kombinationen von Lade- und Speichersystem zu vergleichen:
 \begin{description}
 	\item[Batteriemasse] Einheit: $kg$
-	\item[Batterivolumen] Einheit: $l$
+	\item[Batterievolumen] Einheit: $l$
 	\item[Kühlluftmasse] Dieser Wert sollte nicht zur Auslegung eines Kühlsystems verwendet werden, sondern nur zum Vergleich der Lösungen untereinander.\\
 	Einheit: $\frac{g}{s}$
 	\item[Energieverbrauch] Einheit: $\frac{kWh}{km}$
 	\item[Zeiteffizienz] Der Anteil der Ladezeit an der Summe von Fahr- und Ladezeit. Kleinere Werte sind besser.
-	Einheit: $1$ bei Gelegeheitsladung, $h$ bei Nachtladung
-	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kobination auf die Lebensdauer der Batterie abgeschätzt werden.
+	Einheit: $1$ bei Gelegenheitsladung, $h$ bei Nachtladung
+	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kombination auf die Lebensdauer der Batterie abgeschätzt werden.
 	Einheit: $1$
 \end{description}
 
 \subsection{Linie 204}
 \subsubsection{Nachtladung}
-Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 132 $km$. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40kW gewählt.
+Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 132 $km$. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40kW gewählt. Die Ergebnisse sind in Tabelle \ref{204nacht} aufgeführt.
 
-\begin{table}[h!]\centering
+\begin{table}\centering
 	\begin{tabularx}{\textwidth}{Xrrrrrr}
 		\toprule
-		Batterie    & Masse & Volumen &       Kühlung &          Energie & Ladezeit & Ladezyklen \\
-		            &  $kg$ &     $l$ & $\frac{g}{s}$ & $\frac{kWh}{km}$ &      $h$ &        $1$ \\ \midrule
-		18650 &  681 &     246 &           1673 &              1,20 &       4,7   & 0,0063 \\
-		Bleiakku    & 8217 &    3082 &           512 &              1,91 &      9,5    & 0,0063 \\
-		LiTiO       &  2174 &    1522 &             190 &              1,26 &       4,9   & 0,0062 \\
-		LiFePO-HE      &  1214 &    736 &          5254 &              1,16 &       4,0   & 0,0063 \\ 
-		LiFePO-HP      &  1577 &    824 &          4941 &              1,24 &       5,0  & 0,0063 \\ \bottomrule
+		Batterie & Masse & Volumen &       Kühlung &          Energie & Ladezeit & Ladezyklen \\
+		         &  $kg$ &     $l$ & $\frac{g}{s}$ & $\frac{kWh}{km}$ &      $h$ &        $1$ \\ \midrule
+		18650    &   681 &     246 &          1673 &             1,20 &      4,7 &     0,0063 \\
+		Bleiakku &  8217 &    3082 &           512 &             1,91 &      9,5 &     0,0063 \\
+		LiTiO    &  2174 &    1522 &           190 &             1,26 &      4,9 &     0,0062 \\
+		LFP-HE   &  1214 &     736 &          5254 &             1,16 &      4,0 &     0,0063 \\
+		LFP-HP   &  1577 &     824 &          4941 &             1,24 &      5,0 &     0,0063 \\ \bottomrule
 	\end{tabularx}
-	\caption{Simulationsergebnisse Nachtladung}
+	\caption{Simulationsergebnisse Nachtladung Linie 204}
+	\label{204nacht}
 \end{table}
-\FloatBarrier
 \subsubsection{Gelegenheitsladung}
-Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12 $km$. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachet.
+Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12 $km$. Der Akku darf höchstens auf 30\% Ladezustand entladen werden und wird auf 70\% Ladezustand aufgeladen. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebnisse sind in den Tabellen \ref{204_a} bis \ref{204_e} aufgeführt.
 
-\begin{table}[h!]
+\begin{table}
 	\begin{minipage}{0.45\textwidth}
 		\centering
-		\begin{tabular}{lrrrrr}
-			\multicolumn{5}{c}{Batteriemassen in $kg$} \\ \toprule
-			Bat./LS     & 40kW & 200kW &         375kW & Swap\\ \midrule
-			18650 &  247 &   257 &           249 & \\
-			Bleiakku    & 1944 &  1944 &          1944 & \\
-			LiTiO       &  693 &   695 &           694 & \\
-			LiFePO      &  434 &   434 &           434 & \\ \bottomrule 
+		\begin{tabular}{lrrrr}
+			\multicolumn{5}{c}{Batteriemassen in $kg$}   \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &     Swap   \\ \midrule
+			18650    &  197 &   200 &   198 &      197   \\
+			Bleiakku & 1663 &  1704 &  1667 &     1660   \\
+			LiTiO    &  499 &   505 &   501 &      498   \\
+			LFP-HE   &  291 &   293 &   291 &      290   \\
+			LFP-HP   &  387 &   390 &   388 &      386   \\ \bottomrule
+		\end{tabular}
+		\caption{Batteriemassen Linie 204 Gelegnheitsladung}
+		\label{204_a}
+		\begin{tabular}{lrrrr}
+			         &      &       &       &  \\
+			\multicolumn{5}{c}{Kühlbedarf in $\frac{g}{s}$}  \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &          Swap   \\ \midrule
+			18650    &  305 &   299 &   300 &           340   \\
+			Bleiakku & 1397 &  1367 &  1401 &          1393   \\
+			LiTiO    &  631 &  1358 &  1349 &          1343   \\
+			LFP-HE   & 5670 &  5720 &  5683 &          5658   \\
+			LFP-HP   & 4333 &  4369 &  4342 &          4324   \\ \bottomrule
 		\end{tabular} 
-		\caption{Batteriemassen Gelegnheitsladung}
-		
-		\begin{tabular}{lrrrrr}
-			 & & & & \\
-			\multicolumn{5}{c}{Kühlbedarf in $\frac{g}{s}$} \\ \toprule
-			Bat./LS     & 40kW & 200kW &              375kW & Swap\\ \midrule
-			18650 &  206 &   197 &                207 & \\
-			Bleiakku    & 1342 &  1381 &               1351 & \\
-			LiTiO       &  504 &  1220 &               1217 & \\
-			LiFePO      & 5096 &  5154 &               5110 & \\ \bottomrule 
-		\end{tabular} 
-		\caption{Kühlungsbedarf Gelegenheitsladung}
+		\caption{Kühlungsbedarf Linie 204 Gelegenheitsladung}
 		
 		\begin{tabular}{lrrrr}
-			 & & & & \\
+			         &      &       &       &  \\
 			\multicolumn{5}{c}{Anteil Ladezeit an Gesamtzeit} \\ \toprule
-			Bat./LS     & 40kW & 200kW &                375kW & Swap\\ \midrule
-			18650 & 0,38 &  0,37 &                 0,38 & \\
-			Bleiakku    & 0,64 &  0,64 &                 0,64 & \\
-			LiTiO       & 0,33 &  0,12 &                 0,12 & \\
-			LiFePO      & 0,33 &  0,23 &                 0,23 & \\ \bottomrule 
+			Bat./LS  & 40kW & 200kW & 375kW &            Swap \\ \midrule
+			18650    & 0,35 &  0,35 &  0,35 &            0,08 \\
+			Bleiakku & 0,60 &  0,60 &  0,60 &            0,08 \\
+			LiTiO    & 0,24 &  0,10 &  0,10 &            0,08 \\
+			LFP-HE   & 0,26 &  0,23 &  0,23 &            0,08 \\
+			LFP-HP   & 0,38 &  0,37 &  0,37 &            0,08 \\ \bottomrule
 		\end{tabular} 
-		\caption{Ladezeitanteil Gelegenheitsladung}
+		\caption{Ladezeitanteil Linie 204 Gelegenheitsladung}
 		
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
 		\begin{tabular}{lrrrr}
 			\multicolumn{5}{c}{Batterievolumina in $l$} \\ \toprule
-			Bat./LS     & 40kW & 200kW &          375kW & Swap\\ \midrule
-			18650 &   90 &    93 &             90 & \\
-			Bleiakku    &  729 &   729 &            729 & \\
-			LiTiO       &  485 &   487 &            486 & \\
-			LiFePO      &  263 &   263 &            263 & \\ \bottomrule 
+			Bat./LS  & 40kW & 200kW & 375kW &      Swap \\ \midrule
+			18650    &   71 &    72 &    72 &        71 \\
+			Bleiakku &  624 &   639 &   625 &       622 \\
+			LiTiO    &  349 &   353 &   350 &       348 \\
+			LFP-HE   &  176 &   178 &   177 &       176 \\
+			LFP-HP   &  202 &   204 &   202 &       202 \\ \bottomrule
 		\end{tabular}
-		\caption{Batterievolumina Gelegenheitsladung}
+		\caption{Batterievolumina Linie 204 Gelegenheitsladung}
 		
 		\begin{tabular}{lrrrr}
-			 & & & & \\
+			         &      &       &       &  \\
 			\multicolumn{5}{c}{Energieverbrauch in $\frac{kWh}{km}$} \\ \toprule
-			Bat./LS     & 40kW & 200kW &                       375kW & Swap\\ \midrule
-			18650 & 2.16 &  2.23 &                        2.16 & \\
-			Bleiakku    & 2.66 &  2.77 &                        2.67 & \\
-			LiTiO       & 1.98 &  2.21 &                        2.14 & \\
-			LiFePO      & 2.02 &  2.12 &                        2.05 & \\ \bottomrule 
+			Bat./LS  & 40kW & 200kW & 375kW &                   Swap \\ \midrule
+			18650    & 1,48 &  1,56 &  1,48 &                   1,47 \\
+			Bleiakku & 1,91 &  2,00 &  1,91 &                   1,90 \\
+			LiTiO    & 1,24 &  1,39 &  1,33 &                   1,32 \\
+			LFP-HE   & 1,39 &  1,46 &  1,40 &                   1,39 \\
+			LFP-HP   & 1,48 &  1,57 &  1,49 &                   1,49 \\ \bottomrule
 		\end{tabular} 
-		\caption{Energieverbrauch Gelegenheitsladung}
+		\caption{Energieverbrauch Linie 204 Gelegenheitsladung}
 		
 		\begin{tabular}{lrrrr}
-			 & & & & \\
+			         &       &       &       &  \\
 			\multicolumn{5}{c}{Ladezyklen pro Kilometer} \\ \toprule
-			Bat./LS     &  40kW & 200kW &          375kW & Swap\\ \midrule
-			18650 & 0.030 & 0.029 &          0.030 & \\
-			Bleiakku    & 0.036 & 0.037 &          0.037 & \\
-			LiTiO       & 0.030 & 0.030 &          0.030 & \\
-			LiFePO      & 0.030 & 0.030 &          0.030 & \\ \bottomrule 
+			Bat./LS  &  40kW & 200kW & 375kW &      Swap \\ \midrule
+			18650    & 0,026 &   ??? &   ??? &     0,026 \\
+			Bleiakku & 0,031 &   ??? &   ??? &     0,031 \\
+			LiTiO    & 0,026 &   ??? &   ??? &     0,026 \\
+			LFP-HE   & 0,031 &   ??? &   ??? &     0,031 \\
+			LFP-HP   & 0,031 &   ??? &   ??? &     0,031 \\ \bottomrule
 		\end{tabular} 
-		\caption{Ladezyklen pro Kilometer Gelegenheitsladung}	
-		
+		\caption{Ladezyklen pro Kilometer Linie 204 Gelegenheitsladung}	
+		\label{204_e}
+		%TODO: WERTE!!!
 	\end{minipage}
-	
-	
 \end{table}
+\subsection{Linie 192}
+\subsubsection{Nachtladung}
+Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von \marginpar{wiviel???}132 $km$. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40kW gewählt. Die Ergebnisse sind in Tabelle \ref{192nacht} aufgeführt.
 
-%\subsection{Linie M19}
-%Lipsumsdkjfgasdjkhf \marginpar{TODO!}
+\begin{table}\centering
+	\begin{tabularx}{\textwidth}{Xrrrrrr}
+		\toprule
+		Batterie & Masse & Volumen &       Kühlung &          Energie & Ladezeit & Ladezyklen \\
+		         &  $kg$ &     $l$ & $\frac{g}{s}$ & $\frac{kWh}{km}$ &      $h$ &        $1$ \\ \midrule
+		18650    &   808 &     293 &          2186 &             0,92 &      5,4 &     0,0041 \\
+		Bleiakku & 11726 &    4398 &           746 &             1,74 &     11,9 &     0,0040 \\
+		LiTiO    &  2628 &    1840 &           291 &             0,98 &      5,6 &     0,0040 \\
+		LFP-HE   &  1432 &     869 &          5402 &             0,88 &      4,8 &     0,0041 \\
+		LFP-HP   &  1893 &     988 &          5486 &             0,96 &      5,8 &     0,0041 \\ \bottomrule
+	\end{tabularx}
+	\caption{Simulationsergebnisse Linie 192 Nachtladung}
+	\label{192nacht}
+\end{table}
+\subsubsection{Gelegenheitsladung}
+Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt ?? \marginpar{Text} $km$. Der Akku darf höchstens auf 30\% Ladezustand entladen werden und wird auf 70\% Ladezustand aufgeladen. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebnisse sind in den Tabellen \ref{192_a} bis \ref{192_e} aufgeführt.
+
+\begin{table}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\begin{tabular}{lrrrr}
+			\multicolumn{5}{c}{Batteriemassen in $kg$}  \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &     Swap  \\ \midrule
+			18650    &  215 &   217 &   215 &      214  \\
+			Bleiakku & 1944 &  1944 &  1944 &     1944  \\
+			LiTiO    &  524 &   529 &   525 &      523  \\
+			LFP-HE   &  354 &   357 &   354 &      353  \\
+			LFP-HP   &  476 &   488 &   477 &      475  \\ \bottomrule
+		\end{tabular} 
+		\caption{Batteriemassen Linie 192 Gelegnheitsladung}
+		\label{192_a}
+		
+		\begin{tabular}{lrrrr}
+			         &      &       &       &  \\
+			\multicolumn{5}{c}{Kühlbedarf in $\frac{g}{s}$}   \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &          Swap   \\ \midrule
+			18650    &  492 &   488 &   486 &           538  \\
+			Bleiakku & 1291 &  1324 &  1299 &          1283   \\
+			LiTiO    &  776 &  1470 &  1461 &          1456   \\
+			LFP-HE   & 6582 &  6639 &  6597 &          6568   \\
+			LFP-HP   & 4950 &  4944 &  4960 &          4940   \\ \bottomrule
+		\end{tabular} 
+		\caption{Kühlungsbedarf Linie 192 Gelegenheitsladung}
+		
+		\begin{tabular}{lrrrr}
+			         &      &       &       &  \\
+			\multicolumn{5}{c}{Anteil Ladezeit an Gesamtzeit} \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &            Swap \\ \midrule
+			18650    & 0,45 &  0,44 &  0,44 &            0,10 \\
+			Bleiakku & 0,68 &  0,68 &  0,68 &            0,10 \\
+			LiTiO    & 0,33 &  0,15 &  0,15 &            0,10 \\
+			LFP-HE   & 0,35 &  0,28 &  0,28 &            0,10 \\
+			LFP-HP   & 0,44 &  0,43 &  0,43 &            0,10 \\ \bottomrule
+		\end{tabular} 
+		\caption{Ladezeitanteil Linie 192 Gelegenheitsladung}
+		
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\begin{tabular}{lrrrr}
+			\multicolumn{5}{c}{Batterievolumina in $l$} \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &      Swap \\ \midrule
+			18650    &   78 &    78 &    78 &        77 \\
+			Bleiakku &  729 &   729 &   729 &       729 \\
+			LiTiO    &  367 &   370 &   368 &       366 \\
+			LFP-HE   &  214 &   216 &   215 &       214 \\
+			LFP-HP   &  248 &   254 &   249 &       248 \\ \bottomrule
+		\end{tabular}
+		\caption{Batterievolumina Linie 192 Gelegenheitsladung}
+		
+		\begin{tabular}{lrrrr}
+			         &      &       &       &  \\
+			\multicolumn{5}{c}{Energieverbrauch in $\frac{kWh}{km}$} \\ \toprule
+			Bat./LS  & 40kW & 200kW & 375kW &                   Swap \\ \midrule
+			18650    & 1,22 &  1,23 &  1,22 &                   1,21 \\
+			Bleiakku & 1,60 &  2,69 &  1,61 &                   1,60 \\
+			LiTiO    & 0,99 &  1,11 &  1,06 &                   1,05 \\
+			LFP-HE   & 1,09 &  1,15 &  1,10 &                   1,09 \\
+			LFP-HP   & 1,19 &  1,24 &  1,19 &                   1,19 \\ \bottomrule
+		\end{tabular} 
+		\caption{Energieverbrauch Linie 192 Gelegenheitsladung}
+		
+		\begin{tabular}{lrrrr}
+			         &       &       &       &  \\
+			\multicolumn{5}{c}{Ladezyklen pro Kilometer} \\ \toprule
+			Bat./LS  &  40kW & 200kW & 375kW &      Swap \\ \midrule
+			18650    & 0,020 & 0,020 & 0,020 &     0,020 \\
+			Bleiakku & 0,022 & 0,023 & 0,022 &     0,022 \\
+			LiTiO    & 0,020 & 0,020 & 0,020 &     0,020 \\
+			LFP-HE   & 0,020 & 0,020 & 0,020 &     0,020 \\
+			LFP-HP   & 0,020 & 0,020 & 0,020 &     0,020 \\ \bottomrule
+		\end{tabular} 
+		\caption{Ladezyklen pro Kilometer Linie 192 Gelegenheitsladung}
+		\label{192_e}
+	\end{minipage}	
+\end{table}
