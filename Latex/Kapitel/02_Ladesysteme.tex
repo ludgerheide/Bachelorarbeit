@@ -128,22 +128,20 @@ In dieser Arbeit wird ein in Shanghai eingesetztes Batteriewechselsystem betrach
 \subsection{Mechanische Kriterien}
 \begin{description}
 	\item [Ladestrategie] Ladestrategie, für die dieses System geeignet ist.
-	\item [Abmaße, feste Position] \emph{fahrzeug- und stationsseitig}\\
-	Die Abmaße jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
+	\item [Volumen, feste Position] \emph{fahrzeug- und stationsseitig}\\
+	Das Volumen jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
 	Beispiel: Pantograph und Stromschiene
-	\item [Abmaße, freie Position] \emph{fahrzeug- und stationsseitig}\\
-	Die Abmaße jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
+	\item [Volumen, freie Position] \emph{fahrzeug- und stationsseitig}\\
+	Das Volumen jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
 	Beispiel: Elektrische Wandler
 	\item [Masse] \emph{fahrzeugseitig}\\
 	Gesamtmasse der fahrzeugseitigen Komponenten
 	\item [Freiheitsgrade] \emph{fahrzeug- und stationsseitig}\\
-	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. 0, wenn es keine beweglichen Teile gibt.
+	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. Null, wenn es keine beweglichen Teile gibt.
 	\item [Positionierungsgenauigkeit des Busses] \emph{fahrzeugseitig} \\
 	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus zwei translatorischen und einer rotatorischen Komponente (X, Y, Richtung des Busses)
 	\item [Totzeit]
-	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt. Ist die Zeit von der Position abhängig, so wird jeweils eine Abweichung um die Hälfte des maximalen Wertes angenommen.
-	\item [Anzahl der Wandler] \emph{fahrzeug- und stationsseitig}\\
-	Anzahl der Komponenten, die den Spannungsverlauf verändern (Gleichrichter, Transformatoren etc.)
+	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt.
 \end{description}
 
 \subsection{Elektrische Kriterien}
@@ -176,7 +174,7 @@ In dieser Arbeit wird ein in Shanghai eingesetztes Batteriewechselsystem betrach
 		\toprule
 		System                         & Kurzname & Ladestrategie        & Totzeit \\
 		                               &          &                      & $s$     \\ \midrule
-		1x \textsc{IEC 62196-2}        & 40kW     & Nacht  & \emph{60} \\
+		1x \textsc{IEC 62196-2}        & 40kW     & Nachtladung  & \emph{60} \\
 		\textsc{primove}               & 200kW    & Gelegenheitsladen    & 4 \\
 		\textsc{Schunk Smart Charging} & 375kW    & Gelegenheitsladen    & 8 \\
 		Batteriewechsel                & Swap     & Nacht \& Gelegenheit & 420 \\ \bottomrule
