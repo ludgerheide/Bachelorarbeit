@@ -15,7 +15,12 @@
 % Define new length
 \newlength{\myFigureStandardWidth}
 % Set the new length to a specific value
-\setlength{\myFigureStandardWidth}{1.0\textwidth}
+\setlength{\myFigureStandardWidth}{2.0\textwidth}
+
+% Define new length
+\newlength{\myFigureWideWidth}
+% Set the new length to a specific value
+\setlength{\myFigureWideWidth}{2.0\textwidth}
 
 %Package, damit Bibtex-URL klappt
 \usepackage{url}
@@ -60,11 +65,8 @@
 %%%%% ENDE INHALT %%%%%
 
 %Bibliographie
-\bibliographystyle{alphadin}
-\bibliography{../Quellen/Quellenliste} 
-
-\include{Kapitel/06_Datenblaetter}
-\include{Kapitel/07_Digitaler_Anhang}
+\bibliographystyle{abbrvdin}
+\bibliography{../Quellen/Quellenliste}
 
 \listoffigures
 \listoftables

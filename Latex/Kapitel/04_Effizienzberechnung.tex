@@ -6,7 +6,7 @@ Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem
 %TODO: Ausfüllen
 Ausgangspunkt ist ein Elektrobus-Simulationsmodell, das im Fachgebiet Methoden der Produktenwticklung und Mechatronik der TU Berlin entwickelt wurde. Es wurde im Rahmen einer Diplomarbeit von Maximilian Götz erstellt~\cite{Gotz:2013}. Das Modell ist in \textsc{Matlab} und \textsc{simulink} programmiert. Das Modell wird kontinuierlich weiterentwickelt. Für diese Arbeit wurde die Version verwendet, die Tu-Anh Ly am 11. Juni 2015 zur Verfügung stellte. In Abbildung \ref{abb_simmodell} werden die einzelnen Komponenten des Simulationsmodells und ihre Zusammenhänge dargestellt.
 \begin{figure}\centering
-	\includegraphics[width=\textwidth]{Simulation-Schaubild}
+	\includegraphics[width=\myFigureWideWidth]{Simulation-Schaubild}
 	\caption{Komponenten des Simulationsmodells}
 	\label{abb_simmodell}
 \end{figure}
@@ -16,7 +16,7 @@ Ausgangspunkt ist ein Elektrobus-Simulationsmodell, das im Fachgebiet Methoden d
 \subsection{Aufgezeichnete Strecke}
 Der Energieverbrauch wird anhand einer aufgezeichneten Strecke berechnet. Für jeweils eine Tour wurden dabei Geschwindigkeit, Höhe über dem Meeresspiegel und Passagierzahl mit einer Auflösung von einer Sekunde aufgezeichnet. Die beiden verwendeten Aufzeichnungen sind in Abbildung \ref{Buslinien} zu sehen. Es werden die Buslinien 204 und 192 der BVG betrachtet. Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz. Sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch den Stadtrand Berlins. Wie in Abbildung \ref{Buslinien} erkennbar ist die Durchschnittsgeschwindigkeit höher und das Geschwindigkeitsprofil gleichmäßiger.
 \begin{figure}\centering
-	\includegraphics[width=\textwidth]{Buslinien}
+	\includegraphics[width=\myFigureWideWidth]{Buslinien}
 	\caption[Verlauf und Geschwindigkeitsprofil der Buslinien]{Verlauf und Geschwindigkeitsprofil der Buslinien.}
 	\label{Buslinien}
 \end{figure}
@@ -27,7 +27,7 @@ Der Energieverbrauch wird anhand einer aufgezeichneten Strecke berechnet. Für j
 %TODO: Ausfüllen
 Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Quelle} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} sind die berechneten Leistungen aufgeführt. Die Effizienz des Motors sinkt mit steigender Leistung. Beim Bremsen bei niedrigen Geschwindigkeiten kann die verfügbare Rekuperationsleistung nicht voll ausgenutzt werden.
 \begin{figure}\centering
-	\includegraphics[width=\textwidth]{Leistungen}
+	\includegraphics[width=\myFigureWideWidth]{Leistungen}
 	\caption[Berechnete Traktions-, Motor- und Batterieleistung]{Berechnete Traktions-, Motor- und Batterieleistung. Es wird Bus mit einer Masse von 13,3 Tonnen konstant mit 1 $\frac{m}{s^2}$ auf 61,2 $\frac{km}{h}$ beschleunigt und nach wenigen Sekunden mit 1 $\frac{m}{s^2}$ bis zum Stillstand abgebremst. Als Batterie wurde hier eine $LiFePO_4$-Batterie gewählt. Durch den maximalen Ladestrom von 1 C ist die Rekuperationsleistung stark begrenzt.}
 	\label{abb_Leistungen}
 \end{figure}
@@ -199,11 +199,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			         &       &       &       &  \\
 			\multicolumn{5}{c}{Ladezyklen pro Kilometer} \\ \toprule
 			Bat./LS  &  40kW & 200kW & 375kW &      Swap \\ \midrule
-			18650    & 0,026 &   ??? &   ??? &     0,026 \\
-			Bleiakku & 0,031 &   ??? &   ??? &     0,031 \\
-			LiTiO    & 0,026 &   ??? &   ??? &     0,026 \\
-			LFP-HE   & 0,031 &   ??? &   ??? &     0,031 \\
-			LFP-HP   & 0,031 &   ??? &   ??? &     0,031 \\ \bottomrule
+			18650    & 0,026 &   0,026 &   0,026 &     0,026 \\
+			Bleiakku & 0,031 &   0,030 &   0,031 &     0,031 \\
+			LiTiO    & 0,026 &   0,026 &   0,026 &     0,026 \\
+			LFP-HE   & 0,031 &   0,031 &   0,031 &     0,031 \\
+			LFP-HP   & 0,031 &   0,031 &   0,031 &     0,031 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Ladezyklen pro Kilometer Linie 204 Gelegenheitsladung}	
 		\label{204_e}
