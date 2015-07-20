@@ -1,5 +1,5 @@
 \chapter{Ladesysteme}
-Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"').\marginpar{Eventuell nochmal aufteilen in Ende der Tour – während der Fahrt?}
+Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"').
 
 Im  Abschnitt \ref{untersuchte_Systeme} werden Funktionsweise und Einsatzgeschichte der verschiedenen Ladesysteme erläutert. Im Abschnitt \ref{parameter} werden die betrachteten technischen Parameter, die in dieser Arbeit zum Vergleich der Systeme herangezogen werden, vorgestellt und definiert. In Abschnitt \ref{sec_tabellen_ladesysteme} ab werden dann die für die verschiedenen Ladesysteme ermittelten Parameter tabellarisch aufgelistet. 
 
@@ -10,58 +10,57 @@ Die Ladesysteme werden lassen sich nach den folgenden drei Kriterien kategorisie
 
 \paragraph{Energietransport}
 \begin{itemize}
-	\item Konduktiv – elektrisch leitende Verbindung zwischen Bus und Ladestation
-	\item Induktiv – Ladestation erzeugt Magnetfeld, das im Bus in Strom umgewandelt wird
-	\item Batteriewechsel – die Batterie wird ausgewechselt
+	\item \textbf{Konduktiv} – zwischen Bus und Ladestation wird eine elektrisch leitende Verbindung hergestellt
+	\item \textbf{Induktiv} – die Ladestation erzeugt Magnetfeld, das im Bus in Strom umgewandelt wird
+	\item \textbf{Batteriewechsel} – die Batterie wird ausgewechselt
 \end{itemize}
 
 \paragraph{Fahrzustand}
 \begin{itemize}
-	\item Statisch – es wird nur geladen, während der Bus steht
-	\item Dynamisch – die Batterie kann auch während der Fahrt aufgeladen werden
+	\item \textbf{Statisch} – es wird nur geladen, während der Bus steht
+	\item \textbf{Dynamisch} – die Batterie kann auch während der Fahrt aufgeladen werden
 \end{itemize}
 
 \paragraph{Automatisierungsgrad}
 \begin{itemize}
-	\item Manuell – Der Busfahrer muss seinen Arbeitsplatz verlassen, um den Ladevorgang zu beginnen und zu beenden\footnote{Denkbar ist auch, dass der Fahrer im Bus bleibt und eine andere Person den Ladevorgang steuert. Solche Systeme existieren jedoch aus Kostengründen in Europa nicht.}.
-	\item Automatisch – Der Bus kann geladen werden, ohne dass der Fahrer seinen Arbeitsplatz verlässt
+	\item \textbf{Manuell} – der Busfahrer muss seinen Arbeitsplatz verlassen, um den Ladevorgang zu beginnen und zu beenden\footnote{Denkbar ist auch, dass der Fahrer im Bus bleibt und eine andere Person den Ladevorgang steuert. Solche Systeme existieren jedoch aus Kostengründen in Europa nicht.}.
+	\item \textbf{Automatisch} – der Bus kann geladen werden, ohne dass der Fahrer seinen Arbeitsplatz verlässt
 \end{itemize}
 
 \section{Untersuchte Systeme}
 \label{untersuchte_Systeme}
-Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{uebersichtLadesysteme} sind sämtliche aktuell bekannten Systeme in aufgeführt. 
-\marginpar{Irgendwas fehlt in \ref{uebersichtLadesysteme}. was?}
+Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{uebersichtLadesysteme} sind sämtliche aktuell bekannten Systeme in aufgeführt.
 
-\begin{table}\centering %TODO: cmidrules
-	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.2cm}l}
-		                                                                                       \multicolumn{7}{c}{\textbf{Statische Systeme}}                                                                                         \\ \toprule
-		Energie-transport                & Automati-sierungsgrad         & Hersteller,\newline Land                         & Name        & Einsatzort,\newline Land        & Einsatz-zeitraum & Ref.                                 \\ \midrule
-		\multirow{14}{*}{konduktiv}      & \multirow{2}{*}{manuell}      & \textsc{BYD},\newline China                      & IEC62196"~2 & ???,\newline ???                & ???              & \cite{bydSpecs}                      \\
-		\cmidrule{2-7}                   & \multirow{12}{*}{automatisch} & \textsc{Opbrid},\newline Spanien                 & Bůsbaar     & Umeå,\newline Schweden          & ab 2011          & \cite{SchKonLade}                    \\
-		                                 &                               & \textsc{Proterra,\newline SC, USA}               & FastFill    & Stockton,\newline CA, USA       & ab 2013          & \cite{protCat}                       \\
-		                                 &                               & \textsc{Siemens},\newline Deutschland            & k. A.       & Hamburg,\newline Deutschland    & ab 2014          & \cite{siemensHamburg}                \\
-		                                 &                               & \textsc{Siemens},\newline Deutschland            & k. A.       & Wien,\newline Österreich        & ab 2013          & \cite{SiemensWien}                   \\
-		                                 &                               & \textsc{ABB},\newline Schweiz                    & TOSA        & Genf,\newline Schweiz           & ab 2013          & \cite{tosa}                          \\
-		                                 &                               & \textsc{Sunwin},\newline China                   & k. A.       & Shanghai,\newline China         & ab 2006          & \cite{shanghaiCapabus}               \\ \midrule
-		\multirow{7}{*}{induktiv}        & \multirow{7}{*}{automatisch}  & \textsc{Conductix-Wampfler},\newline Deutschland & IPT         & Turin,\newline Italien          & ab 2002          & \cite{WeIPT}                         \\
-		                                 &                               & \textsc{Bombardier},\newline Kanada?             & primove     & Berlin,\newline Deutschland     & ab 2015          & ?                                    \\
-		                                 &                               & \textsc{WAVE Inc.},\newline UT, USA              & WAVE        & Salt Lake City,\newline UT, USA & ab 2014          & \cite{WuWAVE}                        \\ \midrule
-		\multirow{4}{*}{Batteriewechsel} & \multirow{2}{*}{manuell}      & \textsc{AVS}, \newline TN, USA                   & k. A.       & Chattanooga,\newline TN, USA    & ab 1997          & \cite{chattanoogaDOE}                \\
-		                                 & \multirow{2}{*}{automatisch}  & \textsc{XJ Group}, China                         & k. A.       & Qingdao,\newline China          & ab 2013?         & ?                                    \\ \bottomrule
- & & & & & & \\
-    \end{tabularx}
-	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.2cm}l}
-		                                                                                       \multicolumn{7}{c}{\textbf{Dynamische Systeme}}                                                                                        \\ \toprule
-		         \multicolumn{2}{c}{\multirow{2}{*}{konduktiv}}          & \textsc{Solaris},\newline Deutschland            & k. A.       & Eberswalde,\newline Deutschland & ab 2012          & \cite{Barminer-Busgesellschaft:2012} \\ \midrule
-		         \multicolumn{2}{c}{\multirow{2}{*}{induktiv}}           & \textsc{KAIST},\newline Südkorea                 & OLEV        & Daejeon,\newline Südkorea       & ab 2009          & \cite{5618092}                       \\ \bottomrule
+\begin{table}\centering
+	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.0cm}l}
+		                                                                                    \multicolumn{7}{c}{\textbf{Statische Systeme}}                                                                                     \\ \toprule
+		Energie-transport                & Automati-sierungsgrad         & Hersteller,\newline Land                         & Name                 & Einsatzort,\newline Land        & Einsatz-beginn & Ref.                   \\ \midrule
+		\multirow{16}{*}{konduktiv}      & \multirow{2}{*}{manuell}      & \textbf{\textsc{BYD},\newline China}             & \textbf{IEC62196"~2} & Shenzhen,\newline China         & 2011           & \cite{bydSpecs}        \\
+		\cmidrule{2-7}                   & \multirow{14}{*}{automatisch} & \textsc{Opbrid},\newline Spanien                 & Bůsbaar              & Umeå,\newline Schweden          & 2011           & \cite{SchKonLade}      \\
+		                                 &                               & \textsc{Proterra,\newline SC, USA}               & FastFill             & Stockton,\newline CA, USA       & 2013           & \cite{protCat}         \\
+		                                 &                               & \textsc{Siemens},\newline Deutschland            & k. A.                & Hamburg,\newline Deutschland    & 2014           & \cite{siemensHamburg}  \\
+		                                 &                               & \textsc{Siemens},\newline Deutschland            & k. A.                & Wien,\newline Österreich        & 2013           & \cite{SiemensWien}     \\
+		                                 &                               & \textsc{ABB},\newline Schweiz                    & TOSA                 & Genf,\newline Schweiz           & 2013           & \cite{tosa}            \\
+		                                 &                               & \textsc{Sunwin},\newline China                   & k. A.                & Shanghai,\newline China         & 2006           & \cite{shanghaiCapabus} \\
+		                                 &                               & \textbf{\textsc{Schunk},\newline Deutschland}    & \textbf{k. A.}                & Hannover,\newline Deutschland   & 2015               & \cite{Weigel:2013} \\ \midrule
+		\multirow{7}{*}{induktiv}        & \multirow{7}{*}{automatisch}  & \textsc{Conductix-Wampfler},\newline Deutschland & IPT                  & Turin,\newline Italien          & 2002           & \cite{WeIPT}           \\
+		                                 &                               & \textbf{\textsc{Bombardier},\newline Kanada}     & \textbf{primove}     & Berlin,\newline Deutschland     & 2015           & \cite{swapQingdao}     \\
+		                                 &                               & \textsc{WAVE Inc.},\newline UT, USA              & WAVE                 & Salt Lake City,\newline UT, USA & 2014           & \cite{WuWAVE}          \\ \midrule
+		\multirow{4}{*}{Batteriewechsel} & \multirow{2}{*}{manuell}      & \textsc{AVS}, \newline TN, USA                   & k. A.                & Chattanooga,\newline TN, USA    & 1997           & \cite{chattanoogaDOE}  \\
+		                                 & \multirow{2}{*}{automatisch}  & \textbf{\textsc{XJ Group}, China}                & \textbf{k. A.}       & Qingdao,\newline China          & 2013          & ?                      \\ \bottomrule
+		                                 &                               &                                                  &                      &                                 &                &
 	\end{tabularx}
-	\caption[Übersicht der Ladesysteme mit Name/Verwendungsort und Hersteller]{Übersicht der Ladesysteme mit Name/Verwendungsort und Hersteller.}
+	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.0cm}l}
+		                                                                      \multicolumn{7}{c}{\textbf{Dynamische Systeme}}                                                                        \\ \toprule
+		\multirow{2}{*}{konduktiv} & \multirow{2}{*}{automatisch} &\textsc{Solaris},\newline Deutschland & k. A. & Eberswalde,\newline Deutschland & 2012        &   \cite{Barminer-Busgesellschaft:2012}   \\ \midrule
+		\multirow{2}{*}{induktiv}  & \multirow{2}{*}{automatisch} & \textsc{KAIST},\newline Südkorea      & OLEV  & Daejeon,\newline Südkorea       & 2009         &  \cite{5618092}                        \\ \bottomrule
+	\end{tabularx}
+	\caption[Übersicht der Ladesysteme mit Name/Verwendungsort und Hersteller]{Übersicht der Ladesysteme mit Name/Verwendungsort und Hersteller. Die \textbf{fett} markierten Systeme wurden in dieser Arbeit als Beispiel für ihre Kategorie ausgewählt.}
 	\label{uebersichtLadesysteme}
 \end{table}
 
 
 \subsection{Konduktive Ladesysteme} 
-\marginpar{Irgendwas stimmt hier nicht. Wie passt diese Tabelle zum allgemeinen Gelaber, das später kommt?}
 Bei konduktiven Systemen wird eine direkte Verbindung zwischen stromführenden Metallteilen in Bus und Ladesystem hergestellt. Im Gegensatz zu Eisenbahnen, die über ihre Schienen permanent geerdet sind, müssen bei Bussen mindestens zwei Pole verbunden werden. Zum Schutz vor Stromschlägen müssen die Komponenten in zweipoligen Systemen mindestens doppelt isoliert sein. Alternativ kann auch ein weiterer Pol als Schutzerde und ein Fehlerstrom-Schutzschalter verwendet werden.
 
 \subsubsection{Manuell – Ladesteckdose}
@@ -73,16 +72,16 @@ Vorteil dieses Ladesystems ist die weite Kompatibilität. Ladestation und Bus k�
 
 Viele Busse, die primär über andere Systeme geladen werden besitzen zusätzlich eine Ladesteckdose, um über Nacht oder abseits ihrer normalen Strecke geladen zu werden.\marginpar{Beleg!}
 
-In dieser Arbeit wird ein 40-kW-System mit einer Ladesäule als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Es werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
+In dieser Arbeit wird ein 40-kW-System als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Es werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
 
-\subsubsection{Automatisiert – Stromabnehmer}
+\subsubsection{Automatisch – Stromabnehmer}
 Um die elektrische Verbindung automatisch herzustellen werden ausfahrbare Stromabnehmer verwendet. Es gibt sowohl Systeme mit fahrzeugseitigem als auch mit stationsseitigem Stromabnehmer und jeweils unbeweglichen Kontakten auf der anderen Seite. In den meisten Ladesystemen liegen die zwei Pole auf demselben Stromabnehmer nebeneinander, \textsc{Opbrid} verwendet im \textsc{Bůsbaar}-System zwei Stromabnehmer vorne und hinten auf dem Bus und eine längs geteilte Stromschiene~\cite{SchKonLade}.
 
 Mit diesen Systemen können hohe Leistungen übertragen werden. Sie sind für die Aufladung des Busses an Endstationen (z. B. das System von \textsc{Siemens} in Wien~\cite{SiemensWien}) oder Zwischenhaltestellen (z. B. \textsc{TOSA} in Genf~\cite{tosa}) geeignet. 
 
 Bei allen aktuell im Betrieb befindlichen Systemen befinden sich die Komponenten auf dem Dach des Busses. Es müssen entweder Oberleitungen oder hohe Ladesäulen verwendet werden. Daher fallen diese Systeme im Stadtbild sehr auf. Einige Betreiber wünschen unauffälligere Systeme, für andere Betreiber sind die Ladesäulen jedoch als Symbol für Innovation und Umweltbewusstsein beliebt\marginpar{Beleg!}.
 
-In dieser Arbeit wird das Ladesystem der Firma Schunk mit bis zu 375 kW Leistung und busseitigem Pantographen als Beispiel für konduktiv-automatisierte Ladesysteme gewählt~\cite{Weigel:2013}.
+In dieser Arbeit wird das Ladesystem der Firma Schunk mit bis zu 375 kW Leistung und busseitigem Pantographen als Beispiel für konduktiv-automatische Ladesysteme gewählt~\cite{Weigel:2013}.
 
 \subsubsection{Dynamisch – Trolleybus} \marginpar{Besser!}
 Schon seit über hundert Jahren\marginpar{Beleg!} fahren in vielen Städten (in Deutschland z. B. Solingen) Trolleybusse. In einigen Städten werden sie mit Batterien ausgerüstet, um Abschnitte ohne Oberleitung durchfahren zu können. Dies geschieht zum Beispiel in Rom und Lecce, weil in der denkmalgeschützten Altstadt keine Stromleitungen gebaut werden dürfen~\cite{tub_aleph001746639}[S. 66]. Auch eine Expansion des Liniennetzes in Vororte ohne Verlegung neuer Oberleitungen ist denkbar.
@@ -92,7 +91,7 @@ Der Trolleybus ist ein \emph{dynamisches} System, das die Aufladung während der
 In Berlin besteht aus städtebaulichen Gründen kein Interesse am Einsatz von Trolleybussen. Daher wird dieses System hier nicht weiter betrachtet.
                                  
 \subsection{Induktive Ladesysteme}
-An einer elektrischen Leiterschleife fällt eine Spannung an, wenn sich das Magnetfeld um die Leiterschleife verändert – zum Beispiel wenn diese Spule sich im Magnetfeld einer anderen SPule befindet, durch die Wechselstrom fließt. Durch diese Kombination von zwei Spulen kann eine Wechselspannung transportiert werden. Am häufigsten wird dieser Effekt im Transformator verwendet. Dort wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
+An einer elektrischen Leiterschleife fällt eine Spannung an, wenn sich das Magnetfeld um die Leiterschleife verändert – zum Beispiel wenn diese Spule sich im Magnetfeld einer anderen Spule befindet, durch die Wechselstrom fließt. Durch diese Kombination von zwei Spulen kann eine Wechselspannung transportiert werden. Am häufigsten wird dieser Effekt im Transformator verwendet. Dort wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
 
 \marginpar{holprig!}Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
 
@@ -107,7 +106,7 @@ In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des F
 \end{figure}
 
 \subsubsection{Statisch}
-Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \emph{IPT} con \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}. In dieser Arbeit wird das System \textsc{primove} mit 200 kW Ladeleistung betrachtet.
+Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \textsc{IPT} von \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}. In dieser Arbeit wird das System \textsc{primove} mit 200 kW Ladeleistung betrachtet.
 
 \subsubsection{Dynamisch}
 Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen Vertikalen Abstand zwischen den Spulen. Um ein Aufsetzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Dies führt zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
@@ -179,14 +178,14 @@ In dieser Arbeit wird ein in Shanghai eingesetztes Batteriewechselsystem betrach
 		\textsc{Schunk Smart Charging} & 375kW    & Gelegenheitsladen    & 8 \\
 		Batteriewechsel                & Swap     & Nacht \& Gelegenheit & 420 \\ \bottomrule
 	\end{tabularx}
-	\caption[Allgemeine mechanische Kriterien Ladesysteme]{Allgemeine mechanische Kriterien Ladesysteme. \emph{Kursive} Werte sind geschätzt}
+	\caption[Allgemeine mechanische Kriterien der Ladesysteme]{Allgemeine mechanische Kriterien der Ladesysteme. \emph{Kursive} Werte sind geschätzt}
 	\label{tab_mech_Ladesys_allg}
 \end{table}
 
 \begin{table}[h!]\centering
-	\begin{tabularx}{\linewidth}{Xlllll}
+	\begin{tabularx}{\linewidth}{Xrrrrr}
 		\toprule
-		System & Maße fest & Maße frei  & Masse     & Freiheitsgrade & Genauigkeit            \\
+		System & Volumen fest & Volumen frei  & Masse     & Freiheitsgrade & Genauigkeit            \\
 		       & $l$       & $l$        & $kg$      & $1$            & $m^2,^{\circ}$         \\ \midrule
 		40kW   & 0         & \emph{50}  & \emph{50} & 0              & 47$m^2$, 360$^{\circ}$ \\
 		200kW  & 198       & \emph{100} & 450       & 1              & ???                    \\
@@ -200,7 +199,7 @@ In dieser Arbeit wird ein in Shanghai eingesetztes Batteriewechselsystem betrach
 \begin{table}[h!]\centering
 	\begin{tabularx}{\linewidth}{Xrrrr}
 		\toprule
-		System & Maße fest &   Maße frei & Freiheitsgrade & Wandler \\
+		System & Volumen fest &   Volumen frei & Freiheitsgrade & Wandler \\
 		       &       $l$ &         $l$ &            $1$ &     $1$ \\ \midrule
 		40kW   &         0 &          88 &              0 &      ?? \\
 		200kW  &      1800 & \emph{2000} &              0 &      ?? \\
