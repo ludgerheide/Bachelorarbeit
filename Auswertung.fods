@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:initial-creator>Ludger Heide</meta:initial-creator><meta:creation-date>2015-07-24T12:56:10.423548000</meta:creation-date><dc:date>2015-07-24T17:35:06.616933000</dc:date><dc:creator>Ludger Heide</dc:creator><meta:editing-duration>PT2H11M46S</meta:editing-duration><meta:editing-cycles>9</meta:editing-cycles><meta:generator>LibreOffice/4.4.4.3$MacOSX_X86_64 LibreOffice_project/2c39ebcf046445232b798108aa8a7e7d89552ea8</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="2191" meta:object-count="0"/></office:meta>
+ <office:meta><meta:initial-creator>Ludger Heide</meta:initial-creator><meta:creation-date>2015-07-24T12:56:10.423548000</meta:creation-date><dc:date>2015-07-24T19:59:42.193641000</dc:date><dc:creator>Ludger Heide</dc:creator><meta:editing-duration>PT2H19M33S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:generator>LibreOffice/4.4.4.3$MacOSX_X86_64 LibreOffice_project/2c39ebcf046445232b798108aa8a7e7d89552ea8</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="2274" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">56652</config:config-item>
-   <config:config-item config:name="VisibleAreaHeight" config:type="int">89859</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">97536</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
      <config:config-item-map-named config:name="Tables">
       <config:config-item-map-entry config:name="Tabelle1">
-       <config:config-item config:name="CursorPositionX" config:type="int">19</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">208</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">5</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">210</config:config-item>
        <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
-       <config:config-item config:name="PositionLeft" config:type="int">11</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">13</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
-       <config:config-item config:name="PositionBottom" config:type="int">167</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">166</config:config-item>
        <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
        <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
        <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -31,7 +31,7 @@
       </config:config-item-map-entry>
      </config:config-item-map-named>
      <config:config-item config:name="ActiveTable" config:type="string">Tabelle1</config:config-item>
-     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1539</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1088</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
      <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -168,6 +168,9 @@
   <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
    <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
   </style:style>
+  <number:number-style style:name="N2">
+   <number:number number:decimal-places="2" number:min-integer-digits="1"/>
+  </number:number-style>
   <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
    <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
@@ -222,6 +225,24 @@
   </style:style>
   <style:style style:name="ce16" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties fo:color="#ff3333" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce17" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N2">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0mm"/>
+  </style:style>
+  <style:style style:name="ce18" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N2"/>
+  <style:style style:name="ce19" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N2">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="start" fo:margin-left="0mm"/>
+  </style:style>
+  <style:style style:name="ce20" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N107">
+   <style:text-properties fo:color="#ff3333"/>
+  </style:style>
+  <style:style style:name="ce21" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N2">
+   <style:table-cell-properties fo:border="none"/>
+  </style:style>
+  <style:style style:name="ce22" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N2">
+   <style:text-properties fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties style:writing-mode="lr-tb"/>
@@ -711,34 +732,34 @@
      <table:table-cell table:style-name="ce1" office:value-type="float" office:value="18650" calcext:value-type="float">
       <text:p>18650</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.B14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.C14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.D14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.E14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.E14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.F14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.G14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.G14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.H14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.H14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.I14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.I14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.J14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.K14]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.K14]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -786,35 +807,35 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LiTiO</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.B15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.C15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.D15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.E15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.E15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
-      <text:p>1</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.F15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.G15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.G15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.H15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.H15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.I15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.I15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.J15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.K15]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
-      <text:p>1</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.K15]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
      </table:table-cell>
      <table:table-cell/>
     </table:table-row>
@@ -861,34 +882,34 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HE</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.B16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.C16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.D16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.E16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.E16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.F16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.G16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.G16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.H16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.H16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.I16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.I16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.J16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.K16]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.K16]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -927,44 +948,44 @@
      <table:table-cell table:style-name="ce7" table:formula="of:=[.K$13]+[.K8]" office:value-type="float" office:value="1900.6" calcext:value-type="float">
       <text:p>1900,6</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
-      <text:p>Gewichtung</text:p>
+     <table:table-cell office:value-type="float" office:value="1600" calcext:value-type="float">
+      <text:p>1600</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="6" calcext:value-type="float">
-      <text:p>6</text:p>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HP</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.B17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.C17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.D17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.E17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.E17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.F17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.G17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.G17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.H17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.H17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.I17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.I17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.J17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.K17]; [.$L$13:.$M$16];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
-      <text:p>1</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.K17]; [.$L$13:.$M$17];2;1))" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
      </table:table-cell>
      <table:table-cell/>
     </table:table-row>
@@ -975,12 +996,18 @@
      <table:table-cell table:formula="of:=AVERAGE([.B14:.K17])" office:value-type="float" office:value="737.179" calcext:value-type="float">
       <text:p>737,179</text:p>
      </table:table-cell>
-     <table:table-cell table:number-columns-repeated="11"/>
+     <table:table-cell table:number-columns-repeated="9"/>
+     <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+      <text:p>Gewichtung</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Mittelwert</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O14:.X17])" office:value-type="float" office:value="2.65" calcext:value-type="float">
-      <text:p>2,65</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.O14:.X17])" office:value-type="float" office:value="2.575" calcext:value-type="float">
+      <text:p>2,575</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -995,8 +1022,8 @@
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Min</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=MIN([.O14:.X17])" office:value-type="float" office:value="1" calcext:value-type="float">
-      <text:p>1</text:p>
+     <table:table-cell table:formula="of:=MIN([.O14:.X17])" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -3654,8 +3681,8 @@
      <table:table-cell table:style-name="ce9" table:formula="of:=[.K84]/([.K84]+[.$I$92])" office:value-type="float" office:value="0.326988318264619" calcext:value-type="float">
       <text:p>0,327</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.1" calcext:value-type="float">
-      <text:p>0,1</text:p>
+     <table:table-cell office:value-type="float" office:value="0.15" calcext:value-type="float">
+      <text:p>0,15</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
@@ -3663,20 +3690,20 @@
      <table:table-cell table:style-name="ce1" office:value-type="float" office:value="18650" calcext:value-type="float">
       <text:p>18650</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.B96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.C96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.D96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.E96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.F96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.G96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
@@ -3687,8 +3714,8 @@
      <table:table-cell table:formula="of:=(VLOOKUP([.I96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
-      <text:p>3</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.J96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.K96]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3729,8 +3756,8 @@
      <table:table-cell table:style-name="ce9" table:formula="of:=[.K85]/([.K85]+[.$I$92])" office:value-type="float" office:value="0.33416553685394" calcext:value-type="float">
       <text:p>0,334</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.2" calcext:value-type="float">
-      <text:p>0,2</text:p>
+     <table:table-cell office:value-type="float" office:value="0.25" calcext:value-type="float">
+      <text:p>0,25</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3738,14 +3765,14 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LiTiO</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
-     </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+     <table:table-cell table:formula="of:=(VLOOKUP([.B97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
-      <text:p>3</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.C97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=(VLOOKUP([.D97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.E97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
@@ -3762,8 +3789,8 @@
      <table:table-cell table:formula="of:=(VLOOKUP([.I97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
       <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
-      <text:p>3</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.J97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.K97]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3804,8 +3831,8 @@
      <table:table-cell table:style-name="ce9" table:formula="of:=[.K86]/([.K86]+[.$I$92])" office:value-type="float" office:value="0.298793334610228" calcext:value-type="float">
       <text:p>0,299</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.4" calcext:value-type="float">
-      <text:p>0,4</text:p>
+     <table:table-cell office:value-type="float" office:value="0.35" calcext:value-type="float">
+      <text:p>0,35</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
@@ -3816,20 +3843,20 @@
      <table:table-cell table:formula="of:=(VLOOKUP([.B98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.C98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.D98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.E98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.F98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.F98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.G98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.G98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.H98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3837,8 +3864,8 @@
      <table:table-cell table:formula="of:=(VLOOKUP([.I98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
-      <text:p>3</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.J98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.K98]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3882,20 +3909,20 @@
      <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
       <text:p>Gewichtung</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="8.3" calcext:value-type="float">
-      <text:p>8,3</text:p>
+     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="15" calcext:value-type="float">
+      <text:p>15</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HP</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.B99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.B99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.C99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.C99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.D99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
-      <text:p>2</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.D99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.E99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
       <text:p>4</text:p>
@@ -3912,8 +3939,8 @@
      <table:table-cell table:formula="of:=(VLOOKUP([.I99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="1" calcext:value-type="float">
       <text:p>1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=(VLOOKUP([.J99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="3" calcext:value-type="float">
-      <text:p>3</text:p>
+     <table:table-cell table:formula="of:=(VLOOKUP([.J99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
      </table:table-cell>
      <table:table-cell table:formula="of:=(VLOOKUP([.K99]; [.$L$95:.$M$98];2;1))" office:value-type="float" office:value="2" calcext:value-type="float">
       <text:p>2</text:p>
@@ -3931,8 +3958,8 @@
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Mittelwert</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O96:.X99])" office:value-type="float" office:value="2.25" calcext:value-type="float">
-      <text:p>2,25</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.O96:.X99])" office:value-type="float" office:value="2.35" calcext:value-type="float">
+      <text:p>2,35</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -5296,8 +5323,8 @@
      <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
       <text:p>Gewichtung</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="8.3" calcext:value-type="float">
-      <text:p>8,3</text:p>
+     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HE</text:p>
@@ -5876,8 +5903,8 @@
      <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
       <text:p>Gewichtung</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="8.3" calcext:value-type="float">
-      <text:p>8,3</text:p>
+     <table:table-cell table:style-name="ce16" office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HP</text:p>
@@ -7419,8 +7446,8 @@
      <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
       <text:p>Summe gewi.</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=[.M181]+[.M170]+[.M158]+[.M146]+[.M133]+[.M122]+[.M110]+[.M99]+[.M74]+[.M62]+[.M51]+[.M39]+[.M17]" office:value-type="float" office:value="99.9" calcext:value-type="float">
-      <text:p>99,9</text:p>
+     <table:table-cell table:formula="of:=[.M181]+[.M170]+[.M158]+[.M146]+[.M133]+[.M122]+[.M110]+[.M99]+[.M74]+[.M62]+[.M51]+[.M39]+[.M18]" office:value-type="float" office:value="100" calcext:value-type="float">
+      <text:p>100</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Mittelwert</text:p>
@@ -7468,7 +7495,7 @@
     <table:table-row table:style-name="ro1">
      <table:table-cell table:number-columns-repeated="14"/>
      <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="10" table:number-rows-spanned="1">
-      <text:p>Punkte Kühlluftmasse</text:p>
+      <text:p>Gesamtpunktzahl</text:p>
      </table:table-cell>
      <table:covered-table-cell table:number-columns-repeated="9"/>
      <table:table-cell/>
@@ -7530,38 +7557,38 @@
      <table:table-cell table:style-name="ce1" office:value-type="float" office:value="18650" calcext:value-type="float">
       <text:p>18650</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.O178]+([.$M$170]/100)*[.O167]+([.$M$158]/100)*[.O155]+([.$M$146]/100)*[.O131]+([.$M$122]/100)*[.O119]+([.$M$110]/100)*[.O107]+([.$M$99]/100)*[.O96]+([.$M$74]/100)*[.O71]+([.$M$62]/100)*[.O59]+([.$M$51]/100)*[.O48]+([.$M$39]/100)*[.O36]+([.$M$17]/100)*[.O14]" office:value-type="float" office:value="2.978" calcext:value-type="float">
-      <text:p>2,978</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.O178]+([.$M$170]/100)*[.O167]+([.$M$158]/100)*[.O155]+([.$M$146]/100)*[.O131]+([.$M$122]/100)*[.O119]+([.$M$110]/100)*[.O107]+([.$M$99]/100)*[.O96]+([.$M$74]/100)*[.O71]+([.$M$62]/100)*[.O59]+([.$M$51]/100)*[.O48]+([.$M$39]/100)*[.O36]+([.$M$18]/100)*[.O14]" office:value-type="float" office:value="2.83" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.P178]+([.$M$170]/100)*[.P167]+([.$M$158]/100)*[.P155]+([.$M$146]/100)*[.P131]+([.$M$122]/100)*[.P119]+([.$M$110]/100)*[.P107]+([.$M$99]/100)*[.P96]+([.$M$74]/100)*[.P71]+([.$M$62]/100)*[.P59]+([.$M$51]/100)*[.P48]+([.$M$39]/100)*[.P36]+([.$M$17]/100)*[.P14]" office:value-type="float" office:value="2.578" calcext:value-type="float">
-      <text:p>2,578</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.P178]+([.$M$170]/100)*[.P167]+([.$M$158]/100)*[.P155]+([.$M$146]/100)*[.P131]+([.$M$122]/100)*[.P119]+([.$M$110]/100)*[.P107]+([.$M$99]/100)*[.P96]+([.$M$74]/100)*[.P71]+([.$M$62]/100)*[.P59]+([.$M$51]/100)*[.P48]+([.$M$39]/100)*[.P36]+([.$M$18]/100)*[.P14]" office:value-type="float" office:value="2.43" calcext:value-type="float">
+      <text:p>2,4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.Q178]+([.$M$170]/100)*[.Q167]+([.$M$158]/100)*[.Q155]+([.$M$146]/100)*[.Q131]+([.$M$122]/100)*[.Q119]+([.$M$110]/100)*[.Q107]+([.$M$99]/100)*[.Q96]+([.$M$74]/100)*[.Q71]+([.$M$62]/100)*[.Q59]+([.$M$51]/100)*[.Q48]+([.$M$39]/100)*[.Q36]+([.$M$17]/100)*[.Q14]" office:value-type="float" office:value="2.205" calcext:value-type="float">
-      <text:p>2,205</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.Q178]+([.$M$170]/100)*[.Q167]+([.$M$158]/100)*[.Q155]+([.$M$146]/100)*[.Q131]+([.$M$122]/100)*[.Q119]+([.$M$110]/100)*[.Q107]+([.$M$99]/100)*[.Q96]+([.$M$74]/100)*[.Q71]+([.$M$62]/100)*[.Q59]+([.$M$51]/100)*[.Q48]+([.$M$39]/100)*[.Q36]+([.$M$18]/100)*[.Q14]" office:value-type="float" office:value="2.09" calcext:value-type="float">
+      <text:p>2,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.R178]+([.$M$170]/100)*[.R167]+([.$M$158]/100)*[.R155]+([.$M$146]/100)*[.R131]+([.$M$122]/100)*[.R119]+([.$M$110]/100)*[.R107]+([.$M$99]/100)*[.R96]+([.$M$74]/100)*[.R71]+([.$M$62]/100)*[.R59]+([.$M$51]/100)*[.R48]+([.$M$39]/100)*[.R36]+([.$M$17]/100)*[.R14]" office:value-type="float" office:value="2.814" calcext:value-type="float">
-      <text:p>2,814</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.R178]+([.$M$170]/100)*[.R167]+([.$M$158]/100)*[.R155]+([.$M$146]/100)*[.R131]+([.$M$122]/100)*[.R119]+([.$M$110]/100)*[.R107]+([.$M$99]/100)*[.R96]+([.$M$74]/100)*[.R71]+([.$M$62]/100)*[.R59]+([.$M$51]/100)*[.R48]+([.$M$39]/100)*[.R36]+([.$M$18]/100)*[.R14]" office:value-type="float" office:value="2.95" calcext:value-type="float">
+      <text:p>3,0</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.S178]+([.$M$170]/100)*[.S167]+([.$M$158]/100)*[.S155]+([.$M$146]/100)*[.S131]+([.$M$122]/100)*[.S119]+([.$M$110]/100)*[.S107]+([.$M$99]/100)*[.S96]+([.$M$74]/100)*[.S71]+([.$M$62]/100)*[.S59]+([.$M$51]/100)*[.S48]+([.$M$39]/100)*[.S36]+([.$M$17]/100)*[.S14]" office:value-type="float" office:value="2.898" calcext:value-type="float">
-      <text:p>2,898</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.S178]+([.$M$170]/100)*[.S167]+([.$M$158]/100)*[.S155]+([.$M$146]/100)*[.S131]+([.$M$122]/100)*[.S119]+([.$M$110]/100)*[.S107]+([.$M$99]/100)*[.S96]+([.$M$74]/100)*[.S71]+([.$M$62]/100)*[.S59]+([.$M$51]/100)*[.S48]+([.$M$39]/100)*[.S36]+([.$M$18]/100)*[.S14]" office:value-type="float" office:value="3.05" calcext:value-type="float">
+      <text:p>3,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.T178]+([.$M$170]/100)*[.T167]+([.$M$158]/100)*[.T155]+([.$M$146]/100)*[.T131]+([.$M$122]/100)*[.T119]+([.$M$110]/100)*[.T107]+([.$M$99]/100)*[.T96]+([.$M$74]/100)*[.T71]+([.$M$62]/100)*[.T59]+([.$M$51]/100)*[.T48]+([.$M$39]/100)*[.T36]+([.$M$17]/100)*[.T14]" office:value-type="float" office:value="2.835" calcext:value-type="float">
-      <text:p>2,835</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.T178]+([.$M$170]/100)*[.T167]+([.$M$158]/100)*[.T155]+([.$M$146]/100)*[.T131]+([.$M$122]/100)*[.T119]+([.$M$110]/100)*[.T107]+([.$M$99]/100)*[.T96]+([.$M$74]/100)*[.T71]+([.$M$62]/100)*[.T59]+([.$M$51]/100)*[.T48]+([.$M$39]/100)*[.T36]+([.$M$18]/100)*[.T14]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.U178]+([.$M$170]/100)*[.U167]+([.$M$158]/100)*[.U155]+([.$M$146]/100)*[.U131]+([.$M$122]/100)*[.U119]+([.$M$110]/100)*[.U107]+([.$M$99]/100)*[.U96]+([.$M$74]/100)*[.U71]+([.$M$62]/100)*[.U59]+([.$M$51]/100)*[.U48]+([.$M$39]/100)*[.U36]+([.$M$17]/100)*[.U14]" office:value-type="float" office:value="2.645" calcext:value-type="float">
-      <text:p>2,645</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.U178]+([.$M$170]/100)*[.U167]+([.$M$158]/100)*[.U155]+([.$M$146]/100)*[.U131]+([.$M$122]/100)*[.U119]+([.$M$110]/100)*[.U107]+([.$M$99]/100)*[.U96]+([.$M$74]/100)*[.U71]+([.$M$62]/100)*[.U59]+([.$M$51]/100)*[.U48]+([.$M$39]/100)*[.U36]+([.$M$18]/100)*[.U14]" office:value-type="float" office:value="2.58" calcext:value-type="float">
+      <text:p>2,6</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.V178]+([.$M$170]/100)*[.V167]+([.$M$158]/100)*[.V155]+([.$M$146]/100)*[.V131]+([.$M$122]/100)*[.V119]+([.$M$110]/100)*[.V107]+([.$M$99]/100)*[.V96]+([.$M$74]/100)*[.V71]+([.$M$62]/100)*[.V59]+([.$M$51]/100)*[.V48]+([.$M$39]/100)*[.V36]+([.$M$17]/100)*[.V14]" office:value-type="float" office:value="2.122" calcext:value-type="float">
-      <text:p>2,122</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.V178]+([.$M$170]/100)*[.V167]+([.$M$158]/100)*[.V155]+([.$M$146]/100)*[.V131]+([.$M$122]/100)*[.V119]+([.$M$110]/100)*[.V107]+([.$M$99]/100)*[.V96]+([.$M$74]/100)*[.V71]+([.$M$62]/100)*[.V59]+([.$M$51]/100)*[.V48]+([.$M$39]/100)*[.V36]+([.$M$18]/100)*[.V14]" office:value-type="float" office:value="2.09" calcext:value-type="float">
+      <text:p>2,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.W178]+([.$M$170]/100)*[.W167]+([.$M$158]/100)*[.W155]+([.$M$146]/100)*[.W131]+([.$M$122]/100)*[.W119]+([.$M$110]/100)*[.W107]+([.$M$99]/100)*[.W96]+([.$M$74]/100)*[.W71]+([.$M$62]/100)*[.W59]+([.$M$51]/100)*[.W48]+([.$M$39]/100)*[.W36]+([.$M$17]/100)*[.W14]" office:value-type="float" office:value="2.731" calcext:value-type="float">
-      <text:p>2,731</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.W178]+([.$M$170]/100)*[.W167]+([.$M$158]/100)*[.W155]+([.$M$146]/100)*[.W131]+([.$M$122]/100)*[.W119]+([.$M$110]/100)*[.W107]+([.$M$99]/100)*[.W96]+([.$M$74]/100)*[.W71]+([.$M$62]/100)*[.W59]+([.$M$51]/100)*[.W48]+([.$M$39]/100)*[.W36]+([.$M$18]/100)*[.W14]" office:value-type="float" office:value="2.95" calcext:value-type="float">
+      <text:p>3,0</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.X178]+([.$M$170]/100)*[.X167]+([.$M$158]/100)*[.X155]+([.$M$146]/100)*[.X131]+([.$M$122]/100)*[.X119]+([.$M$110]/100)*[.X107]+([.$M$99]/100)*[.X96]+([.$M$74]/100)*[.X71]+([.$M$62]/100)*[.X59]+([.$M$51]/100)*[.X48]+([.$M$39]/100)*[.X36]+([.$M$17]/100)*[.X14]" office:value-type="float" office:value="3.068" calcext:value-type="float">
-      <text:p>3,068</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.X178]+([.$M$170]/100)*[.X167]+([.$M$158]/100)*[.X155]+([.$M$146]/100)*[.X131]+([.$M$122]/100)*[.X119]+([.$M$110]/100)*[.X107]+([.$M$99]/100)*[.X96]+([.$M$74]/100)*[.X71]+([.$M$62]/100)*[.X59]+([.$M$51]/100)*[.X48]+([.$M$39]/100)*[.X36]+([.$M$18]/100)*[.X14]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O189:.X189])" office:value-type="float" office:value="2.6874" calcext:value-type="float">
-      <text:p>2,6874</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=AVERAGE([.O189:.X189])" office:value-type="float" office:value="2.681" calcext:value-type="float">
+      <text:p>2,7</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
@@ -7569,38 +7596,38 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LiTiO</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.O179]+([.$M$170]/100)*[.O168]+([.$M$158]/100)*[.O156]+([.$M$146]/100)*[.O132]+([.$M$122]/100)*[.O120]+([.$M$110]/100)*[.O108]+([.$M$99]/100)*[.O97]+([.$M$74]/100)*[.O72]+([.$M$62]/100)*[.O60]+([.$M$51]/100)*[.O49]+([.$M$39]/100)*[.O37]+([.$M$17]/100)*[.O15]" office:value-type="float" office:value="2.918" calcext:value-type="float">
-      <text:p>2,918</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.O179]+([.$M$170]/100)*[.O168]+([.$M$158]/100)*[.O156]+([.$M$146]/100)*[.O132]+([.$M$122]/100)*[.O120]+([.$M$110]/100)*[.O108]+([.$M$99]/100)*[.O97]+([.$M$74]/100)*[.O72]+([.$M$62]/100)*[.O60]+([.$M$51]/100)*[.O49]+([.$M$39]/100)*[.O37]+([.$M$18]/100)*[.O15]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.P179]+([.$M$170]/100)*[.P168]+([.$M$158]/100)*[.P156]+([.$M$146]/100)*[.P132]+([.$M$122]/100)*[.P120]+([.$M$110]/100)*[.P108]+([.$M$99]/100)*[.P97]+([.$M$74]/100)*[.P72]+([.$M$62]/100)*[.P60]+([.$M$51]/100)*[.P49]+([.$M$39]/100)*[.P37]+([.$M$17]/100)*[.P15]" office:value-type="float" office:value="2.551" calcext:value-type="float">
-      <text:p>2,551</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.P179]+([.$M$170]/100)*[.P168]+([.$M$158]/100)*[.P156]+([.$M$146]/100)*[.P132]+([.$M$122]/100)*[.P120]+([.$M$110]/100)*[.P108]+([.$M$99]/100)*[.P97]+([.$M$74]/100)*[.P72]+([.$M$62]/100)*[.P60]+([.$M$51]/100)*[.P49]+([.$M$39]/100)*[.P37]+([.$M$18]/100)*[.P15]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.Q179]+([.$M$170]/100)*[.Q168]+([.$M$158]/100)*[.Q156]+([.$M$146]/100)*[.Q132]+([.$M$122]/100)*[.Q120]+([.$M$110]/100)*[.Q108]+([.$M$99]/100)*[.Q97]+([.$M$74]/100)*[.Q72]+([.$M$62]/100)*[.Q60]+([.$M$51]/100)*[.Q49]+([.$M$39]/100)*[.Q37]+([.$M$17]/100)*[.Q15]" office:value-type="float" office:value="2.088" calcext:value-type="float">
-      <text:p>2,088</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.Q179]+([.$M$170]/100)*[.Q168]+([.$M$158]/100)*[.Q156]+([.$M$146]/100)*[.Q132]+([.$M$122]/100)*[.Q120]+([.$M$110]/100)*[.Q108]+([.$M$99]/100)*[.Q97]+([.$M$74]/100)*[.Q72]+([.$M$62]/100)*[.Q60]+([.$M$51]/100)*[.Q49]+([.$M$39]/100)*[.Q37]+([.$M$18]/100)*[.Q15]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.R179]+([.$M$170]/100)*[.R168]+([.$M$158]/100)*[.R156]+([.$M$146]/100)*[.R132]+([.$M$122]/100)*[.R120]+([.$M$110]/100)*[.R108]+([.$M$99]/100)*[.R97]+([.$M$74]/100)*[.R72]+([.$M$62]/100)*[.R60]+([.$M$51]/100)*[.R49]+([.$M$39]/100)*[.R37]+([.$M$17]/100)*[.R15]" office:value-type="float" office:value="2.654" calcext:value-type="float">
-      <text:p>2,654</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.R179]+([.$M$170]/100)*[.R168]+([.$M$158]/100)*[.R156]+([.$M$146]/100)*[.R132]+([.$M$122]/100)*[.R120]+([.$M$110]/100)*[.R108]+([.$M$99]/100)*[.R97]+([.$M$74]/100)*[.R72]+([.$M$62]/100)*[.R60]+([.$M$51]/100)*[.R49]+([.$M$39]/100)*[.R37]+([.$M$18]/100)*[.R15]" office:value-type="float" office:value="2.79" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.S179]+([.$M$170]/100)*[.S168]+([.$M$158]/100)*[.S156]+([.$M$146]/100)*[.S132]+([.$M$122]/100)*[.S120]+([.$M$110]/100)*[.S108]+([.$M$99]/100)*[.S97]+([.$M$74]/100)*[.S72]+([.$M$62]/100)*[.S60]+([.$M$51]/100)*[.S49]+([.$M$39]/100)*[.S37]+([.$M$17]/100)*[.S15]" office:value-type="float" office:value="2.778" calcext:value-type="float">
-      <text:p>2,778</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.S179]+([.$M$170]/100)*[.S168]+([.$M$158]/100)*[.S156]+([.$M$146]/100)*[.S132]+([.$M$122]/100)*[.S120]+([.$M$110]/100)*[.S108]+([.$M$99]/100)*[.S97]+([.$M$74]/100)*[.S72]+([.$M$62]/100)*[.S60]+([.$M$51]/100)*[.S49]+([.$M$39]/100)*[.S37]+([.$M$18]/100)*[.S15]" office:value-type="float" office:value="2.72" calcext:value-type="float">
+      <text:p>2,7</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.T179]+([.$M$170]/100)*[.T168]+([.$M$158]/100)*[.T156]+([.$M$146]/100)*[.T132]+([.$M$122]/100)*[.T120]+([.$M$110]/100)*[.T108]+([.$M$99]/100)*[.T97]+([.$M$74]/100)*[.T72]+([.$M$62]/100)*[.T60]+([.$M$51]/100)*[.T49]+([.$M$39]/100)*[.T37]+([.$M$17]/100)*[.T15]" office:value-type="float" office:value="3.068" calcext:value-type="float">
-      <text:p>3,068</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.T179]+([.$M$170]/100)*[.T168]+([.$M$158]/100)*[.T156]+([.$M$146]/100)*[.T132]+([.$M$122]/100)*[.T120]+([.$M$110]/100)*[.T108]+([.$M$99]/100)*[.T97]+([.$M$74]/100)*[.T72]+([.$M$62]/100)*[.T60]+([.$M$51]/100)*[.T49]+([.$M$39]/100)*[.T37]+([.$M$18]/100)*[.T15]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,1</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.U179]+([.$M$170]/100)*[.U168]+([.$M$158]/100)*[.U156]+([.$M$146]/100)*[.U132]+([.$M$122]/100)*[.U120]+([.$M$110]/100)*[.U108]+([.$M$99]/100)*[.U97]+([.$M$74]/100)*[.U72]+([.$M$62]/100)*[.U60]+([.$M$51]/100)*[.U49]+([.$M$39]/100)*[.U37]+([.$M$17]/100)*[.U15]" office:value-type="float" office:value="2.701" calcext:value-type="float">
-      <text:p>2,701</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.U179]+([.$M$170]/100)*[.U168]+([.$M$158]/100)*[.U156]+([.$M$146]/100)*[.U132]+([.$M$122]/100)*[.U120]+([.$M$110]/100)*[.U108]+([.$M$99]/100)*[.U97]+([.$M$74]/100)*[.U72]+([.$M$62]/100)*[.U60]+([.$M$51]/100)*[.U49]+([.$M$39]/100)*[.U37]+([.$M$18]/100)*[.U15]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.V179]+([.$M$170]/100)*[.V168]+([.$M$158]/100)*[.V156]+([.$M$146]/100)*[.V132]+([.$M$122]/100)*[.V120]+([.$M$110]/100)*[.V108]+([.$M$99]/100)*[.V97]+([.$M$74]/100)*[.V72]+([.$M$62]/100)*[.V60]+([.$M$51]/100)*[.V49]+([.$M$39]/100)*[.V37]+([.$M$17]/100)*[.V15]" office:value-type="float" office:value="2.238" calcext:value-type="float">
-      <text:p>2,238</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.V179]+([.$M$170]/100)*[.V168]+([.$M$158]/100)*[.V156]+([.$M$146]/100)*[.V132]+([.$M$122]/100)*[.V120]+([.$M$110]/100)*[.V108]+([.$M$99]/100)*[.V97]+([.$M$74]/100)*[.V72]+([.$M$62]/100)*[.V60]+([.$M$51]/100)*[.V49]+([.$M$39]/100)*[.V37]+([.$M$18]/100)*[.V15]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.W179]+([.$M$170]/100)*[.W168]+([.$M$158]/100)*[.W156]+([.$M$146]/100)*[.W132]+([.$M$122]/100)*[.W120]+([.$M$110]/100)*[.W108]+([.$M$99]/100)*[.W97]+([.$M$74]/100)*[.W72]+([.$M$62]/100)*[.W60]+([.$M$51]/100)*[.W49]+([.$M$39]/100)*[.W37]+([.$M$17]/100)*[.W15]" office:value-type="float" office:value="2.721" calcext:value-type="float">
-      <text:p>2,721</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.W179]+([.$M$170]/100)*[.W168]+([.$M$158]/100)*[.W156]+([.$M$146]/100)*[.W132]+([.$M$122]/100)*[.W120]+([.$M$110]/100)*[.W108]+([.$M$99]/100)*[.W97]+([.$M$74]/100)*[.W72]+([.$M$62]/100)*[.W60]+([.$M$51]/100)*[.W49]+([.$M$39]/100)*[.W37]+([.$M$18]/100)*[.W15]" office:value-type="float" office:value="2.94" calcext:value-type="float">
+      <text:p>2,9</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.X179]+([.$M$170]/100)*[.X168]+([.$M$158]/100)*[.X156]+([.$M$146]/100)*[.X132]+([.$M$122]/100)*[.X120]+([.$M$110]/100)*[.X108]+([.$M$99]/100)*[.X97]+([.$M$74]/100)*[.X72]+([.$M$62]/100)*[.X60]+([.$M$51]/100)*[.X49]+([.$M$39]/100)*[.X37]+([.$M$17]/100)*[.X15]" office:value-type="float" office:value="2.908" calcext:value-type="float">
-      <text:p>2,908</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.X179]+([.$M$170]/100)*[.X168]+([.$M$158]/100)*[.X156]+([.$M$146]/100)*[.X132]+([.$M$122]/100)*[.X120]+([.$M$110]/100)*[.X108]+([.$M$99]/100)*[.X97]+([.$M$74]/100)*[.X72]+([.$M$62]/100)*[.X60]+([.$M$51]/100)*[.X49]+([.$M$39]/100)*[.X37]+([.$M$18]/100)*[.X15]" office:value-type="float" office:value="2.85" calcext:value-type="float">
+      <text:p>2,9</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O190:.X190])" office:value-type="float" office:value="2.6625" calcext:value-type="float">
-      <text:p>2,6625</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=AVERAGE([.O190:.X190])" office:value-type="float" office:value="2.766" calcext:value-type="float">
+      <text:p>2,8</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
@@ -7608,38 +7635,38 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HE</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.O180]+([.$M$170]/100)*[.O169]+([.$M$158]/100)*[.O157]+([.$M$146]/100)*[.O133]+([.$M$122]/100)*[.O121]+([.$M$110]/100)*[.O109]+([.$M$99]/100)*[.O98]+([.$M$74]/100)*[.O73]+([.$M$62]/100)*[.O61]+([.$M$51]/100)*[.O50]+([.$M$39]/100)*[.O38]+([.$M$17]/100)*[.O16]" office:value-type="float" office:value="2.338" calcext:value-type="float">
-      <text:p>2,338</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.O180]+([.$M$170]/100)*[.O169]+([.$M$158]/100)*[.O157]+([.$M$146]/100)*[.O133]+([.$M$122]/100)*[.O121]+([.$M$110]/100)*[.O109]+([.$M$99]/100)*[.O98]+([.$M$74]/100)*[.O73]+([.$M$62]/100)*[.O61]+([.$M$51]/100)*[.O50]+([.$M$39]/100)*[.O38]+([.$M$18]/100)*[.O16]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.P180]+([.$M$170]/100)*[.P169]+([.$M$158]/100)*[.P157]+([.$M$146]/100)*[.P133]+([.$M$122]/100)*[.P121]+([.$M$110]/100)*[.P109]+([.$M$99]/100)*[.P98]+([.$M$74]/100)*[.P73]+([.$M$62]/100)*[.P61]+([.$M$51]/100)*[.P50]+([.$M$39]/100)*[.P38]+([.$M$17]/100)*[.P16]" office:value-type="float" office:value="2.148" calcext:value-type="float">
-      <text:p>2,148</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.P180]+([.$M$170]/100)*[.P169]+([.$M$158]/100)*[.P157]+([.$M$146]/100)*[.P133]+([.$M$122]/100)*[.P121]+([.$M$110]/100)*[.P109]+([.$M$99]/100)*[.P98]+([.$M$74]/100)*[.P73]+([.$M$62]/100)*[.P61]+([.$M$51]/100)*[.P50]+([.$M$39]/100)*[.P38]+([.$M$18]/100)*[.P16]" office:value-type="float" office:value="2.3" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.Q180]+([.$M$170]/100)*[.Q169]+([.$M$158]/100)*[.Q157]+([.$M$146]/100)*[.Q133]+([.$M$122]/100)*[.Q121]+([.$M$110]/100)*[.Q109]+([.$M$99]/100)*[.Q98]+([.$M$74]/100)*[.Q73]+([.$M$62]/100)*[.Q61]+([.$M$51]/100)*[.Q50]+([.$M$39]/100)*[.Q38]+([.$M$17]/100)*[.Q16]" office:value-type="float" office:value="1.625" calcext:value-type="float">
-      <text:p>1,625</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.Q180]+([.$M$170]/100)*[.Q169]+([.$M$158]/100)*[.Q157]+([.$M$146]/100)*[.Q133]+([.$M$122]/100)*[.Q121]+([.$M$110]/100)*[.Q109]+([.$M$99]/100)*[.Q98]+([.$M$74]/100)*[.Q73]+([.$M$62]/100)*[.Q61]+([.$M$51]/100)*[.Q50]+([.$M$39]/100)*[.Q38]+([.$M$18]/100)*[.Q16]" office:value-type="float" office:value="1.81" calcext:value-type="float">
+      <text:p>1,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.R180]+([.$M$170]/100)*[.R169]+([.$M$158]/100)*[.R157]+([.$M$146]/100)*[.R133]+([.$M$122]/100)*[.R121]+([.$M$110]/100)*[.R109]+([.$M$99]/100)*[.R98]+([.$M$74]/100)*[.R73]+([.$M$62]/100)*[.R61]+([.$M$51]/100)*[.R50]+([.$M$39]/100)*[.R38]+([.$M$17]/100)*[.R16]" office:value-type="float" office:value="2.174" calcext:value-type="float">
-      <text:p>2,174</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.R180]+([.$M$170]/100)*[.R169]+([.$M$158]/100)*[.R157]+([.$M$146]/100)*[.R133]+([.$M$122]/100)*[.R121]+([.$M$110]/100)*[.R109]+([.$M$99]/100)*[.R98]+([.$M$74]/100)*[.R73]+([.$M$62]/100)*[.R61]+([.$M$51]/100)*[.R50]+([.$M$39]/100)*[.R38]+([.$M$18]/100)*[.R16]" office:value-type="float" office:value="2.31" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.S180]+([.$M$170]/100)*[.S169]+([.$M$158]/100)*[.S157]+([.$M$146]/100)*[.S133]+([.$M$122]/100)*[.S121]+([.$M$110]/100)*[.S109]+([.$M$99]/100)*[.S98]+([.$M$74]/100)*[.S73]+([.$M$62]/100)*[.S61]+([.$M$51]/100)*[.S50]+([.$M$39]/100)*[.S38]+([.$M$17]/100)*[.S16]" office:value-type="float" office:value="2.488" calcext:value-type="float">
-      <text:p>2,488</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.S180]+([.$M$170]/100)*[.S169]+([.$M$158]/100)*[.S157]+([.$M$146]/100)*[.S133]+([.$M$122]/100)*[.S121]+([.$M$110]/100)*[.S109]+([.$M$99]/100)*[.S98]+([.$M$74]/100)*[.S73]+([.$M$62]/100)*[.S61]+([.$M$51]/100)*[.S50]+([.$M$39]/100)*[.S38]+([.$M$18]/100)*[.S16]" office:value-type="float" office:value="2.64" calcext:value-type="float">
+      <text:p>2,6</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.T180]+([.$M$170]/100)*[.T169]+([.$M$158]/100)*[.T157]+([.$M$146]/100)*[.T133]+([.$M$122]/100)*[.T121]+([.$M$110]/100)*[.T109]+([.$M$99]/100)*[.T98]+([.$M$74]/100)*[.T73]+([.$M$62]/100)*[.T61]+([.$M$51]/100)*[.T50]+([.$M$39]/100)*[.T38]+([.$M$17]/100)*[.T16]" office:value-type="float" office:value="2.568" calcext:value-type="float">
-      <text:p>2,568</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.T180]+([.$M$170]/100)*[.T169]+([.$M$158]/100)*[.T157]+([.$M$146]/100)*[.T133]+([.$M$122]/100)*[.T121]+([.$M$110]/100)*[.T109]+([.$M$99]/100)*[.T98]+([.$M$74]/100)*[.T73]+([.$M$62]/100)*[.T61]+([.$M$51]/100)*[.T50]+([.$M$39]/100)*[.T38]+([.$M$18]/100)*[.T16]" office:value-type="float" office:value="2.42" calcext:value-type="float">
+      <text:p>2,4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.U180]+([.$M$170]/100)*[.U169]+([.$M$158]/100)*[.U157]+([.$M$146]/100)*[.U133]+([.$M$122]/100)*[.U121]+([.$M$110]/100)*[.U109]+([.$M$99]/100)*[.U98]+([.$M$74]/100)*[.U73]+([.$M$62]/100)*[.U61]+([.$M$51]/100)*[.U50]+([.$M$39]/100)*[.U38]+([.$M$17]/100)*[.U16]" office:value-type="float" office:value="2.218" calcext:value-type="float">
-      <text:p>2,218</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.U180]+([.$M$170]/100)*[.U169]+([.$M$158]/100)*[.U157]+([.$M$146]/100)*[.U133]+([.$M$122]/100)*[.U121]+([.$M$110]/100)*[.U109]+([.$M$99]/100)*[.U98]+([.$M$74]/100)*[.U73]+([.$M$62]/100)*[.U61]+([.$M$51]/100)*[.U50]+([.$M$39]/100)*[.U38]+([.$M$18]/100)*[.U16]" office:value-type="float" office:value="2.22" calcext:value-type="float">
+      <text:p>2,2</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.V180]+([.$M$170]/100)*[.V169]+([.$M$158]/100)*[.V157]+([.$M$146]/100)*[.V133]+([.$M$122]/100)*[.V121]+([.$M$110]/100)*[.V109]+([.$M$99]/100)*[.V98]+([.$M$74]/100)*[.V73]+([.$M$62]/100)*[.V61]+([.$M$51]/100)*[.V50]+([.$M$39]/100)*[.V38]+([.$M$17]/100)*[.V16]" office:value-type="float" office:value="1.755" calcext:value-type="float">
-      <text:p>1,755</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.V180]+([.$M$170]/100)*[.V169]+([.$M$158]/100)*[.V157]+([.$M$146]/100)*[.V133]+([.$M$122]/100)*[.V121]+([.$M$110]/100)*[.V109]+([.$M$99]/100)*[.V98]+([.$M$74]/100)*[.V73]+([.$M$62]/100)*[.V61]+([.$M$51]/100)*[.V50]+([.$M$39]/100)*[.V38]+([.$M$18]/100)*[.V16]" office:value-type="float" office:value="1.79" calcext:value-type="float">
+      <text:p>1,8</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.W180]+([.$M$170]/100)*[.W169]+([.$M$158]/100)*[.W157]+([.$M$146]/100)*[.W133]+([.$M$122]/100)*[.W121]+([.$M$110]/100)*[.W109]+([.$M$99]/100)*[.W98]+([.$M$74]/100)*[.W73]+([.$M$62]/100)*[.W61]+([.$M$51]/100)*[.W50]+([.$M$39]/100)*[.W38]+([.$M$17]/100)*[.W16]" office:value-type="float" office:value="2.321" calcext:value-type="float">
-      <text:p>2,321</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.W180]+([.$M$170]/100)*[.W169]+([.$M$158]/100)*[.W157]+([.$M$146]/100)*[.W133]+([.$M$122]/100)*[.W121]+([.$M$110]/100)*[.W109]+([.$M$99]/100)*[.W98]+([.$M$74]/100)*[.W73]+([.$M$62]/100)*[.W61]+([.$M$51]/100)*[.W50]+([.$M$39]/100)*[.W38]+([.$M$18]/100)*[.W16]" office:value-type="float" office:value="2.54" calcext:value-type="float">
+      <text:p>2,5</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.X180]+([.$M$170]/100)*[.X169]+([.$M$158]/100)*[.X157]+([.$M$146]/100)*[.X133]+([.$M$122]/100)*[.X121]+([.$M$110]/100)*[.X109]+([.$M$99]/100)*[.X98]+([.$M$74]/100)*[.X73]+([.$M$62]/100)*[.X61]+([.$M$51]/100)*[.X50]+([.$M$39]/100)*[.X38]+([.$M$17]/100)*[.X16]" office:value-type="float" office:value="2.658" calcext:value-type="float">
-      <text:p>2,658</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.X180]+([.$M$170]/100)*[.X169]+([.$M$158]/100)*[.X157]+([.$M$146]/100)*[.X133]+([.$M$122]/100)*[.X121]+([.$M$110]/100)*[.X109]+([.$M$99]/100)*[.X98]+([.$M$74]/100)*[.X73]+([.$M$62]/100)*[.X61]+([.$M$51]/100)*[.X50]+([.$M$39]/100)*[.X38]+([.$M$18]/100)*[.X16]" office:value-type="float" office:value="2.66" calcext:value-type="float">
+      <text:p>2,7</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O191:.X191])" office:value-type="float" office:value="2.2293" calcext:value-type="float">
-      <text:p>2,2293</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=AVERAGE([.O191:.X191])" office:value-type="float" office:value="2.303" calcext:value-type="float">
+      <text:p>2,3</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
@@ -7647,38 +7674,38 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>LFP-HP</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.O181]+([.$M$170]/100)*[.O170]+([.$M$158]/100)*[.O158]+([.$M$146]/100)*[.O134]+([.$M$122]/100)*[.O122]+([.$M$110]/100)*[.O110]+([.$M$99]/100)*[.O99]+([.$M$74]/100)*[.O74]+([.$M$62]/100)*[.O62]+([.$M$51]/100)*[.O51]+([.$M$39]/100)*[.O39]+([.$M$17]/100)*[.O17]" office:value-type="float" office:value="2.538" calcext:value-type="float">
-      <text:p>2,538</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.O181]+([.$M$170]/100)*[.O170]+([.$M$158]/100)*[.O158]+([.$M$146]/100)*[.O134]+([.$M$122]/100)*[.O122]+([.$M$110]/100)*[.O110]+([.$M$99]/100)*[.O99]+([.$M$74]/100)*[.O74]+([.$M$62]/100)*[.O62]+([.$M$51]/100)*[.O51]+([.$M$39]/100)*[.O39]+([.$M$18]/100)*[.O17]" office:value-type="float" office:value="2.39" calcext:value-type="float">
+      <text:p>2,4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.P181]+([.$M$170]/100)*[.P170]+([.$M$158]/100)*[.P158]+([.$M$146]/100)*[.P134]+([.$M$122]/100)*[.P122]+([.$M$110]/100)*[.P110]+([.$M$99]/100)*[.P99]+([.$M$74]/100)*[.P74]+([.$M$62]/100)*[.P62]+([.$M$51]/100)*[.P51]+([.$M$39]/100)*[.P39]+([.$M$17]/100)*[.P17]" office:value-type="float" office:value="2.138" calcext:value-type="float">
-      <text:p>2,138</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.P181]+([.$M$170]/100)*[.P170]+([.$M$158]/100)*[.P158]+([.$M$146]/100)*[.P134]+([.$M$122]/100)*[.P122]+([.$M$110]/100)*[.P110]+([.$M$99]/100)*[.P99]+([.$M$74]/100)*[.P74]+([.$M$62]/100)*[.P62]+([.$M$51]/100)*[.P51]+([.$M$39]/100)*[.P39]+([.$M$18]/100)*[.P17]" office:value-type="float" office:value="1.99" calcext:value-type="float">
+      <text:p>2,0</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.Q181]+([.$M$170]/100)*[.Q170]+([.$M$158]/100)*[.Q158]+([.$M$146]/100)*[.Q134]+([.$M$122]/100)*[.Q122]+([.$M$110]/100)*[.Q110]+([.$M$99]/100)*[.Q99]+([.$M$74]/100)*[.Q74]+([.$M$62]/100)*[.Q62]+([.$M$51]/100)*[.Q51]+([.$M$39]/100)*[.Q39]+([.$M$17]/100)*[.Q17]" office:value-type="float" office:value="1.825" calcext:value-type="float">
-      <text:p>1,825</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.Q181]+([.$M$170]/100)*[.Q170]+([.$M$158]/100)*[.Q158]+([.$M$146]/100)*[.Q134]+([.$M$122]/100)*[.Q122]+([.$M$110]/100)*[.Q110]+([.$M$99]/100)*[.Q99]+([.$M$74]/100)*[.Q74]+([.$M$62]/100)*[.Q62]+([.$M$51]/100)*[.Q51]+([.$M$39]/100)*[.Q39]+([.$M$18]/100)*[.Q17]" office:value-type="float" office:value="1.71" calcext:value-type="float">
+      <text:p>1,7</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.R181]+([.$M$170]/100)*[.R170]+([.$M$158]/100)*[.R158]+([.$M$146]/100)*[.R134]+([.$M$122]/100)*[.R122]+([.$M$110]/100)*[.R110]+([.$M$99]/100)*[.R99]+([.$M$74]/100)*[.R74]+([.$M$62]/100)*[.R62]+([.$M$51]/100)*[.R51]+([.$M$39]/100)*[.R39]+([.$M$17]/100)*[.R17]" office:value-type="float" office:value="2.374" calcext:value-type="float">
-      <text:p>2,374</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.R181]+([.$M$170]/100)*[.R170]+([.$M$158]/100)*[.R158]+([.$M$146]/100)*[.R134]+([.$M$122]/100)*[.R122]+([.$M$110]/100)*[.R110]+([.$M$99]/100)*[.R99]+([.$M$74]/100)*[.R74]+([.$M$62]/100)*[.R62]+([.$M$51]/100)*[.R51]+([.$M$39]/100)*[.R39]+([.$M$18]/100)*[.R17]" office:value-type="float" office:value="2.51" calcext:value-type="float">
+      <text:p>2,5</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.S181]+([.$M$170]/100)*[.S170]+([.$M$158]/100)*[.S158]+([.$M$146]/100)*[.S134]+([.$M$122]/100)*[.S122]+([.$M$110]/100)*[.S110]+([.$M$99]/100)*[.S99]+([.$M$74]/100)*[.S74]+([.$M$62]/100)*[.S62]+([.$M$51]/100)*[.S51]+([.$M$39]/100)*[.S39]+([.$M$17]/100)*[.S17]" office:value-type="float" office:value="2.378" calcext:value-type="float">
-      <text:p>2,378</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.S181]+([.$M$170]/100)*[.S170]+([.$M$158]/100)*[.S158]+([.$M$146]/100)*[.S134]+([.$M$122]/100)*[.S122]+([.$M$110]/100)*[.S110]+([.$M$99]/100)*[.S99]+([.$M$74]/100)*[.S74]+([.$M$62]/100)*[.S62]+([.$M$51]/100)*[.S51]+([.$M$39]/100)*[.S39]+([.$M$18]/100)*[.S17]" office:value-type="float" office:value="2.38" calcext:value-type="float">
+      <text:p>2,4</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.T181]+([.$M$170]/100)*[.T170]+([.$M$158]/100)*[.T158]+([.$M$146]/100)*[.T134]+([.$M$122]/100)*[.T122]+([.$M$110]/100)*[.T110]+([.$M$99]/100)*[.T99]+([.$M$74]/100)*[.T74]+([.$M$62]/100)*[.T62]+([.$M$51]/100)*[.T51]+([.$M$39]/100)*[.T39]+([.$M$17]/100)*[.T17]" office:value-type="float" office:value="2.585" calcext:value-type="float">
-      <text:p>2,585</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.T181]+([.$M$170]/100)*[.T170]+([.$M$158]/100)*[.T158]+([.$M$146]/100)*[.T134]+([.$M$122]/100)*[.T122]+([.$M$110]/100)*[.T110]+([.$M$99]/100)*[.T99]+([.$M$74]/100)*[.T74]+([.$M$62]/100)*[.T62]+([.$M$51]/100)*[.T51]+([.$M$39]/100)*[.T39]+([.$M$18]/100)*[.T17]" office:value-type="float" office:value="2.52" calcext:value-type="float">
+      <text:p>2,5</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.U181]+([.$M$170]/100)*[.U170]+([.$M$158]/100)*[.U158]+([.$M$146]/100)*[.U134]+([.$M$122]/100)*[.U122]+([.$M$110]/100)*[.U110]+([.$M$99]/100)*[.U99]+([.$M$74]/100)*[.U74]+([.$M$62]/100)*[.U62]+([.$M$51]/100)*[.U51]+([.$M$39]/100)*[.U39]+([.$M$17]/100)*[.U17]" office:value-type="float" office:value="2.085" calcext:value-type="float">
-      <text:p>2,085</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.U181]+([.$M$170]/100)*[.U170]+([.$M$158]/100)*[.U158]+([.$M$146]/100)*[.U134]+([.$M$122]/100)*[.U122]+([.$M$110]/100)*[.U110]+([.$M$99]/100)*[.U99]+([.$M$74]/100)*[.U74]+([.$M$62]/100)*[.U62]+([.$M$51]/100)*[.U51]+([.$M$39]/100)*[.U39]+([.$M$18]/100)*[.U17]" office:value-type="float" office:value="2.02" calcext:value-type="float">
+      <text:p>2,0</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.V181]+([.$M$170]/100)*[.V170]+([.$M$158]/100)*[.V158]+([.$M$146]/100)*[.V134]+([.$M$122]/100)*[.V122]+([.$M$110]/100)*[.V110]+([.$M$99]/100)*[.V99]+([.$M$74]/100)*[.V74]+([.$M$62]/100)*[.V62]+([.$M$51]/100)*[.V51]+([.$M$39]/100)*[.V39]+([.$M$17]/100)*[.V17]" office:value-type="float" office:value="1.772" calcext:value-type="float">
-      <text:p>1,772</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.V181]+([.$M$170]/100)*[.V170]+([.$M$158]/100)*[.V158]+([.$M$146]/100)*[.V134]+([.$M$122]/100)*[.V122]+([.$M$110]/100)*[.V110]+([.$M$99]/100)*[.V99]+([.$M$74]/100)*[.V74]+([.$M$62]/100)*[.V62]+([.$M$51]/100)*[.V51]+([.$M$39]/100)*[.V39]+([.$M$18]/100)*[.V17]" office:value-type="float" office:value="1.74" calcext:value-type="float">
+      <text:p>1,7</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.W181]+([.$M$170]/100)*[.W170]+([.$M$158]/100)*[.W158]+([.$M$146]/100)*[.W134]+([.$M$122]/100)*[.W122]+([.$M$110]/100)*[.W110]+([.$M$99]/100)*[.W99]+([.$M$74]/100)*[.W74]+([.$M$62]/100)*[.W62]+([.$M$51]/100)*[.W51]+([.$M$39]/100)*[.W39]+([.$M$17]/100)*[.W17]" office:value-type="float" office:value="2.521" calcext:value-type="float">
-      <text:p>2,521</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.W181]+([.$M$170]/100)*[.W170]+([.$M$158]/100)*[.W158]+([.$M$146]/100)*[.W134]+([.$M$122]/100)*[.W122]+([.$M$110]/100)*[.W110]+([.$M$99]/100)*[.W99]+([.$M$74]/100)*[.W74]+([.$M$62]/100)*[.W62]+([.$M$51]/100)*[.W51]+([.$M$39]/100)*[.W39]+([.$M$18]/100)*[.W17]" office:value-type="float" office:value="2.74" calcext:value-type="float">
+      <text:p>2,7</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=([.$M$181]/100)*[.X181]+([.$M$170]/100)*[.X170]+([.$M$158]/100)*[.X158]+([.$M$146]/100)*[.X134]+([.$M$122]/100)*[.X122]+([.$M$110]/100)*[.X110]+([.$M$99]/100)*[.X99]+([.$M$74]/100)*[.X74]+([.$M$62]/100)*[.X62]+([.$M$51]/100)*[.X51]+([.$M$39]/100)*[.X39]+([.$M$17]/100)*[.X17]" office:value-type="float" office:value="2.508" calcext:value-type="float">
-      <text:p>2,508</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=([.$M$181]/100)*[.X181]+([.$M$170]/100)*[.X170]+([.$M$158]/100)*[.X158]+([.$M$146]/100)*[.X134]+([.$M$122]/100)*[.X122]+([.$M$110]/100)*[.X110]+([.$M$99]/100)*[.X99]+([.$M$74]/100)*[.X74]+([.$M$62]/100)*[.X62]+([.$M$51]/100)*[.X51]+([.$M$39]/100)*[.X39]+([.$M$18]/100)*[.X17]" office:value-type="float" office:value="2.45" calcext:value-type="float">
+      <text:p>2,5</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O192:.X192])" office:value-type="float" office:value="2.2724" calcext:value-type="float">
-      <text:p>2,2724</text:p>
+     <table:table-cell table:style-name="ce20" table:formula="of:=AVERAGE([.O192:.X192])" office:value-type="float" office:value="2.245" calcext:value-type="float">
+      <text:p>2,2</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
@@ -7686,8 +7713,8 @@
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Mittelwert</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O189:.X192])" office:value-type="float" office:value="2.4629" calcext:value-type="float">
-      <text:p>2,4629</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.O189:.X192])" office:value-type="float" office:value="2.49875" calcext:value-type="float">
+      <text:p>2,49875</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -7696,8 +7723,8 @@
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Min</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=MIN([.O189:.X192])" office:value-type="float" office:value="1.625" calcext:value-type="float">
-      <text:p>1,625</text:p>
+     <table:table-cell table:formula="of:=MIN([.O189:.X192])" office:value-type="float" office:value="1.71" calcext:value-type="float">
+      <text:p>1,71</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -7706,8 +7733,8 @@
      <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Max</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=MAX([.O189:.X192])" office:value-type="float" office:value="3.068" calcext:value-type="float">
-      <text:p>3,068</text:p>
+     <table:table-cell table:formula="of:=MAX([.O189:.X192])" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,07</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="10"/>
     </table:table-row>
@@ -7735,20 +7762,20 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>MW204</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.O189:.O192])" office:value-type="float" office:value="2.693" calcext:value-type="float">
-      <text:p>2,693</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.O189:.O192])" office:value-type="float" office:value="2.6575" calcext:value-type="float">
+      <text:p>2,6575</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.P189:.P192])" office:value-type="float" office:value="2.35375" calcext:value-type="float">
-      <text:p>2,35375</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.P189:.P192])" office:value-type="float" office:value="2.3725" calcext:value-type="float">
+      <text:p>2,3725</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.Q189:.Q192])" office:value-type="float" office:value="1.93575" calcext:value-type="float">
-      <text:p>1,93575</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.Q189:.Q192])" office:value-type="float" office:value="1.9875" calcext:value-type="float">
+      <text:p>1,9875</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.R189:.R192])" office:value-type="float" office:value="2.504" calcext:value-type="float">
-      <text:p>2,504</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.R189:.R192])" office:value-type="float" office:value="2.64" calcext:value-type="float">
+      <text:p>2,64</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.S189:.S192])" office:value-type="float" office:value="2.6355" calcext:value-type="float">
-      <text:p>2,6355</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.S189:.S192])" office:value-type="float" office:value="2.6975" calcext:value-type="float">
+      <text:p>2,6975</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
@@ -7757,20 +7784,20 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>MW192</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.T189:.T192])" office:value-type="float" office:value="2.764" calcext:value-type="float">
-      <text:p>2,764</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.T189:.T192])" office:value-type="float" office:value="2.695" calcext:value-type="float">
+      <text:p>2,695</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.U189:.U192])" office:value-type="float" office:value="2.41225" calcext:value-type="float">
-      <text:p>2,41225</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.U189:.U192])" office:value-type="float" office:value="2.3975" calcext:value-type="float">
+      <text:p>2,3975</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.V189:.V192])" office:value-type="float" office:value="1.97175" calcext:value-type="float">
-      <text:p>1,97175</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.V189:.V192])" office:value-type="float" office:value="1.99" calcext:value-type="float">
+      <text:p>1,99</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.W189:.W192])" office:value-type="float" office:value="2.5735" calcext:value-type="float">
-      <text:p>2,5735</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.W189:.W192])" office:value-type="float" office:value="2.7925" calcext:value-type="float">
+      <text:p>2,7925</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.X189:.X192])" office:value-type="float" office:value="2.7855" calcext:value-type="float">
-      <text:p>2,7855</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.X189:.X192])" office:value-type="float" office:value="2.7575" calcext:value-type="float">
+      <text:p>2,7575</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
@@ -7779,22 +7806,333 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Mwges</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.Q197:.Q198])" office:value-type="float" office:value="2.7285" calcext:value-type="float">
-      <text:p>2,7285</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.Q197:.Q198])" office:value-type="float" office:value="2.67625" calcext:value-type="float">
+      <text:p>2,67625</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.R197:.R198])" office:value-type="float" office:value="2.383" calcext:value-type="float">
-      <text:p>2,383</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.R197:.R198])" office:value-type="float" office:value="2.385" calcext:value-type="float">
+      <text:p>2,385</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.S197:.S198])" office:value-type="float" office:value="1.95375" calcext:value-type="float">
-      <text:p>1,95375</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.S197:.S198])" office:value-type="float" office:value="1.98875" calcext:value-type="float">
+      <text:p>1,98875</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.T197:.T198])" office:value-type="float" office:value="2.53875" calcext:value-type="float">
-      <text:p>2,53875</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.T197:.T198])" office:value-type="float" office:value="2.71625" calcext:value-type="float">
+      <text:p>2,71625</text:p>
      </table:table-cell>
-     <table:table-cell table:formula="of:=AVERAGE([.U197:.U198])" office:value-type="float" office:value="2.7105" calcext:value-type="float">
-      <text:p>2,7105</text:p>
+     <table:table-cell table:formula="of:=AVERAGE([.U197:.U198])" office:value-type="float" office:value="2.7275" calcext:value-type="float">
+      <text:p>2,7275</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="3">
+     <table:table-cell table:number-columns-repeated="25"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce17" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="6" table:number-rows-spanned="1">
+      <text:p>Buslinie 204</text:p>
+     </table:table-cell>
+     <table:covered-table-cell table:number-columns-repeated="5" table:style-name="ce18"/>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:style-name="ce21" office:value-type="string" calcext:value-type="string">
+      <text:p>40kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>200kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>375kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce21" office:value-type="string" calcext:value-type="string">
+      <text:p>Swap</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>Nachtladen</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>Zeilendurchschnitt</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce19" office:value-type="float" office:value="18650" calcext:value-type="float">
+      <text:p>18650,00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.O189]" office:value-type="float" office:value="2.83" calcext:value-type="float">
+      <text:p>2,83</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.P189]" office:value-type="float" office:value="2.43" calcext:value-type="float">
+      <text:p>2,43</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.Q189]" office:value-type="float" office:value="2.09" calcext:value-type="float">
+      <text:p>2,09</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.R189]" office:value-type="float" office:value="2.95" calcext:value-type="float">
+      <text:p>2,95</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.S189]" office:value-type="float" office:value="3.05" calcext:value-type="float">
+      <text:p>3,05</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O205:.S205])" office:value-type="float" office:value="2.67" calcext:value-type="float">
+      <text:p>2,67</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LiTiO</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.O190]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,07</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.P190]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,77</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.Q190]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.R190]" office:value-type="float" office:value="2.79" calcext:value-type="float">
+      <text:p>2,79</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce22" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0,00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O206:.S206])" office:value-type="float" office:value="2.194" calcext:value-type="float">
+      <text:p>2,19</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LFP-HE</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.O191]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.P191]" office:value-type="float" office:value="2.3" calcext:value-type="float">
+      <text:p>2,30</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.Q191]" office:value-type="float" office:value="1.81" calcext:value-type="float">
+      <text:p>1,81</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.R191]" office:value-type="float" office:value="2.31" calcext:value-type="float">
+      <text:p>2,31</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.S191]" office:value-type="float" office:value="2.64" calcext:value-type="float">
+      <text:p>2,64</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O207:.S207])" office:value-type="float" office:value="2.28" calcext:value-type="float">
+      <text:p>2,28</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LFP-HP</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.O192]" office:value-type="float" office:value="2.39" calcext:value-type="float">
+      <text:p>2,39</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.P192]" office:value-type="float" office:value="1.99" calcext:value-type="float">
+      <text:p>1,99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.Q192]" office:value-type="float" office:value="1.71" calcext:value-type="float">
+      <text:p>1,71</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.R192]" office:value-type="float" office:value="2.51" calcext:value-type="float">
+      <text:p>2,51</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.S192]" office:value-type="float" office:value="2.38" calcext:value-type="float">
+      <text:p>2,38</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O208:.S208])" office:value-type="float" office:value="2.196" calcext:value-type="float">
+      <text:p>2,20</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>Spaltendurchschnitt</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O205:.O208])" office:value-type="float" office:value="2.6575" calcext:value-type="float">
+      <text:p>2,66</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.P205:.P208])" office:value-type="float" office:value="2.3725" calcext:value-type="float">
+      <text:p>2,37</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.Q205:.Q208])" office:value-type="float" office:value="1.9875" calcext:value-type="float">
+      <text:p>1,99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.R205:.R208])" office:value-type="float" office:value="2.64" calcext:value-type="float">
+      <text:p>2,64</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.S205:.S208])" office:value-type="float" office:value="2.0175" calcext:value-type="float">
+      <text:p>2,02</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce17" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="6" table:number-rows-spanned="1">
+      <text:p>Buslinie 192</text:p>
+     </table:table-cell>
+     <table:covered-table-cell table:number-columns-repeated="5" table:style-name="ce18"/>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:style-name="ce21" office:value-type="string" calcext:value-type="string">
+      <text:p>40kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>200kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>375kW</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce21" office:value-type="string" calcext:value-type="string">
+      <text:p>Swap</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>Nachtladen</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce19" office:value-type="float" office:value="18650" calcext:value-type="float">
+      <text:p>18650,00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.T189]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,77</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.U189]" office:value-type="float" office:value="2.58" calcext:value-type="float">
+      <text:p>2,58</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.V189]" office:value-type="float" office:value="2.09" calcext:value-type="float">
+      <text:p>2,09</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.W189]" office:value-type="float" office:value="2.95" calcext:value-type="float">
+      <text:p>2,95</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.X189]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,07</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O212:.S212])" office:value-type="float" office:value="2.692" calcext:value-type="float">
+      <text:p>2,69</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LiTiO</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.T190]" office:value-type="float" office:value="3.07" calcext:value-type="float">
+      <text:p>3,07</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.U190]" office:value-type="float" office:value="2.77" calcext:value-type="float">
+      <text:p>2,77</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.V190]" office:value-type="float" office:value="2.34" calcext:value-type="float">
+      <text:p>2,34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.W190]" office:value-type="float" office:value="2.94" calcext:value-type="float">
+      <text:p>2,94</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce22" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0,00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O213:.S213])" office:value-type="float" office:value="2.224" calcext:value-type="float">
+      <text:p>2,22</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LFP-HE</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.T191]" office:value-type="float" office:value="2.42" calcext:value-type="float">
+      <text:p>2,42</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.U191]" office:value-type="float" office:value="2.22" calcext:value-type="float">
+      <text:p>2,22</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.V191]" office:value-type="float" office:value="1.79" calcext:value-type="float">
+      <text:p>1,79</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.W191]" office:value-type="float" office:value="2.54" calcext:value-type="float">
+      <text:p>2,54</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.X191]" office:value-type="float" office:value="2.66" calcext:value-type="float">
+      <text:p>2,66</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O214:.S214])" office:value-type="float" office:value="2.326" calcext:value-type="float">
+      <text:p>2,33</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>LFP-HP</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.T192]" office:value-type="float" office:value="2.52" calcext:value-type="float">
+      <text:p>2,52</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.U192]" office:value-type="float" office:value="2.02" calcext:value-type="float">
+      <text:p>2,02</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.V192]" office:value-type="float" office:value="1.74" calcext:value-type="float">
+      <text:p>1,74</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=[.W192]" office:value-type="float" office:value="2.74" calcext:value-type="float">
+      <text:p>2,74</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce22" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0,00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O215:.S215])" office:value-type="float" office:value="1.804" calcext:value-type="float">
+      <text:p>1,80</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="13"/>
+     <table:table-cell table:style-name="ce18" office:value-type="string" calcext:value-type="string">
+      <text:p>Spaltendurchschnitt</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.O212:.O215])" office:value-type="float" office:value="2.695" calcext:value-type="float">
+      <text:p>2,70</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.P212:.P215])" office:value-type="float" office:value="2.3975" calcext:value-type="float">
+      <text:p>2,40</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.Q212:.Q215])" office:value-type="float" office:value="1.99" calcext:value-type="float">
+      <text:p>1,99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.R212:.R215])" office:value-type="float" office:value="2.7925" calcext:value-type="float">
+      <text:p>2,79</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18" table:formula="of:=AVERAGE([.S212:.S215])" office:value-type="float" office:value="1.4325" calcext:value-type="float">
+      <text:p>1,43</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce18"/>
+     <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
    </table:table>
    <table:named-expressions/>
