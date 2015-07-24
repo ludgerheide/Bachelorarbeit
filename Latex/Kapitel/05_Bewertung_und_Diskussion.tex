@@ -55,7 +55,6 @@ Auf Basis dieses Schemas wurden den berechneten Werten die in Tabelle \ref{tab_p
 		\textbf{Störanfälligkeit der Ladestation}                &                  &            &         &           &  \\
 		Anteil Ladezeit an Gesamtzeit                            & 1                &  $\ge 0,4$ &  $<0,4$ &    $<0,2$ &       $<0,1$ \\
 		Exponierte Leiter                                        & ---              &      immer &     --- & nur Laden &          nie \\
-		Freiheitsgrade Ladestation                               & 1                &       $>2$ &       2 &         1 &            0 \\
 		Zugänglichkeit Ladestation                               & ---              &  ebenerdig &  erhöht & unterflur & unzugänglich \\ \midrule
 		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                  &            &         &           &  \\
 		Volumen Ladesystem (feste Position)                      & l                & $\ge 1000$ & $<1000$ &    $<500$ &       $<250$ \\
@@ -82,10 +81,9 @@ Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit 
 Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschema konstruiert.
 %TODO: Remove
 \begin{quotation}	
-	\textbf{Notizen zu Tabellen \ref{tab_bewertungskriterien}} und \label{tab_punktzahlen}
+	\textbf{Notizen zu Tabellen \ref{tab_bewertungskriterien} und \ref{tab_punktzahlen}}
 	\begin{itemize}
 		\item Masse $\rightarrow$ Zuverlässigkeit (wegen Verschleiß)?
-		\item Exponierte Leiter wo?
 		\item Volumen Ladestation konnte nirgendwo untergebracht werden
 		\item Volumen Fahrzeug fest steht nicht unbedingt im Zusammenhang zu Niederflurbussen
 	\end{itemize}
@@ -99,16 +97,15 @@ Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} da
 		\textbf{Zuverlässigkeit Fahrzeug}                        &                   &  \\
 		Ladezyklen pro Kilometer                                 &                   & 8               \\
 		Freiheitsgrade Ladesystem Fahrzeug                       &                   & 8               \\
-		Positionierungsgenauigkeit (Fläche)                      &                   & 6               \\
+		Masse Ladesystem + Batterie                              &                   & 6               \\
 		Positionierungsgenauigkeit (Winkel)                      &                   & 3               \\
 		Zugänglichkeit Schnittstelle Fahrzeug                    &                   & 3               \\
-		Masse Ladesystem + Batterie                              &                   & 2               \\ \midrule
+		Positionierungsgenauigkeit (Fläche)                      &                   & 4               \\ \midrule
 		                                                         &          $\Sigma$ & \textbf{30}     \\
 		\textbf{Störanfälligkeit der Ladestation}                &                   &  \\
-		Anteil Ladezeit an Gesamtzeit                            &                   & 6,25             \\
-		Exponierte Leiter                                        &                   & 6,25             \\
-		Freiheitsgrade Ladestation                               &                   & 6,25             \\
-		Zungänglichkeit Ladestation                              &                   & 6,25 \\ \midrule
+		Anteil Ladezeit an Gesamtzeit                            &                   & 8,3             \\
+		Exponierte Leiter                                        &                   & 8,3             \\
+		Zungänglichkeit Ladestation                              &                   & 8,3 \\ \midrule
 		                                                         &          $\Sigma$ & \textbf{25}     \\
 		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                   &  \\
 		Volumen Ladesystem (feste Position)                      &                   & 10              \\
