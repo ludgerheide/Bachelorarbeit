@@ -4,9 +4,72 @@ In den vorigen Kapiteln wurden technische Daten zu Ladesystemen, Speichersysteme
 Die Systeme werden aus rein technischer Sicht betrachtet, wirtschaftliche Aspekte wurden ignoriert. Von daher ist diese Bewertung nur im Zusammenhang mit einer Betrachtung aus wirtschaftlicher Sicht für Busbetreiber relevant. Systeme, die hier als technisch sinnlos identifiziert wurden können bei einer folgenden wirtschaftlichen Betrachtung ausgeblendet werden.
 
 \section{Gewichtete Bewertung}
-Im vorigen Kapitel wurden die Werte 14 verschiedener Parameter für alle Kombinationen von fünf Batterien, insgesamt fünf Ladesystemen und zwei Buslinien berechnet. So sind insgesamt 700 Datenpunkte entstanden, die nun in einer verständlichen Form dargestellt werden müssen. Dazu  
+Im vorigen Kapitel wurden die Werte 14 verschiedener Parameter für alle Kombinationen von fünf Batterien, insgesamt fünf Ladesystemen und zwei Buslinien berechnet. So sind 700 Datenpunkte entstanden. Diese Menge muss nun mit einem geeigneten Verfahren auf wenige Kennwerte reduziert werden, mit denen die Eignung einer bestimmten Kombination von Ladestrategie, Ladesystem und Speichertechnologie für eine bestimmte Strecke bestimmt werden kann.
 
-\subsection{Gewichtung der Kritereien}
+Dazu wurde die Methode der gewichteten technischen Bewertung nach VDI~2225~Blatt~3~\cite{vdi:2225} gewählt. Diese besteht aus drei Phasen:
+\begin{enumerate}
+	\item Festlegung der Parameter und Mindestanforderungen
+	\item Zuordnung von Punktzahlen zu Leistungsmerkmalen
+	\item Gewichtung der Punktzahlen
+	\item Berechnung der gewichteten Mittelwerte
+\end{enumerate}
+
+Die Festlegung der Parameter ist bereits in den Abschnitten \ref{parameter} und \ref{simErgebnisse}. Die Erfüllung der Mindestanforderungen hinsichtlich Stromstärke und Energie wurden durch die Optimierung der Batteriegröße sichergestellt. Um bei einer maximalen Fahrzeugmasse von 18 Tonnen und einem Leergewicht von 13 Tonnen mindestens 50\marginpar{Zahlenwerte} Passagiere transportieren zu können, darf das Gewicht von Batterie und Ladesystem 1,6 Tonnen nicht überschreiten.
+
+\paragraph{Digitaler Anhang} In Anhang \ref{an_Digital} ist die zur Berechnung verwendete Tabelle enthalten. Sie ist unter dem Namen \texttt{Auswertung.ods} zu finden und kann mit \textsc{LibreOffice} geöffnet werden.
+
+\subsection{Zuordnung von Punktzahlen}
+Zur Bewertung werden die Kriterien aus Abschnitt \ref{parameter} und \ref{simErgebnisse} verwendet. Die Massen von Ladesystem und Batterie sowie das Batterievolumen und das freie Volumen des Ladesystems werden zu einem Gesamtvolumen und einer Gesamtmasse zusammengefasst.
+
+Die Zuordnung der Punkte erfolgt anhand einer subjektiven Bewertung der Güte eines bestimmten Wertebereichs. Es wird darauf geachtet, das der Durchschnittswert der Punktzahlen der technisch akzeptablen Lösungen bei 2,5 liegt. Die Bewertungen der Punkte sind in Tabelle \ref{tabPunkte} dargestellt.
+
+\begin{table} \centering
+	\begin{tabular}{ll}
+		\toprule
+		Bewertung & Punktzahl \\ \midrule
+		0 & unbefriedigend \\
+		1 & gerade noch tragbar \\
+		2 & ausreichen \\
+		3 & gut \\
+		4 & sehr gut \\ \bottomrule
+	\end{tabular}
+	\caption[Bewertung der Punktzahlen]{Bewertung der Punktzahlen nach VDI~2225 Blatt~3~\cite{vdi:2225}[S. 5]}
+	\label{tabPunkte}
+\end{table}
+
+Auf Basis dieses Schemas wurden den berechneten Werten die in Tabelle \ref{tab_punktzahlen} dargestellten Punktzahlen zugeordnet.
+
+%TODO: Grad in die Mitte, statt an den Rand?
+\begin{table}
+	\centering
+	\begin{tabulary}{\linewidth}{LLllll}
+		\toprule
+		Kriterium                                                & Einheit        & 1P         & 2P      & 3P      & 4P        \\ \midrule
+		\textbf{Zuverlässigkeit Fahrzeug}                        &                &            &         &         &  \\
+		Ladezyklen pro Kilometer                                 & $\frac{1}{km}$ & $\ge 0,03$ & $<0,03$ & $<0,01$ & $<0,005$  \\
+		Freiheitsgrade Ladesystem Fahrzeug                       & 1              & $>2$       & 2       & 1       & 0         \\
+		Positionierungsgenauigkeit (Fläche)                      & $m^2$          & $<3$       & $<6$    & $<9$    & $\ge 9$   \\
+		Positionierungsgenauigkeit (Winkel)                      & $^\circ$       & $<5$       & ---     & ---     & $\ge 360$ \\
+		Zugänglichkeit Schnittstelle Fahrzeug                    & ---          & innen      & Seite   & Boden   & Dach      \\
+		Masse Ladesystem + Batterie                              & kg             & $\ge 1250$ & $<1250$ & $<750$  & $<250$    \\ \midrule
+		\textbf{Störanfälligkeit der Ladestation}                &                &            &         &         &  \\
+		Anteil Ladezeit an Gesamtzeit                            &                &            &         &         &  \\
+		Exponierte Leiter                                        &                &            &         &         &  \\
+		Freiheitsgrade Ladestation                               &                &            &         &         &  \\
+		Zungänglichkeit Ladestation                              &                &            &         &         &  \\ \midrule
+		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                &            &         &         &  \\
+		Volumen Ladesystem (feste Position)                      &                &            &         &         &  \\
+		Vol. Ladesystem frei + Vol. Batterie                     & l              & $\ge 450$  & $<450$  & $<300$  & $<150$    \\ \midrule
+		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                &            &         &         &  \\
+		Energieverbrauch                                         &                &            &         &         &  \\ \midrule
+		\textbf{Einsatz unter extrem Umweltbedingungen}          &                &            &         &         &  \\
+		Kühlluftmasse                                            &                &            &         &         &  \\ \bottomrule
+	\end{tabulary}
+	\caption{Gewichtung der Bewertungskriterien der Gesamtlösungen}
+	\label{tab_punktzahlen}
+\end{table} 
+
+\subsection{Gewichtung der Punktzahlen}
 Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit von Thomas Pannwitz, in der eine Umfrage unter 17 Busbetreibern über ihre Entscheidungskriterien für die Busbeschaffung durchgeführt wurde. Die fünf wichtigsten Anforderungen der Busbetreiber waren~\cite{pannwitz2014}[S. 24f]:
 \begin{enumerate}
 	\item hohe technische Zuverlässigkeit des Fahrzeugs
@@ -18,8 +81,7 @@ Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit 
 
 Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschema konstruiert.
 %TODO: Remove
-\begin{quotation}
-	
+\begin{quotation}	
 	\textbf{Notizen zu Tabelle \ref{tab_bewertungskriterien}}
 	\begin{itemize}
 		\item Masse $\rightarrow$ Zuverlässigkeit (wegen Verschleiß)?
@@ -55,12 +117,12 @@ Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} da
 		Energieverbrauch                                         &                   & 15              \\ \midrule
 		                                                         &          $\Sigma$ & \textbf{15}     \\
 		\textbf{Einsatz unter extrem Umweltbedingungen}          &                   &  \\
-		Kühlluftmasse                                            &                   & 10              \\
+		Kühlluftmasse                                            &                   & 10              \\ \midrule
 		                                                         &          $\Sigma$ & \textbf{10}     \\ \midrule
-		                                                         & $\Sigma_{gesamt}$ & 100
+		                                                         & $\Sigma_{gesamt}$ & 100 \\ \bottomrule
 	\end{tabularx}
-	\label{tab_bewertungskriterien}
 	\caption{Gewichtung der Bewertungskriterien der Gesamtlösungen}
+	\label{tab_bewertungskriterien}
 \end{table} 
 
 \subsection{Zuweisung von Scorewerten}

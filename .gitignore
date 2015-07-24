@@ -82,3 +82,4 @@ Latex/*.pdf
 *.lg
 *.tmp
 *.xref
+*.fods#
