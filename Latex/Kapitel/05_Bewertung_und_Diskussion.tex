@@ -42,28 +42,28 @@ Auf Basis dieses Schemas wurden den berechneten Werten die in Tabelle \ref{tab_p
 %TODO: Grad in die Mitte, statt an den Rand?
 \begin{table}
 	\centering
-	\begin{tabulary}{\linewidth}{LLllll}
+	\begin{tabulary}{\linewidth}{LLrrrr}
 		\toprule
-		Kriterium                                                & Einheit        & 1P         & 2P      & 3P      & 4P        \\ \midrule
-		\textbf{Zuverlässigkeit Fahrzeug}                        &                &            &         &         &  \\
-		Ladezyklen pro Kilometer                                 & $\frac{1}{km}$ & $\ge 0,03$ & $<0,03$ & $<0,01$ & $<0,005$  \\
-		Freiheitsgrade Ladesystem Fahrzeug                       & 1              & $>2$       & 2       & 1       & 0         \\
-		Positionierungsgenauigkeit (Fläche)                      & $m^2$          & $<3$       & $<6$    & $<9$    & $\ge 9$   \\
-		Positionierungsgenauigkeit (Winkel)                      & $^\circ$       & $<5$       & ---     & ---     & $\ge 360$ \\
-		Zugänglichkeit Schnittstelle Fahrzeug                    & ---          & innen      & Seite   & Boden   & Dach      \\
-		Masse Ladesystem + Batterie                              & kg             & $\ge 1250$ & $<1250$ & $<750$  & $<250$    \\ \midrule
-		\textbf{Störanfälligkeit der Ladestation}                &                &            &         &         &  \\
-		Anteil Ladezeit an Gesamtzeit                            &                &            &         &         &  \\
-		Exponierte Leiter                                        &                &            &         &         &  \\
-		Freiheitsgrade Ladestation                               &                &            &         &         &  \\
-		Zungänglichkeit Ladestation                              &                &            &         &         &  \\ \midrule
-		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                &            &         &         &  \\
-		Volumen Ladesystem (feste Position)                      &                &            &         &         &  \\
-		Vol. Ladesystem frei + Vol. Batterie                     & l              & $\ge 450$  & $<450$  & $<300$  & $<150$    \\ \midrule
-		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                &            &         &         &  \\
-		Energieverbrauch                                         &                &            &         &         &  \\ \midrule
-		\textbf{Einsatz unter extrem Umweltbedingungen}          &                &            &         &         &  \\
-		Kühlluftmasse                                            &                &            &         &         &  \\ \bottomrule
+		Kriterium                                                & Einheit          &         1P &      2P &        3P &           4P \\ \midrule
+		\textbf{Zuverlässigkeit Fahrzeug}                        &                  &            &         &           &  \\
+		Ladezyklen pro Kilometer                                 & $\frac{1}{km}$   & $\ge 0,03$ & $<0,03$ &   $<0,01$ &     $<0,005$ \\
+		Freiheitsgrade Ladesystem Fahrzeug                       & 1                &       $>2$ &       2 &         1 &            0 \\
+		Positionierungsgenauigkeit (Fläche)                      & $m^2$            &       $<3$ &    $<6$ &      $<9$ &      $\ge 9$ \\
+		Positionierungsgenauigkeit (Winkel)                      & $^\circ$         &       $<5$ &     --- &       --- &    $\ge 360$ \\
+		Zugänglichkeit Schnittstelle Fahrzeug                    & ---              &        --- &   Seite &     Boden &         Dach \\
+		Masse Ladesystem + Batterie                              & kg               & $\ge 1250$ & $<1250$ &    $<750$ &       $<250$ \\ \midrule
+		\textbf{Störanfälligkeit der Ladestation}                &                  &            &         &           &  \\
+		Anteil Ladezeit an Gesamtzeit                            & 1                &  $\ge 0,4$ &  $<0,4$ &    $<0,2$ &       $<0,1$ \\
+		Exponierte Leiter                                        & ---              &      immer &     --- & nur Laden &          nie \\
+		Freiheitsgrade Ladestation                               & 1                &       $>2$ &       2 &         1 &            0 \\
+		Zugänglichkeit Ladestation                               & ---              &  ebenerdig &  erhöht & unterflur & unzugänglich \\ \midrule
+		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                  &            &         &           &  \\
+		Volumen Ladesystem (feste Position)                      & l                & $\ge 1000$ & $<1000$ &    $<500$ &       $<250$ \\
+		Volumen Ladesystem freie Position + Volumen Batterie     & l                &  $\ge 450$ &  $<450$ &    $<300$ &       $<150$ \\ \midrule
+		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                  &            &         &           &  \\
+		Energieverbrauch                                         & $\frac{kWh}{km}$ &  $\ge 1,5$ &  $<1,5$ &    $<1,2$ &       $<0,9$ \\ \midrule
+		\textbf{Einsatz unter extrem Umweltbedingungen}          &                  &            &         &           &  \\
+		Kühlluftmasse                                            & $\frac{g}{s}$     & $\ge 5000$ & $<5000$ &   $<3000$ &      $<1000$ \\ \bottomrule
 	\end{tabulary}
 	\caption{Gewichtung der Bewertungskriterien der Gesamtlösungen}
 	\label{tab_punktzahlen}
@@ -82,11 +82,12 @@ Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit 
 Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschema konstruiert.
 %TODO: Remove
 \begin{quotation}	
-	\textbf{Notizen zu Tabelle \ref{tab_bewertungskriterien}}
+	\textbf{Notizen zu Tabellen \ref{tab_bewertungskriterien}} und \label{tab_punktzahlen}
 	\begin{itemize}
 		\item Masse $\rightarrow$ Zuverlässigkeit (wegen Verschleiß)?
 		\item Exponierte Leiter wo?
 		\item Volumen Ladestation konnte nirgendwo untergebracht werden
+		\item Volumen Fahrzeug fest steht nicht unbedingt im Zusammenhang zu Niederflurbussen
 	\end{itemize}
 \end{quotation}
 
@@ -133,6 +134,7 @@ Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} da
 
 %TODO: Warum habe ich keine binäre Dominanzmatrix verwendet?
 
+%TODO: Energieverbrauch ist bei Overnight niedriger ?!
 
 \section{Fazit}
 \section{Ausblick}

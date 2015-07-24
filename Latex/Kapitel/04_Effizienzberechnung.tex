@@ -69,9 +69,9 @@ Die folgenden Ausgabedaten der Simulation wurden ausgewählt, um die Kombination
 	\item[Batterievolumen] Einheit: $l$
 	\item[Kühlluftmasse] Einheit: $\frac{g}{s}$
 	\item[Energieverbrauch] Einheit: $\frac{kWh}{km}$
-	\item[Zeiteffizienz] Der Anteil der Ladezeit an der Summe von Fahr- und Ladezeit. Kleinere Werte sind besser.
-	Einheit: $1$ bei Gelegenheitsladung, h bei Nachtladung
-	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kombination auf die Lebensdauer der Batterie abgeschätzt werden.
+	\item[Zeiteffizienz] Der Anteil der Ladezeit an der Summe von Fahr- und Ladezeit. Kleinere Werte sind besser.\\
+	Einheit: $1$
+	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kombination auf die Lebensdauer der Batterie abgeschätzt werden.\\
 	Einheit: $1$
 \end{description}
 
@@ -113,12 +113,12 @@ Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenlade
 	\begin{tabulary}{\textwidth}{lrrRRRR}
 		\toprule
 		Batterie & Masse & Volumen & Kühlluftmasse & Energieverbrauch & Zeiteffizienz & Ladezyklen pro Kilometer \\
-		         & $kg$  & $l$     & $\frac{g}{s}$  & $\frac{kWh}{km}$  & $h$           & $1$                      \\ \midrule
-		   18650 & 681   & 246     & 1673           & 1,20              & 4,7           & 0,006                   \\
-		Bleiakku & 8217  & 3082    & 512            & 1,91              & 9,5           & 0,006                   \\
-		   LiTiO & 2174  & 1522    & 190            & 1,26              & 4,9           & 0,006                   \\
-		  LFP-HE & 1214  & 736     & 5254           & 1,16              & 4,0           & 0,006                   \\
-		  LFP-HP & 1577  & 824     & 4941           & 1,24              & 5,0           & 0,006                   \\ \bottomrule
+		         & $kg$  & $l$     & $\frac{g}{s}$  & $\frac{kWh}{km}$  & $1$           & $1$                      \\ \midrule
+		   18650 & 668   & 242     & 1734           & 1,21              & 0,25           & 0,006                   \\
+		Bleiakku & 8051  & 3020    & 577            & 1,91              & 0,40           & 0,006                   \\
+		   LiTiO & 2107  & 1475    & 202            & 1,26              & 0,26           & 0,006                   \\
+		  LFP-HE & 1180  & 715     & 5332           & 1,16              & 0,22           & 0,006                   \\
+		  LFP-HP & 1532  & 800     & 4990           & 1,24              & 0,26           & 0,006                   \\ \bottomrule
 	\end{tabulary}
 	\caption{Simulationsergebnisse Nachtladung Linie 204}
 	\label{204nacht}
@@ -138,11 +138,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 		\begin{tabulary}{\linewidth}{lRRRR}
 			\multicolumn{5}{c}{Batteriemassen in $kg$}   \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &     Swap   \\ \midrule
-			18650    &  197 &   200 &   198 &      197   \\
-			Bleiakku & 1663 &  1704 &  1667 &     1660   \\
-			LiTiO    &  499 &   505 &   501 &      498   \\
-			LFP-HE   &  291 &   293 &   291 &      290   \\
-			LFP-HP   &  387 &   390 &   388 &      386   \\ \bottomrule
+			18650    &  193 &   195 &   193 &      192   \\
+			Bleiakku & 1629 &  1645 &  1633 &     1626   \\
+			LiTiO    &  482 &   488 &   484 &      481   \\
+			LFP-HE   &  284 &   287 &   285 &      284   \\
+			LFP-HP   &  377 &   380 &   378 &      376   \\ \bottomrule
 		\end{tabulary}
 		\caption{Batteriemassen Linie 204 Gelegnheitsladung}
 		\label{204_a}
@@ -150,11 +150,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Kühlbedarf in $\frac{g}{s}$}  \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &          Swap   \\ \midrule
-			18650    &  305 &   299 &   300 &           340   \\
-			Bleiakku & 1397 &  1367 &  1401 &          1393   \\
-			LiTiO    &  631 &  1358 &  1349 &          1343   \\
-			LFP-HE   & 5670 &  5720 &  5683 &          5658   \\
-			LFP-HP   & 4333 &  4369 &  4342 &          4324   \\ \bottomrule
+			18650    &  327 &   321 &   321 &           363   \\
+			Bleiakku & 1460 &  1474 &  1463 &          1457   \\
+			LiTiO    &  666 &  1326 &  1316 &          1310   \\
+			LFP-HE   & 5737 &  5786 &  5749 &          5725   \\
+			LFP-HP   & 4398 &  4434 &  4407 &          4390   \\ \bottomrule
 		\end{tabulary} 
 		\caption{Kühlungsbedarf Linie 204 Gelegenheitsladung}
 		
@@ -162,11 +162,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Anteil Ladezeit an Gesamtzeit} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &            Swap \\ \midrule
-			18650    & 0,35 &  0,35 &  0,35 &            0,08 \\
-			Bleiakku & 0,60 &  0,60 &  0,60 &            0,08 \\
-			LiTiO    & 0,24 &  0,10 &  0,10 &            0,08 \\
-			LFP-HE   & 0,26 &  0,23 &  0,23 &            0,08 \\
-			LFP-HP   & 0,38 &  0,37 &  0,37 &            0,08 \\ \bottomrule
+			18650    & 0,36 &  0,35 &  0,35 &            0,08 \\
+			Bleiakku & 0,61 &  0,61 &  0,61 &            0,08 \\
+			LiTiO    & 0,24 &  0,11 &  0,11 &            0,08 \\
+			LFP-HE   & 0,26 &  0,24 &  0,24 &            0,08 \\
+			LFP-HP   & 0,38 &  0,38 &  0,38 &            0,08 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Ladezeitanteil Linie 204 Gelegenheitsladung}
 		
@@ -176,11 +176,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 		\begin{tabulary}{\linewidth}{lRRRR}
 			\multicolumn{5}{c}{Batterievolumina in $l$} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &      Swap \\ \midrule
-			18650    &   71 &    72 &    72 &        71 \\
-			Bleiakku &  624 &   639 &   625 &       622 \\
-			LiTiO    &  349 &   353 &   350 &       348 \\
-			LFP-HE   &  176 &   178 &   177 &       176 \\
-			LFP-HP   &  202 &   204 &   202 &       202 \\ \bottomrule
+			18650    &   70 &    71 &    70 &        70 \\
+			Bleiakku &  611 &   617 &   613 &       610 \\
+			LiTiO    &  337 &   341 &   338 &       336 \\
+			LFP-HE   &  172 &   174 &   173 &       172 \\
+			LFP-HP   &  197 &   199 &   197 &       196 \\ \bottomrule
 		\end{tabulary}
 		\caption{Batterievolumina Linie 204 Gelegenheitsladung}
 		
@@ -188,11 +188,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Energieverbrauch in $\frac{kWh}{km}$} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &                   Swap \\ \midrule
-			18650    & 1,48 &  1,56 &  1,48 &                   1,47 \\
-			Bleiakku & 1,91 &  2,00 &  1,91 &                   1,90 \\
-			LiTiO    & 1,24 &  1,39 &  1,33 &                   1,32 \\
-			LFP-HE   & 1,39 &  1,46 &  1,40 &                   1,39 \\
-			LFP-HP   & 1,48 &  1,57 &  1,49 &                   1,49 \\ \bottomrule
+			18650    & 1,48 &  1,56 &  1,49 &                   1,48 \\
+			Bleiakku & 1,91 &  2,01 &  1,92 &                   1,91 \\
+			LiTiO    & 1,25 &  1,40 &  1,33 &                   1,33 \\
+			LFP-HE   & 1,40 &  1,47 &  1,40 &                   1,40 \\
+			LFP-HP   & 1,50 &  1,57 &  1,49 &                   1,49 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Energieverbrauch Linie 204 Gelegenheitsladung}
 		
@@ -200,11 +200,11 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			         &       &       &       &  \\
 			\multicolumn{5}{c}{Ladezyklen pro Kilometer} \\ \toprule
 			Bat./LS  &  40kW & 200kW & 375kW &      Swap \\ \midrule
-			18650    & 0,026 &   0,026 &   0,026 &     0,026 \\
-			Bleiakku & 0,031 &   0,030 &   0,031 &     0,031 \\
-			LiTiO    & 0,026 &   0,026 &   0,026 &     0,026 \\
-			LFP-HE   & 0,031 &   0,031 &   0,031 &     0,031 \\
-			LFP-HP   & 0,031 &   0,031 &   0,031 &     0,031 \\ \bottomrule
+			18650    & 0,027 &   0,027 &   0,027 &     0,027 \\
+			Bleiakku & 0,032 &   0,032 &   0,032 &     0,032 \\
+			LiTiO    & 0,027 &   0,027 &   0,027 &     0,027 \\
+			LFP-HE   & 0,032 &   0,032 &   0,032 &     0,032 \\
+			LFP-HP   & 0,032 &   0,032 &   0,032 &     0,032 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Ladezyklen pro Kilometer Linie 204 Gelegenheitsladung}	
 		\label{204_e}
@@ -219,12 +219,12 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 	\begin{tabulary}{\textwidth}{lrrRRRR}
 		\toprule
 		Batterie & Masse & Volumen & Kühl-luftmasse & Energie-verbrauch & Zeiteffizienz & Ladezyklen pro Kilometer \\
-		         &  $kg$ &     $l$ &  $\frac{g}{s}$ &  $\frac{kWh}{km}$ &           $h$ &                      $1$ \\ \midrule
-		18650    &   808 &     293 &           2186 &              0,92 &           5,4 &                    0,004 \\
-		Bleiakku & 11726 &    4398 &            746 &              1,74 &          11,9 &                    0,004 \\
-		LiTiO    &  2628 &    1840 &            291 &              0,98 &           5,6 &                    0,004 \\
-		LFP-HE   &  1432 &     869 &           5402 &              0,88 &           4,8 &                    0,004 \\
-		LFP-HP   &  1893 &     988 &           5486 &              0,96 &           5,8 &                    0,004 \\ \bottomrule
+		         &  $kg$ &     $l$ &  $\frac{g}{s}$ &  $\frac{kWh}{km}$ &           $1$ &                      $1$ \\ \midrule
+		18650    &   797 &     288 &           2241 &              0,93 &           0,33 &                    0,004 \\
+		Bleiakku & 11432 &    4288 &            770 &              1,74 &          0,51 &                    0,004 \\
+		LiTiO    &  2559 &    1791 &            306 &              0,98 &           0,33 &                    0,004 \\
+		LFP-HE   &  1400 &     849 &           5461 &              0,88 &           0,30 &                    0,004 \\
+		LFP-HP   &  1851 &     966 &           5512 &              0,96 &           0,34 &                    0,004 \\ \bottomrule
 	\end{tabulary}
 	\caption{Simulationsergebnisse Linie 192 Nachtladung}
 	\label{192nacht}
@@ -237,11 +237,11 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 		\begin{tabulary}{\linewidth}{lRRRR}
 			\multicolumn{5}{c}{Batteriemassen in $kg$}  \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &     Swap  \\ \midrule
-			18650    &  215 &   217 &   215 &      214  \\
+			18650    &  210 &   213 &   211 &      210  \\
 			Bleiakku & 1944 &  1944 &  1944 &     1944  \\
-			LiTiO    &  524 &   529 &   525 &      523  \\
-			LFP-HE   &  354 &   357 &   354 &      353  \\
-			LFP-HP   &  476 &   488 &   477 &      475  \\ \bottomrule
+			LiTiO    &  510 &   515 &   512 &      509  \\
+			LFP-HE   &  348 &   351 &   349 &      347  \\
+			LFP-HP   &  466 &   471 &   467 &      465  \\ \bottomrule
 		\end{tabulary} 
 		\caption{Batteriemassen Linie 192 Gelegnheitsladung}
 		\label{192_a}
@@ -250,11 +250,11 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Kühlbedarf in $\frac{g}{s}$}   \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &          Swap   \\ \midrule
-			18650    &  492 &   488 &   486 &           538  \\
+			18650    &  525 &   514 &   518 &           573  \\
 			Bleiakku & 1291 &  1324 &  1299 &          1283   \\
-			LiTiO    &  776 &  1470 &  1461 &          1456   \\
-			LFP-HE   & 6582 &  6639 &  6597 &          6568   \\
-			LFP-HP   & 4950 &  4944 &  4960 &          4940   \\ \bottomrule
+			LiTiO    &  800 &  1433 &  1424 &          1418   \\
+			LFP-HE   & 6636 &  6691 &  6649 &          6622   \\
+			LFP-HP   & 5008 &  5047 &  5018 &          4999   \\ \bottomrule
 		\end{tabulary} 
 		\caption{Kühlungsbedarf Linie 192 Gelegenheitsladung}
 		
@@ -262,11 +262,11 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Anteil Ladezeit an Gesamtzeit} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &            Swap \\ \midrule
-			18650    & 0,45 &  0,44 &  0,44 &            0,10 \\
+			18650    & 0,45 &  0,45 &  0,45 &            0,10 \\
 			Bleiakku & 0,68 &  0,68 &  0,68 &            0,10 \\
 			LiTiO    & 0,33 &  0,15 &  0,15 &            0,10 \\
 			LFP-HE   & 0,35 &  0,28 &  0,28 &            0,10 \\
-			LFP-HP   & 0,44 &  0,43 &  0,43 &            0,10 \\ \bottomrule
+			LFP-HP   & 0,44 &  0,44 &  0,44 &            0,10 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Ladezeitanteil Linie 192 Gelegenheitsladung}
 		
@@ -276,11 +276,11 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 		\begin{tabulary}{\linewidth}{lRRRR}
 			\multicolumn{5}{c}{Batterievolumina in $l$} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &      Swap \\ \midrule
-			18650    &   78 &    78 &    78 &        77 \\
+			18650    &   76 &    77 &    76 &        76 \\
 			Bleiakku &  729 &   729 &   729 &       729 \\
-			LiTiO    &  367 &   370 &   368 &       366 \\
-			LFP-HE   &  214 &   216 &   215 &       214 \\
-			LFP-HP   &  248 &   254 &   249 &       248 \\ \bottomrule
+			LiTiO    &  367 &   360 &   358 &       357 \\
+			LFP-HE   &  211 &   213 &   211 &       210 \\
+			LFP-HP   &  243 &   246 &   244 &       243 \\ \bottomrule
 		\end{tabulary}
 		\caption{Batterievolumina Linie 192 Gelegenheitsladung}
 		
@@ -288,11 +288,11 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 			         &      &       &       &  \\
 			\multicolumn{5}{c}{Energieverbrauch in $\frac{kWh}{km}$} \\ \toprule
 			Bat./LS  & 40kW & 200kW & 375kW &                   Swap \\ \midrule
-			18650    & 1,22 &  1,23 &  1,22 &                   1,21 \\
-			Bleiakku & 1,60 &  2,69 &  1,61 &                   1,60 \\
-			LiTiO    & 0,99 &  1,11 &  1,06 &                   1,05 \\
-			LFP-HE   & 1,09 &  1,15 &  1,10 &                   1,09 \\
-			LFP-HP   & 1,19 &  1,24 &  1,19 &                   1,19 \\ \bottomrule
+			18650    & 1,22 &  1,29 &  1,23 &                   1,22 \\
+			Bleiakku & 1,60 &  1,69 &  1,61 &                   1,60 \\
+			LiTiO    & 0,99 &  1,12 &  1,07 &                   1,06 \\
+			LFP-HE   & 1,09 &  1,16 &  1,11 &                   1,10 \\
+			LFP-HP   & 1,19 &  1,26 &  1,20 &                   1,19 \\ \bottomrule
 		\end{tabulary} 
 		\caption{Energieverbrauch Linie 192 Gelegenheitsladung}
 		
