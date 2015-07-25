@@ -1,6 +1,6 @@
 \chapter{Simulation der Systemeigenschaften}
 \label{chap4}
-Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht ein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`\textsc{Primove} ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
+Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht sein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`\textsc{Primove} ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
 
 \section{Simulationsmodell}
 %TODO: Ausfüllen
@@ -25,7 +25,7 @@ Der Energieverbrauch wird anhand einer aufgezeichneten Strecke berechnet. Für j
 Über die Strecke sind Beschleunigung, Geschwindgkeit und Steigung zu jedem Zeitpunkt festgelegt. Mit den Busparametern Gewicht, Rollwiderstand, Stirnfläche und $c_w$-Wert werden nun die mechanischen und aerodynamischen Kräfte berechnet, die auf den Bus wirken. Aus diesen Kräften wird die erforderliche Traktionsleistung und Motordrehzahl berechnet.
 
 %TODO: Ausfüllen
-Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Quelle} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} sind die berechneten Leistungen aufgeführt. Die Effizienz des Motors sinkt mit steigender Leistung. Beim Bremsen bei niedrigen Geschwindigkeiten kann die verfügbare Rekuperationsleistung nicht voll ausgenutzt werden.
+Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Wer?} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Leistungen}
 	\caption[Berechnete Traktions-, Motor- und Batterieleistung]{Berechnete Traktions-, Motor- und Batterieleistung. Es wird Bus mit einer Masse von 13,3 Tonnen konstant mit 1 $\frac{m}{s^2}$ auf 61,2 $\frac{km}{h}$ beschleunigt und nach wenigen Sekunden mit 1 $\frac{m}{s^2}$ bis zum Stillstand abgebremst. Als Batterie wurde hier eine $LiFePO_4$-Batterie gewählt. Durch den maximalen Ladestrom von 1 C ist die Rekuperationsleistung stark begrenzt.}
@@ -44,7 +44,7 @@ Da der Stromverbrauch durch die elektrische Motorleistung und die Nebenverbrauch
 
 In dieser Arbeit wird das empirische Batteriemodell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses generische Batteriemodell liefert weniger exakte Daten als spezialisierte Modelle, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die Parameter der aus den Datenblättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst zu vermessen.
 
-In Abbildung \ref{abb_Leistungen} ist neben Traktions- und Motorleistung auch die Batterieleistung aufgeführt. Die Leistung ist im Vergleich zur maximalen Motorleistung sehr klein. Deutlich ist hingegen die begrenzte Rekuperationsfähigkeit der Batterie zu sehen.
+In Abbildung \ref{abb_Leistungen} ist neben Traktions- und Motorleistung auch die Batterieleistung aufgeführt. Im Vergleich zur maximalen Motorleistung von hier 300 kW ist die Leistung der Nebenverbraucher von 5 kW fast nicht zu sehen. Im tatsächlichen Betrieb fällt die Leistung der Nabenverbraucher permanent an, die maximale Motorleistung wird jedoch sehr selten gefordert. Daher ist der tatsächliche Anteil der Nebenverbraucher am Energieverbrauch größer. Die begrenzte Rekuperationsfähigkeit der Batterie zu ist in der Abbildung deutlich zu sehen.
 
 \subsubsection{Dimensionierung}
 Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Durch iterative Optimierung wird die niedrigst mögliche Zellenzahl festgestellt. Als Randbedingung für die Optimierung wird ein maximaler und minimaler Ladezustand der Batterie verwendet. Daneben darf der maximale Entladestrom laut Datenblatt nicht überschritten werden.
@@ -75,7 +75,7 @@ Die folgenden Ausgabedaten der Simulation wurden ausgewählt, um die Kombination
 	Einheit: $1$
 \end{description}
 
-In den Wertetabellen werden Kurznamen für Batterien und Ladesysteme verwendet. Diese werden in Tabelle \ref{batNamen} und \ref{ladeNamen} erläutert.
+In den Wertetabellen werden Kurznamen für Batterien und Ladesysteme verwendet. Diese werden in Tabelle \ref{batNamen} und \ref{ladeNamen} definiert.
 
 \begin{table}\centering
 	\begin{tabularx}{\textwidth}{XXXl}
@@ -144,7 +144,7 @@ Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebniss
 			LFP-HE   &  284 &   287 &   285 &      284   \\
 			LFP-HP   &  377 &   380 &   378 &      376   \\ \bottomrule
 		\end{tabulary}
-		\caption{Batteriemassen Linie 204 Gelegnheitsladung}
+		\caption{Batteriemassen Linie 204 Gelegenheitsladung}
 		\label{204_a}
 		\begin{tabulary}{\linewidth}{lRRRR}
 			         &      &       &       &  \\

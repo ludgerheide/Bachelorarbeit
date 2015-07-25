@@ -4,9 +4,9 @@ In den vorigen Kapiteln wurden technische Daten zu Ladesystemen, Speichersysteme
 Die Systeme werden aus rein technischer Sicht betrachtet, wirtschaftliche Aspekte wurden ignoriert. Von daher ist diese Bewertung nur im Zusammenhang mit einer Betrachtung aus wirtschaftlicher Sicht für Busbetreiber relevant. Systeme, die hier als technisch sinnlos identifiziert wurden können bei einer folgenden wirtschaftlichen Betrachtung ausgeblendet werden.
 
 \section{Gewichtete Bewertung}
-Im vorigen Kapitel wurden die Werte 14 verschiedener Parameter für alle Kombinationen von fünf Batterien, insgesamt fünf Ladesystemen und zwei Buslinien berechnet. So sind 700 Datenpunkte entstanden. Diese Menge muss nun mit einem geeigneten Verfahren auf wenige Kennwerte reduziert werden, mit denen die Eignung einer bestimmten Kombination von Ladestrategie, Ladesystem und Speichertechnologie für eine bestimmte Strecke bestimmt werden kann.
+Im vorigen Kapitel wurden die Werte 13 verschiedener Parameter für alle Kombinationen von fünf Batterien, insgesamt fünf Ladesystemen und zwei Buslinien berechnet. So sind 650 Datenpunkte entstanden. Diese Menge muss nun mit einem geeigneten Verfahren auf wenige Kennwerte reduziert werden, mit denen die Eignung einer bestimmten Kombination von Ladestrategie, Ladesystem und Speichertechnologie für eine bestimmte Strecke bestimmt werden kann.
 
-Dazu wurde die Methode der gewichteten technischen Bewertung nach VDI~2225~Blatt~3~\cite{vdi:2225} gewählt. Diese besteht aus drei Phasen:
+Dazu wurde die Methode der gewichteten technischen Bewertung nach VDI~2225 Blatt~3~\cite{vdi:2225} gewählt. Diese besteht aus vier Phasen:
 \begin{enumerate}
 	\item Festlegung der Parameter und Mindestanforderungen
 	\item Zuordnung von Punktzahlen zu Leistungsmerkmalen
@@ -14,24 +14,29 @@ Dazu wurde die Methode der gewichteten technischen Bewertung nach VDI~2225~Blatt
 	\item Berechnung der gewichteten Mittelwerte
 \end{enumerate}
 
-Die Festlegung der Parameter ist bereits in den Abschnitten \ref{parameter} und \ref{simErgebnisse}. Die Erfüllung der Mindestanforderungen hinsichtlich Stromstärke und Energie wurden durch die Optimierung der Batteriegröße sichergestellt. Um bei einer maximalen Fahrzeugmasse von 18 Tonnen und einem Leergewicht von 13 Tonnen mindestens 50\marginpar{Zahlenwerte} Passagiere transportieren zu können, darf das Gewicht von Batterie und Ladesystem 1,6 Tonnen nicht überschreiten.
+Die Festlegung der Parameter ist bereits in den Abschnitten \ref{parameter} und \ref{simErgebnisse} erfolgt. Die Erfüllung der Mindestanforderungen hinsichtlich Stromstärke und Energie wurden durch die Optimierung der Batteriegröße sichergestellt.
+
+Um bei einer maximalen Fahrzeugmasse von 18 Tonnen und einem Leergewicht von 13 Tonnen mindestens 50\marginpar{Zahlenwerte} Passagiere transportieren zu können, darf das Gewicht von Batterie und Ladesystem 1,6 Tonnen nicht überschreiten. Diese Anforderung wird von der Bleibatterie für keine Kombination erfüllt, von daher wird die Bleibatterie nicht weiter betrachtet. Der Lithium-Titanat-Akku und der Lithium-Eisenphosphat-Hochleistungsakku sind für bestimmte Kombinationen nicht geeignet. Diese Kombinationen werden mit "`unbefriedigend"' bewertet.
 
 \paragraph{Digitaler Anhang} In Anhang \ref{an_Digital} ist die zur Berechnung verwendete Tabelle enthalten. Sie ist unter dem Namen \texttt{Auswertung.ods} zu finden und kann mit \textsc{LibreOffice} geöffnet werden.
 
 \subsection{Zuordnung von Punktzahlen}
-Zur Bewertung werden die Kriterien aus Abschnitt \ref{parameter} und \ref{simErgebnisse} verwendet. Die Massen von Ladesystem und Batterie sowie das Batterievolumen und das freie Volumen des Ladesystems werden zu einem Gesamtvolumen und einer Gesamtmasse zusammengefasst.
+Zur Bewertung werden die Kriterien aus Abschnitt \ref{parameter} und \ref{simErgebnisse} verwendet. Die Massen von Ladesystem und Batterie sowie das Batterievolumen und das freie Volumen des Ladesystems werden zu einem Gesamtvolumen und einer Gesamtmasse zusammengefasst.\marginpar{\textbf{Notizen zu Tabellen  \ref{tab_bewertungskriterien} und \ref{tab_punktzahlen}}\\
+	Masse $\rightarrow$ Zuverlässigkeit (wegen Verschleiß)?\\
+	Volumen Ladestation konnte nirgendwo untergebracht werden\\
+	Volumen Fahrzeug fest steht nicht unbedingt im Zusammenhang zu Niederflurbussen}
 
-Die Zuordnung der Punkte erfolgt anhand einer subjektiven Bewertung der Güte eines bestimmten Wertebereichs. Es wird darauf geachtet, das der Durchschnittswert der Punktzahlen der technisch akzeptablen Lösungen bei 2,5 liegt. Die Bewertungen der Punkte sind in Tabelle \ref{tabPunkte} dargestellt.
+Die Zuordnung der Punkte erfolgt anhand einer subjektiven Bewertung der Güte eines bestimmten Wertebereichs. Die Bewertungen der Punkte sind in Tabelle \ref{tabPunkte} dargestellt. Es wird darauf geachtet, das der Durchschnittswert der Punktzahlen der technisch akzeptablen Lösungen bei ca. 2,5 liegt.
 
 \begin{table} \centering
-	\begin{tabular}{ll}
+	\begin{tabular}{rl}
 		\toprule
-		Bewertung & Punktzahl \\ \midrule
-		0 & unbefriedigend \\
-		1 & gerade noch tragbar \\
-		2 & ausreichen \\
-		3 & gut \\
-		4 & sehr gut \\ \bottomrule
+		Punktzahl & Bewertung           \\ \midrule
+		        0 & unbefriedigend      \\
+		        1 & gerade noch tragbar \\
+		        2 & ausreichen          \\
+		        3 & gut                 \\
+		        4 & sehr gut            \\ \bottomrule
 	\end{tabular}
 	\caption[Bewertung der Punktzahlen]{Bewertung der Punktzahlen nach VDI~2225 Blatt~3~\cite{vdi:2225}[S. 5]}
 	\label{tabPunkte}
@@ -69,7 +74,7 @@ Auf Basis dieses Schemas wurden den berechneten Werten die in Tabelle \ref{tab_p
 \end{table} 
 
 \subsection{Gewichtung der Punktzahlen}
-Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit von Thomas Pannwitz, in der eine Umfrage unter 17 Busbetreibern über ihre Entscheidungskriterien für die Busbeschaffung durchgeführt wurde. Die fünf wichtigsten Anforderungen der Busbetreiber waren~\cite{pannwitz2014}[S. 24f]:
+Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit von Thomas Pannwitz, in der eine Umfrage unter 17 Busbetreibern über ihre Entscheidungskriterien für die Busbeschaffung durchgeführt wurde. Die fünf wichtigsten Anforderungen der Busbetreiber waren~\cite{pannwitz2014}[S. 25]:
 \begin{enumerate}
 	\item hohe technische Zuverlässigkeit des Fahrzeugs
 	\item geringe Störanfälligkeit der Ladestation
@@ -79,16 +84,6 @@ Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit 
 \end{enumerate}
 
 Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschema konstruiert.
-%TODO: Remove
-\begin{quotation}	
-	\textbf{Notizen zu Tabellen \ref{tab_bewertungskriterien} und \ref{tab_punktzahlen}}
-	\begin{itemize}
-		\item Masse $\rightarrow$ Zuverlässigkeit (wegen Verschleiß)?
-		\item Volumen Ladestation konnte nirgendwo untergebracht werden
-		\item Volumen Fahrzeug fest steht nicht unbedingt im Zusammenhang zu Niederflurbussen
-	\end{itemize}
-\end{quotation}
-
 \begin{table}
 	\centering
 	\begin{tabularx}{\linewidth}{Xrl}
@@ -100,7 +95,7 @@ Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} da
 		Masse Ladesystem + Batterie                              &                   & 6               \\
 		Positionierungsgenauigkeit (Winkel)                      &                   & 3               \\
 		Zugänglichkeit Schnittstelle Fahrzeug                    &                   & 3               \\
-		Positionierungsgenauigkeit (Fläche)                      &                   & 4               \\ \midrule
+		Positionierungsgenauigkeit (Fläche)                      &                   & 2               \\ \midrule
 		                                                         &          $\Sigma$ & \textbf{30}     \\
 		\textbf{Störanfälligkeit der Ladestation}                &                   &  \\
 		Anteil Ladezeit an Gesamtzeit                            &                   & 15             \\
@@ -129,42 +124,75 @@ Die Ergebnisse der Bewertung sind in Tabelle \ref{tab_ergebnisse} zu sehen. Nebe
 \begin{table}
 	\centering
 	\begin{tabular}{lllllll}
-		                       \multicolumn{7}{c}{\textbf{Buslinie 204}}                         \\ \toprule
-		                      & 40kW & 200kW & 375kW & Swap & Nachtladen  & Zeilen-$\varnothing$ \\ \midrule
-		18650                 & 2,83 & 2,43  & 2,09  & 2,95 & 3,05        & 2,67                 \\
-		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,79 & \emph{0,00} & 2,19                 \\
-		LFP-HE                & 2,34 & 2,30  & 1,81  & 2,31 & 2,64        & 2,28                 \\
-		LFP-HP                & 2,39 & 1,99  & 1,71  & 2,51 & 2,38        & 2,20                 \\
-		Spalten-$\varnothing$ & 2,66 & 2,37  & 1,99  & 2,64 & 2,02        &  \\ \midrule
-		                       \multicolumn{7}{c}{\textbf{Buslinie 192}}                         \\
-		                      & 40kW & 200kW & 375kW & Swap & Nachtladen  & Zeilen-$\varnothing$ \\ \midrule
-		18650                 & 2,77 & 2,58  & 2,09  & 2,95 & 3,07        & 2,69                 \\
-		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,94 & \emph{0,00} & 2,22                 \\
-		LFP-HE                & 2,42 & 2,22  & 1,79  & 2,54 & 2,66        & 2,33                 \\
-		LFP-HP                & 2,52 & 2,02  & 1,74  & 2,74 & \emph{0,00} & 1,80                 \\
-		Spalten-$\varnothing$ & 2,70 & 2,40  & 1,99  & 2,79 & 1,43        &  \\ \bottomrule
+		                       \multicolumn{7}{c}{\textbf{Buslinie 204}}                        \\ \toprule
+		                      & 40kW & 200kW & 375kW & Swap & Nachtladen & Zeilen-$\varnothing$ \\ \midrule
+		18650                 & 2,83 & 2,43  & 2,09  & 2,95 & 3,05       & 2,67                 \\
+		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,79 & ---        & 2,74                 \\
+		LFP-HE                & 2,34 & 2,30  & 1,81  & 2,31 & 2,64       & 2,28                 \\
+		LFP-HP                & 2,39 & 1,99  & 1,71  & 2,51 & 2,38       & 2,20                 \\
+		Spalten-$\varnothing$ & 2,66 & 2,37  & 1,99  & 2,64 & 2,69       &  \\ \midrule
+		                       \multicolumn{7}{c}{\textbf{Buslinie 192}}                        \\
+		                      & 40kW & 200kW & 375kW & Swap & Nachtladen & Zeilen-$\varnothing$ \\ \midrule
+		18650                 & 2,77 & 2,58  & 2,09  & 2,95 & 3,07       & 2,69                 \\
+		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,94 & ---        & 2,78                 \\
+		LFP-HE                & 2,42 & 2,22  & 1,79  & 2,54 & 2,66       & 2,33                 \\
+		LFP-HP                & 2,52 & 2,02  & 1,74  & 2,74 & ---        & 2,26                 \\
+		Spalten-$\varnothing$ & 2,70 & 2,40  & 1,99  & 2,79 & 2,87       &  \\ \bottomrule
 	\end{tabular}
 	\caption{Ergebnisse der gewichteten Bewertung}
 	\label{tab_ergebnisse}
 \end{table} 
 
-\section{Diskussion} \marginpar{Lieber "`Interpretation"' als Titel?}
-Die am besten bewertetn Kombinationen sind für beide Buslinien die Kombination von Lithium-Titanat-Batterie und konduktiv-manueller Aufladung sowie das Aufladen über Nacht mit Lithium-Schichtoxid-Batterien.
+\section{Diskussion} \marginpar{Lieber "`Interpretation"' als Titel?. Reihenfolge der Absätze?}
+Die am besten bewerteten Kombinationen sind für beide Buslinien die Kombination von Lithium-Titanat-Batterie und konduktiv-manueller Aufladung sowie das Aufladen über Nacht mit Lithium-Schichtoxid-Batterien.
 
-Die hohe Bewertung des konduktiv-manuellen Ladesystems lässt sich durch den Fokus auf Zuverlässigkeit und Kompaktheit erklären. Dieses Ladesystem ist vergleichsweise einfach und leicht, es besitzt keine automatisch bewegten Teile und stellt keine hohen Anforderungen an die Position des Busses. Die Ladezeit beträgt zwischen 25 und 30 Minuten nach jeder Tour und ist damit fast dreimal so lang wie die des induktiven Systems. Um die gleiche Taktfrequenz werden daher mit der langsameren Technologie mehr Fahrzeuge und Fahrer benötigt, die erhöhte Kosten mit sich bringen. Für eine genauere Analyse ist neben den Kosten sämtlicher Komponenten also auch eine Betrachtung der gewünschten Taktfrequenz nötig.
+\paragraph{Konduktiv-Manuelles System} Die hohe Bewertung des konduktiv-manuellen Ladesystems lässt sich durch den Fokus auf Zuverlässigkeit und Kompaktheit erklären. Dieses Ladesystem ist vergleichsweise einfach und leicht, es besitzt keine automatisch bewegten Teile und stellt keine hohen Anforderungen an die Position des Busses. Die Ladezeit beträgt zwischen 25 und 30 Minuten nach jeder Tour und ist damit fast dreimal so lang wie die des induktiven Systems. Für die gleiche Taktfrequenz werden daher mit dieser langsameren Technologie mehr Fahrzeuge und Fahrer benötigt, die erhöhte Kosten mit sich bringen. Für eine genauere Analyse ist neben den Kosten sämtlicher Komponenten also auch eine Betrachtung der gewünschten Taktfrequenz nötig.
 
-Die hohe Bewertung von Nachtladesystem widerspricht der anfänglichen Hypothese, das die benötigten scheren Batterien nicht praktikabel seien. Zwei der vier Batterien haben jedoch genug Kapazität, einen Betriebstag mit 11 Touren zu überstehen. Auch der erwartete höhere Energieaufwand ist nicht aufgetreten. Es wird sogar der niedrigste Energieverbrauch auf beiden Buslinien erreicht. Dies lässt sich durch die bessere Rekuperationsleistung der Batterien erklären. Die spezifische Rekuperationsleistung ist in der Simulation das begrenzende Element gewesen, eine größere Batterie kann mehr rekuperieren. Im Betrieb werden bei der Ladestrategie "`Nachtladung"' sogar weniger Fahrzeuge benötigt als bei jeder anderen Ladestrategie, da während des Betriebs tagsüber gar keine Ladezeit anfällt. Im Gegenzug sind die Fahrzeuge durch die großen Batterien in der Anschaffung erheblich teurer und durch das hohe Gewicht verschleißen Fahrzueg und Straße schneller. Auch hier ist eine Betrachtung der geforderten Taktfrequenz nötig, auch die Verschleißkosten der Straßen für verschiedene Fahrzeuggewichte sollten betrachtet werden.
+\paragraph{Nachtladung} Die hohe Bewertung von Nachtladesystem widerspricht der anfänglichen Hypothese, das die benötigten scheren Batterien nicht praktikabel seien. Zwei der vier Batterien haben jedoch genug Kapazität, um auf beiden Linien einen Betriebstag mit 11 Touren zu überstehen. Auch der erwartete höhere Energieaufwand ist nicht aufgetreten. Es wird sogar der niedrigste Energieverbrauch auf beiden Buslinien erreicht. Dies lässt sich durch die bessere Rekuperationsleistung der Batterien erklären. Die spezifische Rekuperationsleistung ist in der Simulation das begrenzende Element gewesen, eine größere Batterie kann mehr rekuperieren. Im Betrieb werden bei der Ladestrategie "`Nachtladung"' sogar weniger Fahrzeuge benötigt als bei jeder anderen Ladestrategie, da während des Betriebs tagsüber gar keine Ladezeit anfällt. Im Gegenzug sind die Fahrzeuge durch die großen Batterien in der Anschaffung erheblich teurer und durch das hohe Gewicht verschleißen Fahrzeug und Straße schneller. Auch hier ist eine Betrachtung der geforderten Taktfrequenz nötig, auch die Verschleißkosten der Straßen für verschiedene Fahrzeuggewichte sollten betrachtet werden.
 
-Zur Abschätzung der Batterielebensdauer wurden die Ladezyklen pro Kilometer berechnet, die an der Batterie anfallen. Es fällt auf, das diese bei der Ladestrategie "`Gelegenheitsladung"' ca. um den Faktor fünf höher sind als bei Nachtladung. Auch die Zellenströme sind bei den großen Batterien der Ladestrategie "`Nachtladung"' weit niedriger. Bei Gelegenheitsladung werden die Batterien zwischen 70\% und 30\% Ladezustand betrieben, bei Nachtladung zwischen 90\% und 10\%. Welche Ladestrategie die bessere Lebensdauer mit sich bringt lässt sich schwer abschätzen und sollte weiter erforscht werden.
+\paragraph{18650-Zelle} Die hohe Bewertung der Lithium-Schichtoxid-Batterien zeigt, das Batterien aus der Unterhaltungselektronik technisch fortschrittlicher sind als dedizierte Fahrzeugbatterien. Aufgrund der niedrigen Zellenkapazität ist die Zellenzahl jedoch um mehr als den Faktor zehn höher, was ein aufwändiges Kühl- und Managementsystem erfordert. Sollte es gelingen dieses System herzustellen, wird man mit einer großen Flexibilität belohnt. Die Kapazität kann sehr exakt definiert werden, durch den Austausch individueller Zellen können die Wartungskosten minimiert werden und bei Verwendung eines geeigneten Batteriemanagementsystems können Batterien verschiedener Hersteller verwendet werden.
 
-Das insgesamt am besten bewertete Ladesystem ist das Wechseln der Batterien durch Roboter in einem speziellen Gebäude. Es zeichnet sich durch eine "`konstante"' Ladezeit aus, da die Batterie im Bus nach dem sieben Minuten langen Wechselvorgang unabhängig von ihrer Größe "`voll"' ist. Daneben muss keine Ladeelektrik im Fahrzeug mitgeführt werden und die Batterien können außerhalb des Busses sehr effizient geladen werden. Allerdings ist die Ladestation sehr viel aufwändiger, da die Batterien  von Robotern entnommen und in Ladebuchten transportiert werden müssen. Von daher macht dieses System für den Einsatz von nur wenigen Elektrobussen keinen Sinn. Erst beim Einsatz einer großen Flotte wird die Investition in so ein aufwändigeres Ladesystem sinnvoll.
+\paragraph{Batteriewechselsysteme} Das insgesamt am besten bewertete Ladesystem ist das Wechseln der Batterien durch Roboter in einem speziellen Gebäude. Es zeichnet sich durch eine "`konstante"' Ladezeit aus, da die Batterie im Bus nach dem sieben Minuten langen Wechselvorgang unabhängig von ihrer Größe "`voll"' ist. Daneben muss keine Ladeelektrik im Fahrzeug mitgeführt werden und die Batterien können außerhalb des Busses sehr effizient geladen werden. Allerdings ist die Ladestation sehr viel aufwändiger, da die Batterien  von Robotern entnommen und in Ladebuchten transportiert werden müssen. Von daher macht dieses System für den Einsatz von nur wenigen Elektrobussen keinen Sinn. Erst beim Einsatz einer großen Flotte wird die Investition in so ein aufwändigeres Ladesystem sinnvoll.
 
-Das konduktiv-automatische Ladesystem mit 375 kW hat in jeder Kombination schlechter abgeschnitten als das induktive System mit 200k W. Aufgrund der begrenzten Ladeleistung der Batterien hat die höhere Ladeleistung keinen Vorteil, selbst der Lithium-Titanat-Akku erreicht eine maximale Ladeleistung von ca. 170 kW\marginpar{170 kW: Wert!}. Aufgrund der größeren und exponierteren Komponenten und der größeren Anzahl an Komponenten wird eine höhere Fehleranfälligkeit erwartet. Der ca. 5\% niedrigere Energieverbrauch reichte in der Bewertung nicht aus, um die Nachteile auszugleichen. Durch den Einsatz einer größeren Batterie könnte auch mit aktueller Technologie eine Ladezeit von 5 Minuten pro Tour erreicht werden, dies würde jedoch eine doppelt so große und teure Batterie erfordern.
+\paragraph{Batterielebensdauer} Zur Abschätzung der Batterielebensdauer wurden die Ladezyklen pro Kilometer berechnet, die an der Batterie anfallen. Es fällt auf, das diese bei der Ladestrategie "`Gelegenheitsladung"' ca. um den Faktor fünf höher sind als bei Nachtladung. Auch die Zellenströme sind bei den großen Batterien der Ladestrategie "`Nachtladung"' weit niedriger. Andererseits werden bei der Nachtladung 90 Prozent der Batteriekapazität genutzt, bei Gelegenheitsladung nur die mittleren 40. Ob die niedrigere Zyklenzahl bei Nachtladung oder die schonende, aber häufigere Aufladung bei Gelegenheitsladung besser für die Batterien ist, kann nicht geklärt werden.
 
-Es wurde auch untersucht, ob Bleibatterien bei Gelegenheitsladung immer noch eine preiswerte alternative sind. Ergebnis ist, dass die gewählte Bleibatterie nicht aufgrund ihrer niedrigen spezifischen Energie zu schwer ist, sondern durch die spezifische Lade- und Entladeleistung begrenzt ist, weshalb ihr Einsatz keinen Sinn macht.
+\paragraph{Kein Vorteil für Ladeleistungen über 200 kW} Das konduktiv-automatische Ladesystem mit 375 kW hat in jeder Kombination schlechter abgeschnitten als das induktive System mit 200 kW. Aufgrund der begrenzten Ladeleistung der Batterien hat die höhere Ladeleistung keinen Vorteil, selbst der Lithium-Titanat-Akku erreicht eine maximale Ladeleistung von ca. 170 kW\marginpar{170 kW: Wert!}. Aufgrund der größeren und exponierteren Komponenten und der größeren Anzahl an Komponenten des konduktiv-automatischen Systems wird eine höhere Fehleranfälligkeit erwartet. Der ca. 5\% niedrigere Energieverbrauch reichte in der Bewertung nicht aus, um die Nachteile auszugleichen. Durch den Einsatz einer größeren Batterie könnte auch mit aktueller Technologie eine Ladezeit von 5 Minuten pro Tour erreicht werden, dies würde jedoch eine doppelt so große und teure Batterie erfordern.
 
-Alle anderen Batterien können die geforderte Leistung mit einer gewissen Reserve lieferen, die Rekuperationsleistung ist jedoch begrenzt. Hier bietet sich der Einsatz von Superkondensatoren an, um Leistungsspitzen beim Bremsen aufzunehmen und so die Energieeffizienz – und damit die erforderliche Batteriegröße – zu verbessern.
+\paragraph{Bleibatterien in 12m-Bussen nicht sinnvoll} Es wurde auch untersucht, ob Bleibatterien bei Gelegenheitsladung immer noch eine preiswerte alternative sind. Ergebnis ist, dass die gewählte Bleibatterie nicht aufgrund ihrer niedrigen spezifischen Energie zu schwer ist, sondern durch die spezifische Lade- und Entladeleistung begrenzt ist, weshalb ihr Einsatz selbst auf sehr kurzen Strecken keinen Sinn macht. Nur in kleinen oder langsamen Bussen mit niedrigerer Spitzenleistung können sie noch verwendet werden.
+
+\paragraph{Keine Hochleistungsbatterien nötig} Der Vergleich von zwei verschiedenen Lithium-Eisenphosphatbatterien, die jeweils auf hohe Energie und hohe Leistung ausgelegt sind, zeigt das die Hochleistungszelle keinen entscheidenden Vorteil mit sich bringt. Auch die Spitzenleistung der Hochenergiebatterie reicht aus, die Hochleistungsbatterie ist durch ihren maximalen Ladestrom von 0,5 C bei  der Energieeffizienz und der Ladedauer unterlegen.
+
+\paragraph{Superkondensatoren können Effizienz verbessern} Alle lithiumbasierten Batterien können die geforderte Leistung mit einer gewissen Reserve liefern, die Rekuperationsleistung ist jedoch begrenzt. Hier bietet sich der Einsatz von Superkondensatoren an, um Leistungsspitzen beim Bremsen aufzunehmen und so die Energieeffizienz – und damit die erforderliche Batteriegröße – zu verbessern.
 
 \section{Fazit}
+\begin{itemize}
+	\item Mit der aufgezeichneten Strecke eines Dieselbusses kann das Verhalten von Elektrobussen auf dieser Buslinie simuliert werden.
+	\item Technisch sind die folgenden Kombinationen für die BVG-Linien 204 und 192 sinnvoll.
+	\begin{itemize}
+		\item konduktiv-manuelle Gelegenheitsladung mit Lithium-Titanat-Batterien (erfordert mehr Fahrzeuge)
+		\item induktive Gelegenheitsladung mit Lithium-Titanat-Batterien (aufwändiger, aber weniger Fahrzeuge nötig)
+		\item Batteriewechsel nach jeder Tour mit Lithium-Schichtoxid- oder Lithium-Eisenphosphat-Batterien
+		\item Nachtladen mit Lithium-Schichtoxid- oder Lithium-Eisenphosphat-Batterien
+	\end{itemize}
+	\item Am Stadtrand ist der Energiebedarf pro Kilometer niedriger, der Energiebedarf pro Tour jedoch höher.
+	\item Der Einsatz von Bleibatterien und Lithium-Eisenphosphat-Hochleistungsbatterien ist technisch nicht sinnvoll.
+	\item Batterien aus der Unterhaltungselektronik sind dedizierten Fahrzeugbatterien überlegen, die Herstellung von Batteriepacks ist jedoch eine Herausforderung.
+\end{itemize}
 
 \section{Ausblick}
+In dieser Arbeit wurde die Eignung verschiedener Kombinationen von Lade- und Speichertechnologie für zwei verschiedene Buslinien der BVG analysiert. Im Rahmen dieser Analyse sind ein weiterer Forschungsbedarf sowohl bei der Simulation auch bei der aktuellen Technologie festgestellt worden.
+
+\subsection{Wirtschaftliche Analyse}
+Im Rahmen der technischen Analyse haben sich sowohl Gelegenheits- als auch Nachtladung als geeignete Ladesysteme herausgestellt. Beide bringen eine unterschiedliche Kombination von Investitionskosten und laufenden Kosten mit sich. Zur Entscheidung für ein System muss die Größe dieser Kosten bekannt sein. Dazu sollte Anhand eines Umlaufplans die nötige Anzahl von Fahrzeugen und Ladestationen berechnet werden, um dann die kosten verschiedener Lösungen gegenüberzustellen. Auch ein eventueller Vorteil von Batteriewechselsystemen bei der Elektrifizierung von mehreren Buslinien ist zu analysieren.
+
+\subsection{Simulation der Batterielebensdauer}
+Im Rahmen der Simulation wurde in dieser Arbeit die Anzahl der Ladezyklen pro Kilometer für die verschiedenen Kombinationen von Batterie und Ladesystem berechnet. Daneben habe aber auch Temperatur, durschschnittliche Entladetiefe sowie Lade- und Entladestrom einen Einfluss auf die Lebensdauer. Es bietet sich an, mithilfe von aufgezeichneten Fahrstrecken an verschiedenen tageszeiten sowie einem Klimatisierungsmodell für das ganze Jahr die Lebensdauer der verschiedenen Kombinationen genauer zu berechnen. Für Lithium-Eisenphosphatbatterien haben Lam und Bauer bereits ein empirisches Modell zur Berechnung der Lebensdauer geschaffen, das in das existierende Simulationsmodell eingebunden werden kann~\cite{lam2013practical}.
+
+\subsection{Wiederverwendung alter Batterien auf kürzeren Linien}
+Batterien für Elektrofahrzeuge gelten als aufgebraucht, wenn sie nur noch 80\% ihrer ursprünglichen Ladung speichern können. Da sich der Energieverbrauch je nach Buslinie unterscheidet, können jedoch Batterien die für lange Buslinien nicht mehr geeignet sind auf kürzeren Buslinien noch erfolgreich eingesetzt werden. Das Einsparpotenzial einer solchen Wiederverwendung von Batterien aus technischer und wirtschaftlicher Sicht sollte weiter analysiert werden.
+
+\subsection{Zusammengefasstes Temperaturmanagement}
+In aktuellen Bussen werden separate Kühl- und Heizkreisläufe für Batterie und Innenraum verwendet. Damit werden einerseits Komponenten doppelt verbaut, andererseits kann es vorkommen das die Batterie gekühlt wird während der Fahrgastraum geheizt wird, so dass Energie verschwendet wird. Ein gemeinsames Temperierungssystem für Innenraum und Batterie würde die Fahrzeugmasse reduzieren und die Energieeffizienz teilweise stark erhöhen.
+
+\subsection{Verbesserung der Ladeleistung}
+Ergebnis der technischen Analyse ist, das die \emph{Entladeleistung} der aktuellen Batterien in allen betrachteten Fällen ausreicht. Durch die begrenzte \emph{Ladeleistung} geht jedoch einerseits Rekuperationsleistung verloren, andererseits steigt die Ladedauer. Eine Erhöhung der spezifischen Ladeleistung verbessert die Attraktivität von Elektrobussen weit mehr als eine vergleichbare Verbesserung der spezifischen Energie oder Entladeleistung. Zur Verbesserung der Rekuperationsleistung bietet sich der Einsatz eines hybriden Speichersystems mit leistungsstarken Superkondensatoren und energiereichen Batterien an. Wie groß der Vorteil eines solchen Systems wäre, kann durch eine Erweiterung des bestehenden Simualtionsmodells berechnet werden.
