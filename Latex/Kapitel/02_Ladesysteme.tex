@@ -1,7 +1,7 @@
 \chapter{Ladesysteme}
 Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"').
 
-Im  Abschnitt \ref{untersuchte_Systeme} werden Funktionsweise und Einsatzgeschichte der verschiedenen Ladesysteme erläutert. Im Abschnitt \ref{parameter} werden die betrachteten technischen Parameter, die in dieser Arbeit zum Vergleich der Systeme herangezogen werden, vorgestellt und definiert. In Abschnitt \ref{sec_tabellen_ladesysteme} ab werden dann die für die verschiedenen Ladesysteme ermittelten Parameter tabellarisch aufgelistet. 
+Im  Abschnitt \ref{untersuchte_Systeme} werden Funktionsweise und Einsatzgeschichte der verschiedenen Ladesysteme erläutert. Im Abschnitt \ref{parameter} werden die betrachteten technischen Parameter, die in dieser Arbeit zum Vergleich der Systeme herangezogen werden, vorgestellt und definiert. In Abschnitt \ref{sec_tabellen_ladesysteme} werden dann die für die verschiedenen Ladesysteme ermittelten Parameter tabellarisch aufgelistet. 
 
 Viele technisch mögliche Kombinationen von Ladesystem und Ladestrategie machen betrieblich keinen Sinn – zum Beispiel der Einsatz eines aufwändigen Schnellladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
 
@@ -29,7 +29,7 @@ Die Ladesysteme werden lassen sich nach den folgenden drei Kriterien kategorisie
 
 \section{Untersuchte Systeme}
 \label{untersuchte_Systeme}
-Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{uebersichtLadesysteme} sind sämtliche aktuell bekannten Systeme in aufgeführt.
+Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits ein Testbetrieb im normalen Verkehr stattgefunden hat. In Tabelle \ref{uebersichtLadesysteme} sind sämtliche aktuell bekannten Systeme in aufgeführt. Die für diese Arbeit ausgewählten Systeme sind markiert.
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.0cm}l}
@@ -47,7 +47,7 @@ Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits 
 		                                 &                               & \textbf{\textsc{Bombardier},\newline Kanada}     & \textbf{primove}     & Berlin,\newline Deutschland     & 2015           & \cite{swapQingdao}     \\
 		                                 &                               & \textsc{WAVE Inc.},\newline UT, USA              & WAVE                 & Salt Lake City,\newline UT, USA & 2014           & \cite{WuWAVE}          \\ \midrule
 		\multirow{4}{*}{Batteriewechsel} & \multirow{2}{*}{manuell}      & \textsc{AVS}, \newline TN, USA                   & k. A.                & Chattanooga,\newline TN, USA    & 1997           & \cite{chattanoogaDOE}  \\
-		                                 & \multirow{2}{*}{automatisch}  & \textbf{\textsc{XJ Group}, China}                & \textbf{k. A.}       & Qingdao,\newline China          & 2013          & ?                      \\ \bottomrule
+		                                 & \multirow{2}{*}{automatisch}  & \textbf{\textsc{XJ Group}, China}                & \textbf{k. A.}       & Qingdao,\newline China          & 2013          & \cite{swapQingdao}                      \\ \bottomrule
 		                                 &                               &                                                  &                      &                                 &                &
 	\end{tabularx}
 	\begin{tabularx}{\linewidth}{p{1.5cm}p{1.9cm}p{2.2cm}Xp{2.4cm}p{1.0cm}l}
@@ -72,28 +72,28 @@ Vorteil dieses Ladesystems ist die weite Kompatibilität. Ladestation und Bus k�
 
 Viele Busse, die primär über andere Systeme geladen werden besitzen zusätzlich eine Ladesteckdose, um über Nacht oder abseits ihrer normalen Strecke geladen zu werden.\marginpar{Beleg!}
 
-In dieser Arbeit wird ein 40-kW-System als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Es werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
+In dieser Arbeit wird ein 40-kW-System als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Für die Ladestation werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
 
 \subsubsection{Automatisch – Stromabnehmer}
-Um die elektrische Verbindung automatisch herzustellen werden ausfahrbare Stromabnehmer verwendet. Es gibt sowohl Systeme mit fahrzeugseitigem als auch mit stationsseitigem Stromabnehmer und jeweils unbeweglichen Kontakten auf der anderen Seite. In den meisten Ladesystemen liegen die zwei Pole auf demselben Stromabnehmer nebeneinander, \textsc{Opbrid} verwendet im \textsc{Bůsbaar}-System zwei Stromabnehmer vorne und hinten auf dem Bus und eine längs geteilte Stromschiene~\cite{SchKonLade}.
+Um die elektrische Verbindung automatisch herzustellen, werden ausfahrbare Stromabnehmer verwendet. Es gibt sowohl Systeme mit fahrzeugseitigem als auch mit stationsseitigem Stromabnehmer und jeweils unbeweglichen Kontakten auf der anderen Seite. In den meisten Ladesystemen liegen die zwei Pole auf demselben Stromabnehmer nebeneinander, \textsc{Opbrid} verwendet im \textsc{Bůsbaar}-System zwei Stromabnehmer vorne und hinten auf dem Bus und eine längs geteilte Stromschiene~\cite{SchKonLade}.
 
-Mit diesen Systemen können hohe Leistungen übertragen werden. Sie sind für die Aufladung des Busses an Endstationen (z. B. das System von \textsc{Siemens} in Wien~\cite{SiemensWien}) oder Zwischenhaltestellen (z. B. \textsc{TOSA} in Genf~\cite{tosa}) geeignet. 
+Mit solchen konduktiv-automatischen Systemen können hohe Leistungen übertragen werden. Sie sind für die Aufladung des Busses an Endstationen (z. B. das System von \textsc{Siemens} in Wien~\cite{SiemensWien}) und auch an Zwischenhaltestellen (z. B. \textsc{TOSA} in Genf~\cite{tosa}) geeignet. 
 
-Bei allen aktuell im Betrieb befindlichen Systemen befinden sich die Komponenten auf dem Dach des Busses. Es müssen entweder Oberleitungen oder hohe Ladesäulen verwendet werden. Daher fallen diese Systeme im Stadtbild sehr auf. Einige Betreiber wünschen unauffälligere Systeme, für andere Betreiber sind die Ladesäulen jedoch als Symbol für Innovation und Umweltbewusstsein beliebt\marginpar{Beleg!}.
+Bei allen aktuell im Betrieb befindlichen Systemen befinden sich die Komponenten zur Stromübertragung auf dem Dach des Busses. Aus diesem Grund müssen entweder Oberleitungen oder hohe Ladesäulen verwendet werden. Daher fallen diese Systeme im Stadtbild sehr auf. Einige Betreiber wünschen unauffälligere Systeme, bei einigen anderen Betreibern sind die Ladesäulen jedoch als Symbol für Innovation und Umweltbewusstsein beliebt\marginpar{Beleg!}.
 
 In dieser Arbeit wird das Ladesystem der Firma Schunk mit bis zu 375 kW Leistung und busseitigem Pantographen als Beispiel für konduktiv-automatische Ladesysteme gewählt~\cite{Weigel:2013}.
 
-\subsubsection{Dynamisch – Trolleybus} \marginpar{Besser!}
-Schon seit über hundert Jahren\marginpar{Beleg!} fahren in vielen Städten (in Deutschland z. B. Solingen) Trolleybusse. In einigen Städten werden sie mit Batterien ausgerüstet, um Abschnitte ohne Oberleitung durchfahren zu können. Dies geschieht zum Beispiel in Rom und Lecce, weil in der denkmalgeschützten Altstadt keine Stromleitungen gebaut werden dürfen~\cite{tub_aleph001746639}[S. 66]. Auch eine Expansion des Liniennetzes in Vororte ohne Verlegung neuer Oberleitungen ist denkbar.
+\subsubsection{Dynamisch – Oberleitungsbus} \marginpar{Besser!}
+Schon seit über hundert Jahren\marginpar{Beleg!} fahren in vielen Städten (in Deutschland z. B. Solingen) Oberleitungsbusse. In einigen Städten werden sie zusätzlich mit Batterien ausgerüstet, um Abschnitte ohne Oberleitung durchfahren zu können. Dies geschieht zum Beispiel in Rom und Lecce, weil in der denkmalgeschützten Altstadt keine Stromleitungen gebaut werden dürfen~\cite{tub_aleph001746639}[S. 66]. Auch eine Expansion des Liniennetzes in Vororte ohne Verlegung neuer Oberleitungen ist auf diese Weise durchführbar.
 
 Der Trolleybus ist ein \emph{dynamisches} System, das die Aufladung während der Fahrt ermöglicht. Die Stromabnehmer können an speziellen Einfädelstellen automatisch ausgefahren werden, auf freier Strecke (z. B. nach einer Entgleisung der Stromabnehmer) muss der Fahrer sie jedoch mit Seilen oder Stangen an die Oberleitung führen. Da diese Systeme nur einen kleinen Teil ihrer Strecke ohne Oberleitung durchfahren, ist eine aufwändige Oberleitungsinfrastruktur erforderlich\marginpar{Belege!}. Kreuzungen zwischen Buslinien und besonders zwischen Bus- und Bahnlinien sind technisch sehr komplex.
 
 In Berlin besteht aus städtebaulichen Gründen kein Interesse am Einsatz von Trolleybussen. Daher wird dieses System hier nicht weiter betrachtet.
                                  
 \subsection{Induktive Ladesysteme}
-An einer elektrischen Leiterschleife fällt eine Spannung an, wenn sich das Magnetfeld um die Leiterschleife verändert – zum Beispiel wenn diese Spule sich im Magnetfeld einer anderen Spule befindet, durch die Wechselstrom fließt. Durch diese Kombination von zwei Spulen kann eine Wechselspannung transportiert werden. Am häufigsten wird dieser Effekt im Transformator verwendet. Dort wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
+In einer elektrischen Leiterschleife entsteht eine Spannung, wenn sich das Magnetfeld in der Umgebung der die Leiterschleife verändert – zum Beispiel, wenn diese Spule sich im Magnetfeld einer anderen Spule befindet, durch die Wechselstrom fließt. Durch diese Kombination von zwei Spulen kann eine Wechselspannung transportiert werden. Am häufigsten wird dieser Effekt im Transformator verwendet. Dort wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
 
-\marginpar{holprig!}Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
+Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
 
 In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des Fahrzeugs angebracht, die Primärspule befindet sich unter dem Straßen- oder Haltestellenboden und kann befahren werden.
 
@@ -107,19 +107,20 @@ In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des F
 Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \textsc{IPT} von \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}. In dieser Arbeit wird das System \textsc{primove} mit 200 kW Ladeleistung betrachtet.
 
 \subsubsection{Dynamisch}
-Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen Vertikalen Abstand zwischen den Spulen. Um ein Aufsetzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Dies führt zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
+Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen vertikalen Abstand zwischen den Spulen. Um ein Aufsetzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Dies führt zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
 
-Induktiv-dynamische Systeme könnten zukünftig eine wichtige Rolle in der Elektromobilität spielen, sind jedoch aktuell noch nicht ausgereift genug um einen Stadtbus im Fahrplanverkehr zu versorgen. Von daher werden sie hier nicht weiter betrachtet. 
+Induktiv-dynamische Systeme könnten zukünftig eine wichtige Rolle in der Elektromobilität spielen. Sie sind jedoch aktuell nicht ausgereift genug, um einen Stadtbus im Fahrplanverkehr zu versorgen. Von daher werden sie hier nicht weiter betrachtet. 
 
 \subsection{Batteriewechselsysteme}
-Im Gegensatz zu den anderen Systemen wird bei Batteriewechselsystemen keine elektrische Energie in das Fahrzeug übertragen sondern die komplette Batterie ausgewechselt. Statt Energietransport findet hier also Stofftransport zwischen Ladestation und Bus statt. 
+Im Gegensatz zu den anderen Systemen wird bei Batteriewechselsystemen nicht nur elektrische Energie in das Fahrzeug übertragen sondern ew wird die komplette Batterie ausgewechselt. Statt Energietransport findet hier also Stofftransport zwischen Ladestation und Bus statt. 
 
-In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter ausgetauscht. Innerhalb von kurzer Zeit können so auch sehr große Batterien ausgewechselt werden. Die "`Ladeleistung"' ist sehr groß. Die Batterien können außerhalb des Busses mit optimaler Ladeleistung und bei optimaler Temperatur aufgeladen werden. Es muss jedoch mehr als eine Batterie pro Bus vorgehalten werden, was dieses System sehr teuer macht.\marginpar{Beleg!, Wo wird das eingesetzt}
+In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter ausgetauscht. Innerhalb von kurzer Zeit können so auch sehr große Batterien ausgewechselt werden. Die "`Ladeleistung"' ist sehr groß. Die Batterien können außerhalb des Busses mit optimaler Ladeleistung und bei optimaler Temperatur aufgeladen werden. Es muss jedoch mehr als eine Batterie pro Bus vorgehalten werden, was dieses System teuer macht.
 
-In dieser Arbeit wird ein in Shanghai eingesetztes Batteriewechselsystem betrachtet\marginpar{stimmts?}. Dieses System kann die Batterie in sieben Minuten austauschen.
+In dieser Arbeit wird ein in Qingdao eingesetztes Batteriewechselsystem betrachtet. Dieses System kann die Batterie in sieben Minuten austauschen~\cite{swapQingdao}.
 
+\section{Parameter für die Simulation des Ladesystems}
 
-\section{Parameter zum Vergleich der Ladesysteme}
+\section{Parameter für die Bewertung der Ladesysteme}
 \label{parameter}
 
 \subsection{Mechanische Kriterien}

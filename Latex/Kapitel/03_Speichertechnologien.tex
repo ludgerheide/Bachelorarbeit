@@ -1,21 +1,22 @@
 \chapter{Speichertechnologien}
-
-In diesem Kapitel werden die Energiespeicher für Stadtbusse betrachtet. Wie im vorigen Kapitel werden zunächst die Technologien erläutert. Die Parameter sind aufgeteilt in Parameter, die direkt bewertet werden und Eingabewerte für die Simulation. In Abschnitt \ref{vergleichstabellen_speichertechnologien} ab Seite \pageref{vergleichstabellen_speichertechnologien} sind die Werte aufgelistet. \marginpar{ÜBERARBEITEN (für Parameterliste)}
-
 Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologien nahezu unbegrenzt. Von daher werden hier nur Technologien aufgelistet, die bereits in elektrischen Stadtbussen eingesetzt wurden. Die Daten stammen von aktuell erhältlichen Produkten für elektrische Straßenfahrzeuge.
 
+Wie im vorigen Kapitel werden zunächst die Technologien erläutert und dann die Parameter und ihre Werte aufgeführt. Die Parameter werden hier jedoch nur als Eingabewerte für die Verbrauchssimulation in Kapitel \ref{chap4} verwendet und nicht direkt bewertet.
+
 \section{Untersuchte Technologien}
-Im folgenden Abschnitt werden die Grundlagen und die Einsatzgeschichten der verschiedenen Speichertechnologien kurz erläutert. Die Technologien sind nach dem genutzten physikalischen Effekt aufgeteilt~\cite{Sterner:2014}[S. 35f]. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
+Im folgenden Abschnitt sind die Technologien nach dem genutzten physikalischen Effekt geordnet~\cite{Sterner:2014}[S. 35f]. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, zum Beispiel um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
+
+In den weiteren Abschnitten dieser Arbeit werden fünf wichtige Speichertechnologien exemplarisch in der Simulation verwendet, nämlich ein Blei-Säure-Akkumulator und vier verschiedene Lithium-Ionen-Akkus. Zusätzlich werden in diesem Kapitel auch andere wichtige Speichertechnologien vorgestellt, die aus verschiedenen Gründen aktuell nicht in Elektrobussen eingesetzt werden.
 
 \subsection{Mechanisch – Schwungradspeicher}
-In Bussen kann mechanische Energie mit einem Schwungrad gespeichert werden\footnote{Es gibt auch Prototypen von Pressluftspeichern in kleineren Fahrzeugen, in Bussen werden sie jedoch nur als Teil eines Hybridantriebs eingesetzt und hier nicht weiter betrachtet~\cite{Sebastian-Naumann:2014}[S. 14].}. Die Energieübertragung erfolgt durch eine elektrische Motor- und Generatoreinheit. Moderne Schwungräder werden aus gewickelten Karbonfasern hergestellt und in Vakuumgehäusen magnetisch gelagert. So werden Drehzahlen von bis zu 40.000~min\textsuperscript{-1} und sehr geringe Reibungsverluste erreicht~\cite{993788}. Um die Sicherheit der Passagiere zu gewährleisten muss das Gehäuse im Falle eines berstenden Schwungrades die gesamte gespeicherte Energie innerhalb von Sekundenbruchteilen aufnehmen können, ohne selbst zu bersten. Dies erfordert sehr schwere Gehäuse, die die spezifische Energie und Leistung des tatsächlichen Systems stark reduzieren.
+In Bussen kann mechanische Energie mit einem Schwungrad gespeichert werden\footnote{Es gibt auch Prototypen von Pressluftspeichern in kleineren Fahrzeugen, in Bussen werden sie jedoch nur als Teil eines Hybridantriebs eingesetzt und hier nicht weiter betrachtet~\cite{Sebastian-Naumann:2014}[S. 14].}. Die Energieübertragung erfolgt durch eine elektrische Motor- und Generatoreinheit. Moderne Schwungräder werden aus gewickelten Karbonfasern hergestellt und in Vakuumgehäusen magnetisch gelagert. So werden Drehzahlen von bis zu 40.000~min\textsuperscript{-1} und sehr geringe Reibungsverluste erreicht~\cite{993788}. Um die Sicherheit der Passagiere im Falle eines berstenden Schwungrades zu gewährleisten, muss das Gehäuse die gesamte gespeicherte Energie innerhalb von Sekundenbruchteilen aufnehmen können ohne selbst zu bersten. Dies erfordert sehr schwere Gehäuse, die die spezifische Energie und Leistung des tatsächlichen Systems stark reduzieren.
 
-Der Schwungradspeicher wurde in den fünfziger Jahren im Gyrobus im schweizerischen Yverdon auf einer acht Kilometer langen Linie erprobt. Die Strecke wurde erfolgreich zurückgelegt, die damalige Technologie war jedoch sehr wartungsaufwändig und weniger effizient als ein Oberleitungsbus. Aktuell wird der Schwungradspeicher nur als Teil eines hybriden Antriebsstrangs eingesetzt und daher in dieser Arbeit nicht weiter betrachtet~\cite{tub_aleph001746639}[S. 216].
+Schwungradspeicher wurden in den fünfziger Jahren im Gyrobus im schweizerischen Yverdon auf einer acht Kilometer langen Linie erprobt. Die Strecke wurde erfolgreich zurückgelegt, die damalige Technologie war jedoch sehr wartungsaufwändig und weniger effizient als ein Oberleitungsbus. Aktuell wird der Schwungradspeicher nur als Teil eines hybriden Antriebsstrangs eingesetzt und daher in dieser Arbeit nicht weiter betrachtet~\cite{tub_aleph001746639}[S. 216].
 
 \subsection{Elektrisch – Kondensator}
 Der Kondensator ist ein rein elektrischer Energiespeicher. Im klassischen Plattenkondensator werden zwei durch ein festes Dielektrikum getrennte Platten elektrisch aufgeladen, die Ladung kann später in Strom umgewandelt werden. Kondensatoren haben eine hohe spezifische Leistung, aber eine sehr geringe spezifische Energie.
 
-In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte un Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in die Leiterplatten erreicht~\cite{Sterner:2014}[S. 167f].
+In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein flüssiges Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte und Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in die Leiterplatten erreicht~\cite{Sterner:2014}[S. 167f].
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureStandardWidth]{Doppelschicht-Prinzipdarstellung}
@@ -25,16 +26,16 @@ In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eine
 
 In Shanghai werden Busse mit dieser Technologie seit 2008 im Linienverkehr eingesetzt. Daneben werden Superkondensatoren für kurzzeitige Einsätze mit hohem Leistungsbedarf, zum Beispiel zur Bremsenergierückgewinnung oder zur Überbrückung stromloser Stellen in Trolleybussen eingesetzt~\cite{Barminer-Busgesellschaft:2012}.
 
-Die spezifische Energie von Superkondensatoren reicht aktuell nicht für ein Aufladen an den Endhaltestellen aus. Stattdessen müssen auch Unterwegshaltestellen zu Ladestationen ausgebaut werden. Aufgrund des hohen Infrastrukturbedarfs werden Superkondensatoren nicht weiter betrachtet.
+Die spezifische Energie von Superkondensatoren reicht aktuell nicht für ein Aufladen nur an den Endhaltestellen aus. Stattdessen müssen auch Unterwegshaltestellen zu Ladestationen ausgebaut werden. Aufgrund des hohen Infrastrukturbedarfs werden Superkondensatoren in dieser Arbeit nicht weiter betrachtet.
 
 \subsection{Elektrochemisch – Batterie} %TODO: Besser
-Eine Batterie ist ein elektrochemischer Energiespeicher. An den Klemmen besteht eine elektrische Spannung, die direkt abgerufen werden kann. Innerhalb der Batterie besteht ein Ungleichgewicht zwischen den elektrischen Ladungen von zwei Elektroden, die durch ein Elektrolyt getrennt sind. Durch den Elektrolyt können nur Ionen, aber keine Elektronen wandern, von daher wandern die Elektronen durch den Verbraucher von Klemme zu Klemme, sobald der Stromkreis geschlossen wird.
+Eine Batterie ist ein elektrochemischer Energiespeicher. An den Klemmen besteht eine elektrische Spannung, die direkt abgerufen werden kann. Innerhalb der Batterie besteht ein Ungleichgewicht zwischen den elektrischen Potentialen von zwei Elektroden, die durch ein Elektrolyt getrennt sind. Durch den Elektrolyt können nur Ionen, aber keine Elektronen wandern, von daher wandern die Elektronen durch den Verbraucher von Klemme zu Klemme, sobald der Stromkreis geschlossen wird.
 
 Es wird unterschieden in Primärbatterien, in denen die Reaktion nicht umkehrbar ist und wiederaufladbaren Batterien, sogenannten Sekundärbatterien. In dieser Arbeit werden nur Sekundärbatterien betrachtet\footnote{Die Begriffe Batterie, Akkumulator und Akku werden hier austauschbar verwendet.}, die für den Einsatz in Fahrzeugen geeignet sind.
 
-Die Spannung einer einzelnen Batteriezelle ist durch die verwendeten chemischen Elemente begrenzt~\cite{Sterner:2014}[S. 202f]. Deshalb bestehen sämtliche Batterien für elektrische Fahrzeuge aus einer Parallelschaltung einzelner Zellen, mit der eine höhere Spannung erreicht wird.
+Die Spannung einer einzelnen Batteriezelle ist durch die verwendeten chemischen Elemente begrenzt~\cite{Sterner:2014}[S. 202f]. Deshalb bestehen sämtliche Batterien für elektrische Fahrzeuge aus einer Reihenschaltung einzelner Zellen, mit der eine höhere Spannung erreicht wird.
 
-Die Bauformen sind sehr unterschiedlich, meist werden jedoch gewickelte oder ineinander geschachtelte, flache Elektroden verwendet um die Oberflächen und damit die Stromstärke zu maximieren~\cite{Sterner:2014}[S. 209ff].
+Die Bauformen sind sehr unterschiedlich, meist werden jedoch gewickelte oder ineinander geschachtelte, flache Elektroden verwendet, um die Oberflächen und damit die Stromstärke zu maximieren~\cite{Sterner:2014}[S. 209ff].
 
 \subsubsection{Wärmeverluste} \label{sec_waermeverluste}
 In einer Batterie treten sowohl reversible als auch irreversible thermodynamische Prozesse auf. Die an den Elektroden ablaufenden Reaktionen sind je nach Materialpaarung und Reaktionsrichtung endotherm oder exotherm. Die reversible Erwärmung kann über die Summe der Entropieänderungen an beiden Elektroden berechnet werden~\cite{KiehneBattery}[S. 21ff].
@@ -48,7 +49,7 @@ Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Inne
 Q_{irr}=-I^2\cdot R_i
 \end{equation}
 
-Das thermische Verhalten wir durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich bei langsamen Laden oder Entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entspricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
+Das thermische Verhalten wird durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich bei langsamen Laden oder Entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entspricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
 
 
 \subsubsection{Blei-Säure}
@@ -156,7 +157,9 @@ Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoc
 
 Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}. Aufgrund ihrer geringen Lebensdauer werden sie nicht in Fahrzeugen eingesetzt und hier nicht weiter betrachtet~\cite{Schimke:2012}[S. 24].
 
-\section{Parameter}
+\section{Parameter für die Simulation des Speichersystems}
+
+\section{Parameter für die Bewertung der Speichersysteme}
 Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchssimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert.
 
 Die Entlade- und Ladekurven der Batterien sind in Anhang \ref{an_Datenblaetter} zu finden. Wenn keine Kurve für das Verhältnis von Ladestrom zu Ladezustand verfügbar war, wurde sie mit einer simulierten CC-CV-Aufladung ermittelt.
