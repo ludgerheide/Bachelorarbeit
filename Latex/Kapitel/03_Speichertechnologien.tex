@@ -49,11 +49,11 @@ Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Inne
 Q_{irr}=-I^2\cdot R_i
 \end{equation}
 
-Das thermische Verhalten wird durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich bei langsamen Laden oder Entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entspricht der reversible Anteil bei einer 1$C$-Entladung maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
+Das thermische Verhalten wird durch die Summe der reversiblen und irreversiblen Wärmeentwicklung beschrieben. Der reversible Anteil hängt linear vom Strom ab, der irreversible quadratisch. Für niedrige Ströme kann der reversible Anteil den irreversiblen übertreffen, das heißt die Batterie kann sich bei langsamen Laden oder Entladen \emph{abkühlen}. Bei hohen Strömen überwiegt der irreversible Anteil, bei Lithium-Ionen Akkus entspricht der reversible Anteil bei einer 1$C$-Entladung\footnote{$C$ ist eine für Batterien übliche Einheit der Belastung. Sie ist definiert als $\frac{Strom\ (in\ A)}{Ladung\ (in\ Ah)}$} maximal 50\% des irreversiblen Anteils~\cite{Viswanathan20103720}.
 
 
 \subsubsection{Blei-Säure}
-Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} auf Seite \pageref{Pb} aufgeführt~\cite{KiehneBattery}[S. 50].
+Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} aufgeführt~\cite{KiehneBattery}[S. 50].
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
@@ -71,9 +71,15 @@ Im Gegensatz zu den meisten anderen Batterien transportiert hier der Elektrolyt 
 
 Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches Nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, dass so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können, da die Energie des Überladevorgangs in die Wasserspaltung geführt wird~\cite{tub_aleph001746639}[S. 182].
 
-Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof)~\cite{Risch:1957}[S. 8f].
+Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) fuhr~\cite{Risch:1957}[S. 8f].
 
-Heutzutage ist die Verwendung von Bleiakkus auf Gabelstapler und andere Fahrzeuge außerhalb des Straßenverkehrs begrenzt. In dieser Arbeit wird dennoch der Bleiakku \textsc{Panasonic EC-FV1260} betrachtet um aufzuzeigen, wie weit die Technologie in den vergangen 40 Jahren fortgeschritten ist.
+Heutzutage ist die Verwendung von Bleiakkus als Antriebsbatterien auf Gabelstapler und andere Fahrzeuge außerhalb des Straßenverkehrs begrenzt. Die spezifische Leistung reicht nicht aus, um Fahrzeuge mit größeren Zuladungen auf längeren Strecken zu betreiben.
+
+\begin{quote}
+	In dieser Arbeit wird dennoch der Bleiakku \textsc{Panasonic EC-FV1260} betrachtet um aufzuzeigen, wie weit die Technologie in den vergangen 40 Jahren fortgeschritten ist.
+\end{quote}
+
+
 
 \subsubsection{Nickel-Cadmium}
 Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalischen, wässrigen Elektrolyt, dass nicht an der Reaktion beteiligt ist, sondern nur dem Ionentransport dient. Die Reaktionsgleichungen sind in Tabelle \ref{NiCd} aufgeführt~\cite{Sterner:2014}[S.233].
@@ -90,14 +96,14 @@ Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalisc
 	\label{NiCd}
 \end{table}
 
-Wie bei Blei-Säure-Batterien wird der Elektrolyt in Wasserstoff und Sauerstoff zerlegt. Es sind offene Bauformen und geschlossene Bauformen mit interner Rekombination vorhanden.
+Wie bei Blei-Säure-Batterien wird der Elektrolyt bei Überladung in Wasserstoff und Sauerstoff zerlegt. Es sind offene Bauformen und geschlossene Bauformen mit interner Rekombination der Gase vorhanden.
 
-Die Nickel-Cadmium-Batterie weist eine weit höhere spezifische Energie als die Blei-Säure-Batterie auf, wird jedoch in elektrischen Bussen nicht verwendet und daher hier auch nicht weiter betrachtet. \marginpar{Warum? Wirklich?}
+Die Nickel-Cadmium-Batterie weist eine höhere spezifische Energie als die Blei-Säure-Batterie auf, wird jedoch in elektrischen Bussen nicht verwendet und daher in dieser Arbeit auch nicht weiter betrachtet.
 
 \subsubsection{Nickel-Metallhydrid}
-Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickel(oxy)hydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, das hier statt giftigem Cadmium(hydroxid) in der negativen Elektrode Metall eingesetzt wird, in dem $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Dieser Hydrierung genannte Vorgang tritt in vielen verschiedenen Metallen und Legierungen auf. In diesen Batterien wird meist eine Legierung aus seltenen Erden und Nickel verwendet~\cite{KiehneBattery}[S. 85ff]. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt~\cite{Sterner:2014}[S. 245].
+Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickel(oxy)hydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, das hier statt giftigem Cadmium in der negativen Elektrode ein Metall eingesetzt wird, in dem $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Dieser Hydrierung genannte Vorgang tritt in vielen verschiedenen Metallen und Legierungen auf. In diesen Batterien wird meist eine Legierung aus seltenen Erden und Nickel verwendet~\cite{KiehneBattery}[S. 85ff]. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt~\cite{Sterner:2014}[S. 245].
 
-\begin{table}\centering %TODO: Rahmen für Tabellen
+\begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
 		\toprule
 		&              $geladen$ & $\rightleftarrows$ & $entladen$        \\
@@ -109,76 +115,79 @@ Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nic
 	\label{NiMH}
 \end{table}
 
-Da die Hydrierung bei einem Druck von bis zu 10 Bar stattfindet, gibt es nur geschlossene Bauformen. Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Nickel-Metallhydrid-Akkus sind inzwischen teurer als vergleichbare Lithium-Ionen-Akkus~\cite{Schimke:2012}[S. 33]. Von daher werden sie hier nicht weiter betrachtet.
+Da die Hydrierung bei einem Druck von bis zu 10 Bar stattfindet, gibt es nur geschlossene Bauformen. Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Nickel-Metallhydrid-Akkus sind inzwischen teurer als vergleichbare Lithium-Ionen-Akkus~\cite{Schimke:2012}[S. 33]. Von daher werden sie in dieser Arbeit nicht weiter betrachtet.
 
 \subsubsection{Lithium-Ionen}
-In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch ein Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. Das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.}~\cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren. Von daher werden für positive und negative Elektroden verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden~\cite{KiehneBattery}[S. 408, 440ff]. 
+In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch einen Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. Das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.}~\cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren. Von daher werden für positive und negative Elektroden verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden~\cite{KiehneBattery}[S. 408, 440ff]. 
 
 \paragraph{Geschichtete Oxide}
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureStandardWidth]{LiCoO2}
-	\caption[Prinzipdarstellung eines Lithium-Ionen-Akkus]{Prinzipdarstellung eines Lithium-Ionen-Akkus mit Kobaltoxid in der positiven Elektrode. Quelle: Cepheiden (Eigenes Werk) CC BY-SA 2.0, via Wikimedia Commons} %TODO: Zitierweise
+	\caption[Prinzipdarstellung eines Lithium-Ionen-Akkus]{Prinzipdarstellung eines Lithium-Ionen-Akkus mit Kobaltoxid in der positiven Elektrode. Quelle: Cepheiden (Eigenes Werk) CC BY-SA 2.0, via Wikimedia Commons}
 	\label{abb_LiCoO2}
 \end{figure}
 
-In kleinen und mittelgroßen Akkus werden meist positive Elektroden aus Lithium-Metalloxiden verwendet. Diese haben eine kubische Kristallstruktur. Das Lithium wird zwischen den Sauerstoffatomen eingelagert. Positive Elektroden aus $LiCoO_2$ werden seit den 90er Jahren in kommerziellen Lithiumakkus verwendet. Daneben sind auch Lithium-Manganoxide und Mischungen von Lithium-Nickel- und Lithium-Kobaltoxid gebräuchlich, mit denen man günstigere Akkus auf Kosten der spezifischen Energie herstellen kann~\cite{whittingham2004lithium}. %TODO: Welche Busse?
+In kleinen und mittelgroßen Akkus werden meist positive Elektroden aus Lithium-Metalloxiden verwendet. Diese haben eine kubische Kristallstruktur. Das Lithium wird zwischen den Sauerstoffatomen eingelagert. Positive Elektroden aus $LiCoO_2$ werden seit den neunziger Jahren in kommerziellen Lithiumakkus verwendet. Daneben sind auch Lithium-Manganoxide und Mischungen von Lithium-Nickel- und Lithium-Kobaltoxid bzw. Lithium-Aluminiumoxid gebräuchlich, mit denen man günstigere Akkus auf Kosten der spezifischen Energie herstellen kann~\cite{whittingham2004lithium}.
 
 Die negative Elektrode besteht in allen Fällen aus Graphit. Die Lithiumionen werden zwischen den verschiedenen Schichten der Graphitkristalle eingelagert. Es werden verschiedene Größen von Graphitkristallen und auch andere Modifikationen von Kohlenstoff verwendet~\cite{Sterner:2014}[S. 252]. Ein Lithium-Kobaltoxid-Akku ist in Abbildung \ref{abb_LiCoO2} schematisch dargestellt.
 
-Tesla Motors verwendet im Gegensatz zu anderen Herstellern von Elektrofahrzeugen keine speziellen Batterien, sondern generische 18650-Zellen, wie sie in Laptops verwendet werden\marginpar{Beleg!}. In dieser Arbeit wird die Batterie \textsc{NCR18650B} von \textsc{Panasonic} als Beispiel für "`klassische"' Lithium-Ionen-Akkus betrachtet.
+Tesla Motors verwendet im Gegensatz zu anderen Herstellern von Elektrofahrzeugen keine speziellen Batterien, sondern generische 18650-Zellen, wie sie in Laptops verwendet werden~\cite{teslaBatReport}.
+
+\begin{quote}
+	In dieser Arbeit wird die Batterie \textsc{NCR18650B} von \textsc{Panasonic} als Beispiel für "`klassische"' Lithium-Ionen-Akkus betrachtet.
+\end{quote}
 
 \paragraph{Lithium-Eisenphosphat}
 Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die theoretische spezifische Energie ist ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht~\cite{Tie201382}. In der negativen Elektrode wird Graphit verwendet. Aufgrund des niedrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geeignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet~\cite{bydSpecs}.
 
-In dieser Arbeit werden zwei Lithium-Eisenphosphat-Akkus betrachtet. Es handelt sich jeweils um Zellen mit hoher Kapazität für den Einsatz in Elektrofahrzeugen. Die Batterie \textsc{EV 45 Ah} von \textsc{European Batteries} ist auf hohe spezifische Energie auf Kosten der Leistung ausgelegt. Im Gegensatz ist die Batterie \textsc{ePLB F 14 AH} auf eine hohe spezifische Entladeleistung ausgelegt.
+\begin{quote}
+	In dieser Arbeit werden zwei Lithium-Eisenphosphat-Akkus betrachtet. Es handelt sich jeweils um Zellen mit hoher Kapazität für den Einsatz in Elektrofahrzeugen. Die Batterie \textsc{EV 45 Ah} von \textsc{European Batteries} ist auf hohe spezifische Energie auf Kosten der Leistung ausgelegt. Im Gegensatz ist die Batterie \textsc{ePLB F 14 AH} auf eine hohe spezifische Entladeleistung ausgelegt.
+\end{quote}
 
 \paragraph{Lithium-Titanat}
 Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür aber eine weit höhere spezifische Lade- und Entladeleistung~\cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird im Berliner Elektrobus-Projekt sowie von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt~\cite{protCat}.
 
-In dieser Arbeit wird die \textsc{primove}-Batterie betrachtet, die im Berliner Elektrobus zum Einsatz kommt.
+\begin{quote}
+	In dieser Arbeit wird die \textsc{primove}-Batterie betrachtet, die im Berliner Elektrobus zum Einsatz kommt.
+\end{quote}
 
 \subsubsection{Natrium-Nickelchlorid}
-Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Aluminiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen aus flüssigem Kochsalz und Nickel, der ebenfalls in flüssigem Kochsalz gelagert ist. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt~\cite{KiehneBattery}[S. 257ff].
+Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Aluminiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen beide aus flüssigem Kochsalz, an der negativen Elektrode ist Nickel im Kochsalz gelöst. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt~\cite{KiehneBattery}[S. 257ff].
 
-\begin{table}\centering %TODO: RICHTIG
+\begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
 		\toprule
 		&       $geladen$ & $\rightleftarrows$ & $entladen$           \\
-		Negative Elektrode & $NiCl_2 + 2e^-$ & $\rightleftarrows$ & $2Cl^- + 2Na^+ + Ni$ \\
-		Positive Elektrode &           $2Na$ & $\rightleftarrows$ & $2e^-$               \\ \midrule
+		Negative Elektrode & $NiCl_2 + 2e^-$ & $\rightleftarrows$ & $2Cl^- + Ni$ \\
+		Positive Elektrode &           $2Na$ & $\rightleftarrows$ & $2Na^+ + 2e^-$               \\ \midrule
 		Zellenreaktion     &  $2Na + NiCl_2$ & $\rightleftarrows$ & $Ni + 2NaCl$ \\ \bottomrule
 	\end{tabularx}
 	\caption{Elektrodengleichungen der Natrium-Nickelchlorid-Batterie}
 	\label{ZEBRA}
-	%TODO: Formeln
 \end{table}
-\marginpar{Formeln in \ref{ZEBRA}}
 
-Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Lebensdauer und Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}. Aufgrund ihrer geringen Lebensdauer werden sie nicht in Fahrzeugen eingesetzt und hier nicht weiter betrachtet~\cite{Schimke:2012}[S. 24].
+Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}. Aufgrund ihrer geringen Lebensdauer werden sie nicht mehr in Fahrzeugen eingesetzt und in dieser Arbeit nicht weiter betrachtet~\cite{Schimke:2012}[S. 24].
 
-\section{Parameter für die Simulation des Speichersystems}
+\section{Parameter für die Simulation der Speichersysteme}
+In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Die Zahlenwerte sind in den Tabellen \ref{vergleichstabellen_speichertechnologien_1} und \ref{vergleichstabellen_speichertechnologien_2} aufgeführt.
 
-\section{Parameter für die Bewertung der Speichersysteme}
-Die Bewertung der Speichersysteme erfolgt anhand der Ausgabedaten einer Verbrauchssimulation. In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Sie sind Eingangsdaten der Verbrauchssimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden in Kapitel \ref{chap4} erläutert.
+Die Bewertung der Speichersysteme wird in dieser Arbeit anhand der Ausgabedaten einer Verbrauchssimulation vorgenommen werden. Die Parameter in diesem Abschnitt sind Eingangsdaten dieser Verbrauchssimulation. Die Verbrauchssimulation und ihre Ausgabedaten werden anschließend in Kapitel \ref{chap4} dargestellt.
 
-Die Entlade- und Ladekurven der Batterien sind in Anhang \ref{an_Datenblaetter} zu finden. Wenn keine Kurve für das Verhältnis von Ladestrom zu Ladezustand verfügbar war, wurde sie mit einer simulierten CC-CV-Aufladung ermittelt.
+Die Entlade- und Ladekurven der Batterien sind in den Datenblättern in Anhang \ref{an_Datenblaetter} abgebildet. Wenn keine Kurve für das Verhältnis von Ladestrom zu Ladezustand in den Datenblättern enthalten war, wurde die Kurve mit einer simulierten CC-CV-Aufladung\footnote{CC-CV ("`constant-current – constant voltage"') ist die für Lithium-Ionen-Akkus übliche Ladestrategie. Bis zu einem bestimmten Ladezustand wird mit konstanten Strom geladen, danach mit konstanter Spannung.} ermittelt.
 \begin{description}
-	\item[Entladekurve] Graph von Spannung und Kapazität für verschiedene Ströme.
-	\item[Aufladung] Graph von Ladestrom in Abhängigkeit vom Ladezustand.
-\end{description}
-Die folgenden Parameter sind in Tabelle \ref{vergleichstabellen_speichertechnologien} aufgelistet:
-\begin{description}
+	\item[Entladekurve] Graph von Spannung und Ladung für verschiedene Ströme.
+	\item[Aufladung] Graph des Ladestroms in Abhängigkeit vom Ladezustand.
 	\item[Spannung $U$] Die Nennspannung laut Datenblatt.\\
 	Einheit: $V$
 	\item[Kapazität $Q$] Die Nennkapazität der Batterie\footnote{Diese physikalische Größe hieße richtig \emph{Ladung}. In der Literatur wird jedoch meist das Wort \emph{Kapazität} verwendet.}.\\
 	Einheit: $Ah$
 	\item[Maximaler Entladestrom $I$] Es wird er maximale Pulsstrom für einen ca. 30-sekündigen Stromstoß verwendet.\\
 	Einheit: $A$
-	\item[Innenwiderstand $R$] Sollte kein Innenwiderstand dokumentiert sein, wird als Schätzwert 1\% der Nennleistung verwendet.\\
+	\item[Innenwiderstand $R$] Sollte kein Innenwiderstand dokumentiert sein, wird als Schätzwert der Zahlenwert von 1\% der Nennleistung verwendet.\\
 	Einheit: $m\Omega$
 	\item[Gewicht] Einheit: $kg$
-	\item[Volumen] Das Packvolumen einer Batterieeinheit. Bei Zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.\\
+	\item[Volumen] Das Packvolumen einer Batterieeinheit. Bei zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.\\
 	Einheit: $l$
 	\item[Wärmekapazität $c_p$] Die spezifische Wärmekapazität einer Batterie dieses Typs nach Pesaran~\cite{pesaran2001battery}.\\
 	Einheit: $\frac{kJ}{kg\cdot K}$
@@ -187,16 +196,32 @@ Die folgenden Parameter sind in Tabelle \ref{vergleichstabellen_speichertechnolo
 \end{description}
 
 \begin{table}\centering
-	\begin{tabularx}{\textwidth}{XXrrrrrrrr}
+	\begin{tabulary}{\textwidth}{LLlRRRR}
 		\toprule
-		Kurzname & Chemie           & U   &    Q &   I &         R &   Gew. &   Vol. &                  $c_p$ &       Temp. \\
-		         &                  & $V$ & $Ah$ & $A$ & $m\Omega$ &   $kg$ &    $l$ & $\frac{kJ}{kg\cdot K}$ & $^{\circ}C$ \\ \midrule
-		18650    & $LiNi_xCo_xAl_x$ & 3,6 & 3,35 & 7,2 &       1,8 & 0,0485 & 0,0176 &                  0,795 &          45 \\
-		Bleiakku & $PbSO_4$         & 12,0  &   43 & 180 &       3,5 &     21 &    7,9 &                  0,660 &          50 \\
-		LiTiO    & $Li_4Ti_5O_{12}$ & 3,7 &   42 & 133 &       1,2 &      2 &    1,4 &                  0,795 &          55 \\
-		LFP-HE   & $LiFePO_4$       & 3,2 &   45 & 160 &       2,0 &   0,99 &    0,6 &                  0,795 &          45 \\
-		LFP-HP   & $LiFePO_4$       & 3,2 &   14 & 140 &       5,0 &   0,38 &    0,3 &                  0,795 &          45 \\ \bottomrule
-	\end{tabularx}
-	\caption{Parameter der Batterien}
-	\label{vergleichstabellen_speichertechnologien}
+		Technologie                           & Verwendetes Beispiel                      & Referenz                        &    U &    Q &   I &         R \\
+		                                      &                                           &                             &  $V$ & $Ah$ & $A$ & $m\Omega$ \\ \midrule
+		Blei-Säure                            & \textsc{Panasonic} EC-FV1260              & Abb. \ref{datasheet_Blei}   & 12,0 &   43 & 180 &       3,5 \\
+		"`Klassischer"' Lithium-Ionen-Akku    & \textsc{Panasonic} NCR18650B              & Abb. \ref{datasheet_18650}  &  3,6 & 3,35 & 7,2 &       1,8 \\
+		Lithium-Eisenphosphat (hohe Energie)  & \textsc{European Batteries} EV 45 AH      & Abb. \ref{datasheet_LFP_HE} &  3,2 &   45 & 160 &       2,0 \\
+		Lithium-Eisenphosphat (hohe Leistung) & \textsc{EIG ePLB} F 14 Ah                 & Abb. \ref{datasheet_LFP_HP} &  3,2 &   14 & 140 &       5,0 \\
+		Lithium-Titanat                       & Einzelzelle der \textsc{primove}-Batterie & Abb. \ref{datasheet_LTO}    &  3,7 &   42 & 133 &       1,2 \\ \bottomrule
+	\end{tabulary}
+	\caption{Elektrische Parameter der Batterien}
+	\label{vergleichstabellen_speichertechnologien_1}
 \end{table}
+
+\begin{table}\centering
+	\begin{tabulary}{\textwidth}{LLRRRR}
+		\toprule
+		Technologie                           & Verwendetes Beispiel                      &   Gew. &   Vol. &                  $c_p$ &       Temp. \\
+		                                      &                                           &   $kg$ &    $l$ & $\frac{kJ}{kg\cdot K}$ & $^{\circ}C$ \\ \midrule
+		Blei-Säure                            & \textsc{Panasonic} EC-FV1260              &     21 &    7,9 &                  0,660 &          50 \\
+		"`Klassischer"' Lithium-Ionen-Akku    & \textsc{Panasonic} NCR18650B              & 0,0485 & 0,0176 &                  0,795 &          45 \\
+		Lithium-Eisenphosphat (hohe Energie)  & \textsc{European Batteries} EV 45 AH      &   0,99 &    0,6 &                  0,795 &          45 \\
+		Lithium-Eisenphosphat (hohe Leistung) & \textsc{EIG ePLB} F 14 Ah                 &   0,38 &    0,3 &                  0,795 &          45 \\
+		Lithium-Titanat                       & Einzelzelle der \textsc{primove}-Batterie &      2 &    1,4 &                  0,795 &          55 \\ \bottomrule
+	\end{tabulary}
+	\caption{Mechanische und thermische Parameter der Batterien}
+	\label{vergleichstabellen_speichertechnologien_2}
+\end{table}
+

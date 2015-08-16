@@ -1,28 +1,38 @@
 \chapter{Simulation der Systemeigenschaften}
 \label{chap4}
-Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht sein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`\textsc{Primove} ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
+Ziel dieser Arbeit soll der Vergleich verschiedener Kombinationen von Ladesystem und Speichertechnologie aus technischer Sicht sein. Qualitative Bewertungen einer Kombination sind teilweise ohne Rechnung möglich (z. B. "`Das \textsc{primove}-Ladesystem ist besser für Lithium-Titanat-Batterien geeignet als für Lithium-Eisenphosphat-Batterien"'). Eine genauere Betrachtung und ein Vergleich von ähnlichen Technologiekombinationen ist jedoch nicht möglich. Daher werden in dieser Arbeit mit Hilfe eines Simulationsmodell quantitative Daten zu den verschiedenen Technologiekombinationen ermittelt.
 
 \section{Simulationsmodell}
 %TODO: Ausfüllen
-Ausgangspunkt ist ein Elektrobus-Simulationsmodell, das im Fachgebiet Methoden der Produktenwticklung und Mechatronik der TU Berlin entwickelt wurde. Es wurde im Rahmen einer Diplomarbeit von Maximilian Götz erstellt~\cite{Gotz:2013}. Das Modell ist in \textsc{Matlab} und \textsc{simulink} programmiert. Das Modell wird kontinuierlich weiterentwickelt. Für diese Arbeit wurde die Version verwendet, die Tu-Anh Ly am 11. Juni 2015 zur Verfügung stellte. In Abbildung \ref{abb_simmodell} werden die einzelnen Komponenten des Simulationsmodells und ihre Zusammenhänge dargestellt.
+Ausgangspunkt ist ein Elektrobus-Simulationsmodell, das im Fachgebiet Methoden der Produktenwticklung und Mechatronik der TU Berlin entwickelt wurde. Es wurde im Rahmen einer Diplomarbeit von Maximilian Götz erstellt~\cite{Gotz:2013}. Das Modell ist in \textsc{Matlab} und \textsc{simulink} programmiert. Das Modell wird kontinuierlich weiterentwickelt. Für diese Arbeit wurde die Version verwendet, die Tu-Anh Ly (MPM, TU Berlin) am 11. Juni 2015 zur Verfügung stellte. In Abbildung \ref{abb_simmodell} sind die einzelnen Komponenten des Simulationsmodells und ihre Zusammenhänge dargestellt.
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Simulation-Schaubild}
 	\caption{Komponenten des Simulationsmodells}
 	\label{abb_simmodell}
 \end{figure}
 
-\paragraph{Digitaler Anhang} In Anhang \ref{an_Digital} ist eine Kopie des kompletten Simulationsmodells enthalten. Durch Ausführen von \texttt{Simulationsmodell/Batteriesimulation\_Ludger.m} können die Ergebnisse reproduziert werden.
+\paragraph{Digitaler Anhang} In Anhang \ref{an_Digital} ist eine Kopie des kompletten Simulationsmodells enthalten. Durch Ausführen von \texttt{Simulationsmodell/Batteriesimulation\_Heide.m} können die Ergebnisse reproduziert werden.
 
 \subsection{Aufgezeichnete Strecke}
-Der Energieverbrauch wird anhand einer aufgezeichneten Strecke berechnet. Für jeweils eine Tour wurden dabei Geschwindigkeit, Höhe über dem Meeresspiegel und Passagierzahl mit einer Auflösung von einer Sekunde aufgezeichnet. Die beiden verwendeten Aufzeichnungen sind in Abbildung \ref{Buslinien} zu sehen. Es werden die Buslinien 204 und 192 der BVG betrachtet. Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz. Sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch den Stadtrand Berlins. Wie in Abbildung \ref{Buslinien} erkennbar ist die Durchschnittsgeschwindigkeit höher und das Geschwindigkeitsprofil gleichmäßiger.
+Der Energieverbrauch wird anhand einer im normalen Linienverkehr aufgezeichneten Strecke berechnet. Für jeweils einen bestimmten Umlauf wurden dabei Geschwindigkeit, Höhe über dem Meeresspiegel und Passagierzahl mit einer zeitlichen Auflösung von einer Sekunde aufgezeichnet. Es werden die Buslinien 204 und 192 der Berliner Verkehrsbetriebe (BVG) betrachtet.
+
+Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz. Ein Umlauf ist 12,8 km lang un dauert ca. 80 Minuten. Sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Der Verlauf und ein farbkodiertes Geschwindigkeitsprofil sind in Abbildung \ref{Abb_204} zu sehen.
 \begin{figure}\centering
-	\includegraphics[width=\myFigureWideWidth]{Buslinien}
-	\caption[Verlauf und Geschwindigkeitsprofil der Buslinien]{Verlauf und Geschwindigkeitsprofil der Buslinien.}
-	\label{Buslinien}
+	\includegraphics[height=19cm]{Buslinien2}
+	\caption[Verlauf und Geschwindigkeitsprofil der Buslinie 204]{Verlauf und Geschwindigkeitsprofil der Buslinie 204}
+	\label{Abb_204}
+\end{figure}
+
+Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch den Stadtrand Berlins. Ein Umlauf ist 19,8 km lang und dauert ca. eine Stunde. Wie in Abbildung \ref{Abb_192} erkennbar ist die Durchschnittsgeschwindigkeit höher und das Geschwindigkeitsprofil gleichmäßiger.
+
+\begin{figure}\centering
+	\includegraphics[width=\myFigureWideWidth]{Profil192}
+	\caption[Geschwindigkeitsprofil der Buslinie 192]{Geschwindigkeitsprofil der Buslinie 192}
+	\label{Abb_192}
 \end{figure}
 
 \subsection{Energieverbrauch}
-Über die Strecke sind Beschleunigung, Geschwindgkeit und Steigung zu jedem Zeitpunkt festgelegt. Mit den Busparametern Gewicht, Rollwiderstand, Stirnfläche und $c_w$-Wert werden nun die mechanischen und aerodynamischen Kräfte berechnet, die auf den Bus wirken. Aus diesen Kräften wird die erforderliche Traktionsleistung und Motordrehzahl berechnet.
+Über die aufgezeichnete Strecke sind Beschleunigung, Geschwindgkeit und Steigung zu jedem Zeitpunkt festgelegt. Mit den Busparametern Gewicht, Rollwiderstand, Stirnfläche und $c_w$-Wert werden nun die mechanischen und aerodynamischen Kräfte berechnet, die auf den Bus wirken. Aus diesen Kräften wird die erforderliche Traktionsleistung und Motordrehzahl berechnet.
 
 %TODO: Ausfüllen
 Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Wer?} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
