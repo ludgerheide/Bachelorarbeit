@@ -16,10 +16,10 @@ Ausgangspunkt ist ein Elektrobus-Simulationsmodell, das im Fachgebiet Methoden d
 \subsection{Aufgezeichnete Strecke}
 Der Energieverbrauch wird anhand einer im normalen Linienverkehr aufgezeichneten Strecke berechnet. Für jeweils einen bestimmten Umlauf wurden dabei Geschwindigkeit, Höhe über dem Meeresspiegel und Passagierzahl mit einer zeitlichen Auflösung von einer Sekunde aufgezeichnet. Es werden die Buslinien 204 und 192 der Berliner Verkehrsbetriebe (BVG) betrachtet.
 
-Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz. Ein Umlauf ist 12,8 km lang un dauert ca. 80 Minuten. Sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Der Verlauf und ein farbkodiertes Geschwindigkeitsprofil sind in Abbildung \ref{Abb_204} zu sehen.
+Die Buslinie 204 führt vom Bahnhof Zoo zum Südkreuz. Ein Umlauf ist 12,8 km lang un dauert ca. 80 Minuten. Sie ist eine innerstädtische Linie mit niedriger Durchschnittsgeschwindigkeit und vielen Beschleunigungs- und Bremsvorgängen. Das Geschwindigkeitsprofil ist in Abbildung \ref{Abb_204} zu sehen.
 \begin{figure}\centering
-	\includegraphics[height=19cm]{Buslinien2}
-	\caption[Verlauf und Geschwindigkeitsprofil der Buslinie 204]{Verlauf und Geschwindigkeitsprofil der Buslinie 204}
+	\includegraphics[width=\myFigureWideWidth]{Profil204}
+	\caption{Geschwindigkeitsprofil der Buslinie 204}
 	\label{Abb_204}
 \end{figure}
 
@@ -27,7 +27,7 @@ Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch d
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Profil192}
-	\caption[Geschwindigkeitsprofil der Buslinie 192]{Geschwindigkeitsprofil der Buslinie 192}
+	\caption{Geschwindigkeitsprofil der Buslinie 192}
 	\label{Abb_192}
 \end{figure}
 
@@ -35,41 +35,54 @@ Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch d
 Über die aufgezeichnete Strecke sind Beschleunigung, Geschwindgkeit und Steigung zu jedem Zeitpunkt festgelegt. Mit den Busparametern Gewicht, Rollwiderstand, Stirnfläche und $c_w$-Wert werden nun die mechanischen und aerodynamischen Kräfte berechnet, die auf den Bus wirken. Aus diesen Kräften wird die erforderliche Traktionsleistung und Motordrehzahl berechnet.
 
 %TODO: Ausfüllen
-Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Wer?} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
+Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Wer, Quellenvermerk!} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Leistungen}
-	\caption[Berechnete Traktions-, Motor- und Batterieleistung]{Berechnete Traktions-, Motor- und Batterieleistung. Es wird Bus mit einer Masse von 13,3 Tonnen konstant mit 1 $\frac{m}{s^2}$ auf 50,4 $\frac{km}{h}$ beschleunigt und nach wenigen Sekunden mit 1 $\frac{m}{s^2}$ bis zum Stillstand abgebremst. Als Batterie wurde hier eine $LiFePO_4$-Batterie gewählt. Durch die maximale Ladeleistung von 38kW kann die verfügbare Rekuperationsleistung nur begrenzt ausgenutzt werden.}
+	\caption[Traktions-, Motor- und Batterieleistung für ein einfaches Geschwindigkeitsprofil]{Traktions-, Motor- und Batterieleistung für ein einfaches Geschwindigkeitsprofil. Ein Bus mit einer Masse von 13,3 Tonnen wird konstant mit 1 $\frac{m}{s^2}$ auf 50,4 $\frac{km}{h}$ beschleunigt und nach wenigen Sekunden mit 1 $\frac{m}{s^2}$ bis zum Stillstand abgebremst. Als Batterie wurde hier eine $LiFePO_4$-Batterie gewählt. Durch die maximale Ladeleistung von 38 kW kann die verfügbare Rekuperationsleistung nur begrenzt ausgenutzt werden.}
 	\label{abb_Leistungen}
 \end{figure}
 
 \subsubsection{Nebenverbraucher}
-Neben Antrieb entfällt ein signifikanter Teil der Batterieleistung auf die sogenannten Nebenverbraucher. Der weitaus wichtigste Nebenverbraucher ist die Klimatisierung des Busses. Die Kühlung erfolgt wie in einem Dieselbus durch eine elektrische Klimaanlage mit einer maximalen Dauerleistung von 3 kW an heißen Tagen.
+Neben dem Antrieb entfällt ein signifikanter Teil der Batterieleistung auf die sogenannten Nebenverbraucher. Der weitaus wichtigste Nebenverbraucher ist die Klimatisierung des Busses. Die Kühlung erfolgt durch eine elektrische Klimaanlage mit einer maximalen Dauerleistung von 3 kW an heißen Tagen.
 
-Für die Heizung kann nicht wie bei Dieselbussen die Abwärme des Motors benutzt werden, da der Elektromotor dafür viel zu effizient ist. Im Berliner Elektrobus sollte eine Wärmepumpe verwendet werden. Damit kann mehr Wärme in den Bus transportiert werden als elektrsiche Energie aufgewandt wird. Aufgrund von mangelnder Zuverlässigkeit wird aktuell eine direkte Heizung mit einer Leistung von durchschnittlich 10 kW an kalten Tagen verwendet. Es ist damit zu rechnen, das neue Elektrobusse auch eine Wärmepumpe zur Heizung verwenden werden. Daher wurde die Heiz- und Kühlleistung mit 3 kW abgeschätzt.
+Für die Heizung kann nicht wie bei Dieselbussen die Abwärme des Motors benutzt werden, da der Elektromotor dafür viel zu effizient ist. Im Berliner Elektrobus sollte ursprünglich eine Wärmepumpe verwendet werden. Damit kann mehr Wärme in den Bus transportiert werden als elektrische Energie aufgewandt wird. Aufgrund von mangelnder Zuverlässigkeit wird aktuell eine direkte Heizung mit einer Leistung von durchschnittlich 10 kW an kalten Tagen verwendet. Es ist aber damit zu rechnen, das neue Elektrobusse eine Wärmepumpe zur Heizung verwenden werden. Daher wurde die Heiz- und Kühlleistung mit 3 kW abgeschätzt.
 
 Für die anderen Nebenverbraucher wie Licht, Türen und Druckluft wird eine durchschnittliche Leistung von insgesamt 2 kW veranschlagt.
 
 \subsection{Batteriemodell}
-Da der Stromverbrauch durch die elektrische Motorleistung und die Nebenverbraucher festgelegt ist, \emph{muss} die Batterie die geforderte Fahrleistung liefern. Sie \emph{kann} bis zu ihrer maximalen Ladeleistung Rekuperationsenergie nutzen. Darüber hinaus anfallende Bremsenergie wird in der Realität über einen Bremswiderstand auf dem Dach abgeleitet, in der Simulation wird sie ignoriert.
+Da der Stromverbrauch durch die elektrische Motorleistung und die Nebenverbraucher festgelegt ist, \emph{muss} die Batterie die geforderte Fahrleistung liefern. Sie \emph{kann} bis zu ihrer maximalen Ladeleistung Rekuperationsleistung zum Aufladen nutzen. Darüber hinaus anfallende Bremsenergie wird in der Realität über einen Bremswiderstand auf dem Dach abgeleitet, daher kann sie in der Simulation ignoriert werden.
 
-In dieser Arbeit wird das empirische Batteriemodell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses generische Batteriemodell liefert weniger exakte Daten als spezialisierte Modelle, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die Parameter der aus den Datenblättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst zu vermessen.
+In dieser Arbeit wird das empirische Batteriemodell von Tremblay und Dessaint verwendet \cite{tremblay2009experimental}. Dieses generische Batteriemodell liefert weniger exakte Daten als spezialisierte Modelle, kann aber dafür verschiedene Batterietypen darstellen. Ein großer Vorteil dieses Modells ist, das sich die erforderlichen Parameter aus den Datenblättern der Batterien ablesen lassen. Damit kann man das Modell verschiedenen Batterietypen anpassen, ohne die Batterien selbst experimentell zu vermessen.
 
-In Abbildung \ref{abb_Leistungen} ist neben Traktions- und Motorleistung auch die Batterieleistung aufgeführt. Im Vergleich zur maximalen Motorleistung von hier 300 kW ist die Leistung der Nebenverbraucher von 5 kW fast nicht zu sehen. Im tatsächlichen Betrieb fällt die Leistung der Nabenverbraucher permanent an, die maximale Motorleistung wird jedoch sehr selten gefordert. Daher ist der tatsächliche Anteil der Nebenverbraucher am Energieverbrauch größer. Die begrenzte Rekuperationsfähigkeit der Batterie zu ist in der Abbildung deutlich zu sehen.
+In Abbildung \ref{abb_Leistungen} ist neben Traktions- und Motorleistung auch die Batterieleistung aufgeführt. Im Vergleich zur maximalen Motorleistung von hier 250 kW ist die Leistung der Nebenverbraucher von 5 kW fast nicht zu sehen. Im tatsächlichen Betrieb fällt die Leistung der Nabenverbraucher permanent an, die maximale Motorleistung wird jedoch sehr selten gefordert. Daher ist der tatsächliche Anteil der Nebenverbraucher am Energieverbrauch in der Praxis größer als in einfachen Beispielen wie in Abbildung \ref{abb_Leistungen}. Die begrenzte Rekuperationsfähigkeit der Batterie zu ist in der Abbildung deutlich zu sehen.
 
 \subsubsection{Dimensionierung}
-Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt\footnote{Diese Zellen entsprechen nicht unbedingt einer chemischen Batteriezelle, sondern der kleinsten Batterie, die einzeln verfügbar ist.}. Durch iterative Optimierung wird die niedrigst mögliche Zellenzahl festgestellt. Als Randbedingung für die Optimierung wird ein maximaler und minimaler Ladezustand der Batterie verwendet. Daneben darf der maximale Entladestrom laut Datenblatt nicht überschritten werden.
+
+Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt. In dieser Arbeit soll die Größe der jeweils kleinsten Batterie ermittelt werden, mit der eine Fahrstrecke innerhalb von gegeben Ladezustandsgrenzen durchfahren werden kann. Aufgrund der unterschiedlichen Masse und Rekuperationsleistung verschieden großer Batterien hängt der Energieverbrauch von der Batteriegröße ab. Daher kann die optimale Batteriegröße nicht direkt aus dem Energieverbrauch mit einer Standardbatterie berechnet werden, sondern muss durch iterative Optimierung ermittelt werden.
+
+Dazu wird die Simulation eines einzelnen Umlaufs mehrmals durchgeführt und die Batteriegröße variiert. Die erste Simulation wird mit einer viel zu großen Batterie durchgeführt. Es wird berechnet, um welchen Faktor die simulierte Entladung der Batterie unter der gewünschten Entladung liegt. Die Größe der simulierten Batterie wird nun um die dritte Wurzel dieses Faktors verkleinert und die Simulation sowie die Verkleinerung erneut ausgeführt. Die Verkleinerung um die dritte Wurzel des Faktors wurde gewählt, um die Simulation einer zu kleinen Batterie und das Überschreiten der maximalen Entladung zu verhindern. Wenn die simulierte Batterie um weniger als 1\% überdimensioniert ist, endet die Simulation.
+
+Eine weitere Randbedingung ist der Spitzenstrom, sollte das Verhältnis von simuliertem Spitzenstrom zu maximalem Spitzenstrom kleiner sein als das der Entladungen, wird stattdessen dieses Verhältnis zur Dimensionierung genutzt. Auch hier endet die Simulation, wenn der Spitzenstrom weniger als 1\% unter dem maximalen Spitzenstrom liegt.
+
+In Abbildung \ref{abb_Optimierung} ist der Verlauf einer solchen Optimierung für ein Beispiel zu sehen.
+
+\begin{figure}\centering
+	\includegraphics[width=\myFigureStandardWidth]{Optimierung}
+	\caption[Optimierung der Batteriegröße]{Optimierung der Batteriegröße. Die immer langsamere Annäherung ohne Unterschreiten des Zielwertes ist gut zu erkennen. Für dieses Beispiel wurde ein Lithium-Eisenphosphat-Akku mit hoher Energie auf einem Umlauf der Linie 204 gewählt. Der Akku darf sich von 70\% Ladezustand auf minimal 30\% entladen.}
+	\label{abb_Optimierung}
+\end{figure}
 
 \subsubsection{Ladesystem}
-Im Simulationsmodell von Götz ist die Ladezeit durch die aufgezeichnete Strecke festgelegt und nicht variabel. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde ein separates Modell für den Ladevorgang erstellt. Es besteht aus dem Batteriemodell und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die Ergebnisse können entnommen werden.
+Im ursprünglichen Simulationsmodell von Götz~\cite{Gotz:2013} ist die Ladezeit durch die aufgezeichnete Strecke festgelegt und nicht variabel. Da in dieser Arbeit die Ladezeiten verschiedener Technologiekombinationen verglichen werden sollen, wurde zusätzlich ein separates Modell für den Ladevorgang erstellt. Es besteht aus dem Batteriemodell und einer Energiequelle, die nach einer Totzeit die maximale Ladeleistung bereitstellt. Die Batterie nimmt entsprechend ihrer jeweiligen Ladekurve diese Leistung teilweise oder vollständig auf. Wenn die Batterie den gewünschten Ladezustand erreicht hat, endet die Simulation und die Ergebnisse werden ausgegeben.
 
 \subsection{Wärmeberechnung}
 Der Abtransport der an der Batterie entstehenden Wärme stellt eine große Herausforderung bei der Auslegung eines Speichersystems dar. Durch Überhitzung kann die Batterie zerstört werden. Aber auch zulässige, jedoch innerhalb des Batteriepacks unterschiedliche Temperaturen führen zu einer unterschiedlichen Lebensdauer der verschiedenen Zellen und reduzieren so die Gesamtlebensdauer. Von daher wird in dieser Simulation auch die Größe des erforderlichen Kühlsystems abgeschätzt.
 
-Wie in Abschnitt \ref{sec_waermeverluste} erläutert überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 2 verwendet. Die Erwärmung der Batterien wird mit der Batteriemasse aus dem entsprechenden Datenblatt und den von Pesaran ermittelten Wärmekapazitäten berechnet~\cite{pesaran2001battery}.
+Wie in Abschnitt \ref{sec_waermeverluste} erläutert, überwiegt bei hohen Strömen die vom Innenwiderstand verursachte irreversible Erwärmung. Bei niedrigen Strömen ist der Anteil der reversiblen Erwärmung höher, die Gesamterwärmung jedoch niedriger. Daher wird zur Abschätzung nur der irreversible Anteil mit einem Sicherheitsfaktor von 2 verwendet. Die Erwärmung der Batterien wird mit der Batteriemasse aus dem entsprechenden Datenblatt und den von Pesaran ermittelten Wärmekapazitäten berechnet~\cite{pesaran2001battery}.
 
-Es wird eine parallele Luftkühlung modelliert, bei der die jeweils Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wird von Pesaran als einfache Möglichkeit für eine gleichmäßige Temperatur im Batteriepack empfohlen~\cite{pesaran2001battery}. Es wird angenommen, das die Hälfte der Temperaturdifferenz zwischen Batterie und Umgebungsluft zur Kühlung verwendet werden kann. Als Umgebungstemperatur wird ein Wert von 40 $^{\circ}C$ angenommen, der noch eine kleine Reserve zur höchsten in Berlin gemessenen Temperatur von 38,1 $^{\circ}C$ bietet\cite{tempRekord}. Die benötigte Luftmenge wird durch einem PI-Regler berechnet und der Höchstwert in $\frac{g}{s}$ angegeben.
+Es wird eine parallele Luftkühlung modelliert, bei der die jeweils Luft nur an einer Zelle vorbeigeführt wird. Diese Methode wird von Pesaran als einfache Möglichkeit für eine gleichmäßige Temperatur im Batteriepack empfohlen~\cite{pesaran2001battery}. Es wird angenommen, dass die Hälfte der Temperaturdifferenz zwischen Batterie und Umgebungsluft zur Kühlung verwendet werden kann. Als Umgebungstemperatur wird ein Wert von 40 $^{\circ}C$ angenommen, der noch eine kleine Reserve zur höchsten in Berlin gemessenen Temperatur von 38,1 $^{\circ}C$ bietet\cite{tempRekord}. Die benötigte Luftmenge wird durch einem PI-Regler berechnet und der Höchstwert in $\frac{g}{s}$ angegeben.
 
-Es wird nicht unbedingt die ideale Kühlung für jede mögliche Batterie berechnet, sondern es werden vergleichbare Werte für verschiedene Batterien ermittelt, in denen Masse, Wärmekapazität und Maximaltemperatur zusammengefasst sind.
+Es wird nicht unbedingt die ideale Kühlung für jede mögliche Batterie berechnet, sondern es werden vergleichbare Werte für verschiedene Batterien ermittelt, in denen Masse, Wärmekapazität und Maximaltemperatur berücksichtigt sind.
 
 \section{Ergebnisse}
 \label{simErgebnisse}
