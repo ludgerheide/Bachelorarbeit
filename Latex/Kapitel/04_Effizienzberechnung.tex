@@ -92,40 +92,10 @@ Die folgenden Ausgabedaten der Simulation wurden ausgewählt, um die Kombination
 	\item[Batterievolumen] Einheit: $l$
 	\item[Kühlluftmasse] Einheit: $\frac{g}{s}$
 	\item[Energieverbrauch] Einheit: $\frac{kWh}{km}$
-	\item[Zeiteffizienz] Der Anteil der Ladezeit an der Summe von Fahr- und Ladezeit. Kleinere Werte sind besser.\\
-	Einheit: $1$
-	\item[Ladezyklen pro Kilometer] Mit diesem Wert kann der Einfluss dieser Kombination auf die Lebensdauer der Batterie abgeschätzt werden.\\
+	\item[Zeiteffizienz] Der Anteil der Fahrzeit an der Summe von Fahr- und Ladezeit. Zahlenwert zwischen 0 und 1, größere Werte sind besser.
+	\item[Ladezyklen pro tausend Kilometer] Mit diesem Wert kann der Einfluss dieser Kombination auf die Lebensdauer der Batterie abgeschätzt werden.\\
 	Einheit: $1$
 \end{description}
-
-In den Wertetabellen werden Kurznamen für Batterien und Ladesysteme verwendet. Diese werden in Tabelle \ref{batNamen} und \ref{ladeNamen} definiert.
-
-\begin{table}\centering
-	\begin{tabularx}{\textwidth}{XXXl}
-		\toprule
-		Kurzname & Hersteller        & Bezeichnung     & Technologie      \\ \midrule
-		18650    & Panasonic         & NCR18650B       & $LiNi_xCo_xAl_x$ \\
-		Bleiakku & Panasonic         & EC-FV1260       & $PbSO_4$         \\
-		LiTiO    & Bombardier        & primove Battery & $Li_4Ti_5O_{12}$ \\
-		LFP-HE   & Europen Batteries & EV 45 Ah        & $LiFePO_4$       \\
-		LFP-HP   & EIG               & ePLB F 14 Ah    & $LiFePO_4$       \\ \bottomrule
-	\end{tabularx}
-	\caption{Kurznamen der Batterien}
-	\label{batNamen}
-\end{table}
-
-\begin{table}\centering
-	\begin{tabularx}{\textwidth}{XXXl}
-		\toprule
-		Kurzname & Hersteller        & Bezeichnung     & Technologie      \\ \midrule
-		40kW    & \emph{mehrere}         & IEC 62196-2       & konduktiv-manuell \\
-		200kW & Bombardier         & primove       & induktiv         \\
-		375kW    & Schunk        & Smart Charging & konduktiv-automatisch \\
-		Swap   & k.A.  & k. A.       & Batteriewechsel    \\ \bottomrule
-	\end{tabularx}
-	\caption{Kurznamen der Ladesystene}
-	\label{ladeNamen}
-\end{table}
 
 \subsection{Linie 204}
 \subsubsection{Nachtladung}

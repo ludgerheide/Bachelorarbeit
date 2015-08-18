@@ -1,9 +1,9 @@
 \chapter{Ladesysteme}
 Ein \emph{Ladesystem} ist ein technisches System, das elektrische Energie aus dem öffentlichen Stromnetz in den Energiespeicher des Busses transportiert. Die \emph{Ladestrategie} beschreibt, wann, wo und wie lange geladen wird. Es kann über Nacht im Depot ("`Nachtladung"'), oder tagsüber an Haltestellen beziehungsweise während der Fahrt geladen werden ("`Gelegenheitsladen"').
 
-Im  Abschnitt \ref{untersuchte_Systeme} werden Funktionsweise und Einsatzgeschichte der verschiedenen Ladesysteme erläutert. Im Abschnitt \ref{parameter} werden die betrachteten technischen Parameter, die in dieser Arbeit zum Vergleich der Systeme herangezogen werden, vorgestellt und definiert. In Abschnitt \ref{sec_tabellen_ladesysteme} werden dann die für die verschiedenen Ladesysteme ermittelten Parameter tabellarisch aufgelistet. 
+Im  Abschnitt \ref{untersuchte_Systeme} werden Funktionsweise und Einsatzgeschichte der verschiedenen Ladesysteme erläutert. In den Abschnitten \ref{parameterDirekt} und \ref{parameterIndirekt} werden die betrachteten technischen Parameter, die in dieser Arbeit zum Vergleich der Systeme herangezogen werden, vorgestellt und definiert. In Abschnitt \ref{sec_tabellen_ladesysteme} werden dann die für die verschiedenen Ladesysteme ermittelten Parameter tabellarisch aufgelistet. 
 
-Viele technisch mögliche Kombinationen von Ladesystem und Ladestrategie machen betrieblich keinen Sinn – zum Beispiel der Einsatz eines aufwändigen Schnellladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
+Viele technisch mögliche Kombinationen von Ladesystem und Ladestrategie ergeben betrieblich keinen Sinn – zum Beispiel der Einsatz eines aufwändigen Schnellladesystems für die Nachtladung im Depot. In dieser Arbeit werden Ladesysteme zusammen mit der für dieses System sinnvollen Ladestrategie betrachtet.
 
 \section{Kategorisierung der Systeme}
 Die Ladesysteme werden lassen sich nach den folgenden drei Kriterien kategorisieren:
@@ -118,132 +118,109 @@ In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter
 
 In dieser Arbeit wird ein in Qingdao eingesetztes Batteriewechselsystem betrachtet. Dieses System kann die Batterie in sieben Minuten austauschen~\cite{swapQingdao}.
 
-\section{Parameter für die Simulation des Ladesystems}
-
 \section{Parameter für die Bewertung der Ladesysteme}
-\label{parameter}
+\label{parameterDirekt}
+Die in diesem Abschnitt aufgeführten Parameter werden zu Bewertung der Ladesysteme in Kapitel \ref{chap5} verwendet.
 
-\subsection{Mechanische Kriterien}
 \begin{description}
-	\item [Ladestrategie] Ladestrategie, für die dieses System geeignet ist.
 	\item [Volumen, feste Position] \emph{fahrzeug- und stationsseitig}\\
 	Das Volumen jener Komponenten des Ladesystems, deren Postion relativ zu ihrem Gegenüber fest ist.\\
-	Beispiel: Pantograph und Stromschiene
-	\item [Volumen, freie Position] \emph{fahrzeug- und stationsseitig}\\
+	Beispiel: Pantograph und Stromschiene\\
+	Einheit: $l$
+	\item [Volumen, freie Position] \emph{stationsseitig}\\
 	Das Volumen jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
-	Beispiel: Elektrische Wandler
-	\item [Masse] \emph{fahrzeugseitig}\\
-	Gesamtmasse der fahrzeugseitigen Komponenten
+	Beispiel: Elektrische Wandler\\
+	Einheit: $l$
 	\item [Freiheitsgrade] \emph{fahrzeug- und stationsseitig}\\
-	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. Null, wenn es keine beweglichen Teile gibt.
+	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. Null, wenn es keine beweglichen Teile gibt.\\
+	Einheit: 1
 	\item [Positionierungsgenauigkeit des Busses] \emph{fahrzeugseitig} \\
-	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus zwei translatorischen und einer rotatorischen Komponente (X, Y, Richtung des Busses)
-	\item [Totzeit]
-	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt.
-\end{description}
-
-\subsection{Elektrische Kriterien}
-\begin{description}
-	\item [Leistung]
-	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa)\marginpar{Amerika}
-	\item [Effizienz]
-	Prozentualer Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.		
-\end{description}
-
-\subsection{Sicherheit}
-\begin{description}
-	\item [Exponierte Leiter]
-	Sind die spannungsführenden Leiter nur durch die umgebende Luft isoliert? Mögliche Antworten: nie, nur beim Ladevorgang, immer
+	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus einer Fläche und einem Winkel ($x_{abweichung}\cdot y_{abweichung}$, Richtung des Busses)\\
+	Einheit: $m^2,^\circ$
 	\item [Zugänglichkeit der Schnittstelle]
-	Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?
+	Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?\\
+	Mögliche Werte: Bodenhöhe, Unterseite, Dach
+	\item [Exponierte Leiter]
+	Sind die spannungsführenden Leiter nur durch die umgebende Luft isoliert?\\
+	Mögliche Werte: nie, nur beim Ladevorgang, immer
 	\item [Position der Ladestation]
-	Ladesäule oder Unterflur? Im Depot oder an öffentlich zugänglicher Station?	
+	Ladesäule oder Unterflur? Im Depot oder an öffentlich zugänglicher Station?\\
+	Mögliche Werte: ebenerdig, unterflur, erhöht, unzugänglich	
+\end{description}
+
+\section{Parameter für die Simulation des Ladesystems}
+\label{parameterIndirekt}
+Die in diesem Abschnitt aufgeführten Parameter fließen nicht direkt in die Bewertung ein, sondern sind Eingangsdaten für eine Verbrauchssimulation, deren Ergebnisse bewertet werden. Die Verbrauchssimulation und ihre Ausgabedaten werden anschließend in Kapitel \ref{chap4} dargestellt.
+
+\begin{description}
+	\item [Ladestrategie] Ladestrategie, für die dieses System geeignet ist.\\
+	Mögliche Werte: Nachtladung, Gelegenheitsladen, Nacht \& Gelegenheit
+	\item [Volumen, freie Position] \emph{fahrzeugseitig}\\
+	Das Volumen jener Komponenten des Ladesystems, deren Postion frei gewählt werden kann.\\
+	Beispiel: Elektrische Wandler\\
+	Einheit: $l$
+	\item [Masse] \emph{fahrzeugseitig}\\
+	Gesamtmasse der fahrzeugseitigen Komponenten\\
+	Einheit: $kg$
+	\item [Totzeit]
+	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt.\\
+	Einheit: $s$
+	\item [Leistung]
+	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa)\\
+	Einheit: $kW$
+	\item [Effizienz]
+	Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.\\
+	Einheit: 1
 \end{description}
 
 
 \section{Wertetabellen}
 \label{sec_tabellen_ladesysteme}
-\marginpar{Methodik!}
 \FloatBarrier
-\subsection{Mechanische Kriterien}
-%%%% MECHANISCHE TABELLEN %%%%
-\begin{table}[h!]\centering
-	\begin{tabularx}{\textwidth}{lXlr}
+\subsection{Wertetabellen für die Bewertung der Ladesysteme}
+\begin{table}[h] \centering
+	\begin{tabulary}{\linewidth}{LLRRRL}
 		\toprule
-		System                         & Kurzname & Ladestrategie        & Totzeit \\
-		                               &          &                      & $s$     \\ \midrule
-		1x \textsc{IEC 62196-2}        & 40kW     & Nachtladung  & \emph{60} \\
-		\textsc{primove}               & 200kW    & Gelegenheitsladen    & 4 \\
-		\textsc{Schunk Smart Charging} & 375kW    & Gelegenheitsladen    & 8 \\
-		Batteriewechsel                & Swap     & Nacht \& Gelegenheit & 420 \\ \bottomrule
-	\end{tabularx}
-	\caption[Allgemeine mechanische Kriterien der Ladesysteme]{Allgemeine mechanische Kriterien der Ladesysteme. \emph{Kursive} Werte sind geschätzt}
-	\label{tab_mech_Ladesys_allg}
+		Typ                   & Systemname                     & Volumen fest & Freiheitsgrade &   Positionierungsgenauigkeit & Zugänglichkeit Ladeschnittstelle \\
+		&                                &          $l$ &            $1$ &                 $m^2,^\circ$ &  \\ \midrule
+		konduktiv-manuell     & 1x \textsc{IEC 62196-2}        &            0 &              0 &       47$m^2$, 360$^{\circ}$ &                        Bodenhöhe \\
+		konduktiv-automatisch & \textsc{Schunk Smart Charging} &         1000 &              3 &       1,75$m^2$, 2$^{\circ}$ &                             Dach \\
+		induktiv-automatisch  & \textsc{primove}               &          198 &              1 & \emph{1$m^2$, 360$^{\circ}$} &                       Unterseite \\
+		Batteriewechsel       & ---                            &            0 &              0 &   \emph{4$m^2$, 1$^{\circ}$} &                        Bodenhöhe \\ \bottomrule
+		&
+	\end{tabulary}
+	\caption{Zu bewertende Parameter der Ladesysteme – fahrzeugseitig}
+	\label{tab_parameterLadesysDirektFzg}
 \end{table}
 
-\begin{table}[h!]\centering
-	\begin{tabularx}{\linewidth}{Xrrrrr}
+\begin{table}[h] \centering
+	\begin{tabulary}{\linewidth}{LRRRLL}
 		\toprule
-		System & Volumen fest & Volumen frei  & Masse     & Freiheitsgrade & Genauigkeit            \\
-		       & $l$       & $l$        & $kg$      & $1$            & $m^2,^{\circ}$         \\ \midrule
-		40kW   & 0         & \emph{50}  & \emph{50} & 0              & 47$m^2$, 360$^{\circ}$ \\
-		200kW  & 198       & \emph{100} & 450       & 1              & \emph{1$m^2$, 360$^{\circ}$}                    \\
-		375kW  & 1000      & \emph{100} & 185       & 3              & 1,75$m^2$, 2$^{\circ}$ \\
-		Swap   & 0         & 0          & 0         & 0              & \emph{4$m^2$, 1$^{\circ}$}              \\ \bottomrule
-	\end{tabularx}
-	\caption[Mechanische Kriterien der Ladesysteme – fahrzeugseitig]{Mechanische Kriterien der Ladesysteme – fahrzeugseitig. \emph{Kursive} Werte sind geschätzt}
-	\label{tab_mech_Ladesys_fzg}
-\end{table}
-
-\begin{table}[h!]\centering
-	\begin{tabularx}{\linewidth}{Xrrrr}
-		\toprule
-		System & Volumen fest &   Volumen frei & Freiheitsgrade & Wandler \\
-		       &       $l$ &         $l$ &            $1$ &     $1$ \\ \midrule
-		40kW   &         0 &          88 &              0 &      ?? \\
-		200kW  &      1800 & \emph{2000} &              0 &      ?? \\
-		375kW  &       325 & \emph{2000} &              0 &      ?? \\
-		Swap   &         0 & $\gg10.000$ &           $>2$ &      ?? \\ \bottomrule
-	\end{tabularx}
-	\caption{Mechanische Kriterien der Ladesysteme – stationsseitig}
-	\label{tab_mech_Ladesys_stat}
+		Typ                   & Volumen fest & Volumen frei & Freiheitsgrade & Exponierte Leiter & Position Ladestation \\
+		&          $l$ &          $l$ &            $1$ &                   &  \\ \midrule
+		konduktiv-manuell     &            0 &           88 &              0 &               nie &            ebenerdig \\
+		konduktiv-automatisch &          325 &  \emph{2000} &              0 &    nur beim Laden &               erhöht \\
+		induktiv-automatisch  &         1800 &  \emph{2000} &              0 &               nie &            unterflur \\
+		Batteriewechsel       &            0 &  $\gg10000$ &           $>2$ &               nie &         unzugänglich \\ \bottomrule
+	\end{tabulary}
+	\caption{Zu bewertende Parameter der Ladesysteme – stationsseitig}
+	\label{tab_parameterLadesysDirektStat}
 \end{table}
 \FloatBarrier
-
-\subsection{Elektrische Kriterien}
-%%%% ELEKTRISCHE TABELLE %%%%
-\begin{table}[h!]\centering
-	\begin{tabularx}{\linewidth}{XXX}
+\newpage
+\subsection{Wertetabelle für die Simulation des Ladesystems}
+\begin{table}[h] \centering
+	\begin{tabulary}{\linewidth}{LlRRRRR}
 		\toprule
-		System & Leistung & Effizienz \\
-		       & $kW$     & $\%$      \\ \midrule
-		40kW   & 40       & \emph{99} \\
-		200kW  & 200      & 95 \\
-		375kW  & 375      & \emph{99} \\
-		Swap   & $\infty$ & \emph{99} \\ \bottomrule
-	\end{tabularx}
-	\caption{Elektrische Kriterien der Ladesysteme}
-	\label{tab_el_Ladesys}
+		Typ                   & Ladestrategie        & Leistung & Volumen frei &     Masse &   Totzeit & Effizienz \\
+		                      &                      &     $kW$ &          $l$ &      $kg$ &       $s$ &        \% \\ \midrule
+		konduktiv-manuell     & Nacht \& Gelegenheit &       40 &    \emph{50} & \emph{50} & \emph{60} & \emph{99} \\
+		konduktiv-automatisch & Gelegenheitsladen    &      375 &   \emph{100} &       185 &         8 & \emph{99} \\
+		induktiv-automatisch  & Gelegenheitsladen    &      200 &   \emph{100} &       450 &         9 &        95 \\
+		Batteriewechsel       & Gelegenheitsladen    & $\infty$ &            0 &         0 &       420 & \emph{99} \\ \bottomrule
+	\end{tabulary}
+	\caption{Parameter der Ladesysteme für die Verbrauchssimulation}
+	\label{tab_parameterLadesysSimFzg}
 \end{table}
-\FloatBarrier
-
-\subsection{Zuverlässigkeit}
-
-%%%% SICHERHEIT %%%%
-\begin{table}[h!]\centering
-	\begin{tabularx}{\linewidth}{XXXX}
-		\toprule
-		System         & Exponierte Leiter & \multicolumn{2}{c}{Zugänglichkeit Schnittstelle} \\
-		\cmidrule{3-4} &                   & Ladestation  & Fahrzeug                          \\ \midrule
-		40kW           & nie               & ebenerdig    & Bodenhöhe                         \\
-		200kW          & nie               & unterflur    & Unterseite                        \\
-		375kW          & nur beim Laden    & erhöht        & Dach                              \\
-		Swap           & nie               & unzugänglich & Bodenhöhe                         \\ \bottomrule
-	\end{tabularx}
-	\caption{Sicherheitskriterien der Ladesysteme}
-	\label{tab_sich_Ladesys}
-\end{table}
-\FloatBarrier
-
 
 
