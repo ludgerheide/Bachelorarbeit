@@ -52,19 +52,19 @@ Auf Basis dieses Schemas wurden den berechneten Werten die in Tabelle \ref{tab_p
 		\toprule
 		Kriterium                                                & Einheit          &         1P &      2P &        3P &           4P \\ \midrule
 		\textbf{Zuverlässigkeit Fahrzeug}                        &                  &            &         &           &  \\
-		Ladezyklen pro Kilometer                                 & $\frac{1}{km}$   & $\ge 0,03$ & $<0,03$ &   $<0,01$ &     $<0,005$ \\
+		Ladezyklen pro tausend Kilometer                                 & $\frac{1}{10^{3}km}$   & $\ge 30$ & $<30$ &   $<10$ &     $<5$ \\
 		Freiheitsgrade Ladesystem Fahrzeug                       & 1                &       $>2$ &       2 &         1 &            0 \\
 		Positionierungsgenauigkeit (Fläche)                      & $m^2$            &       $<3$ &    $<6$ &      $<9$ &      $\ge 9$ \\
 		Positionierungsgenauigkeit (Winkel)                      & $^\circ$         &       $<5$ &     --- &       --- &    $\ge 360$ \\
 		Zugänglichkeit Schnittstelle Fahrzeug                    & ---              &        --- &   Seite &     Boden &         Dach \\
 		Masse Ladesystem + Batterie                              & kg               & $\ge 1250$ & $<1250$ &    $<750$ &       $<250$ \\ \midrule
 		\textbf{Störanfälligkeit der Ladestation}                &                  &            &         &           &  \\
-		Anteil Ladezeit an Gesamtzeit                            & 1                &  $\ge 0,4$ &  $<0,4$ &    $<0,2$ &       $<0,1$ \\
+		Zeiteffizienz                                            & 1                &  $<0,6$ &  $<0,75$ &    $<0,9$ &       $\ge 0,9$ \\
 		Exponierte Leiter                                        & ---              &      immer &     --- & nur Laden &          nie \\
 		Zugänglichkeit Ladestation                               & ---              &  ebenerdig &  erhöht & unterflur & unzugänglich \\ \midrule
 		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                  &            &         &           &  \\
 		Volumen Ladesystem (feste Position)                      & l                & $\ge 1000$ & $<1000$ &    $<500$ &       $<250$ \\
-		Volumen Ladesystem freie Position + Volumen Batterie     & l                &  $\ge 450$ &  $<450$ &    $<300$ &       $<150$ \\ \midrule
+		Volumen Ladesystem freie Position + Volumen Batterie     & l                &  $\ge 400$ &  $<400$ &    $<200$ &       $<100$ \\ \midrule
 		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                  &            &         &           &  \\
 		Energieverbrauch                                         & $\frac{kWh}{km}$ &  $\ge 1,5$ &  $<1,5$ &    $<1,2$ &       $<0,9$ \\ \midrule
 		\textbf{Einsatz unter extrem Umweltbedingungen}          &                  &            &         &           &  \\
@@ -120,29 +120,37 @@ Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} da
 \end{table} 
 
 \subsection{Ergebnisse}
-Die Ergebnisse der Bewertung sind in Tabelle \ref{tab_ergebnisse} zu sehen. Neben dem gewichteten Mittelwert zu jeder Kombination von Ladesystem und Speichertechnologie sind Durchschnittswerte für ein Ladesystem bzw. eine Speichertechnologie und Linie berechnet worden.
+Die Ergebnisse der Bewertung sind in den Tabellen \ref{tab_ergebnisse204} und \ref{tab_ergebnisse192} zu sehen. Neben dem gewichteten Mittelwert zu jeder Kombination von Ladesystem und Speichertechnologie sind Durchschnittswerte für ein Ladesystem bzw. eine Speichertechnologie und Linie berechnet worden.
 
-\begin{table}
-	\centering
-	\begin{tabular}{lllllll}
-		                       \multicolumn{7}{c}{\textbf{Buslinie 204}}                        \\ \toprule
-		                      & 40kW & 200kW & 375kW & Swap & Nachtladen & Zeilen-$\varnothing$ \\ \midrule
-		18650                 & 2,83 & 2,43  & 2,09  & 2,95 & 3,05       & 2,67                 \\
-		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,79 & ---        & 2,74                 \\
-		LFP-HE                & 2,34 & 2,30  & 1,81  & 2,31 & 2,64       & 2,28                 \\
-		LFP-HP                & 2,39 & 1,99  & 1,71  & 2,51 & 2,38       & 2,20                 \\
-		Spalten-$\varnothing$ & 2,66 & 2,37  & 1,99  & 2,64 & 2,69       &  \\ \midrule
-		                       \multicolumn{7}{c}{\textbf{Buslinie 192}}                        \\
-		                      & 40kW & 200kW & 375kW & Swap & Nachtladen & Zeilen-$\varnothing$ \\ \midrule
-		18650                 & 2,77 & 2,58  & 2,09  & 2,95 & 3,07       & 2,69                 \\
-		LiTiO                 & 3,07 & 2,77  & 2,34  & 2,94 & ---        & 2,78                 \\
-		LFP-HE                & 2,42 & 2,22  & 1,79  & 2,54 & 2,66       & 2,33                 \\
-		LFP-HP                & 2,52 & 2,02  & 1,74  & 2,74 & ---        & 2,26                 \\
-		Spalten-$\varnothing$ & 2,70 & 2,40  & 1,99  & 2,79 & 2,87       &  \\ \bottomrule
-	\end{tabular}
-	\caption{Ergebnisse der gewichteten Bewertung}
-	\label{tab_ergebnisse}
-\end{table} 
+\begin{table} \centering
+	\begin{tabulary}{\linewidth}{LRRRRRR}
+		\toprule
+		Bat./LS                          &         \multicolumn{4}{c}{Gelegenheitsladen}         & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
+		\cmidrule{2-5}                   & kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    &       2,92 &        2,63 &     1,99 &            2,65 &                            3,05 &                 2,65 \\
+		Li-Eisenphosphat (hohe Energie)  &       2,67 &        2,42 &     1,99 &            2,44 &                            2,74 &                 2,45 \\
+		Li-Eisenphosphat (hohe Leistung) &       2,52 &        2,27 &     1,69 &            2,19 &                            2,38 &                 2,21 \\
+		Lithium-Titanat                  &       2,87 &        2,67 &     2,24 &            2,44 &                             --- &                 2,56 \\
+		Spalten-$\varnothing$            &       2,75 &        2,50 &     1,98 &            2,43 &                            4,72 &  \\ \bottomrule
+	\end{tabulary}
+	\caption{Ergebnisse der Simulation Linie 204}
+	\label{tab_ergebnisse204}
+\end{table}
+
+\begin{table} \centering
+	\begin{tabulary}{\linewidth}{LRRRRRR}
+		\toprule
+		Bat./LS                          &         \multicolumn{4}{c}{Gelegenheitsladen}         & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
+		\cmidrule{2-5}                   & kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    &       3,07 &        2,78 &     2,14 &            2,59 &                            3,07 &                 2,73 \\
+		Li-Eisenphosphat (hohe Energie)  &       2,67 &        2,57 &     2,14 &            2,44 &                            2,76 &                 2,52 \\
+		Li-Eisenphosphat (hohe Leistung) &       2,67 &        2,42 &     1,93 &            2,19 &                             --- &                 2,30 \\
+		Lithium-Titanat                  &       2,87 &        2,57 &     2,08 &            2,59 &                             --- &                 2,53 \\
+		Spalten-$\varnothing$            &       2,82 &        2,59 &     2,07 &            2,45 &                            2,92 &  \\ \bottomrule
+	\end{tabulary}
+	\caption{Ergebnisse der Simulation Linie 192}
+	\label{tab_ergebnisse192}
+\end{table}
 
 \section{Diskussion} \marginpar{Lieber "`Interpretation"' als Titel?. Reihenfolge der Absätze?}
 Die am besten bewerteten Kombinationen sind für beide Buslinien die Kombination von Lithium-Titanat-Batterie und konduktiv-manueller Aufladung sowie das Aufladen über Nacht mit Lithium-Schichtoxid-Batterien.

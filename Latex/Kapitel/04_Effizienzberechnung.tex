@@ -94,42 +94,48 @@ Die folgenden Ausgabedaten der Simulation wurden ausgewählt, um die Kombination
 	\item[Energieverbrauch] Einheit: $\frac{kWh}{km}$
 	\item[Zeiteffizienz] Der Anteil der Fahrzeit an der Summe von Fahr- und Ladezeit. Zahlenwert zwischen 0 und 1, größere Werte sind besser.
 	\item[Ladezyklen pro tausend Kilometer] Mit diesem Wert kann die Lebensdauer der Batterie abgeschätzt werden.\\
+	Einheit: $\frac{1}{10^{3}km}$  
 \end{description}
 
 \subsection{Linie 204}
-\subsubsection{Nachtladung}
-\label{erkl204nacht}
-Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 132 km. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40 kW gewählt. Die Ergebnisse sind in Tabellen \ref{204_a} bis \ref{204_e} in der Spalte "`Nachtlafung"' aufgeführt.
+\label{erkl204} 
+Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 141 km. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40 kW gewählt.
 
-\subsubsection{Gelegenheitsladung}
-\label{erkl204gel}
-Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12 km. 
+Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12,8 km. 
 
-Beim schnellen Laden können die Ladezustände der einzelnen Zellen nicht angeglichen werden, so dass sie über den Betriebstag immer weiter divergieren. Zum Schutz gegen Tiefentladung und Überladung einzelner Zellen wird die Batterie zwischen 30\% und 70\% Ladezustand betrieben.
+Beim schnellen Laden können die Ladezustände der einzelnen Zellen nicht angeglichen werden, so dass sie über den Betriebstag immer weiter divergieren. Zum Schutz gegen Tiefentladung und Überladung einzelner Zellen wird die Batterie zwischen 35\% und 65\% Ladezustand betrieben. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet.
 
-Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet. Die Ergebnisse sind in den Tabellen \ref{204_a} bis \ref{204_e} aufgeführt.
+Die Ergebnisse sind in Abbildung \ref{diagramme204} grafisch dargestellt un in den Tabellen \ref{204_a} bis \ref{204_e} aufgeführt.
 
 
 \subsection{Linie 192}
-\subsubsection{Nachtladung}
-Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings beträgt die Gesamtlänge hier 215 km.
+Die Parameter sind wie in Abschnitt \ref{erkl204} gewählt, allerdings  beträgt die Länge eines Umlaufs 29,8 km. Ein Betriebstag wird zur besseren Vergleichbarkeit auch hier mit 11 Umläufen simuliert, die Gesamtlänge bei der Ladestrategie "`Nachtladung"' beträgt 217 km.
 
-\subsubsection{Gelegenheitsladung}
-Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings beträgt die Länge einer Tour 19,5 km.
+Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt un in den Tabellen \ref{192_a} bis \ref{192_e} aufgeführt.
 
-\FloatBarrier
-\subsection{Wertetabellen}
+\begin{figure}\centering
+	\includegraphics[height=20cm]{Diagramme204}
+	\caption{Diagramme der Simulationsergebnisse für die Buslinie 204}
+	\label{diagramme204}
+\end{figure}
+
+\begin{figure}\centering
+	\includegraphics[height=20cm]{Diagramme192}
+	\caption{Diagramme der Simulationsergebnisse für die Buslinie 192}
+	\label{diagramme192}
+\end{figure}
+
 %%%%% LINIE 204 %%%%%
 \begin{table}[h] \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Batteriemassen in $kg$}                                                  \\ \toprule
+		                                                \multicolumn{6}{c}{Batteriemassen in $kg$}                                                  \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              2125 &                  2130 &     2145 &            2120 &                            8051 \\
+		"`klassischer"' Li-Ionen-Akku    &               215 &                   215 &      217 &             214 &                             668 \\
+		Li-Eisenphosphat (hohe Energie)  &               358 &                   359 &      361 &             357 &                            1180 \\
+		Li-Eisenphosphat (hohe Leistung) &               480 &                   481 &      484 &             479 &                            1532 \\
+		Lithium-Titanat                  &               540 &                   541 &      543 &             539 &                            2107 \\ \bottomrule
 	\end{tabulary}
 	\caption{Batteriemassen Linie 204}
 	\label{204_a}
@@ -137,70 +143,70 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Batterievolumina in $l$}                                                  \\ \toprule
+		                                                \multicolumn{6}{c}{Batterievolumina in $l$}                                                 \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &               797 &                   799 &      805 &             795 &                            3020 \\
+		"`klassischer"' Li-Ionen-Akku    &                78 &                    78 &       78 &              78 &                             242 \\
+		Li-Eisenphosphat (hohe Energie)  &               217 &                   217 &      219 &             217 &                             715 \\
+		Li-Eisenphosphat (hohe Leistung) &               251 &                   251 &      253 &             250 &                             800 \\
+		Lithium-Titanat                  &               378 &                   379 &      380 &             377 &                            1475 \\ \bottomrule
 	\end{tabulary}
 	\caption{Batterievolumina Linie 204}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Kühlbedarf in $\frac{g}{s}$}                                                  \\ \toprule
+		                                              \multicolumn{6}{c}{Kühlbedarf in $\frac{g}{s}$}                                               \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &               969 &                   972 &      980 &             966 &                             577 \\
+		"`klassischer"' Li-Ionen-Akku    &               245 &                   241 &      242 &             276 &                            1735 \\
+		Li-Eisenphosphat (hohe Energie)  &              5130 &                  5141 &     5174 &            5119 &                            5331 \\
+		Li-Eisenphosphat (hohe Leistung) &              3827 &                  3835 &     3858 &            3820 &                            4989 \\
+		Lithium-Titanat                  &               582 &                  1421 &     1426 &            1417 &                             202 \\ \bottomrule
 	\end{tabulary}
 	\caption{Kühlungsbedarf Linie 204}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Energieverbrauch in $\frac{kWh}{km}$}                                                  \\ \toprule
+		                                         \multicolumn{6}{c}{Energieverbrauch in $\frac{kWh}{km}$}                                           \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              1,87 &                  1,88 &     1,97 &            1,87 &                            1,91 \\
+		"`klassischer"' Li-Ionen-Akku    &              1,45 &                  1,46 &     1,53 &            1,45 &                            1,21 \\
+		Li-Eisenphosphat (hohe Energie)  &              1,31 &                  1,33 &     1,39 &            1,32 &                            1,16 \\
+		Li-Eisenphosphat (hohe Leistung) &              1,43 &                  1,43 &     1,50 &            1,43 &                            1,24 \\
+		Lithium-Titanat                  &              1,22 &                  1,31 &     1,37 &            1,31 &                            1,26 \\ \bottomrule
 	\end{tabulary}
 	\caption{Energieverbrauch Linie 204}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Zeiteffizienz}                                                  \\ \toprule
+		                                                     \multicolumn{6}{c}{Zeiteffizienz}                                                      \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              0,46 &                  0,46 &     0,46 &            0,45 &                            0,60 \\
+		"`klassischer"' Li-Ionen-Akku    &              0,67 &                  0,67 &     0,67 &            0,64 &                            0,75 \\
+		Li-Eisenphosphat (hohe Energie)  &              0,75 &                  0,81 &     0,81 &            0,76 &                            0,78 \\
+		Li-Eisenphosphat (hohe Leistung) &              0,68 &                  0,68 &     0,68 &            0,64 &                            0,74 \\
+		Lithium-Titanat                  &              0,76 &                  0,90 &     0,90 &            0,84 &                            0,74 \\ \bottomrule
 	\end{tabulary}
 	\caption{Zeiteffizienz (Anteil Fahrzeit an Gesamtzeit) Linie 204}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Ladezyklen pro tausend Kilometer}                                                  \\ \toprule
+		                                           \multicolumn{6}{c}{Ladezyklen pro tausend Kilometer}                                             \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &                24 &                    24 &       24 &              24 &                               6 \\
+		"`klassischer"' Li-Ionen-Akku    &                24 &                    24 &       24 &              24 &                               6 \\
+		Li-Eisenphosphat (hohe Energie)  &                24 &                    24 &       24 &              24 &                               6 \\
+		Li-Eisenphosphat (hohe Leistung) &                24 &                    24 &       24 &              24 &                               6 \\
+		Lithium-Titanat                  &                24 &                    24 &       24 &              24 &                               6 \\ \bottomrule
 	\end{tabulary}
 	\caption{Ladezyklen pro tausend Kilometer Linie 204}
 	\label{204_e}
@@ -209,14 +215,14 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 %%%%% LINIE 192 %%%%%
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Batteriemassen in $kg$}                                                  \\ \toprule
+		                                                \multicolumn{6}{c}{Batteriemassen in $kg$}                                                  \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              2751 &                  2759 &     2781 &            2744 &                           11432 \\
+		"`klassischer"' Li-Ionen-Akku    &               264 &                   265 &      267 &             264 &                             797 \\
+		Li-Eisenphosphat (hohe Energie)  &               435 &                   436 &      439 &             434 &                            1400 \\
+		Li-Eisenphosphat (hohe Leistung) &               592 &                   594 &      598 &             591 &                            1851 \\
+		Lithium-Titanat                  &               647 &                   648 &      652 &             646 &                            2559 \\ \bottomrule
 	\end{tabulary}
 	\caption{Batteriemassen Linie 192}
 	\label{192_a}
@@ -224,74 +230,73 @@ Die Parameter sind wie in Abschnitt \ref{erkl204nacht} gewählt, allerdings betr
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Batterievolumina in $l$}                                                  \\ \toprule
+		                                                \multicolumn{6}{c}{Batterievolumina in $l$}                                                 \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              1032 &                  1035 &     1043 &            1029 &                            4288 \\
+		"`klassischer"' Li-Ionen-Akku    &                96 &                    96 &       97 &              95 &                             288 \\
+		Li-Eisenphosphat (hohe Energie)  &               264 &                   264 &      266 &             263 &                             849 \\
+		Li-Eisenphosphat (hohe Leistung) &               309 &                   310 &      313 &             309 &                             966 \\
+		Lithium-Titanat                  &               453 &                   454 &      456 &             452 &                            1791 \\ \bottomrule
 	\end{tabulary}
 	\caption{Batterievolumina Linie 192}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Kühlbedarf in $\frac{g}{s}$}                                                  \\ \toprule
+		                                              \multicolumn{6}{c}{Kühlbedarf in $\frac{g}{s}$}                                               \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &               967 &                   971 &      981 &             964 &                             770 \\
+		"`klassischer"' Li-Ionen-Akku    &               269 &                   264 &      265 &             303 &                            2241 \\
+		Li-Eisenphosphat (hohe Energie)  &              5972 &                  5985 &     6022 &            5960 &                            5461 \\
+		Li-Eisenphosphat (hohe Leistung) &              4321 &                  4329 &     4354 &            4313 &                            5512 \\
+		Lithium-Titanat                  &               625 &                  1687 &     1694 &            1683 &                             306 \\ \bottomrule
 	\end{tabulary}
 	\caption{Kühlungsbedarf Linie 192}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Energieverbrauch in $\frac{kWh}{km}$}                                                  \\ \toprule
+		                                         \multicolumn{6}{c}{Energieverbrauch in $\frac{kWh}{km}$}                                           \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              1,56 &                  1,56 &     1,64 &            1,56 &                            1,74 \\
+		"`klassischer"' Li-Ionen-Akku    &              1,16 &                  1,16 &     1,22 &            1,15 &                            0,93 \\
+		Li-Eisenphosphat (hohe Energie)  &              1,02 &                  1,04 &     1,09 &            1,03 &                            0,88 \\
+		Li-Eisenphosphat (hohe Leistung) &              1,14 &                  1,14 &     1,20 &            1,13 &                            0,96 \\
+		Lithium-Titanat                  &              0,94 &                  1,01 &     1,06 &            1,01 &                            0,98 \\ \bottomrule
 	\end{tabulary}
 	\caption{Energieverbrauch Linie 1929}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Zeiteffizienz}                                                  \\ \toprule
+		                                                     \multicolumn{6}{c}{Zeiteffizienz}                                                      \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &              0,40 &                  0,41 &     0,41 &            0,39 &                            0,49 \\
+		"`klassischer"' Li-Ionen-Akku    &              0,61 &                  0,62 &     0,62 &            0,58 &                            0,67 \\
+		Li-Eisenphosphat (hohe Energie)  &              0,66 &                  0,77 &     0,77 &            0,71 &                            0,70 \\
+		Li-Eisenphosphat (hohe Leistung) &              0,62 &                  0,63 &     0,63 &            0,59 &                            0,66 \\
+		Lithium-Titanat                  &              0,68 &                  0,88 &     0,88 &            0,80 &                            0,67 \\ \bottomrule
 	\end{tabulary}
 	\caption{Zeiteffizienz (Anteil Fahrzeit an Gesamtzeit) Linie 192}
 \end{table}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRrRR}
-		\multicolumn{6}{c}{Ladezyklen pro tausend Kilometer}                                                  \\ \toprule
+		                                           \multicolumn{6}{c}{Ladezyklen pro tausend Kilometer}                                             \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &                   &                       &          &                 &  \\
-		"`klassischer"' Li-Ionen-Akku    &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Energie)  &                   &                       &          &                 &  \\
-		Li-Eisenphosphat (hohe Leistung) &                   &                       &          &                 &  \\
-		Lithium-Titanat                  &                   &                       &          &                 &  \\ \bottomrule
+		Blei-Säure-Batterie              &                15 &                    15 &       15 &               4 &  \\
+		"`klassischer"' Li-Ionen-Akku    &                15 &                    15 &       15 &               4 &  \\
+		Li-Eisenphosphat (hohe Energie)  &                15 &                    15 &       15 &               4 &  \\
+		Li-Eisenphosphat (hohe Leistung) &                15 &                    15 &       15 &               4 &  \\
+		Lithium-Titanat                  &                15 &                    15 &       51 &               4 &  \\ \bottomrule
 	\end{tabulary}
 	\caption{Ladezyklen pro tausend Kilometer Linie 192}
 	\label{192_e}
 \end{table}
-\FloatBarrier
 
 \subsection{Diagramme}
