@@ -58,11 +58,11 @@ In Abbildung \ref{abb_Leistungen} ist neben Traktions- und Motorleistung auch di
 
 \subsubsection{Dimensionierung}
 
-Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt. In dieser Arbeit soll die Größe der jeweils kleinsten Batterie ermittelt werden, mit der eine Fahrstrecke innerhalb von gegeben Ladezustandsgrenzen durchfahren werden kann. Aufgrund der unterschiedlichen Masse und Rekuperationsleistung verschieden großer Batterien hängt der Energieverbrauch von der Batteriegröße ab. Daher kann die optimale Batteriegröße nicht direkt aus dem Energieverbrauch mit einer Standardbatterie berechnet werden, sondern muss durch iterative Optimierung ermittelt werden.
+Die simulierte Batterie ist aus mehreren Zellen zusammengesetzt. In dieser Arbeit soll die Größe der jeweils kleinsten Batterie ermittelt werden, mit der eine Fahrstrecke innerhalb von gegeben Ladezustandsgrenzen durchfahren werden kann. Aufgrund der unterschiedlichen Masse und Rekuperationsleistung verschieden großer Batterien hängt der Energieverbrauch von der Batteriegröße ab. Daher kann die optimale Batteriegröße nicht direkt aus dem Energieverbrauch mit einer Standardbatterie berechnet werden, sondern muss iterativ ermittelt werden.
 
 Dazu wird die Simulation eines einzelnen Umlaufs mehrmals durchgeführt und die Batteriegröße variiert. Die erste Simulation wird mit einer viel zu großen Batterie durchgeführt. Es wird berechnet, um welchen Faktor die simulierte Entladung der Batterie unter der gewünschten Entladung liegt. Die Größe der simulierten Batterie wird nun um die dritte Wurzel dieses Faktors verkleinert und die Simulation sowie die Verkleinerung erneut ausgeführt. Die Verkleinerung um die dritte Wurzel des Faktors wurde gewählt, um die Simulation einer zu kleinen Batterie und das Überschreiten der maximalen Entladung zu verhindern. Wenn die simulierte Batterie um weniger als 1\% überdimensioniert ist, endet die Simulation.
 
-Eine weitere Randbedingung ist der Spitzenstrom, sollte das Verhältnis von simuliertem Spitzenstrom zu maximalem Spitzenstrom kleiner sein als das der Entladungen, wird stattdessen dieses Verhältnis zur Dimensionierung genutzt. Auch hier endet die Simulation, wenn der Spitzenstrom weniger als 1\% unter dem maximalen Spitzenstrom liegt.
+Eine weitere Randbedingung ist der Spitzenstrom. sollte das Verhältnis von simuliertem Spitzenstrom zu maximalem Spitzenstrom kleiner sein als das der Entladungen, wird stattdessen dieses Verhältnis zur Dimensionierung genutzt. Auch hier endet die Simulation, wenn der Spitzenstrom weniger als 1\% unter dem maximalen Spitzenstrom liegt.
 
 In Abbildung \ref{abb_Optimierung} ist der Verlauf einer solchen Optimierung für ein Beispiel zu sehen.
 
@@ -188,11 +188,11 @@ Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt un in d
 		                                                     \multicolumn{6}{c}{Zeiteffizienz}                                                      \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &              0,46 &                  0,46 &     0,46 &            0,45 &                            0,60 \\
-		"`klassischer"' Li-Ionen-Akku    &              0,67 &                  0,67 &     0,67 &            0,64 &                            0,75 \\
-		Li-Eisenphosphat (hohe Energie)  &              0,75 &                  0,81 &     0,81 &            0,76 &                            0,78 \\
-		Li-Eisenphosphat (hohe Leistung) &              0,68 &                  0,68 &     0,68 &            0,64 &                            0,74 \\
-		Lithium-Titanat                  &              0,76 &                  0,90 &     0,90 &            0,84 &                            0,74 \\ \bottomrule
+		Blei-Säure-Batterie              &              0,46 &                  0,46 &     0,46 &            0,92 &                            0,60 \\
+		"`klassischer"' Li-Ionen-Akku    &              0,67 &                  0,67 &     0,67 &            0,92 &                            0,75 \\
+		Li-Eisenphosphat (hohe Energie)  &              0,75 &                  0,81 &     0,81 &            0,92 &                            0,78 \\
+		Li-Eisenphosphat (hohe Leistung) &              0,68 &                  0,68 &     0,68 &            0,92 &                            0,74 \\
+		Lithium-Titanat                  &              0,76 &                  0,90 &     0,90 &            0,92 &                            0,74 \\ \bottomrule
 	\end{tabulary}
 	\caption{Zeiteffizienz (Anteil Fahrzeit an Gesamtzeit) Linie 204}
 \end{table}
@@ -275,11 +275,11 @@ Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt un in d
 		                                                     \multicolumn{6}{c}{Zeiteffizienz}                                                      \\ \toprule
 		Bat./LS                          &                 \multicolumn{4}{c}{Gelegenheitsladen}                  & \multicolumn{1}{c}{Nachtladung} \\
 		\cmidrule{2-5}                   & konduktiv-manuell & konduktiv-automatisch & induktiv & Batteriewechsel &               konduktiv-manuell \\ \midrule
-		Blei-Säure-Batterie              &              0,40 &                  0,41 &     0,41 &            0,39 &                            0,49 \\
-		"`klassischer"' Li-Ionen-Akku    &              0,61 &                  0,62 &     0,62 &            0,58 &                            0,67 \\
-		Li-Eisenphosphat (hohe Energie)  &              0,66 &                  0,77 &     0,77 &            0,71 &                            0,70 \\
-		Li-Eisenphosphat (hohe Leistung) &              0,62 &                  0,63 &     0,63 &            0,59 &                            0,66 \\
-		Lithium-Titanat                  &              0,68 &                  0,88 &     0,88 &            0,80 &                            0,67 \\ \bottomrule
+		Blei-Säure-Batterie              &              0,40 &                  0,41 &     0,41 &            0,90 &                            0,49 \\
+		"`klassischer"' Li-Ionen-Akku    &              0,61 &                  0,62 &     0,62 &            0,90 &                            0,67 \\
+		Li-Eisenphosphat (hohe Energie)  &              0,66 &                  0,77 &     0,77 &            0,90 &                            0,70 \\
+		Li-Eisenphosphat (hohe Leistung) &              0,62 &                  0,63 &     0,63 &            0,90 &                            0,66 \\
+		Lithium-Titanat                  &              0,68 &                  0,88 &     0,88 &            0,90 &                            0,67 \\ \bottomrule
 	\end{tabulary}
 	\caption{Zeiteffizienz (Anteil Fahrzeit an Gesamtzeit) Linie 192}
 \end{table}
