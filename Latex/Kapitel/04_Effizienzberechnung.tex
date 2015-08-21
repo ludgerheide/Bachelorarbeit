@@ -101,17 +101,15 @@ Die folgenden Ausgabedaten der Simulation wurden ausgewählt, um die Kombination
 \label{erkl204} 
 Bei der Ladestrategie "`Nachtladung"' fährt der Bus tagsüber ohne Zwischenladen auf der Strecke. Er absolviert 11 Touren mit einer Gesamtlänge von 141 km. Die Batterie darf sich dabei auf maximal 10\% Ladezustand entladen. Nach Betriebsschluss wird der Bus über Nacht im Depot auf 100\% Ladezustand geladen. Als Ladesystem wurde ein konduktiv-manuelles System mit 40 kW gewählt.
 
-Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12,8 km. 
+Bei der Ladestrategie "`Gelegenheitsladung"' wird der Bus nach jeder Folge von Hin- und Rückfahrt aufgeladen. Die Länge einer Tour beträgt 12,8 km. Beim schnellen Laden können die Ladezustände der einzelnen Zellen nicht angeglichen werden, so dass sie über den Betriebstag immer weiter divergieren. Zum Schutz gegen Tiefentladung und Überladung einzelner Zellen wird die Batterie zwischen 35\% und 65\% Ladezustand betrieben. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet.
 
-Beim schnellen Laden können die Ladezustände der einzelnen Zellen nicht angeglichen werden, so dass sie über den Betriebstag immer weiter divergieren. Zum Schutz gegen Tiefentladung und Überladung einzelner Zellen wird die Batterie zwischen 35\% und 65\% Ladezustand betrieben. Bei dieser Ladestrategie werden sämtliche Ladesysteme betrachtet.
-
-Die Ergebnisse sind in Abbildung \ref{diagramme204} grafisch dargestellt un in den Tabellen \ref{204_a} bis \ref{204_e} aufgeführt.
+Die Ergebnisse sind in Abbildung \ref{diagramme204} grafisch dargestellt und in den Tabellen \ref{204_a} bis \ref{204_e} aufgeführt.
 
 
 \subsection{Linie 192}
 Die Parameter sind wie in Abschnitt \ref{erkl204} gewählt, allerdings  beträgt die Länge eines Umlaufs 29,8 km. Ein Betriebstag wird zur besseren Vergleichbarkeit auch hier mit 11 Umläufen simuliert, die Gesamtlänge bei der Ladestrategie "`Nachtladung"' beträgt 217 km.
 
-Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt un in den Tabellen \ref{192_a} bis \ref{192_e} aufgeführt.
+Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt und in den Tabellen \ref{192_a} bis \ref{192_e} aufgeführt.
 
 \begin{figure}\centering
 	\includegraphics[height=20cm]{Diagramme204}
@@ -298,5 +296,3 @@ Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt un in d
 	\caption{Ladezyklen pro tausend Kilometer Linie 192}
 	\label{192_e}
 \end{table}
-
-\subsection{Diagramme}
