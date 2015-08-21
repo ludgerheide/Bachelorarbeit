@@ -84,95 +84,125 @@ Die Auswahl und Gewichtung der Bewertungskriterien basiert auf der Masterarbeit 
 	\item effizienter Einsatz unter extrem Umweltbedingungen
 \end{enumerate}
 
-Auf Basis dieser Kriterien wurde das in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschema entwickelt. Die Gewichtung der Parameter wurde entsprechend den genannten Anforderungen der Busbetreiber festgelegt. Parameter, die sich nicht eindeutig unter einer der genannten Anforderungen einsortieren liessen wurden bestmöglich einsortiert
+Auf Basis dieser Kriterien wurden die in Tabelle \ref{tab_bewertungskriterien} dargestellte Gewichtungsschemata entwickelt. Die Gewichtung der Parameter wurde im ersten Schema entsprechend den genannten Anforderungen der Busbetreiber festgelegt. Da die relativen Unterschiede der Gewichtungen in der Umfrage nicht signifikant waren, wurde ein alternatives Gewichtungsschema mit gleichen Gewichtungen für die unterschiedlichen Kategorien erstellt. Parameter, die sich nicht eindeutig unter einer der genannten Anforderungen einsortieren liessen wurden bestmöglich einsortiert
 \begin{table}
 	\centering
-	\begin{tabularx}{\linewidth}{Xrl}
+	\begin{tabulary}{\linewidth}{LRLL}
 		\toprule
-		Kriterium                                                &                   & Gewichtung (\%) \\ \midrule
-		\textbf{Zuverlässigkeit Fahrzeug}                        &                   &  \\
-		Ladezyklen pro tausend Kilometer                         &                   & 8               \\
-		Masse Ladesystem + Batterie                              &                   & 6               \\
-		Positionierungsgenauigkeit (Fläche)                      &                   & 6               \\
-		Freiheitsgrade Ladesystem Fahrzeug                       &                   & 4               \\
-		Positionierungsgenauigkeit (Winkel)                      &                   & 3               \\
-		Zugänglichkeit Schnittstelle Fahrzeug                    &                   & 3               \\\midrule
-		                                                         &          $\Sigma$ & \textbf{30}     \\
-		\textbf{Störanfälligkeit der Ladestation}                &                   &  \\
-		Zeiteffizienz                            &                   & 15              \\
-		Exponierte Leiter                                        &                   & 5               \\
-		Zungänglichkeit Ladestation                              &                   & 5               \\ \midrule
-		                                                         &          $\Sigma$ & \textbf{25}     \\
-		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                   &  \\
-		Volumen Ladesystem (feste Position)                      &                   & 10              \\
-		Volumen Ladesystem (freie Position) + Volumen Batterie   &                   & 10              \\ \midrule
-		                                                         &          $\Sigma$ & \textbf{20}     \\
-		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                   &  \\
-		Energieverbrauch                                         &                   & 15              \\ \midrule
-		                                                         &          $\Sigma$ & \textbf{15}     \\
-		\textbf{Einsatz unter extrem Umweltbedingungen}          &                   &  \\
-		Kühlluftmasse                                            &                   & 10              \\ \midrule
-		                                                         &          $\Sigma$ & \textbf{10}     \\ \midrule
-		                                                         & $\Sigma_{gesamt}$ & 100             \\ \bottomrule
-	\end{tabularx}
+		Kriterium                                                &                   & Gewichtung (\%) & Alternative Gewichtung (\%) \\ \midrule
+		\textbf{Zuverlässigkeit Fahrzeug}                        &                   &                 &  \\
+		Ladezyklen pro tausend Kilometer                         &                   & 8               & 3,3                         \\
+		Masse Ladesystem + Batterie                              &                   & 6               & 3,3                         \\
+		Positionierungsgenauigkeit (Fläche)                      &                   & 6               & 3,3                         \\
+		Freiheitsgrade Ladesystem Fahrzeug                       &                   & 4               & 3,3                         \\
+		Positionierungsgenauigkeit (Winkel)                      &                   & 3               & 3,3                         \\
+		Zugänglichkeit Schnittstelle Fahrzeug                    &                   & 3               & 3,3                         \\ \midrule
+		                                                         &          $\Sigma$ & \textbf{30}     & \textbf{20}                 \\
+		\textbf{Störanfälligkeit der Ladestation}                &                   &                 &  \\
+		Zeiteffizienz                                            &                   & 15              & 6,7                         \\
+		Exponierte Leiter                                        &                   & 5               & 6,7                         \\
+		Zungänglichkeit Ladestation                              &                   & 5               & 6,7                         \\ \midrule
+		                                                         &          $\Sigma$ & \textbf{25}     & \textbf{20}                 \\
+		\textbf{Verfügbarkeit von elektrischen Niederflurbussen} &                   &                 &  \\
+		Volumen Ladesystem (feste Position)                      &                   & 10              & 10                          \\
+		Volumen Ladesystem (freie Position) + Volumen Batterie   &                   & 10              & 10                          \\ \midrule
+		                                                         &          $\Sigma$ & \textbf{20}     & \textbf{20}                 \\
+		\textbf{Vermeidung von CO\textsubscript{2}-Emissionen}   &                   &                 &  \\
+		Energieverbrauch                                         &                   & 15              & 20                          \\ \midrule
+		                                                         &          $\Sigma$ & \textbf{15}     & \textbf{20}                 \\
+		\textbf{Einsatz unter extrem Umweltbedingungen}          &                   &                 &  \\
+		Kühlluftmasse                                            &                   & 10              & 20                          \\ \midrule
+		                                                         &          $\Sigma$ & \textbf{10}     & \textbf{20}                 \\ \midrule
+		                                                         & $\Sigma_{gesamt}$ & 100             & 100 \\ \bottomrule
+		                                                         &
+	\end{tabulary}
 	\caption{Gewichtung der Bewertungskriterien der Gesamtlösungen}
 	\label{tab_bewertungskriterien}
 \end{table} 
 
 \subsection{Ergebnisse der gewichteten Bewertung}
-Die Ergebnisse der Bewertung sind in den Tabellen \ref{tab_ergebnisse204} und \ref{tab_ergebnisse192} zu sehen und in Abbildung \ref{abb_DiagrammAuswertung} grafisch dargestellt. Neben dem gewichteten Mittelwert zu jeder Kombination von Ladesystem und Speichertechnologie sind Durchschnittswerte für ein Ladesystem bzw. eine Speichertechnologie und Linie berechnet worden.
+In Abbildung \ref{abb_DiagrammAuswertung} sind die Ergebnisse der gewichteten Bewertungen grafisch dargestellt. Die Zahlenwerte der Bewertung mit der ersten Gewichtung sind in den Tabellen \ref{tab_ergebnisse204} und \ref{tab_ergebnisse192} zu sehen. Die Ergebnisse für die alternative Gewichtung sind in den Tabellen \ref{tab_ergebnisse204a} und \ref{tab_ergebnisse192a} aufgeführt. Neben dem gewichteten Mittelwert zu jeder Kombination von Ladesystem und Speichertechnologie sind in den Tabellen Durchschnittswerte für ein Ladesystem bzw. eine Speichertechnologie und Linie berechnet worden.
 
 \paragraph{Digitaler Anhang} In Anhang \ref{an_Digital} ist die zur Berechnung verwendete Tabelle enthalten. Sie ist unter dem Namen \texttt{Auswertung.ods} zu finden und kann mit \textsc{LibreOffice} geöffnet werden.
+
+\begin{figure}\centering
+	\includegraphics[width=\myFigureWideWidth]{DiagrammeAuswertung}
+	\caption[Diagramm der gewichteten Bewertungen]{Diagramm der gewichteten Bewertungen. Der linke Balken einer Farbe stellt das Ergebnis für das erste Gewichtungsschema dar, der rechte Balken ist das Ergebnis für das alternative Gewichtungsschema.}
+	\label{abb_DiagrammAuswertung}
+\end{figure}
 
 \begin{table} \centering
 	\begin{tabulary}{\linewidth}{LRRRRRR}
 		\toprule
 		Bat./LS                          &         \multicolumn{4}{c}{Gelegenheitsladen}         & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
-		\cmidrule{2-5}                   & kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
-		"`klassischer"' Li-Ionen-Akku    &       2,92 &        2,63 &     1,99 &            2,95 &                            3,05 &                 2,71 \\
-		Li-Eisenphosphat (hohe Energie)  &       2,67 &        2,42 &     1,99 &            2,59 &                            2,74 &                 2,48 \\
-		Li-Eisenphosphat (hohe Leistung) &       2,52 &        2,27 &     1,69 &            2,49 &                            2,38 &                 2,27 \\
-		Lithium-Titanat                  &       2,87 &        2,67 &     2,24 &            2,59 &                             --- &                 2,59 \\
-		Spalten-$\varnothing$            &       2,75 &        2,50 &     1,98 &            2,66 &                            2,72 &  \\ \bottomrule
+		\cmidrule{2-5}                   &    kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    & \textbf{2,92} &        2,20 &  2,13 &   \textbf{2,95} &                   \textbf{3,05} &                 2,65 \\
+		Li-Eisenphosphat (hohe Energie)  &          2,67 &        2,05 &  2,07 &            2,59 &                   \textbf{2,74} &                 2,42 \\
+		Li-Eisenphosphat (hohe Leistung) &          2,52 &        1,90 &  1,77 &            2,49 &                            2,38 &                 2,21 \\
+		Lithium-Titanat                  & \textbf{2,87} &        2,30 &  2,32 &            2,59 &                             --- &                 2,52 \\
+		Spalten-$\varnothing$            &          2,75 &        2,11 &  2,07 &            2,66 &                            2,72 &  \\ \bottomrule
 	\end{tabulary}
-	\caption{Ergebnisse der Simulation Linie 204}
+	\caption[Ergebnisse der Simulation Linie 204 mit erster Gewichtung]{Ergebnisse der Simulation Linie 204 mit erster Gewichtung. Die Bewertungen liegen zwischen 1 (schlechteste Bewertung) und 4 (beste Bewertung). Die fünf besten Werte sind markiert. Ungeeignete Systeme wurden ausgelassen.}
 	\label{tab_ergebnisse204}
 	
 	
 	\begin{tabulary}{\linewidth}{LRRRRRR}
-		\toprule
-		Bat./LS                          &         \multicolumn{4}{c}{Gelegenheitsladen}         & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
-		\cmidrule{2-5}                   & kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
-		"`klassischer"' Li-Ionen-Akku    &       3,07 &        2,78 &     2,14 &            2,89 &                            3,07 &                 2,79 \\
-		Li-Eisenphosphat (hohe Energie)  &       2,67 &        2,57 &     2,14 &            2,59 &                            2,76 &                 2,55 \\
-		Li-Eisenphosphat (hohe Leistung) &       2,67 &        2,42 &     1,93 &            2,49 &                             --- &                 2,38 \\
-		Lithium-Titanat                  &       2,87 &        2,57 &     2,08 &            2,59 &                             --- &                 2,53 \\
-		Spalten-$\varnothing$            &       2,82 &        2,59 &     2,07 &            2,64 &                            2,92 &  \\ \bottomrule
+		                                 &               &               &       &                 &                                 &  \\ \toprule
+		Bat./LS                          &          \multicolumn{4}{c}{Gelegenheitsladen}          & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
+		\cmidrule{2-5}                   &    kond.-man. &   kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    & \textbf{3,07} & 2,29          &  2,33 &   \textbf{2,89} &                  \textbf{ 3,07} &                 2,73 \\
+		Li-Eisenphosphat (hohe Energie)  &          2,67 &          2,14 &  2,27 &            2,59 &                  \textbf{2,76} &                 2,49 \\
+		Li-Eisenphosphat (hohe Leistung) &          2,67 &          1,93 &  2,12 &            2,49 &                             --- &                 2,30 \\
+		Lithium-Titanat                  & \textbf{2,87} &          2,08 &  2,27 &            2,59 &                             --- &                 2,45 \\
+		Spalten-$\varnothing$            &          2,82 &          2,11 &  2,25 &            2,64 &                            2,92 &  \\ \bottomrule
 	\end{tabulary}
-	\caption{Ergebnisse der Simulation Linie 192}
+	\caption[Ergebnisse der Simulation Linie 192 mit erster Gewichtung]{Ergebnisse der Simulation Linie 192 mit erster Gewichtung. Die Bewertungen liegen zwischen 1 (schlechteste Bewertung) und 4 (beste Bewertung). Die fünf besten Werte sind markiert. Ungeeignete Systeme wurden ausgelassen.}
 	\label{tab_ergebnisse192}
 \end{table}
 
-\begin{figure}\centering
-	\includegraphics[width=\myFigureWideWidth]{DiagrammeAuswertung}
-	\caption{Diagramm der gewichteten Bewertungen}
-	\label{abb_DiagrammAuswertung}
-\end{figure}
+\begin{table} \centering
+	\begin{tabulary}{\linewidth}{LRRRRRR}
+		\toprule
+		Bat./LS                          &         \multicolumn{4}{c}{Gelegenheitsladen}         & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
+		\cmidrule{2-5}                   &    kond.-man. & kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    & \textbf{3,03} & 2,33        &  2,33 &   \textbf{2,93} &                   \textbf{2,93} &                 2,71 \\
+		Li-Eisenphosphat (hohe Energie)  &          2,40 &        1,80 &  1,97 &            2,30 &                   \textbf{2,50} &                 2,19 \\
+		Li-Eisenphosphat (hohe Leistung) &          2,43 &        1,83 &  1,80 &            2,30 &                            2,30 &                 2,13 \\
+		Lithium-Titanat                  & \textbf{2,90} &        2,17 &  2,33 &   \textbf{2,50} &                             --- &                 2,47 \\
+		Spalten-$\varnothing$            &          2,69 &        2,03 &  2,11 &            2,51 &                            2,58 &  \\ \bottomrule
+	\end{tabulary}
+	\caption[Ergebnisse der Simulation Linie 204 mit alternativer Gewichtung]{Ergebnisse der Simulation Linie 204 mit alternativer Gewichtung. Die Bewertungen liegen zwischen 1 (schlechteste Bewertung) und 4 (beste Bewertung). Die fünf besten Werte sind markiert. Ungeeignete Systeme wurden ausgelassen.}
+	\label{tab_ergebnisse204a}
+	
+	
+	\begin{tabulary}{\linewidth}{LRRRRRR}
+		&               &               &       &                 &                                 &  \\ \toprule
+		Bat./LS                          &          \multicolumn{4}{c}{Gelegenheitsladen}          & \multicolumn{1}{c}{Nachtladung} & Zeilen-$\varnothing$ \\
+		\cmidrule{2-5}                   &    kond.-man. &   kond.-auto. & indu. & Batteriewechsel &               konduktiv-manuell &  \\ \midrule
+		"`klassischer"' Li-Ionen-Akku    & \textbf{3,23} & 2,53     &  2,53      &   \textbf{3,03} &                  \textbf{3,07}  &                 2,88 \\
+		Li-Eisenphosphat (hohe Energie)  &          2,53 &          2,00 &  2,17 &            2,43 &                 \textbf{2,63} &                 2,35 \\
+		Li-Eisenphosphat (hohe Leistung) &          2,63 &          2,00 &  2,20 &            2,43 &                             --- &                 2,32 \\
+		Lithium-Titanat                  & \textbf{3,03} &          2,12 &  2,37 &   \textbf{2,63} &                             --- &                 2,55 \\
+		Spalten-$\varnothing$            &          2,86 &          2,17 &  2,32 &            2,63 &                            2,85 &  \\ \bottomrule
+	\end{tabulary}
+	\caption[Ergebnisse der Simulation Linie 192 mit alternativer Gewichtung]{Ergebnisse der Simulation Linie 192 mit alternativer Gewichtung. Die Bewertungen liegen zwischen 1 (schlechteste Bewertung) und 4 (beste Bewertung). Die fünf besten Werte sind markiert. Ungeeignete Systeme wurden ausgelassen.}
+	\label{tab_ergebnisse192a}
+\end{table}
 
 \section{Diskussion}
 Die am besten bewerteten Kombinationen sind für beide Buslinien die Kombination von Lithium-Titanat-Batterie und konduktiv-manueller Aufladung sowie das Aufladen über Nacht mit Lithium-Schichtoxid-Batterien.
 
-\paragraph{Konduktiv-Manuelles System bei Gelegenheitsladung} Das konduktiv-manuelle System ist das am besten bewertete Ladesystem für die Ladestrategie "`Gelegenheitsladung"' lässt sich durch den Fokus auf Zuverlässigkeit und Kompaktheit erklären. Dieses Ladesystem ist vergleichsweise einfach und leicht, es besitzt keine automatisch bewegten Teile und stellt keine hohen Anforderungen an die Position des Busses. Die Ladezeit beträgt zwischen 25 und 30 Minuten nach jeder Tour (Fahrzeiten 77 und 61 Minuten) und ist damit fast dreimal so lang wie die des induktiven Systems. Für die gleiche Taktfrequenz werden daher mit dieser langsameren Technologie mehr Fahrzeuge und Fahrer benötigt, die erhöhte Kosten mit sich bringen. Für eine genauere Analyse ist neben den Kosten sämtlicher Komponenten also auch eine Betrachtung der gewünschten Taktfrequenz nötig.
+\paragraph{Konduktiv-Manuelles System bei Gelegenheitsladung} Das konduktiv-manuelle System ist das am besten bewertete Ladesystem für die Ladestrategie "`Gelegenheitsladung"'. Dies lässt sich durch den Fokus auf Zuverlässigkeit und Kompaktheit erklären. Dieses Ladesystem ist vergleichsweise einfach und leicht, es besitzt keine automatisch bewegten Teile und stellt keine hohen Anforderungen an die Position des Busses. Die Ladezeit beträgt zwischen 25 und 40 Minuten nach jeder Tour (Fahrzeiten 77 und 61 Minuten) und ist damit zwischen drei- und fünfmal länger als die des konduktiv-automatischen Systems. Für die gleiche Taktfrequenz werden daher mit dieser langsameren Technologie mehr Fahrzeuge und Fahrer benötigt, die erhöhte Kosten mit sich bringen. Für eine genauere Analyse ist neben den Kosten sämtlicher Komponenten also auch eine Betrachtung der gewünschten Taktfrequenz nötig.
 
-\paragraph{Nachtladung} Die hohe Bewertung von Nachtladesystem widerspricht der anfänglichen Hypothese, das die benötigten scheren Batterien (0.7 - 1,5 t im Genesatz zu 0,2 - 0,7 t bei Gelegenheitsladung) nicht praxistauglich seien. Zwei der vier Batterien haben jedoch genug Kapazität, um auf beiden Linien einen Betriebstag mit 11 Umläufen zu überstehen. Auch der al möglicher Nachteil vermutete höhere Energieaufwand konnte in der Simulation nicht bestätigt werden. Es wird sogar der niedrigste Energieverbrauch auf beiden Buslinien erreicht. Dies lässt sich durch die bessere Rekuperationsleistung der Batterien erklären. Die spezifische Rekuperationsleistung hat sich in der Simulation das begrenzende Element erwiesen, und eine größere Batterie kann entsprechend mehr rekuperieren. Im Betrieb werden bei der Ladestrategie "`Nachtladung"' sogar weniger Fahrzeuge benötigt als bei jeder anderen Ladestrategie, da während des Betriebs tagsüber gar keine Ladezeit anfällt. Im Gegenzug sind die Fahrzeuge durch die großen Batterien in der Anschaffung erheblich teurer und durch das etwas höhere Gewicht verschleißen Fahrzeug und Straße eventuell schneller. Auch hier ist eine Betrachtung der geforderten Taktfrequenz nötig, auch die Verschleißkosten der Straßen für verschiedene Fahrzeuggewichte sollten betrachtet werden.
+\paragraph{Nachtladung} Die hohe Bewertung von Nachtladesystem (dreimal zweitbestes und einmal bestes System) widerspricht der anfänglichen Hypothese, das die benötigten scheren Batterien (0.7 - 1,5 t im Genesatz zu 0,2 - 0,7 t bei Gelegenheitsladung) nicht praxistauglich seien. Zwei der vier Batterien haben jedoch genug Kapazität, um auf beiden Linien einen Betriebstag mit 11 Umläufen zu überstehen. Auch der als möglicher Nachteil vermutete höhere Energieaufwand konnte in der Simulation nicht bestätigt werden. Es wird sogar der niedrigste Energieverbrauch auf beiden Buslinien erreicht. Dies lässt sich durch die bessere Rekuperationsleistung der Batterien erklären. Die spezifische Rekuperationsleistung hat sich in der Simulation das begrenzende Element erwiesen, und eine größere Batterie kann entsprechend mehr rekuperieren. Im Betrieb werden bei der Ladestrategie "`Nachtladung"' sogar weniger Fahrzeuge benötigt als bei jeder anderen Ladestrategie, da während des Betriebs tagsüber gar keine Ladezeit anfällt. Im Gegenzug sind die Fahrzeuge durch die großen Batterien in der Anschaffung erheblich teurer und durch das etwas höhere Gewicht verschleißen Fahrzeug und Straße eventuell schneller. Auch hier ist eine Betrachtung der geforderten Taktfrequenz nötig, auch die Verschleißkosten der Straßen für verschiedene Fahrzeuggewichte sollten betrachtet werden.
+
+\paragraph{Batteriewechselsysteme} Das insgesamt am drittbesten bewertete Ladesystem ist das Wechseln der Batterien durch Roboter in einem speziellen Gebäude. Es zeichnet sich durch eine "`konstante"' Ladezeit aus, da die Batterie im Bus nach dem sieben Minuten langen Wechselvorgang unabhängig von ihrer Größe "`vollständig geladen"' ist. Daneben muss keine Ladeelektrik im Fahrzeug mitgeführt werden und die Batterien können außerhalb des Busses sehr effizient geladen werden. Allerdings ist die Ladestation sehr viel aufwändiger, da die Batterien  von Robotern entnommen und in Ladebuchten transportiert werden müssen. Von daher macht dieses System für den Einsatz von nur wenigen Elektrobussen keinen Sinn. Erst beim Einsatz einer großen Flotte wird die Investition in so ein aufwändigeres Ladesystem sinnvoll.
+
+\paragraph{Kein Vorteil für Ladeleistungen über 200 kW} Das konduktiv-automatische Ladesystem mit 375 kW hat in jeder Kombination schlechter abgeschnitten als das induktive System mit 200 kW. Aufgrund der begrenzten Ladeleistung der Batterien hat die höhere Ladeleistung keinen Vorteil, selbst der Lithium-Titanat-Akku erreicht eine maximale Ladeleistung von ca. 170 kW\marginpar{170 kW: Wert!}. Aufgrund der größeren und exponierteren Komponenten und der größeren Anzahl an Komponenten des konduktiv-automatischen Systems wird eine höhere Fehleranfälligkeit erwartet. Der ca. 5\% niedrigere Energieverbrauch reichte in der Bewertung nicht aus, um die Nachteile auszugleichen. Durch den Einsatz einer größeren Batterie könnte auch mit aktueller Technologie eine Ladezeit von 5 Minuten pro Tour erreicht werden, dies würde jedoch eine doppelt so große und teure Batterie erfordern.
 
 \paragraph{18650-Zelle} Die hohe Bewertung der Lithium-Schichtoxid-Batterien zeigt, das Batterien aus der Unterhaltungselektronik technisch fortschrittlicher sind als dedizierte Fahrzeugbatterien. Aufgrund der niedrigen Zellenkapazität ist die Zellenzahl jedoch um mehr als den Faktor zehn höher, was ein aufwändiges Kühl- und Managementsystem erfordert. Sollte es gelingen dieses System herzustellen, wird man mit einer großen Flexibilität belohnt. Die Kapazität kann sehr exakt definiert werden, durch den Austausch individueller Zellen können die Wartungskosten minimiert werden und bei Verwendung eines geeigneten Batteriemanagementsystems können Batterien verschiedener Hersteller verwendet werden.
 
-\paragraph{Batteriewechselsysteme} Das insgesamt am zweitbesten bewertete Ladesystem ist das Wechseln der Batterien durch Roboter in einem speziellen Gebäude. Es zeichnet sich durch eine "`konstante"' Ladezeit aus, da die Batterie im Bus nach dem sieben Minuten langen Wechselvorgang unabhängig von ihrer Größe "`vollständig geladen"' ist. Daneben muss keine Ladeelektrik im Fahrzeug mitgeführt werden und die Batterien können außerhalb des Busses sehr effizient geladen werden. Allerdings ist die Ladestation sehr viel aufwändiger, da die Batterien  von Robotern entnommen und in Ladebuchten transportiert werden müssen. Von daher macht dieses System für den Einsatz von nur wenigen Elektrobussen keinen Sinn. Erst beim Einsatz einer großen Flotte wird die Investition in so ein aufwändigeres Ladesystem sinnvoll.
-
 \paragraph{Batterielebensdauer} Zur Abschätzung der Batterielebensdauer wurden die Ladezyklen pro tausend Kilometer berechnet, die an der Batterie anfallen. Es fällt auf, das die Zahl der Ladezyklen bei der Ladestrategie "`Gelegenheitsladung"' ca. um den Faktor vier höher sind als bei Nachtladung. Auch die Zellenströme sind bei den großen Batterien der Ladestrategie "`Nachtladung"' weit niedriger. Andererseits werden bei der Nachtladung 90 Prozent der Batteriekapazität genutzt, bei Gelegenheitsladung nur die mittleren 30. Ob die niedrigere Zyklenzahl bei Nachtladung oder die schonende, aber häufigere Aufladung bei Gelegenheitsladung besser für die Batterien ist, kann im Rahmen dieser Arbeit nicht beantwortet werden.
-
-\marginpar{ÜBERARBEITEN}\paragraph{Kein Vorteil für Ladeleistungen über 200 kW} Das konduktiv-automatische Ladesystem mit 375 kW hat in jeder Kombination schlechter abgeschnitten als das induktive System mit 200 kW. Aufgrund der begrenzten Ladeleistung der Batterien hat die höhere Ladeleistung keinen Vorteil, selbst der Lithium-Titanat-Akku erreicht eine maximale Ladeleistung von ca. 170 kW\marginpar{170 kW: Wert!}. Aufgrund der größeren und exponierteren Komponenten und der größeren Anzahl an Komponenten des konduktiv-automatischen Systems wird eine höhere Fehleranfälligkeit erwartet. Der ca. 5\% niedrigere Energieverbrauch reichte in der Bewertung nicht aus, um die Nachteile auszugleichen. Durch den Einsatz einer größeren Batterie könnte auch mit aktueller Technologie eine Ladezeit von 5 Minuten pro Tour erreicht werden, dies würde jedoch eine doppelt so große und teure Batterie erfordern.
 
 \paragraph{Bleibatterien in 12m-Bussen nicht sinnvoll} Es wurde auch untersucht, ob Bleibatterien bei Gelegenheitsladung immer noch eine preiswerte Alternative darstellen. Ergebnis ist, dass die gewählte Bleibatterie nicht aufgrund ihrer niedrigen spezifischen Energie zu schwer ist, sondern vor allem durch die spezifische Lade- und Entladeleistung begrenzt ist, weshalb ihr Einsatz selbst auf sehr kurzen Strecken keinen Sinn macht. Nur in kleinen oder langsamen Bussen mit niedrigerer Spitzenleistung können sie noch verwendet werden.
 
@@ -185,10 +215,10 @@ Die am besten bewerteten Kombinationen sind für beide Buslinien die Kombination
 	\item Mit der aufgezeichneten Strecke eines Dieselbusses kann das Verhalten von Elektrobussen auf dieser Buslinie simuliert werden.
 	\item Technisch sind die folgenden Kombinationen für die BVG-Linien 204 und 192 sinnvoll.
 	\begin{itemize} \marginpar{ÜBERARBEITEN}
-		\item konduktiv-manuelle Gelegenheitsladung mit Lithium-Titanat-Batterien (erfordert mehr Fahrzeuge)
-		\item induktive Gelegenheitsladung mit Lithium-Titanat-Batterien (aufwändiger, aber weniger Fahrzeuge nötig)
-		\item Batteriewechsel nach jeder Tour mit Lithium-Schichtoxid- oder Lithium-Eisenphosphat-Batterien
+		\item konduktiv-manuelle Gelegenheitsladung mit Lithium-Titanat-Batterien oder Lithium-Schichtoxid-Batterien (erfordert mehr Fahrzeuge)
 		\item Nachtladen mit Lithium-Schichtoxid- oder Lithium-Eisenphosphat-Batterien
+		\item Batteriewechsel nach jeder Tour mit Lithium-Schichtoxid- oder Lithium-Titanat-Batterien
+		\item induktive Gelegenheitsladung mit Lithium-Titanat-Batterien (aufwändiger, aber weniger Fahrzeuge nötig)
 	\end{itemize}
 	\item Am Stadtrand ist der Energiebedarf pro Kilometer niedriger, der Energiebedarf pro Tour jedoch höher.
 	\item Der Einsatz von Bleibatterien und Lithium-Eisenphosphat-Hochleistungsbatterien ist technisch nicht sinnvoll.
