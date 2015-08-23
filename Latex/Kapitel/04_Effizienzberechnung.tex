@@ -34,8 +34,7 @@ Die Linie 192 führt vom S-Bahnhof Marzahn zum S-Bahnhof Friedrichsfelde durch d
 \subsection{Energieverbrauch}
 Über die aufgezeichnete Strecke sind Beschleunigung, Geschwindgkeit und Steigung zu jedem Zeitpunkt festgelegt. Mit den Busparametern Gewicht, Rollwiderstand, Stirnfläche und $c_w$-Wert werden nun die mechanischen und aerodynamischen Kräfte berechnet, die auf den Bus wirken. Aus diesen Kräften wird die erforderliche Traktionsleistung und Motordrehzahl berechnet.
 
-%TODO: Ausfüllen
-Eine von \textbf{xxx} ertellte Effizienzkurve\marginpar{Wer, Quellenvermerk!} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
+Eine von Fabian Gingoll ertellte Effizienzkurve~\cite{MotorEntwurf} berechnet aus Traktionsleistung und Geschwindigkeit die erforderliche elektrische Leistung. In Abbildung \ref{abb_Leistungen} werden die berechneten Leistungen für ein einfaches Geschwindigkeitsprofil gezeigt. Wie in der Abbildung zu sehen, sinkt die Effizienz des Motors mit steigender Leistung. Beim Bremsen kann der Motor als Generator betrieben werden und die Bewegungsenergie wieder in elektrische Energie umwandeln. Nur bei sehr niedrigen Geschwindigkeiten kann nicht rekuperiert werden.
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Leistungen}
 	\caption[Traktions-, Motor- und Batterieleistung]{Traktions-, Motor- und Batterieleistung für ein einfaches Geschwindigkeitsprofil. Ein Bus mit einer Masse von 13,3 Tonnen wird konstant mit 1 $\frac{m}{s^2}$ auf 50,4 $\frac{km}{h}$ beschleunigt und nach wenigen Sekunden mit 1 $\frac{m}{s^2}$ bis zum Stillstand abgebremst. Als Batterie wurde hier eine $LiFePO_4$-Batterie gewählt. Durch die maximale Ladeleistung von 38 kW kann die verfügbare Rekuperationsleistung nur begrenzt ausgenutzt werden.}
@@ -112,13 +111,13 @@ Die Parameter sind wie in Abschnitt \ref{erkl204} gewählt, allerdings  beträgt
 Die Ergebnisse sind in Abbildung \ref{diagramme192} grafisch dargestellt und in den Tabellen \ref{192_a} bis \ref{192_e} aufgeführt.
 
 \begin{figure}\centering
-	\includegraphics[height=20cm]{Diagramme204}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Diagramme204}
 	\caption{Diagramme der Simulationsergebnisse für die Buslinie 204}
 	\label{diagramme204}
 \end{figure}
 
 \begin{figure}\centering
-	\includegraphics[height=20cm]{Diagramme192}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Diagramme192}
 	\caption{Diagramme der Simulationsergebnisse für die Buslinie 192}
 	\label{diagramme192}
 \end{figure}
