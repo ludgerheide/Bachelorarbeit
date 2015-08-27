@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:initial-creator>Ludger Heide</meta:initial-creator><meta:creation-date>2015-07-24T12:56:10.423548000</meta:creation-date><dc:date>2015-08-23T13:23:34.917922000</dc:date><dc:creator>Ludger Heide</dc:creator><meta:editing-duration>PT6H10M46S</meta:editing-duration><meta:editing-cycles>28</meta:editing-cycles><meta:generator>LibreOffice/4.4.5.2$MacOSX_X86_64 LibreOffice_project/a22f674fd25a3b6f45bdebf25400ed2adff0ff99</meta:generator><meta:printed-by>Ludger Heide</meta:printed-by><meta:print-date>2015-08-19T23:32:48.908147000</meta:print-date><meta:document-statistic meta:table-count="4" meta:cell-count="5404" meta:object-count="19"/></office:meta>
+ <office:meta><meta:initial-creator>Ludger Heide</meta:initial-creator><meta:creation-date>2015-07-24T12:56:10.423548000</meta:creation-date><dc:date>2015-08-23T17:26:41.946317000</dc:date><dc:creator>Ludger Heide</dc:creator><meta:editing-duration>PT8H3M28S</meta:editing-duration><meta:editing-cycles>29</meta:editing-cycles><meta:generator>LibreOffice/4.4.5.2$MacOSX_X86_64 LibreOffice_project/a22f674fd25a3b6f45bdebf25400ed2adff0ff99</meta:generator><meta:printed-by>Ludger Heide</meta:printed-by><meta:print-date>2015-08-19T23:32:48.908147000</meta:print-date><meta:document-statistic meta:table-count="5" meta:cell-count="5531" meta:object-count="21"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
-   <config:config-item config:name="VisibleAreaWidth" config:type="int">81488</config:config-item>
-   <config:config-item config:name="VisibleAreaHeight" config:type="int">116049</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">37253</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">28448</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
@@ -20,10 +20,10 @@
        <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
-       <config:config-item config:name="PositionLeft" config:type="int">7</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">3</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
-       <config:config-item config:name="PositionBottom" config:type="int">212</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">55</config:config-item>
        <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
        <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
        <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -64,8 +64,25 @@
        <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
       </config:config-item-map-entry>
       <config:config-item-map-entry config:name="Diagramme 204">
-       <config:config-item config:name="CursorPositionX" config:type="int">7</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">0</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">1</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">1</config:config-item>
+       <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">10</config:config-item>
+       <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+       <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+       <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+       <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+      </config:config-item-map-entry>
+      <config:config-item-map-entry config:name="Tabelle5">
+       <config:config-item config:name="CursorPositionX" config:type="int">8</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">6</config:config-item>
        <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
@@ -81,7 +98,7 @@
        <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
       </config:config-item-map-entry>
      </config:config-item-map-named>
-     <config:config-item config:name="ActiveTable" config:type="string">Diagramme 192</config:config-item>
+     <config:config-item config:name="ActiveTable" config:type="string">Tabelle5</config:config-item>
      <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1860</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
@@ -385,7 +402,7 @@
      <text:p><text:sheet-name>???</text:sheet-name> (<text:title>???</text:title>)</text:p>
     </style:region-left>
     <style:region-right>
-     <text:p><text:date style:data-style-name="N2" text:date-value="2015-08-23">00.00.0000</text:date>, <text:time style:data-style-name="N2" text:time-value="13:12:10.465488000">00:00:00</text:time></text:p>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2015-08-23">00.00.0000</text:date>, <text:time style:data-style-name="N2" text:time-value="14:48:37.363328000">00:00:00</text:time></text:p>
     </style:region-right>
    </style:header>
    <style:header-left style:display="false"/>
@@ -1748,7 +1765,7 @@
          <number:number-style style:name="N2">
           <number:number number:decimal-places="2" number:min-integer-digits="1"/>
          </number:number-style>
-         <number:date-style style:name="N20036" number:language="de" number:country="DE" number:automatic-order="true">
+         <number:date-style style:name="N10036" number:language="de" number:country="DE" number:automatic-order="true">
           <number:day number:style="long"/>
           <number:text>.</number:text>
           <number:month number:style="long"/>
@@ -1765,7 +1782,7 @@
          <style:style style:name="ch3" style:family="chart">
           <style:chart-properties chart:include-hidden-cells="false" chart:auto-position="true" chart:auto-size="true" chart:treat-empty-cells="use-zero" chart:series-source="rows" chart:right-angled-axes="true"/>
          </style:style>
-         <style:style style:name="ch4" style:family="chart" style:data-style-name="N20036">
+         <style:style style:name="ch4" style:family="chart" style:data-style-name="N10036">
           <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="0"/>
           <style:graphic-properties svg:stroke-color="#b3b3b3"/>
           <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
@@ -2496,7 +2513,7 @@
          <number:number-style style:name="N2">
           <number:number number:decimal-places="2" number:min-integer-digits="1"/>
          </number:number-style>
-         <number:date-style style:name="N20036" number:language="de" number:country="DE" number:automatic-order="true">
+         <number:date-style style:name="N10036" number:language="de" number:country="DE" number:automatic-order="true">
           <number:day number:style="long"/>
           <number:text>.</number:text>
           <number:month number:style="long"/>
@@ -2513,7 +2530,7 @@
          <style:style style:name="ch3" style:family="chart">
           <style:chart-properties chart:include-hidden-cells="false" chart:auto-position="true" chart:auto-size="true" chart:treat-empty-cells="use-zero" chart:series-source="rows" chart:right-angled-axes="true"/>
          </style:style>
-         <style:style style:name="ch4" style:family="chart" style:data-style-name="N20036">
+         <style:style style:name="ch4" style:family="chart" style:data-style-name="N10036">
           <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="0"/>
           <style:graphic-properties svg:stroke-color="#b3b3b3"/>
           <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
@@ -2528,7 +2545,7 @@
          </style:style>
          <style:style style:name="ch7" style:family="chart" style:data-style-name="N2">
           <style:chart-properties chart:link-data-style-to-source="true"/>
-          <style:graphic-properties draw:stroke="none" draw:fill-color="#004586" draw:fill-hatch-name="Blue_5f_20_5f_Triple_5f_20_5f_90_5f_20_5f_Degrees" dr3d:edge-rounding="5%"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#004586" draw:fill-hatch-name="Blue_5f_5f_5f_20_5f_5f_5f_Triple_5f_5f_5f_20_5f_5f_5f_90_5f_5f_5f_20_5f_5f_5f_Degrees" dr3d:edge-rounding="5%"/>
           <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
          </style:style>
          <style:style style:name="ch8" style:family="chart" style:data-style-name="N2">
@@ -23350,7 +23367,7 @@ in kWh/km</text:p>
         AAAAAAIBABMAAAAJAFhURVhUX0VPQwMAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPTAAAAAAA
         AAAAAAIBABMAAAAJAFhURVhUX0VPUAAAAAAAAAAAAAIBAB4AAAAUAFhURVhUX1BBSU5UU0hB
         UEVfRU5EAAAAAAAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAAAAAA
-        igABAEEAAAADADsAAAAPAExpYmVyYXRpb24gU2FucwAAAAAAAH8BAAD//wAAAgAFAAAAAAAA
+        igABAEEAAAADADsAAAAPAExpYmVyYXRpb24gU2FucwAAAAAAAIEBAAD//wAAAgAFAAAAAAAA
         AAcEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgABAAQAAAAAAAAA
         cQACAJYAAABNHQAAhgIAABAAAABFAG4AZQByAGcAaQBlAHYAZQByAGIAcgBhAHUAYwBoAAAA
         EAAQAAAA8wAAAMsBAACkAgAAEAMAAOgDAAA5BAAAEQUAAM4FAACmBgAALQcAAAYIAACNCAAA
@@ -27943,7 +27960,7 @@ in kWh/km</text:p>
         AAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAe
         AAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5U
         U0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAA
-        AAB/AQAA//8AAAIABQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
+        AACBAQAA//8AAAIABQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUA
         AAD/////AIYAAQAEAAAAAAAAAHEAAgCWAAAATR0AAIYCAAAQAAAARQBuAGUAcgBnAGkAZQB2
         AGUAcgBiAHIAYQB1AGMAaAAAABAAEAAAAPMAAADLAQAApAIAABADAADoAwAAOQQAABEFAADO
         BQAApgYAAC0HAAAGCAAAjQgAAGUJAAAiCgAA+goAALcLAAAQAEUAbgBlAHIAZwBpAGUAdgBl
@@ -30241,6 +30258,1660 @@ tausend km</text:p>
      <table:table-cell table:style-name="ce26" table:formula="of:=1000*[.F55]" office:value-type="float" office:value="4.1561" calcext:value-type="float">
       <text:p>4,2</text:p>
      </table:table-cell>
+    </table:table-row>
+   </table:table>
+   <table:table table:name="Tabelle5" table:style-name="ta1">
+    <table:shapes>
+     <draw:frame draw:z-index="0" draw:style-name="gr1" draw:text-style-name="P1" svg:width="120mm" svg:height="50mm" svg:x="200mm" svg:y="80mm">
+      <draw:object draw:notify-on-update-of-ranges="Tabelle5.A22:Tabelle5.A22 Tabelle5.B22:Tabelle5.E22 Tabelle5.A23:Tabelle5.A23 Tabelle5.B23:Tabelle5.E23 Tabelle5.A24:Tabelle5.A24 Tabelle5.B24:Tabelle5.E24 Tabelle5.A25:Tabelle5.A25 Tabelle5.B25:Tabelle5.E25 Tabelle5.A26:Tabelle5.A26 Tabelle5.B26:Tabelle5.E26 Tabelle5.A27:Tabelle5.A27 Tabelle5.B27:Tabelle5.E27">
+       <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:chartooo="http://openoffice.org/2010/chart" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.chart">
+        <office:meta><meta:generator>LibreOffice/4.4.5.2$MacOSX_X86_64 LibreOffice_project/a22f674fd25a3b6f45bdebf25400ed2adff0ff99</meta:generator></office:meta>
+        <office:styles/>
+        <office:automatic-styles>
+         <number:number-style style:name="N0">
+          <number:number number:min-integer-digits="1"/>
+         </number:number-style>
+         <style:style style:name="ch1" style:family="chart">
+          <style:graphic-properties draw:stroke="none"/>
+         </style:style>
+         <style:style style:name="ch2" style:family="chart">
+          <style:chart-properties chart:auto-position="true" style:rotation-angle="0"/>
+          <style:text-properties fo:font-size="13pt" style:font-size-asian="13pt" style:font-size-complex="13pt"/>
+         </style:style>
+         <style:style style:name="ch3" style:family="chart">
+          <style:chart-properties chart:auto-position="true"/>
+          <style:graphic-properties draw:stroke="none" svg:stroke-color="#b3b3b3" draw:fill="none" draw:fill-color="#e6e6e6"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch4" style:family="chart">
+          <style:chart-properties chart:include-hidden-cells="false" chart:auto-position="true" chart:auto-size="true" chart:treat-empty-cells="leave-gap" chart:series-source="rows" chart:right-angled-axes="true"/>
+         </style:style>
+         <style:style style:name="ch5" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="0"/>
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch6" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:minimum="0.75" chart:maximum="1" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="1"/>
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch7" style:family="chart">
+          <style:chart-properties chart:auto-position="true" style:rotation-angle="90"/>
+          <style:text-properties fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+         </style:style>
+         <style:style style:name="ch8" style:family="chart">
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+         </style:style>
+         <style:style style:name="ch9" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#004586" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch10" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#ff420e" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch11" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#ffd320" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch12" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#579d1c" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch13" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#7e0021" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch14" style:family="chart">
+          <style:graphic-properties draw:stroke="solid" svg:stroke-color="#b3b3b3" draw:fill="none" draw:fill-color="#e6e6e6"/>
+         </style:style>
+         <style:style style:name="ch15" style:family="chart">
+          <style:graphic-properties svg:stroke-color="#b3b3b3" draw:fill-color="#cccccc"/>
+         </style:style>
+        </office:automatic-styles>
+        <office:body>
+         <office:chart>
+          <chart:chart svg:width="12.001cm" svg:height="5.001cm" xlink:href=".." xlink:type="simple" chart:class="chart:bar" chart:style-name="ch1">
+           <chart:title svg:x="1.215cm" svg:y="0.235cm" chart:style-name="ch2">
+            <text:p>Zeiteffizienz in Abhängigkeit vom Ladeintervall</text:p>
+           </chart:title>
+           <chart:legend chart:legend-position="bottom" svg:x="4.165cm" svg:y="4.264cm" style:legend-expansion="wide" chart:style-name="ch3"/>
+           <chart:plot-area chart:style-name="ch4" table:cell-range-address="Tabelle5.A22:Tabelle5.E27" chart:data-source-has-labels="both" svg:x="1.205cm" svg:y="1.098cm" svg:width="10.556cm" svg:height="3.066cm">
+            <chartooo:coordinate-region svg:x="2.132cm" svg:y="1.274cm" svg:width="9.588cm" svg:height="2.289cm"/>
+            <chart:axis chart:dimension="x" chart:name="primary-x" chart:style-name="ch5" chartooo:axis-type="auto">
+             <chartooo:date-scale/>
+             <chart:categories table:cell-range-address="Tabelle5.B22:Tabelle5.E22"/>
+            </chart:axis>
+            <chart:axis chart:dimension="y" chart:name="primary-y" chart:style-name="ch6">
+             <chart:title svg:x="0.451cm" svg:y="3.526cm" chart:style-name="ch7">
+              <text:p>Zeiteffizienz</text:p>
+             </chart:title>
+             <chart:grid chart:style-name="ch8" chart:class="major"/>
+            </chart:axis>
+            <chart:series chart:style-name="ch9" chart:values-cell-range-address="Tabelle5.B23:Tabelle5.E23" chart:label-cell-address="Tabelle5.A23:Tabelle5.A23" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch10" chart:values-cell-range-address="Tabelle5.B24:Tabelle5.E24" chart:label-cell-address="Tabelle5.A24:Tabelle5.A24" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch11" chart:values-cell-range-address="Tabelle5.B25:Tabelle5.E25" chart:label-cell-address="Tabelle5.A25:Tabelle5.A25" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch12" chart:values-cell-range-address="Tabelle5.B26:Tabelle5.E26" chart:label-cell-address="Tabelle5.A26:Tabelle5.A26" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch13" chart:values-cell-range-address="Tabelle5.B27:Tabelle5.E27" chart:label-cell-address="Tabelle5.A27:Tabelle5.A27" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:wall chart:style-name="ch14"/>
+            <chart:floor chart:style-name="ch15"/>
+           </chart:plot-area>
+           <table:table table:name="local-table">
+            <table:table-header-columns>
+             <table:table-column/>
+            </table:table-header-columns>
+            <table:table-columns>
+             <table:table-column table:number-columns-repeated="4"/>
+            </table:table-columns>
+            <table:table-header-rows>
+             <table:table-row>
+              <table:table-cell>
+               <text:p/>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>kond.-man.</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B22:Tabelle5.E22</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>kond.-auto.</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>induktiv</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>Batteriewechsel</text:p>
+              </table:table-cell>
+             </table:table-row>
+            </table:table-header-rows>
+            <table:table-rows>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>1</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A23:Tabelle5.A23</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.763140604467806">
+               <text:p>0.763140604467806</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B23:Tabelle5.E23</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.9047711781889">
+               <text:p>0.9047711781889</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.904595015576324">
+               <text:p>0.904595015576324</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.917094354520332">
+               <text:p>0.917094354520332</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>2</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A24:Tabelle5.A24</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.776079512235864">
+               <text:p>0.776079512235864</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B24:Tabelle5.E24</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.950005111951743">
+               <text:p>0.950005111951743</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.939629891798968">
+               <text:p>0.939629891798968</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.956754530477759">
+               <text:p>0.956754530477759</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>3</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A25:Tabelle5.A25</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.778354833305411">
+               <text:p>0.778354833305411</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B25:Tabelle5.E25</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.966172189103009">
+               <text:p>0.966172189103009</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.94131154183832">
+               <text:p>0.94131154183832</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.970748015043878">
+               <text:p>0.970748015043878</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>4</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A26:Tabelle5.A26</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.777833584463419">
+               <text:p>0.777833584463419</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B26:Tabelle5.E26</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.968067927280304">
+               <text:p>0.968067927280304</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.941724941724942">
+               <text:p>0.941724941724942</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.977899389602189">
+               <text:p>0.977899389602189</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>5</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A27:Tabelle5.A27</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.776663323303243">
+               <text:p>0.776663323303243</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B27:Tabelle5.E27</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.968279771581009">
+               <text:p>0.968279771581009</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.941705853737636">
+               <text:p>0.941705853737636</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="0.982241014799154">
+               <text:p>0.982241014799154</text:p>
+              </table:table-cell>
+             </table:table-row>
+            </table:table-rows>
+           </table:table>
+          </chart:chart>
+         </office:chart>
+        </office:body>
+       </office:document>
+      </draw:object><draw:image>
+       <office:binary-data>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
+        WFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAAACAQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JF
+        R0lOAAAAAAAAAACKAAEAQQAAAAMAOwAAAA8ATGliZXJhdGlvbiBTYW5zAAAAAAAAYQEAAP//
+        AAACAAUAAAAAAAAABwQAAAAAAAAAAAD/AwAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCG
+        AAEABAAAAAAAAABxAAIAHgAAAJ0GAAB0BQAAAQAAADEAAAABAAEAAAC9AAAAAQAxAAACAQAT
+        AAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQAT
+        AAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAA
+        AAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBBAAAA
+        AwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAADLAQAA//8AAAIABQAAAAAAAAAHBAAAAAAA
+        AAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgCOAQAA
+        EwUAAAsDAAAvAAAAWgBlAGkAdABlAGYAZgBpAHoAaQBlAG4AegAgAGkAbgAgAEEAYgBoAOQA
+        bgBnAGkAZwBrAGUAaQB0ACAAdgBvAG0AIABMAGEAZABlAGkAbgB0AGUAcgB2AGEAbABsAAAA
+        LwAvAAAADgEAAAECAABtAgAA9QIAAOgDAABvBAAA2wQAAEcFAAA6BgAAiwYAAJoHAACNCAAA
+        gAkAAAcKAABYCgAAZgsAANILAAD8DAAA7w0AAP0OAADwDwAA/hAAAPIRAABeEgAAURMAAEQU
+        AAA3FQAAoxUAACoWAACXFgAAihcAAH0YAAASGgAAfhoAAI0bAACAHAAAjh0AAIEeAADtHgAA
+        4B8AAGggAABbIQAA/SEAAPAiAADjIwAATyQAALskAAAvAFoAZQBpAHQAZQBmAGYAaQB6AGkA
+        ZQBuAHoAIABpAG4AIABBAGIAaADkAG4AZwBpAGcAawBlAGkAdAAgAHYAbwBtACAATABhAGQA
+        ZQBpAG4AdABlAHIAdgBhAGwAbAAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DCwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DDQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XDQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DDgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XEAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DEgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DFQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DFwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DGQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DGwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DHAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DHQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XHQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DHgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DHwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DIAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DIQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9XIQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DIgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DIwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DJAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DJQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DJgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DJwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DKAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DKQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DKgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DKwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DLAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DLQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DLgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAA
+        ABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAIUAAQAFAAAAhkUAAAGEAAEABQAAAAAA
+        AAAAbwACADYAAAABAAYAIxEAACUSAAC5EAAAJRIAALkQAABSEQAAjBEAAFIRAACMEQAAJRIA
+        ACMRAAAlEgAAAACFAAEABQAAAA5C/wABhAABAAUAAAAAAAAAAG8AAgA2AAAAAQAGAAEUAAAl
+        EgAAlxMAACUSAACXEwAAUhEAAGoUAABSEQAAahQAACUSAAABFAAAJRIAAAAAhQABAAUAAAAg
+        0/8AAYQAAQAFAAAAAAAAAABvAAIANgAAAAEABgDfFgAAJRIAAHUWAAAlEgAAdRYAAFIRAABI
+        FwAAUhEAAEgXAAAlEgAA3xYAACUSAAAAAIUAAQAFAAAAHJ1XAAGEAAEABQAAAAAAAAAAbwAC
+        ADYAAAABAAYAvRkAACUSAABTGQAAJRIAAFMZAABSEQAAJhoAAFIRAAAmGgAAJRIAAL0ZAAAl
+        EgAAAACFAAEABQAAACEAfgABhAABAAUAAAAAAAAAAG8AAgA2AAAAAQAGAJscAAAlEgAAMRwA
+        ACUSAAAxHAAAUhEAAAQdAABSEQAABB0AACUSAACbHAAAJRIAAAAAAAIBACAAAAAWAFhURVhU
+        X1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNh
+        bnMAAAAAAABhAQAA//8AAAIABQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEA
+        hwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgAeAAAA8BEAADUSAAABAAAAMQAAAAEAAQAA
+        AL0AAAABADEAAAIBABMAAAAJAFhURVhUX0VPQwAAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VP
+        TAAAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPUAAAAAAAAAAAAAIBAB4AAAAUAFhURVhUX1BB
+        SU5UU0hBUEVfRU5EAAAAAAAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAA
+        AAAAAAAAigABAEEAAAADADsAAAAPAExpYmVyYXRpb24gU2FucwAAAAAAAGEBAAD//wAAAgAF
+        AAAAAAAAAAcEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgABAAQA
+        AAAAAAAAcQACAB4AAADOFAAANRIAAAEAAAAyAAAAAQABAAAAvQAAAAEAMgAAAgEAEwAAAAkA
+        WFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAA
+        AAACAQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAQQAAAAMAOwAA
+        AA8ATGliZXJhdGlvbiBTYW5zAAAAAAAAYQEAAP//AAACAAUAAAAAAAAABwQAAAAAAAAAAAD/
+        AwAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAHgAAAKwXAAA1
+        EgAAAQAAADMAAAABAAEAAAC9AAAAAQAzAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAAC
+        AQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAAC
+        AQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BB
+        SU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMA
+        AAAAAABhAQAA//8AAAIABQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwAB
+        AAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgAeAAAAihoAADUSAAABAAAANAAAAAEAAQAAAL0A
+        AAABADQAAAIBABMAAAAJAFhURVhUX0VPQwAAAAAAAAAAAAIBABMAAAAJAFhURVhUX0VPTAAA
+        AAAAAAAAAAIBABMAAAAJAFhURVhUX0VPUAAAAAAAAAAAAAIBAB4AAAAUAFhURVhUX1BBSU5U
+        U0hBUEVfRU5EAAAAAAAAAAAAAgEAIAAAABYAWFRFWFRfUEFJTlRTSEFQRV9CRUdJTgAAAAAA
+        AAAAigABAEEAAAADADsAAAAPAExpYmVyYXRpb24gU2FucwAAAAAAAGEBAAD//wAAAgAFAAAA
+        AAAAAAcEAAAAAAAAAAAA/wMAAAAAAIgAAQACAAAAAQCHAAEABQAAAP////8AhgABAAQAAAAA
+        AAAAcQACAB4AAABoHQAANRIAAAEAAAA1AAAAAQABAAAAvQAAAAEANQAAAgEAEwAAAAkAWFRF
+        WFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRF
+        WFRfRU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAAAC
+        AQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAQQAAAAMAOwAAAA8A
+        TGliZXJhdGlvbiBTYW5zAAAAAAAAPgEAAP//AAACAAUAAAAAAAAABwQAAIQDAAAAAAD/AwAA
+        AAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAfgAAADEDAACNDQAA
+        DQAAAFoAZQBpAHQAZQBmAGYAaQB6AGkAZQBuAHoAAAANAA0AAAC9AAAAXwEAALABAAABAgAA
+        vwIAABADAABhAwAAsgMAADkEAACKBAAARwUAAOkFAACLBgAADQBaAGUAaQB0AGUAZgBmAGkA
+        egBpAGUAbgB6AAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MBAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MDAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MEAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MFAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MGAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MHAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MIAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MJAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MKAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0MLAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MMAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9Q
+        QUlOVFNIQVBFX0VORAAAAAAAAAAAjAABAAAAAACLAAEAAgAAACAAggABACEAAAACABsAAAAC
+        AAIAAAAAAAAAiBMAAAEAAAAAAOAuAAACAACMAAEAAAAAAIwAAQAAAAAA
+       </office:binary-data>
+      </draw:image>
+     </draw:frame>
+     <draw:frame draw:z-index="1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="120mm" svg:height="40mm" svg:x="200mm" svg:y="30mm">
+      <draw:object draw:notify-on-update-of-ranges="Tabelle5.A8:Tabelle5.A8 Tabelle5.B8:Tabelle5.E8 Tabelle5.A9:Tabelle5.A9 Tabelle5.B9:Tabelle5.E9 Tabelle5.A10:Tabelle5.A10 Tabelle5.B10:Tabelle5.E10 Tabelle5.A11:Tabelle5.A11 Tabelle5.B11:Tabelle5.E11 Tabelle5.A12:Tabelle5.A12 Tabelle5.B12:Tabelle5.E12 Tabelle5.A13:Tabelle5.A13 Tabelle5.B13:Tabelle5.E13">
+       <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:chartooo="http://openoffice.org/2010/chart" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.chart">
+        <office:meta><meta:generator>LibreOffice/4.4.5.2$MacOSX_X86_64 LibreOffice_project/a22f674fd25a3b6f45bdebf25400ed2adff0ff99</meta:generator></office:meta>
+        <office:styles/>
+        <office:automatic-styles>
+         <number:number-style style:name="N0">
+          <number:number number:min-integer-digits="1"/>
+         </number:number-style>
+         <style:style style:name="ch1" style:family="chart">
+          <style:graphic-properties draw:stroke="none"/>
+         </style:style>
+         <style:style style:name="ch2" style:family="chart">
+          <style:chart-properties chart:auto-position="true" style:rotation-angle="0"/>
+          <style:text-properties fo:font-size="13pt" style:font-size-asian="13pt" style:font-size-complex="13pt"/>
+         </style:style>
+         <style:style style:name="ch3" style:family="chart">
+          <style:chart-properties chart:include-hidden-cells="false" chart:auto-position="true" chart:auto-size="true" chart:treat-empty-cells="leave-gap" chart:series-source="rows" chart:right-angled-axes="true"/>
+         </style:style>
+         <style:style style:name="ch4" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="0"/>
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch5" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:display-label="true" chart:logarithmic="false" chart:reverse-direction="false" text:line-break="false" chart:link-data-style-to-source="true" chart:axis-position="0"/>
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch6" style:family="chart">
+          <style:chart-properties chart:auto-position="true" style:rotation-angle="90"/>
+          <style:text-properties fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+         </style:style>
+         <style:style style:name="ch7" style:family="chart">
+          <style:graphic-properties svg:stroke-color="#b3b3b3"/>
+         </style:style>
+         <style:style style:name="ch8" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#004586" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch9" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#ff420e" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch10" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#ffd320" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch11" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#579d1c" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch12" style:family="chart" style:data-style-name="N0">
+          <style:chart-properties chart:link-data-style-to-source="true"/>
+          <style:graphic-properties draw:stroke="none" draw:fill-color="#7e0021" dr3d:edge-rounding="5%"/>
+          <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+         </style:style>
+         <style:style style:name="ch13" style:family="chart">
+          <style:graphic-properties draw:stroke="solid" svg:stroke-color="#b3b3b3" draw:fill="none" draw:fill-color="#e6e6e6"/>
+         </style:style>
+         <style:style style:name="ch14" style:family="chart">
+          <style:graphic-properties svg:stroke-color="#b3b3b3" draw:fill-color="#cccccc"/>
+         </style:style>
+        </office:automatic-styles>
+        <office:body>
+         <office:chart>
+          <chart:chart svg:width="12.001cm" svg:height="4.001cm" xlink:href=".." xlink:type="simple" chart:class="chart:bar" chart:style-name="ch1">
+           <chart:title svg:x="0.634cm" svg:y="0.215cm" chart:style-name="ch2">
+            <text:p>Energieverbrauch in Abhängigkeit vom Ladeintervall</text:p>
+           </chart:title>
+           <chart:plot-area chart:style-name="ch3" table:cell-range-address="Tabelle5.A8:Tabelle5.E13" chart:data-source-has-labels="both" svg:x="1.529cm" svg:y="1.058cm" svg:width="10.232cm" svg:height="2.863cm">
+            <chartooo:coordinate-region svg:x="2.266cm" svg:y="1.234cm" svg:width="9.414cm" svg:height="2.086cm"/>
+            <chart:axis chart:dimension="x" chart:name="primary-x" chart:style-name="ch4" chartooo:axis-type="auto">
+             <chartooo:date-scale/>
+             <chart:categories table:cell-range-address="Tabelle5.B8:Tabelle5.E8"/>
+            </chart:axis>
+            <chart:axis chart:dimension="y" chart:name="primary-y" chart:style-name="ch5">
+             <chart:title svg:x="0.451cm" svg:y="3.789cm" chart:style-name="ch6">
+              <text:p>Energieverbrauch
+in kWh/km</text:p>
+             </chart:title>
+             <chart:grid chart:style-name="ch7" chart:class="major"/>
+            </chart:axis>
+            <chart:series chart:style-name="ch8" chart:values-cell-range-address="Tabelle5.B9:Tabelle5.E9" chart:label-cell-address="Tabelle5.A9:Tabelle5.A9" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch9" chart:values-cell-range-address="Tabelle5.B10:Tabelle5.E10" chart:label-cell-address="Tabelle5.A10:Tabelle5.A10" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch10" chart:values-cell-range-address="Tabelle5.B11:Tabelle5.E11" chart:label-cell-address="Tabelle5.A11:Tabelle5.A11" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch11" chart:values-cell-range-address="Tabelle5.B12:Tabelle5.E12" chart:label-cell-address="Tabelle5.A12:Tabelle5.A12" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:series chart:style-name="ch12" chart:values-cell-range-address="Tabelle5.B13:Tabelle5.E13" chart:label-cell-address="Tabelle5.A13:Tabelle5.A13" chart:class="chart:bar">
+             <chart:data-point chart:repeated="4"/>
+            </chart:series>
+            <chart:wall chart:style-name="ch13"/>
+            <chart:floor chart:style-name="ch14"/>
+           </chart:plot-area>
+           <table:table table:name="local-table">
+            <table:table-header-columns>
+             <table:table-column/>
+            </table:table-header-columns>
+            <table:table-columns>
+             <table:table-column table:number-columns-repeated="4"/>
+            </table:table-columns>
+            <table:table-header-rows>
+             <table:table-row>
+              <table:table-cell>
+               <text:p/>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>kond.-man.</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B8:Tabelle5.E8</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>kond.-auto.</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>induktiv</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="string">
+               <text:p>Batteriewechsel</text:p>
+              </table:table-cell>
+             </table:table-row>
+            </table:table-header-rows>
+            <table:table-rows>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>1</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A9:Tabelle5.A9</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2228">
+               <text:p>1.2228</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B9:Tabelle5.E9</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.3122">
+               <text:p>1.3122</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.3741">
+               <text:p>1.3741</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.3079">
+               <text:p>1.3079</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>2</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A10:Tabelle5.A10</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.1595">
+               <text:p>1.1595</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B10:Tabelle5.E10</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2678">
+               <text:p>1.2678</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.301">
+               <text:p>1.301</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2641">
+               <text:p>1.2641</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>3</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A11:Tabelle5.A11</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.1528">
+               <text:p>1.1528</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B11:Tabelle5.E11</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2692">
+               <text:p>1.2692</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2684">
+               <text:p>1.2684</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2655">
+               <text:p>1.2655</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>4</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A12:Tabelle5.A12</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.1608">
+               <text:p>1.1608</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B12:Tabelle5.E12</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2549">
+               <text:p>1.2549</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.262">
+               <text:p>1.262</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2779">
+               <text:p>1.2779</text:p>
+              </table:table-cell>
+             </table:table-row>
+             <table:table-row>
+              <table:table-cell office:value-type="string">
+               <text:p>5</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.A13:Tabelle5.A13</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.1714">
+               <text:p>1.1714</text:p>
+               <draw:g>
+                <svg:desc>Tabelle5.B13:Tabelle5.E13</svg:desc></draw:g>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2494">
+               <text:p>1.2494</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2644">
+               <text:p>1.2644</text:p>
+              </table:table-cell>
+              <table:table-cell office:value-type="float" office:value="1.2933">
+               <text:p>1.2933</text:p>
+              </table:table-cell>
+             </table:table-row>
+            </table:table-rows>
+           </table:table>
+          </chart:chart>
+         </office:chart>
+        </office:body>
+       </office:document>
+      </draw:object><draw:image>
+       <office:binary-data>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
+        AFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0
+        aW9uIFNhbnMAAAAAAABhAQAA//8AAAIABQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEA
+        AgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgBWAAAAgx0AABoPAAAIAAAAaQBu
+        AGQAdQBrAHQAaQB2AAAACAAIAAAANgAAAA4BAADLAQAAiQIAAEYDAACXAwAA6AMAAKUEAAAI
+        AGkAbgBkAHUAawB0AGkAdgAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBAAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBgAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkA
+        WFRFWFRfRU9QAAAAAAAAAAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAA
+        AAACAQAgAAAAFgBYVEVYVF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAQQAAAAMAOwAA
+        AA8ATGliZXJhdGlvbiBTYW5zAAAAAAAAYQEAAP//AAACAAUAAAAAAAAABwQAAAAAAAAAAAD/
+        AwAAAAAAiAABAAIAAAABAIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAjgAAAC0kAAAa
+        DwAADwAAAEIAYQB0AHQAZQByAGkAZQB3AGUAYwBoAHMAZQBsAAAADwAPAAAA2AAAAJUBAAAB
+        AgAAbQIAACsDAACXAwAA6AMAAMAEAACzBQAAcAYAAC0HAADrBwAAqAgAAGUJAAC2CQAADwBC
+        AGEAdAB0AGUAcgBpAGUAdwBlAGMAaABzAGUAbAAAAgEAEwAAAAkAWFRFWFRfRU9DAAAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAgAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBAAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBgAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCAAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCgAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DCwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDAAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9DDQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDgAAAAAA
+        AAAAAgEAEwAAAAkAWFRFWFRfRU9MAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9QAAAAAAAA
+        AAAAAgEAHgAAABQAWFRFWFRfUEFJTlRTSEFQRV9FTkQAAAAAAAAAAAACAQAgAAAAFgBYVEVY
+        VF9QQUlOVFNIQVBFX0JFR0lOAAAAAAAAAACKAAEAQQAAAAMAOwAAAA8ATGliZXJhdGlvbiBT
+        YW5zAAAAAAAAYQEAAP//AAACAAUAAAAAAAAABwQAAAAAAAAAAAD/AwAAAAAAiAABAAIAAAAB
+        AIcAAQAFAAAA/////wCGAAEABAAAAAAAAABxAAIAHgAAACMHAAByDQAAAQAAADEAAAABAAEA
+        AAC9AAAAAQAxAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9F
+        T0wAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9Q
+        QUlOVFNIQVBFX0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4A
+        AAAAAAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAABhAQAA//8AAAIA
+        BQAAAAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAE
+        AAAAAAAAAHEAAgAuAAAA+gUAAGgLAAADAAAAMQAsADEAAAADAAMAAAC9AAAADgEAAOYBAAAD
+        ADEALAAxAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MB
+        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wA
+        AAAAAAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlO
+        VFNIQVBFX0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAA
+        AAAAAIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAABhAQAA//8AAAIABQAA
+        AAAAAAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAA
+        AAAAAHEAAgAuAAAA+gUAAF8JAAADAAAAMQAsADIAAAADAAMAAAC9AAAADgEAAOYBAAADADEA
+        LAAyAAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAA
+        AAAAAAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAA
+        AAAAAAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNI
+        QVBFX0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAA
+        AIoAAQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAABhAQAA//8AAAIABQAAAAAA
+        AAAHBAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAA
+        AHEAAgAuAAAA+gUAAFUHAAADAAAAMQAsADMAAAADAAMAAAC9AAAADgEAAOYBAAADADEALAAz
+        AAACAQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAA
+        AAACAQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAA
+        AAACAQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBF
+        X0VORAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoA
+        AQBBAAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAABhAQAA//8AAAIABQAAAAAAAAAH
+        BAAAAAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEA
+        AgAuAAAA+gUAAEwFAAADAAAAMQAsADQAAAADAAMAAAC9AAAADgEAAOYBAAADADEALAA0AAAC
+        AQATAAAACQBYVEVYVF9FT0MAAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0MBAAAAAAAAAAAC
+        AQATAAAACQBYVEVYVF9FT0MCAAAAAAAAAAACAQATAAAACQBYVEVYVF9FT0wAAAAAAAAAAAAC
+        AQATAAAACQBYVEVYVF9FT1AAAAAAAAAAAAACAQAeAAAAFABYVEVYVF9QQUlOVFNIQVBFX0VO
+        RAAAAAAAAAAAAAIBACAAAAAWAFhURVhUX1BBSU5UU0hBUEVfQkVHSU4AAAAAAAAAAIoAAQBB
+        AAAAAwA7AAAADwBMaWJlcmF0aW9uIFNhbnMAAAAAAADLAQAA//8AAAIABQAAAAAAAAAHBAAA
+        AAAAAAAAAP8DAAAAAACIAAEAAgAAAAEAhwABAAUAAAD/////AIYAAQAEAAAAAAAAAHEAAgCm
+        AQAAzgIAAPcCAAAyAAAARQBuAGUAcgBnAGkAZQB2AGUAcgBiAHIAYQB1AGMAaAAgAGkAbgAg
+        AEEAYgBoAOQAbgBnAGkAZwBrAGUAaQB0ACAAdgBvAG0AIABMAGEAZABlAGkAbgB0AGUAcgB2
+        AGEAbABsAAAAMgAyAAAAKQEAABwCAAArAwAAsgMAAMAEAAAsBQAAHwYAABIHAAAGCAAAqAgA
+        AJsJAAA9CgAAMAsAAD4MAAAXDQAAJQ4AAJEOAAD9DgAACxAAAFwQAAChEQAAlBIAAKITAACV
+        FAAAiBUAAJcWAAADFwAA9hcAAOkYAADcGQAASBoAAM8aAAA7GwAALxwAACIdAACcHgAAIx8A
+        ADEgAAAlIQAAGCIAACYjAACSIwAAhSQAAAwlAAAAJgAAoiYAAHonAACIKAAA9CgAAEUpAAAy
+        AEUAbgBlAHIAZwBpAGUAdgBlAHIAYgByAGEAdQBjAGgAIABpAG4AIABBAGIAaADkAG4AZwBp
+        AGcAawBlAGkAdAAgAHYAbwBtACAATABhAGQAZQBpAG4AdABlAHIAdgBhAGwAbAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DAAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DAgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DAwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DBAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DBgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DBwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DCAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DCgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DCwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DDAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DDgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DDwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XEAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DEgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DEwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XEwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DFAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DFgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DFwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DGAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DGgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DGwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DHAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DHQAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DHgAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DHwAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DIAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9XIAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DIQAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DIgAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9DIwAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DJAAAAAAAAAAAAgEAEwAA
+        AAkAWFRFWFRfRU9XJAAAAAAAAAAAAgEAEwAAAAkAWFRFWFRfRU9DJQAAAAAAAAAAAgEAEwAA
+        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
+       </office:binary-data>
+      </draw:image>
+     </draw:frame></table:shapes>
+    <table:table-column table:style-name="co1" table:number-columns-repeated="7" table:default-cell-style-name="Default"/>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Masse/LI</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-man.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-auto.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>induktiv</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Batteriewechsel</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="539.91" calcext:value-type="float">
+      <text:p>539,91</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="540.8" calcext:value-type="float">
+      <text:p>540,8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="543.45" calcext:value-type="float">
+      <text:p>543,45</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="539" calcext:value-type="float">
+      <text:p>539</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1043.4" calcext:value-type="float">
+      <text:p>1043,4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1044.9" calcext:value-type="float">
+      <text:p>1044,9</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1049" calcext:value-type="float">
+      <text:p>1049</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1041.9" calcext:value-type="float">
+      <text:p>1041,9</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1570.1" calcext:value-type="float">
+      <text:p>1570,1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1572.4" calcext:value-type="float">
+      <text:p>1572,4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1579.5" calcext:value-type="float">
+      <text:p>1579,5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1567.8" calcext:value-type="float">
+      <text:p>1567,8</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2109.5" calcext:value-type="float">
+      <text:p>2109,5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2112.1" calcext:value-type="float">
+      <text:p>2112,1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2120.9" calcext:value-type="float">
+      <text:p>2120,9</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2106.7" calcext:value-type="float">
+      <text:p>2106,7</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2668.6" calcext:value-type="float">
+      <text:p>2668,6</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2672.1" calcext:value-type="float">
+      <text:p>2672,1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2682.4" calcext:value-type="float">
+      <text:p>2682,4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2665" calcext:value-type="float">
+      <text:p>2665</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="7"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Energieverrbrauch/LI</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-man.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-auto.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>induktiv</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Batteriewechsel</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2228" calcext:value-type="float">
+      <text:p>1,2228</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.3122" calcext:value-type="float">
+      <text:p>1,3122</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.3741" calcext:value-type="float">
+      <text:p>1,3741</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.3079" calcext:value-type="float">
+      <text:p>1,3079</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.1595" calcext:value-type="float">
+      <text:p>1,1595</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2678" calcext:value-type="float">
+      <text:p>1,2678</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.301" calcext:value-type="float">
+      <text:p>1,301</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2641" calcext:value-type="float">
+      <text:p>1,2641</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.1528" calcext:value-type="float">
+      <text:p>1,1528</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2692" calcext:value-type="float">
+      <text:p>1,2692</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2684" calcext:value-type="float">
+      <text:p>1,2684</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2655" calcext:value-type="float">
+      <text:p>1,2655</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.1608" calcext:value-type="float">
+      <text:p>1,1608</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2549" calcext:value-type="float">
+      <text:p>1,2549</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.262" calcext:value-type="float">
+      <text:p>1,262</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2779" calcext:value-type="float">
+      <text:p>1,2779</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.1714" calcext:value-type="float">
+      <text:p>1,1714</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2494" calcext:value-type="float">
+      <text:p>1,2494</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2644" calcext:value-type="float">
+      <text:p>1,2644</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.2933" calcext:value-type="float">
+      <text:p>1,2933</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="6"/>
+     <table:table-cell office:value-type="float" office:value="4646" calcext:value-type="float">
+      <text:p>4646</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Ladezeit/LI</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-man.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-auto.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>induktiv</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Batteriewechsel</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Fahrzeit</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1442" calcext:value-type="float">
+      <text:p>1442</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="489" calcext:value-type="float">
+      <text:p>489</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="490" calcext:value-type="float">
+      <text:p>490</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="420" calcext:value-type="float">
+      <text:p>420</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=[.$G$14]*[.A16]" office:value-type="float" office:value="4646" calcext:value-type="float">
+      <text:p>4646</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2681" calcext:value-type="float">
+      <text:p>2681</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="489" calcext:value-type="float">
+      <text:p>489</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="597" calcext:value-type="float">
+      <text:p>597</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="420" calcext:value-type="float">
+      <text:p>420</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=[.$G$14]*[.A17]" office:value-type="float" office:value="9292" calcext:value-type="float">
+      <text:p>9292</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="3969" calcext:value-type="float">
+      <text:p>3969</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="488" calcext:value-type="float">
+      <text:p>488</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="869" calcext:value-type="float">
+      <text:p>869</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="420" calcext:value-type="float">
+      <text:p>420</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=[.$G$14]*[.A18]" office:value-type="float" office:value="13938" calcext:value-type="float">
+      <text:p>13938</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="5308" calcext:value-type="float">
+      <text:p>5308</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="613" calcext:value-type="float">
+      <text:p>613</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1150" calcext:value-type="float">
+      <text:p>1150</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="420" calcext:value-type="float">
+      <text:p>420</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=[.$G$14]*[.A19]" office:value-type="float" office:value="18584" calcext:value-type="float">
+      <text:p>18584</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="6680" calcext:value-type="float">
+      <text:p>6680</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="761" calcext:value-type="float">
+      <text:p>761</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1438" calcext:value-type="float">
+      <text:p>1438</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="420" calcext:value-type="float">
+      <text:p>420</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=[.$G$14]*[.A20]" office:value-type="float" office:value="23230" calcext:value-type="float">
+      <text:p>23230</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="7"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Zeiteffieizienz#/LI</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-man.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>kond.-auto.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>induktiv</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Batteriewechsel</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G16])/([.$G16]+[.B16])" office:value-type="float" office:value="0.763140604467806" calcext:value-type="float">
+      <text:p>0,7631406045</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G16])/([.$G16]+[.C16])" office:value-type="float" office:value="0.9047711781889" calcext:value-type="float">
+      <text:p>0,9047711782</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G16])/([.$G16]+[.D16])" office:value-type="float" office:value="0.904595015576324" calcext:value-type="float">
+      <text:p>0,9045950156</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G16])/([.$G16]+[.E16])" office:value-type="float" office:value="0.917094354520332" calcext:value-type="float">
+      <text:p>0,9170943545</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G17])/([.$G17]+[.B17])" office:value-type="float" office:value="0.776079512235864" calcext:value-type="float">
+      <text:p>0,7760795122</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G17])/([.$G17]+[.C17])" office:value-type="float" office:value="0.950005111951743" calcext:value-type="float">
+      <text:p>0,950005112</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G17])/([.$G17]+[.D17])" office:value-type="float" office:value="0.939629891798968" calcext:value-type="float">
+      <text:p>0,9396298918</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G17])/([.$G17]+[.E17])" office:value-type="float" office:value="0.956754530477759" calcext:value-type="float">
+      <text:p>0,9567545305</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G18])/([.$G18]+[.B18])" office:value-type="float" office:value="0.778354833305411" calcext:value-type="float">
+      <text:p>0,7783548333</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G18])/([.$G18]+[.C18])" office:value-type="float" office:value="0.966172189103009" calcext:value-type="float">
+      <text:p>0,9661721891</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G18])/([.$G18]+[.D18])" office:value-type="float" office:value="0.94131154183832" calcext:value-type="float">
+      <text:p>0,9413115418</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G18])/([.$G18]+[.E18])" office:value-type="float" office:value="0.970748015043878" calcext:value-type="float">
+      <text:p>0,970748015</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G19])/([.$G19]+[.B19])" office:value-type="float" office:value="0.777833584463419" calcext:value-type="float">
+      <text:p>0,7778335845</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G19])/([.$G19]+[.C19])" office:value-type="float" office:value="0.968067927280304" calcext:value-type="float">
+      <text:p>0,9680679273</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G19])/([.$G19]+[.D19])" office:value-type="float" office:value="0.941724941724942" calcext:value-type="float">
+      <text:p>0,9417249417</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G19])/([.$G19]+[.E19])" office:value-type="float" office:value="0.977899389602189" calcext:value-type="float">
+      <text:p>0,9778993896</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G20])/([.$G20]+[.B20])" office:value-type="float" office:value="0.776663323303243" calcext:value-type="float">
+      <text:p>0,7766633233</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G20])/([.$G20]+[.C20])" office:value-type="float" office:value="0.968279771581009" calcext:value-type="float">
+      <text:p>0,9682797716</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G20])/([.$G20]+[.D20])" office:value-type="float" office:value="0.941705853737636" calcext:value-type="float">
+      <text:p>0,9417058537</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.$G20])/([.$G20]+[.E20])" office:value-type="float" office:value="0.982241014799154" calcext:value-type="float">
+      <text:p>0,9822410148</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
     </table:table-row>
    </table:table>
    <table:named-expressions/>

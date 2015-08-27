@@ -1,11 +1,85 @@
 
 \chapter{Digitaler Anhang}
 \label{an_Digital}
-Im digitalen Anhang finden Sie:
+Im digitalen Anhang sind folgende Dokumente enthalten:
 \begin{itemize}
-	\item Diese Arbeit als PDF
+	\item Diese Arbeit als \textsc{PDF}, \textsc{html} und \textsc{epub}
 	\item Sämtliche digital verfügbaren Quellen als PDF
 	\item Das verwendete Simulationsmodell (erfordert \textsc{Matlab} (ab R2012a) und \textsc{simulink})
 	\item Die Auswertungstabelle (erfordert \textsc{LibreOffice})
 \end{itemize}
-%TODO: CD + Links
+
+Der digitale Anhang ist sowohl auf der CD auf der letzten Seite als auch im \href{http://lht.no-ip.biz/share/public/Digitaler\_Anhang\_Bachelorarbeit.tar.gz}{Internet}\footnote{\href{http://lht.no-ip.biz/share/public/Digitaler_Anhang_Bachelorarbeit.tar.gz}{\texttt{http://lht.no-ip.biz/share/public/Digitaler\_Anhang\_Bachelorarbeit.tar.gz}}} zu finden. In den folgenden Abschnitten wird die Bedienung von Simulationsmodell und Auswertungstabelle erläutert.
+
+\section{Bedienung des Simulationsmodells}
+Die Simulation besteht aus mehreren Dateien, die über ihre Namen aufgerufen werden. Von daher ist das \emph{Arbeitsverzeichnis} von \textsc{Matlab} auf den Ordner \texttt{Simulationsmodell} zu setzen.
+
+Die Simulation wird durch das Ausführen der Datei \texttt{Batteriesimulation\_Heide.m} gestartet. Durch Bearbeiten dieser Datei können die Simulationsparameter geändert werden.
+
+Erster Parameter ist die Fahrstrecke. Hier werden ein Fahrzyklus und sein Höhendatensatz eingelesen.
+
+\textbf{TODO: Datenstruktur Fahrzyklus}
+
+In Zeile 14 kann der Präfix der Ausgabedateinamen eingestellt werden.
+
+In den Zeilen 21-23 wird die Anzahl der Fahrzyklen zwischen Ladevorgängen sowie der minimale und maximale Ladezustand festgelegt.
+
+Die Ladesysteme werden zwischen Zeile 26 und 48 als \texttt{array} von \texttt{structs} gespeichert. Bei Änderungen ist darauf zu achten, das die Indizierung weiterhin bei eins beginnt und der Array keine "`Löcher"' hat.
+
+Das Ladesystem wird durch fünf Kenndaten beschrieben:
+\begin{enumerate}
+	\item \texttt{mass} Die Gesamtmasse der Fahrzeugseitigen Komponenten in.\\
+	Einheit: kg
+	\item \texttt{totzeit} Die Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt.\\
+	Einheit: s
+	\item \texttt{P} Die maximale Dauerleistung dieses Ladesystems.\\
+	Einheit: W
+	\item \texttt{fancyName} Der Name des Ladesystems für die Konsolenausgabe.
+	\item \texttt{effizienz} Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.\\
+	Zahlenwert zwischen 0 und 1 (keine Prozentwerte)
+\end{enumerate}
+
+Zwischen Zeile 52 und 65 werden die Daten der Batterien eingelesen. Auch hier wird ein \texttt{array} aus \texttt{structs verwendet}. Zusätzlich zu der Dokumentation in diesem Abschnitt sollte zum Verständnis des Batteriemodells die offizielle \href{https://de.mathworks.com/help/physmod/sps/powersys/ref/battery.html}{Dokumentation}\footnote{\href{https://de.mathworks.com/help/physmod/sps/powersys/ref/battery.html}{\texttt{https://de.mathworks.com/help/physmod/sps/powersys/ref/battery.html}}} gelesen werden.
+
+Die Batterie wird durch 19 Kenndaten beschrieben:
+\begin{enumerate}
+	\item \texttt{fancyName} Der Name der Batterie für die Konsolenausgabe.
+	\item \texttt{uNominal} Die Spannung der Batterie am Ende des linearen Bereiches der Entladekurve.\\
+	Einheit: V
+	\item \texttt{qRated} Die Nennkapazität der Batterie.\\
+	Einheit: Ah
+	\item \texttt{qMax} Die maximale Kapazität der Batterie. Dieser Wert sollte über der Nennkapazität liegen.\\
+	Einheit: Ah
+	\item \texttt{uFull} Die Spannung der Batterie zu Beginn des Entladevorgangs. Dieser Wert sollte unter der Klemmenspannung ohne Last liegen.\\
+	Einheit: V
+	\item \texttt{iNom} Der Entladestrom, für den die Spannungs- und Kapazitätswerte angegeben sind.\\
+	Einheit: A
+	\item \texttt{rInternal} Der Innenwiderstand laut Datenblatt. Sollte kein Innenwiderstand dokumentiert sein, wird als Schätzwert der Zahlenwert von 1\% der Nennleistung verwendet.\\
+	Einheit: $m\Omega$
+	\item \texttt{comment} Ein frei verwendbares Textfeld.
+	\item \texttt{qNominal} Die entnommene Ladung am Ende des linearen Bereiches.\\
+	Einheit: Ah
+	\item \texttt{uExponentialZone} Die Spannung zu Beginn des linearen Bereiches der Entladekurve.\\
+	Einheit: V
+	\item \texttt{qExponentialZone} Die entnommene Ladung zu Beginn des linearen Bereiches der Entladekurve.\\
+	Einheit: Ah
+	\item \texttt{ladestromgrenze} Der maximale Ladestrom für jeden Ladezustand.\\
+	Format: \texttt{1x100 Double}\\
+	Einheit: \texttt{A}
+	\item \texttt{iMaxDischarge} Der maximale Entladestrom für einen ca. 30-sekündigen Puls.\\
+	Einheit: A
+	\item \texttt{mass} Die Masse einer Batterieeinheit.\\
+	Einheit: $kg$
+	\item \texttt{volume} Das Packvolumen einer Batterieeinheit. Bei zylindrischen Zellen Beispielsweise $\frac{2\sqrt{3}}{\pi} \cdot V_{Zelle}$.\\
+	Einheit: $l$
+	\item \texttt{modelToUse} Das zu verwendende Batteriemodell. Diese Variable ist derzeit ungenutzt, da nur ein Batteriemodell verwendet wird.\\
+	Wert: \texttt{Ludger Heide}
+	\item \texttt{BatType\_for\_simulink} Der Batterietyp, der an das \textsc{simulink}-Batteriemodell übergeben wird.\\
+	Mögliche Werte: \texttt{Lead-Acid}, \texttt{Lithium-Ion}
+	\item \texttt{cp} Die spezifische Wärmekapazität einer Batterie dieses Typs nach Pesaran~\cite{pesaran2001battery}.\\
+	Einheit: $\frac{kJ}{kg\cdot K}$
+	\item \texttt{tMax} Die höchste zulässige Batterietemperatur.\\
+	Einheit: $^{\circ}C$
+\end{enumerate}
+
+\section{Bedienung der Auswertungstabelle}
