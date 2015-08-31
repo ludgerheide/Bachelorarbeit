@@ -4,19 +4,21 @@ Im Gegensatz zu den Ladesystemen ist die Produktvielfalt der Speichertechnologie
 Wie im vorigen Kapitel werden zunächst die Technologien erläutert und dann die Parameter und ihre Werte aufgeführt. Die Parameter werden hier jedoch nur als Eingabewerte für die Verbrauchssimulation in Kapitel \ref{chap4} verwendet und nicht direkt bewertet.
 
 \section{Untersuchte Technologien}
-Im folgenden Abschnitt sind die Technologien nach dem genutzten physikalischen Effekt geordnet~\cite{Sterner:2014}[S. 35f]. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, zum Beispiel um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
+Im folgenden Abschnitt sind die Technologien nach dem genutzten physikalischen Effekt geordnet~\cite[S. 35f]{Sterner:2014}. Im realen Betrieb werden manchmal auch Kombinationen von verschiedenen Speichertechnologien eingesetzt, zum Beispiel um dem hohen Leistungsbedarf beim Anfahren und bei der Bremsenergierückgewinnung gerecht zu werden.
 
-In den weiteren Abschnitten dieser Arbeit werden fünf wichtige Speichertechnologien exemplarisch in der Simulation verwendet, nämlich ein Blei-Säure-Akkumulator und vier verschiedene Lithium-Ionen-Akkus. Zusätzlich werden in diesem Kapitel auch andere wichtige Speichertechnologien vorgestellt, die aus verschiedenen Gründen aktuell nicht in Elektrobussen eingesetzt werden.
+In den weiteren Abschnitten dieser Arbeit werden fünf wichtige Speichertechnologien exemplarisch in der Simulation verwendet, nämlich ein Blei-Säure-Akkumulator und vier verschiedene Lithium-Ionen-Akkus. 
+
+Zusätzlich werden in diesem Kapitel auch andere wichtige Speichertechnologien vorgestellt, die aus verschiedenen Gründen aktuell nicht in Elektrobussen eingesetzt werden.
 
 \subsection{Mechanisch – Schwungradspeicher}
-In Bussen kann mechanische Energie mit einem Schwungrad gespeichert werden\footnote{Es gibt auch Prototypen von Pressluftspeichern in kleineren Fahrzeugen, in Bussen werden sie jedoch nur als Teil eines Hybridantriebs eingesetzt und hier nicht weiter betrachtet~\cite{Sebastian-Naumann:2014}[S. 14].}. Die Energieübertragung erfolgt durch eine elektrische Motor- und Generatoreinheit. Moderne Schwungräder werden aus gewickelten Karbonfasern hergestellt und in Vakuumgehäusen magnetisch gelagert. So werden Drehzahlen von bis zu 40.000~min\textsuperscript{-1} und sehr geringe Reibungsverluste erreicht~\cite{993788}. Um die Sicherheit der Passagiere im Falle eines berstenden Schwungrades zu gewährleisten, muss das Gehäuse die gesamte gespeicherte Energie innerhalb von Sekundenbruchteilen aufnehmen können ohne selbst zu bersten. Dies erfordert sehr schwere Gehäuse, die die spezifische Energie und Leistung des tatsächlichen Systems stark reduzieren.
+In Bussen kann mechanische Energie mit einem Schwungrad gespeichert werden\footnote{Es gibt auch Prototypen von Pressluftspeichern in kleineren Fahrzeugen, in Bussen werden sie jedoch nur als Teil eines Hybridantriebs eingesetzt und hier nicht weiter betrachtet~\cite[S. 14]{Sebastian-Naumann:2014}.}. Die Energieübertragung erfolgt durch eine elektrische Motor- und Generatoreinheit. Moderne Schwungräder werden aus gewickelten Karbonfasern hergestellt und in Vakuumgehäusen magnetisch gelagert. So werden Drehzahlen von bis zu 40.000~min\textsuperscript{-1} und sehr geringe Reibungsverluste erreicht~\cite{993788}. Um die Sicherheit der Passagiere im Falle eines berstenden Schwungrades zu gewährleisten, muss das Gehäuse die gesamte gespeicherte Energie innerhalb von Sekundenbruchteilen aufnehmen können, ohne selbst zu bersten. Dies erfordert sehr schwere Gehäuse, die die spezifische Energie und Leistung des tatsächlichen Systems stark reduzieren.
 
-Schwungradspeicher wurden in den fünfziger Jahren im Gyrobus im schweizerischen Yverdon auf einer acht Kilometer langen Linie erprobt. Die Strecke wurde erfolgreich zurückgelegt, die damalige Technologie war jedoch sehr wartungsaufwändig und weniger effizient als ein Oberleitungsbus. Aktuell wird der Schwungradspeicher nur als Teil eines hybriden Antriebsstrangs eingesetzt und daher in dieser Arbeit nicht weiter betrachtet~\cite{tub_aleph001746639}[S. 216].
+Schwungradspeicher wurden in den fünfziger Jahren im Gyrobus im schweizerischen Yverdon auf einer acht Kilometer langen Linie erprobt. Die Strecke wurde erfolgreich zurückgelegt, die damalige Technologie war jedoch sehr wartungsaufwändig und weniger effizient als ein Oberleitungsbus. Aktuell wird der Schwungradspeicher nur als Teil eines hybriden Antriebsstrangs eingesetzt und daher in dieser Arbeit nicht weiter betrachtet~\cite[S. 216]{tub_aleph001746639}.
 
 \subsection{Elektrisch – Kondensator}
 Der Kondensator ist ein rein elektrischer Energiespeicher. Im klassischen Plattenkondensator werden zwei durch ein festes Dielektrikum getrennte Platten elektrisch aufgeladen, die Ladung kann später in Strom umgewandelt werden. Kondensatoren haben eine hohe spezifische Leistung, aber eine sehr geringe spezifische Energie.
 
-In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein flüssiges Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte und Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in die Leiterplatten erreicht~\cite{Sterner:2014}[S. 167f].
+In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eines festen Dielektrikums ein flüssiges Elektrolyt (meist eine Salz-Wasser-Lösung) verwenden. Die im Elektrolyt gelösten Ionen werden von der geladenen Platte angezogen, können sie jedoch aufgrund der umgebenden Wasserschicht nicht erreichen (siehe Abbildung \ref{abb_doppelschicht}). Da der Abstand zwischen Platte und Ionen extrem klein ist, entsteht eine sehr hohe elektrische Kapazität. Eine weitere Kapazitätssteigerung wird durch die Einlagerung von einigen Elektronen des Elektrolyts in die Leiterplatten erreicht~\cite[S. 167f]{Sterner:2014}.
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureStandardWidth]{Doppelschicht-Prinzipdarstellung}
@@ -26,25 +28,25 @@ In Bussen werden deshalb sogenannte Superkondensatoren verwendet, die statt eine
 
 In Shanghai werden Busse mit dieser Technologie seit 2008 im Linienverkehr eingesetzt. Daneben werden Superkondensatoren für kurzzeitige Einsätze mit hohem Leistungsbedarf, zum Beispiel zur Bremsenergierückgewinnung oder zur Überbrückung stromloser Stellen in Trolleybussen eingesetzt~\cite{Barminer-Busgesellschaft:2012}.
 
-Die spezifische Energie von Superkondensatoren reicht aktuell nicht für ein Aufladen nur an den Endhaltestellen aus. Stattdessen müssen auch Unterwegshaltestellen zu Ladestationen ausgebaut werden. Aufgrund des hohen Infrastrukturbedarfs werden Superkondensatoren in dieser Arbeit nicht weiter betrachtet.
+Die spezifische Energie von Superkondensatoren reicht aktuell nicht für ein Aufladen nur an den Endhaltestellen aus. Stattdessen müssen auch Unterwegshaltestellen zu Ladestationen ausgebaut werden. Aufgrund des hohen Infrastrukturbedarfs werden Superkondensatoren in dieser Arbeit nicht berücksichtigt.
 
-\subsection{Elektrochemisch – Batterie} %TODO: Besser
+\subsection{Elektrochemisch – Batterie}
 Eine Batterie ist ein elektrochemischer Energiespeicher. An den Klemmen besteht eine elektrische Spannung, die direkt abgerufen werden kann. Innerhalb der Batterie besteht ein Ungleichgewicht zwischen den elektrischen Potentialen von zwei Elektroden, die durch ein Elektrolyt getrennt sind. Durch den Elektrolyt können nur Ionen, aber keine Elektronen wandern, von daher wandern die Elektronen durch den Verbraucher von Klemme zu Klemme, sobald der Stromkreis geschlossen wird.
 
 Es wird unterschieden in Primärbatterien, in denen die Reaktion nicht umkehrbar ist und wiederaufladbaren Batterien, sogenannten Sekundärbatterien. In dieser Arbeit werden nur Sekundärbatterien betrachtet\footnote{Die Begriffe Batterie, Akkumulator und Akku werden hier austauschbar verwendet.}, die für den Einsatz in Fahrzeugen geeignet sind.
 
-Die Spannung einer einzelnen Batteriezelle ist durch die verwendeten chemischen Elemente begrenzt~\cite{Sterner:2014}[S. 202f]. Deshalb bestehen sämtliche Batterien für elektrische Fahrzeuge aus einer Reihenschaltung einzelner Zellen, mit der eine höhere Spannung erreicht wird.
+Die Spannung einer einzelnen Batteriezelle ist durch die verwendeten chemischen Elemente begrenzt~\cite[S. 202f]{Sterner:2014}. Deshalb bestehen sämtliche Batterien für elektrische Fahrzeuge aus einer Reihenschaltung einzelner Zellen, mit der eine höhere Spannung erreicht wird.
 
-Die Bauformen sind sehr unterschiedlich, meist werden jedoch gewickelte oder ineinander geschachtelte, flache Elektroden verwendet, um die Oberflächen und damit die Stromstärke zu maximieren~\cite{Sterner:2014}[S. 209ff].
+Die Bauformen sind sehr unterschiedlich, meist werden jedoch gewickelte oder ineinander geschachtelte, flache Elektroden verwendet, um die Oberflächen und damit die Stromstärke zu maximieren~\cite[S. 209ff]{Sterner:2014}.
 
 \subsubsection{Wärmeverluste} \label{sec_waermeverluste}
-In einer Batterie treten sowohl reversible als auch irreversible thermodynamische Prozesse auf. Die an den Elektroden ablaufenden Reaktionen sind je nach Materialpaarung und Reaktionsrichtung endotherm oder exotherm. Die reversible Erwärmung kann über die Summe der Entropieänderungen an beiden Elektroden berechnet werden~\cite{KiehneBattery}[S. 21ff].
+In einer Batterie treten sowohl reversible als auch irreversible thermodynamische Prozesse auf. Die an den Elektroden ablaufenden Reaktionen sind je nach Materialpaarung und Reaktionsrichtung endotherm oder exotherm. Die reversible Erwärmung kann über die Summe der Entropieänderungen an beiden Elektroden berechnet werden~\cite[S. 21ff]{KiehneBattery}.
 \begin{equation}\label{gl_entropie}
 	Q_{rev}=T(\Delta S_{Kat.~Reakt.} + \Delta S_{An.~Reakt.}) \frac{I}{nF}	
 \end{equation}
 In Gleichung \ref{gl_entropie} ist $I$ der Strom, $n$ die Anzahl der Elektronen pro Reaktion und $F$ die Faradaykonstante. 
 
-Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Innenwiderstand bestimmt ist. Im Innenwiderstand $R_i$ werden die Widerstände von Elektroden, Elektrolyt und der irreversible Anteil der Zellenreaktion zusammengefasst.
+Daneben gibt es einen irreversiblen Wärmeverlust, dessen Größe durch den Innenwiderstand bestimmt ist. Im Innenwiderstand $R_i$ werden die elektrischen Widerstände von Elektroden und Elektrolyt sowie der irreversible Anteil der Zellenreaktion zusammengefasst.
 \begin{equation}\label{gl_innenwiderstand}
 Q_{irr}=-I^2\cdot R_i
 \end{equation}
@@ -53,7 +55,7 @@ Das thermische Verhalten wird durch die Summe der reversiblen und irreversiblen 
 
 
 \subsubsection{Blei-Säure}
-Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} aufgeführt~\cite{KiehneBattery}[S. 50].
+Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsäurelösung. Vor dem ersten Aufladen bildet sich an beiden Elektronen Bleisulfat ($PbSO_4$). Die Elektrodengleichungen sind in Tabelle \ref{Pb} aufgeführt~\cite[S. 50]{KiehneBattery}.
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
@@ -69,20 +71,20 @@ Der Blei-Säure-Akkumulator besteht aus zwei Bleielektroden in einer Schwefelsä
 
 Im Gegensatz zu den meisten anderen Batterien transportiert hier der Elektrolyt nicht nur die Ionen, sondern ist selbst an der Reaktion beteiligt.
 
-Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches Nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, dass so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können, da die Energie des Überladevorgangs in die Wasserspaltung geführt wird~\cite{tub_aleph001746639}[S. 182].
+Im geladenen Zustand wird das enthaltene Wasser elektrolytisch zu Wasserstoff und Sauerstoff zerlegt. Dieser Wasserverlust muss durch periodisches Nachfüllen oder Rekombination der Gase zu Wasser ausgeglichen werden. Vorteil der Gasentwicklung ist, dass so durch Überladen die Spannungen verschiedener Zellen angeglichen werden können, da die Energie des Überladevorgangs in die Wasserspaltung geführt wird~\cite[S. 182]{tub_aleph001746639}.
 
-Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) fuhr~\cite{Risch:1957}[S. 8f].
+Der Blei-Säure-Akkumulator ist eine der ältesten wiederaufladbaren Batterietechnologien und wurde in allen frühen Elektrobussen eingesetzt, zum Beispiel im weltweit ersten Batteriebus, der ab 1900 in Berlin auf der Strecke Anhalter Bahnhof – Stettiner Bahnhof (heute: Nordbahnhof) fuhr~\cite[S. 8f]{Risch:1957}.
 
 Heutzutage ist die Verwendung von Bleiakkus als Antriebsbatterien auf Gabelstapler und andere Fahrzeuge außerhalb des Straßenverkehrs begrenzt. Die spezifische Leistung reicht nicht aus, um Fahrzeuge mit größeren Zuladungen auf längeren Strecken zu betreiben.
 
 \begin{quote}
-	In dieser Arbeit wird dennoch der Bleiakku \textsc{Panasonic EC-FV1260} betrachtet um aufzuzeigen, wie weit die Technologie in den vergangen 40 Jahren fortgeschritten ist.
+	In dieser Arbeit wird dennoch der Bleiakku \textsc{Panasonic EC-FV1260} betrachtet, um aufzuzeigen, wie weit die Technologie in den vergangen 40 Jahren fortgeschritten ist.
 \end{quote}
 
 
 
 \subsubsection{Nickel-Cadmium}
-Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalischen, wässrigen Elektrolyt, dass nicht an der Reaktion beteiligt ist, sondern nur dem Ionentransport dient. Die Reaktionsgleichungen sind in Tabelle \ref{NiCd} aufgeführt~\cite{Sterner:2014}[S.233].
+Die Elektroden bestehen aus Nickelhydroxid und Cadmiumhydroxid in einem alkalischen, wässrigen Elektrolyt, das nicht an der Reaktion beteiligt ist, sondern nur dem Ionentransport dient. Die Reaktionsgleichungen sind in Tabelle \ref{NiCd} aufgeführt~\cite[S.233]{Sterner:2014}.
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
@@ -101,7 +103,7 @@ Wie bei Blei-Säure-Batterien wird der Elektrolyt bei Überladung in Wasserstoff
 Die Nickel-Cadmium-Batterie weist eine höhere spezifische Energie als die Blei-Säure-Batterie auf, wird jedoch in elektrischen Bussen nicht verwendet und daher in dieser Arbeit auch nicht weiter betrachtet.
 
 \subsubsection{Nickel-Metallhydrid}
-Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickelhydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, das hier statt giftigem Cadmium in der negativen Elektrode ein Metall eingesetzt wird, in dem $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Dieser Hydrierung genannte Vorgang tritt in vielen verschiedenen Metallen und Legierungen auf. In diesen Batterien wird meist eine Legierung aus seltenen Erden und Nickel verwendet~\cite{KiehneBattery}[S. 85ff]. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt~\cite{Sterner:2014}[S. 245].
+Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nickelhydroxidelektrode und einen alkalischen Elektrolyt. Der Unterschied ist, dass hier statt giftigem Cadmium in der negativen Elektrode ein Metall eingesetzt wird, in dem $H^+$-Ionen zu Wasserstoff reduziert und eingelagert werden. Dieser Hydrierung genannte Vorgang tritt in vielen verschiedenen Metallen und Legierungen auf. In diesen Batterien wird meist eine Legierung aus seltenen Erden und Nickel verwendet~\cite[S. 85ff]{KiehneBattery}. Die Reaktionsgleichungen sind in Tabelle \ref{NiMH} aufgeführt~\cite[S. 245]{Sterner:2014}.
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
@@ -115,10 +117,10 @@ Die Nickel-Metalhydridbatterie verwendet wie die Nickel-Cadmiumbatterie eine Nic
 	\label{NiMH}
 \end{table}
 
-Da die Hydrierung bei einem Druck von bis zu 10 Bar stattfindet, gibt es nur geschlossene Bauformen. Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Nickel-Metallhydrid-Akkus sind inzwischen teurer als vergleichbare Lithium-Ionen-Akkus~\cite{Schimke:2012}[S. 33]. Von daher werden sie in dieser Arbeit nicht weiter betrachtet.
+Da die Hydrierung bei einem Druck von bis zu 10 Bar stattfindet, gibt es nur geschlossene Bauformen. Der Nickel-Metallhydrid-Akku wird in mehreren Hybridfahrzeugen verwendet, zum Beispiel im Toyota Prius. Nickel-Metallhydrid-Akkus sind inzwischen teurer als vergleichbare Lithium-Ionen-Akkus~\cite[S. 33]{Schimke:2012}. Von daher werden sie in dieser Arbeit nicht weiter betrachtet.
 
 \subsubsection{Lithium-Ionen}
-In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch einen Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. Das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.}~\cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren. Von daher werden für positive und negative Elektroden verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden~\cite{KiehneBattery}[S. 408, 440ff]. 
+In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch einen Elektrolyt aus Lithiumsalzen in organischen Lösungsmitteln wandern. Der Elektrolyt ist häufig in ein Polymer eingelagert. Das so entstandene Gel dient sowohl als Elektrolyt als auch zur mechanischen Separation der Elektroden\footnote{Es wird auch an einphasigen, festen Polymerelektrolyten geforscht, mit deren geringer Dicke eine hohe Energiedichte erreicht werden könnte. Diese Technologie wird jedoch noch nicht kommerziell eingesetzt.}~\cite{xu2004nonaqueous}. Im Gegensatz zu den anderen Batterietypen, bei denen das Elektrodenmaterial oxidiert und reduziert wird, wandert hier das Metall selber von Elektrode zu Elektrode. Reine Lithiumelektroden würden sich auflösen und dadurch ihre Form verlieren. Von daher werden für positive und negative Elektroden verschiedene Materialien verwendet, in denen die Lithiumionen eingelagert werden~\cite[S. 408, 440ff]{KiehneBattery}. 
 
 \paragraph{Geschichtete Oxide}
 
@@ -130,16 +132,16 @@ In Lithium-Ionen-Akkus erfolgt der Ladungstransfer durch $Li^+$-Ionen, die durch
 
 In kleinen und mittelgroßen Akkus werden meist positive Elektroden aus Lithium-Metalloxiden verwendet. Diese haben eine kubische Kristallstruktur. Das Lithium wird zwischen den Sauerstoffatomen eingelagert. Positive Elektroden aus $LiCoO_2$ werden seit den neunziger Jahren in kommerziellen Lithiumakkus verwendet. Daneben sind auch Lithium-Manganoxide und Mischungen von Lithium-Nickel- und Lithium-Kobaltoxid bzw. Lithium-Aluminiumoxid gebräuchlich, mit denen man günstigere Akkus auf Kosten der spezifischen Energie herstellen kann~\cite{whittingham2004lithium}.
 
-Die negative Elektrode besteht in allen Fällen aus Graphit. Die Lithiumionen werden zwischen den verschiedenen Schichten der Graphitkristalle eingelagert. Es werden verschiedene Größen von Graphitkristallen und auch andere Modifikationen von Kohlenstoff verwendet~\cite{Sterner:2014}[S. 252]. Ein Lithium-Kobaltoxid-Akku ist in Abbildung \ref{abb_LiCoO2} schematisch dargestellt.
+Die negative Elektrode besteht in allen Fällen aus Graphit. Die Lithiumionen werden zwischen den verschiedenen Schichten der Graphitkristalle eingelagert. Es werden verschiedene Größen von Graphitkristallen und auch andere Modifikationen von Kohlenstoff verwendet~\cite[S. 252]{Sterner:2014}. Ein Lithium-Kobaltoxid-Akku ist in Abbildung \ref{abb_LiCoO2} schematisch dargestellt.
 
-Tesla Motors verwendet im Gegensatz zu anderen Herstellern von Elektrofahrzeugen keine speziellen Batterien, sondern generische 18650-Zellen, wie sie in Laptops verwendet werden~\cite{teslaBatReport}.
+\textsc{Tesla Motors} verwendet im Gegensatz zu anderen Herstellern von Elektrofahrzeugen keine speziellen Batterien, sondern generische 18650-Zellen, wie sie in Laptops verwendet werden~\cite{teslaBatReport}.
 
 \begin{quote}
 	In dieser Arbeit wird die Batterie \textsc{NCR18650B} von \textsc{Panasonic} als Beispiel für "`klassische"' Lithium-Ionen-Akkus betrachtet.
 \end{quote}
 
 \paragraph{Lithium-Eisenphosphat}
-Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die theoretische spezifische Energie ist ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht~\cite{Tie201382}. In der negativen Elektrode wird Graphit verwendet. Aufgrund des niedrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geeignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet~\cite{bydSpecs}.
+Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elektrode. Die spezifische Energie ist theoretisch ähnlich der von geschichteten Oxiden, aktuell wird jedoch nur eine niedrigere spezifische Energie erreicht~\cite{Tie201382}. In der negativen Elektrode wird Graphit verwendet. Aufgrund des niedrigen Preises von Eisen sind diese Batterien gut für elektrische Fahrzeuge geeignet und werden zum Beispiel in den elektrischen Bussen von \textsc{BYD} verwendet~\cite{bydSpecs}.
 
 \begin{quote}
 	In dieser Arbeit werden zwei Lithium-Eisenphosphat-Akkus betrachtet. Es handelt sich jeweils um Zellen mit hoher Kapazität für den Einsatz in Elektrofahrzeugen. Die Batterie \textsc{EV 45 Ah} von \textsc{European Batteries} ist auf hohe spezifische Energie auf Kosten der Leistung ausgelegt. Im Gegensatz ist die Batterie \textsc{ePLB F 14 AH} auf eine hohe spezifische Entladeleistung ausgelegt.
@@ -149,11 +151,11 @@ Lithium-Eisenphosphat ($LiFePO_4$) ist ein neues Material für die positive Elek
 Anders als die vorigen Materialien ist Lithium-Titanat ($Li_4Ti_5O_{12}$) kein Material für die positive Elektrode, sondern ersetzt das Graphit in der negativen Elektrode und wird meist in Kombination mit $LiCoO_2$ eingesetzt. Diese Technologie bietet eine niedrigere spezifische Energie, dafür aber eine weit höhere spezifische Lade- und Entladeleistung~\cite{veneri2012charging}. Damit ist sie insbesondere für Stadtbusse mit Gelegenheitsladung interessant und wird im Berliner Elektrobus-Projekt sowie von \textsc{Proterra} in elektrischen Stadtbussen eingesetzt~\cite{protCat}.
 
 \begin{quote}
-	In dieser Arbeit wird die \textsc{primove}-Batterie betrachtet, die im Berliner Elektrobus zum Einsatz kommt.
+	In dieser Arbeit wird die \textsc{primove}-Batterie betrachtet, die im \mbox{Berliner Elektrobus} zum Einsatz kommt.
 \end{quote}
 
 \subsubsection{Natrium-Nickelchlorid}
-Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Aluminiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen beide aus flüssigem Kochsalz, an der negativen Elektrode ist Nickel im Kochsalz gelöst. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt~\cite{KiehneBattery}[S. 257ff].
+Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hochtemperaturbatterie. Sie verwendet als Elektrolyt feste Aluminiumkeramik, die nur für $Na^+$-Ionen durchlässig ist. Die Elektroden bestehen beide aus flüssigem Kochsalz, an der negativen Elektrode ist Nickel im Kochsalz gelöst. Die Reaktionsgleichungen sind in Tabelle \ref{ZEBRA} aufgeführt~\cite[S. 257ff]{KiehneBattery}.
 
 \begin{table}\centering
 	\begin{tabularx}{\linewidth}{XrcX}
@@ -167,7 +169,7 @@ Die Natrium-Nickelchloridbatterie (auch als ZEBRA-Batterie bekannt) ist eine Hoc
 	\label{ZEBRA}
 \end{table}
 
-Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}. Aufgrund ihrer geringen Lebensdauer werden sie nicht mehr in Fahrzeugen eingesetzt und in dieser Arbeit nicht weiter betrachtet~\cite{Schimke:2012}[S. 24].
+Damit das Kochsalz flüssig bleibt, muss die Batterie permanent geheizt werden, es werden immer ca. 100W pro 20kWh Kapazität zum Heizen benötigt. Im Gegenzug besitzt dieser Batterietyp eine hohe Leistungsdichte. In Kalifornien wurde ein Schulbus mit dieser Batterietechnologie erprobt~\cite{Electric-Transportation-Department:2004}. Aufgrund ihrer geringen Lebensdauer wird sie nicht mehr in Fahrzeugen eingesetzt und in dieser Arbeit nicht weiter betrachtet~\cite[S. 24]{Schimke:2012}.
 
 \section{Parameter für die Simulation der Speichersysteme}
 In diesem Abschnitt werden die Kenndaten der Energiespeicher erläutert. Die Zahlenwerte sind in den Tabellen \ref{vergleichstabellen_speichertechnologien_1} und \ref{vergleichstabellen_speichertechnologien_2} aufgeführt.
@@ -191,7 +193,7 @@ Die Entlade- und Ladekurven der Batterien sind in den Datenblättern in Anhang \
 	Einheit: $l$
 	\item[Wärmekapazität $c_p$] Die spezifische Wärmekapazität einer Batterie dieses Typs nach Pesaran~\cite{pesaran2001battery}.\\
 	Einheit: $\frac{kJ}{kg\cdot K}$
-	\item[Höchsttemperatur] Wenn sich Lade- und Entladetemperatur unterscheiden wird der jeweils kleinere Wert verwendet.\\
+	\item[Höchsttemperatur] Wenn sich Lade- und Entladetemperatur unterscheiden, wird der jeweils kleinere Wert verwendet.\\
 	Einheit: $^{\circ}C$
 \end{description}
 

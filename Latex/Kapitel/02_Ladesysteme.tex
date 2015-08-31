@@ -11,7 +11,7 @@ Die Ladesysteme werden lassen sich nach den folgenden drei Kriterien kategorisie
 \paragraph{Energietransport}
 \begin{itemize}
 	\item \textbf{Konduktiv} – zwischen Bus und Ladestation wird eine elektrisch leitende Verbindung hergestellt
-	\item \textbf{Induktiv} – die Ladestation erzeugt Magnetfeld, das im Bus in Strom umgewandelt wird
+	\item \textbf{Induktiv} – die Ladestation erzeugt ein Magnetfeld, das im Bus in Strom umgewandelt wird
 	\item \textbf{Batteriewechsel} – die Batterie wird ausgewechselt
 \end{itemize}
 
@@ -55,47 +55,47 @@ Für diese Arbeit wurden ausgewählte Ladesysteme betrachtet, bei denen bereits 
 		\multirow{2}{*}{konduktiv} & \multirow{2}{*}{automatisch} &\textsc{Solaris},\newline Deutschland & k. A. & Eberswalde,\newline Deutschland & 2012        &   \cite{Barminer-Busgesellschaft:2012}   \\ \midrule
 		\multirow{2}{*}{induktiv}  & \multirow{2}{*}{automatisch} & \textsc{KAIST},\newline Südkorea      & OLEV  & Daejeon,\newline Südkorea       & 2009         &  \cite{5618092}                        \\ \bottomrule
 	\end{tabularx}
-	\caption[Übersicht der Ladesysteme mit Name und ausgewähltem Verwendungsort sowie Hersteller]{Übersicht der Ladesysteme mit Name und ausgewähltem Verwendungsort sowie Hersteller. Die \textbf{fett} markierten Systeme wurden in dieser Arbeit als Beispiel für ihre Kategorie ausgewählt.}
+	\caption[Übersicht der Ladesysteme mit Namen und ausgewähltem Verwendungsort sowie Hersteller]{Übersicht der Ladesysteme mit Namen und ausgewähltem Verwendungsort sowie Hersteller. Die \textbf{fett} markierten Systeme wurden in dieser Arbeit als Beispiel für ihre Kategorie ausgewählt.}
 	\label{uebersichtLadesysteme}
 \end{table}
 
 
 \subsection{Konduktive Ladesysteme} 
-Bei konduktiven Systemen wird eine direkte Verbindung zwischen stromführenden Metallteilen in Bus und Ladesystem hergestellt. Im Gegensatz zu Eisenbahnen, die über ihre Schienen permanent geerdet sind, müssen bei Bussen mindestens zwei Pole verbunden werden. Zum Schutz vor Stromschlägen müssen die Komponenten in zweipoligen Systemen mindestens doppelt isoliert sein. Alternativ kann auch ein weiterer Pol als Schutzerde und ein Fehlerstrom-Schutzschalter verwendet werden.
+Bei konduktiven Systemen wird eine direkte Verbindung zwischen stromführenden Metallteilen in Bus und Ladesystem hergestellt. Im Gegensatz zu Eisenbahnen, die über ihre Schienen permanent geerdet sind, müssen bei Bussen mindestens zwei Pole verbunden werden. Zum Schutz vor Stromschlägen müssen die Komponenten in zweipoligen Systemen mindestens doppelt isoliert sein. Alternativ können auch ein weiterer Pol als Schutzerde sowie ein Fehlerstrom-Schutzschalter verwendet werden.
 
 \subsubsection{Manuell – Ladesteckdose}
 Die in Elektroautos verwendeten Ladegeräte werden auch in Elektrobussen eingesetzt. Die Ladesysteme bestehen aus einer Ladesäule und einem Kabel mit einem Stecker, der in eine fahrzeugseitige Steckdose gesteckt wird. Die Stecker sind standardisiert und mit Kommunikationspfaden ausgestattet, über die Spannung und Strom ausgehandelt werden.
 
 \textsc{BYD} verkauft in Europa einen Elektrobus mit Ladestecker nach IEC 62196-2 ("`Mennekes"'). Durch die Verwendung von zwei Ladesteckern kann dieser Bus mit bis zu 80 kW geladen werden~\cite{bydSpecs4}.
 
-Vorteil dieses Ladesystems ist die weite Kompatibilität. Ladestation und Bus können von unterschiedlichen Herstellern stammen. Die Ladestationen können sowohl von Bussen als auch von Elektroautos benutzt werden. Durch die relativ niedrige Ladeleistung und die fehlende Automatisierung ist dieses Ladesystem nur für das Aufladen über Nacht geeignet.
+Vorteil dieses Ladesystems ist die weite Kompatibilität. Ladestation und Bus können von unterschiedlichen Herstellern stammen. Die Ladestationen können sowohl von Bussen als auch von Elektroautos benutzt werden.
 
-Viele Busse, die primär über andere Systeme geladen werden besitzen zusätzlich eine Ladesteckdose, um über Nacht oder abseits ihrer normalen Strecke geladen zu werden.\marginpar{Beleg!}
+Viele Busse, die primär über andere Systeme geladen werden besitzen zusätzlich eine Ladesteckdose, um über Nacht oder abseits ihrer normalen Strecke geladen zu werden.
 
-In dieser Arbeit wird ein 40-kW-System als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Für die Ladestation werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
+\begin{quotation}
+	In dieser Arbeit wird ein 40-kW-System als Beispiel für konduktiv-manuelle Ladesysteme verwendet. Für die Ladestation werden die Abmaße der RWE eStation verwendet~\cite{rweKonMan}.
+\end{quotation}
 
 \subsubsection{Automatisch – Stromabnehmer}
 Um die elektrische Verbindung automatisch herzustellen, werden ausfahrbare Stromabnehmer verwendet. Es gibt sowohl Systeme mit fahrzeugseitigem als auch mit stationsseitigem Stromabnehmer und jeweils unbeweglichen Kontakten auf der anderen Seite. In den meisten Ladesystemen liegen die zwei Pole auf demselben Stromabnehmer nebeneinander, \textsc{Opbrid} verwendet im \textsc{Bůsbaar}-System zwei Stromabnehmer vorne und hinten auf dem Bus und eine längs geteilte Stromschiene~\cite{SchKonLade}.
 
 Mit solchen konduktiv-automatischen Systemen können hohe Leistungen übertragen werden. Sie sind für die Aufladung des Busses an Endstationen (z. B. das System von \textsc{Siemens} in Wien~\cite{SiemensWien}) und auch an Zwischenhaltestellen (z. B. \textsc{TOSA} in Genf~\cite{tosa}) geeignet. 
 
-Bei allen aktuell im Betrieb befindlichen Systemen befinden sich die Komponenten zur Stromübertragung auf dem Dach des Busses. Aus diesem Grund müssen entweder Oberleitungen oder hohe Ladesäulen verwendet werden. Daher fallen diese Systeme im Stadtbild sehr auf. Einige Betreiber wünschen unauffälligere Systeme, bei einigen anderen Betreibern sind die Ladesäulen jedoch als Symbol für Innovation und Umweltbewusstsein beliebt\marginpar{Beleg!}.
+Bei allen aktuell im Betrieb befindlichen Systemen befinden sich die Komponenten zur Stromübertragung auf dem Dach des Busses. Aus diesem Grund müssen entweder Oberleitungen oder hohe Ladesäulen verwendet werden. Daher fallen diese Systeme im Stadtbild sehr auf. Einige Betreiber wünschen unauffälligere Systeme, bei anderen Betreibern sind die Ladesäulen jedoch als Symbol für Innovation und Umweltbewusstsein beliebt.
 
-In dieser Arbeit wird das Ladesystem der Firma Schunk mit bis zu 375 kW Leistung und busseitigem Pantographen als Beispiel für konduktiv-automatische Ladesysteme gewählt~\cite{Weigel:2013}.
+\begin{quotation}
+	In dieser Arbeit wird das Ladesystem der Firma \textsc{Schunk} mit bis zu 375 kW Leistung und busseitigem Pantographen als Beispiel für konduktiv-automatische Ladesysteme gewählt~\cite{Weigel:2013}.
+\end{quotation}
 
-\subsubsection{Dynamisch – Oberleitungsbus} \marginpar{Besser!}
-Schon seit über hundert Jahren\marginpar{Beleg!} fahren in vielen Städten (in Deutschland z. B. Solingen) Oberleitungsbusse. In einigen Städten werden sie zusätzlich mit Batterien ausgerüstet, um Abschnitte ohne Oberleitung durchfahren zu können. Dies geschieht zum Beispiel in Rom und Lecce, weil in der denkmalgeschützten Altstadt keine Stromleitungen gebaut werden dürfen~\cite{tub_aleph001746639}[S. 66]. Auch eine Expansion des Liniennetzes in Vororte ohne Verlegung neuer Oberleitungen ist auf diese Weise durchführbar.
+\subsubsection{Dynamisch – Oberleitungsbus}
+Schon seit über hundert Jahren fahren in vielen Städten (in Deutschland z. B. Solingen) Oberleitungsbusse. In einigen Städten werden sie zusätzlich mit Batterien ausgerüstet, um Abschnitte ohne Oberleitung durchfahren zu können. Dies geschieht zum Beispiel in Rom und Lecce, weil in der denkmalgeschützten Altstadt keine Stromleitungen gebaut werden dürfen~\cite[S. 66]{tub_aleph001746639}. Auch eine Expansion des Liniennetzes in Vororte ohne Verlegung neuer Oberleitungen ist auf diese Weise durchführbar.
 
-Der Trolleybus ist ein \emph{dynamisches} System, das die Aufladung während der Fahrt ermöglicht. Die Stromabnehmer können an speziellen Einfädelstellen automatisch ausgefahren werden, auf freier Strecke (z. B. nach einer Entgleisung der Stromabnehmer) muss der Fahrer sie jedoch mit Seilen oder Stangen an die Oberleitung führen. Da diese Systeme nur einen kleinen Teil ihrer Strecke ohne Oberleitung durchfahren, ist eine aufwändige Oberleitungsinfrastruktur erforderlich\marginpar{Belege!}. Kreuzungen zwischen Buslinien und besonders zwischen Bus- und Bahnlinien sind technisch sehr komplex.
+Der Oberleitungsbus ist ein \emph{dynamisches} System, das die Aufladung während der Fahrt ermöglicht. Die Stromabnehmer können an speziellen Einfädelstellen automatisch ausgefahren werden. Auf freier Strecke (z.B. nach einer Entgleisung der Stromabnehmer) muss der Fahrer sie jedoch mit Seilen oder Stangen an die Oberleitung führen. Da diese Systeme nur einen kleinen Teil ihrer Strecke ohne Oberleitung durchfahren, ist eine aufwändige Oberleitungsinfrastruktur erforderlich. Kreuzungen zwischen Buslinien und besonders zwischen Bus- und Bahnlinien sind technisch sehr komplex.
 
 In Berlin besteht aus städtebaulichen Gründen kein Interesse am Einsatz von Trolleybussen. Daher wird dieses System hier nicht weiter betrachtet.
                                  
 \subsection{Induktive Ladesysteme}
 In einer elektrischen Leiterschleife entsteht eine Spannung, wenn sich das Magnetfeld in der Umgebung der die Leiterschleife verändert – zum Beispiel, wenn diese Spule sich im Magnetfeld einer anderen Spule befindet, durch die Wechselstrom fließt. Durch diese Kombination von zwei Spulen kann eine Wechselspannung transportiert werden. Am häufigsten wird dieser Effekt im Transformator verwendet. Dort wird das Magnetfeld durch einen Eisenkern von der Primär- in die Sekundärspule geführt. Nur ein kleiner Teil des Magnetfelds geht nicht durch die Sekundärspule.
-
-Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
-
-In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des Fahrzeugs angebracht, die Primärspule befindet sich unter dem Straßen- oder Haltestellenboden und kann befahren werden.
 
 \begin{figure}\centering
 	\includegraphics[width=\myFigureWideWidth]{Resonant-Induktive_Kopplung}
@@ -103,20 +103,30 @@ In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des F
 	\label{abb_ResIndKopplung}
 \end{figure}
 
+Für die Ladung von Fahrzeugen kann kein Eisenkern verwendet werden und der Abstand zwischen den Spulen ist weit größer. Deshalb geht nur ein kleiner Teil des Magnetfelds durch die Sekundärspule. Daher wird die Sekundärspule mit einem Kondensator zu einem Schwingkreis gekoppelt, dessen Resonanzfrequenz der Frequenz der Primärspule entspricht~\cite{Kurs06072007}. Da die Frequenz der Primärspule weit über der Netzfrequenz von 50 oder 60 Hz liegt, ist ein Oszillator vor der Primärspule erforderlich. Über einen Gleichrichter hinter der Sekundärspule wird Gleichspannung bereitgestellt (siehe Abbildung \ref{abb_ResIndKopplung}).
+
+In Ladesystemen für Elektrobusse ist die Sekundärspule an der Unterseite des Fahrzeugs angebracht, die Primärspule befindet sich unter dem Straßen- oder Haltestellenboden und kann befahren werden.
+
 \subsubsection{Statisch}
-Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \textsc{IPT} von \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}. In dieser Arbeit wird das System \textsc{primove} mit 200 kW Ladeleistung betrachtet.
+Bei statischen Ladesystemen lädt der Bus im Stand an Haltestellen oder speziellen Ladestationen. Der Bus wird vom Fahrer anhand von Markierungen auf dem Boden ausgerichtet, teilweise wird die Sekundärspule näher an die Straße abgesenkt. Dadurch kann effizient geladen werden. Es gibt mehrere statische induktive Ladesysteme für Busse, die bereits seit Jahren im Einsatz sind, so zum Beispiel das System \textsc{IPT} von \textsc{Conductix-Wampfler} in Turin und das System \emph{primove} von \textsc{Bombardier} in Braunschweig~\cite{WeIPT}. 
+
+\begin{quotation}
+	In dieser Arbeit wird das System \textsc{primove} mit 200 kW Ladeleistung betrachtet.
+\end{quotation}
 
 \subsubsection{Dynamisch}
-Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen vertikalen Abstand zwischen den Spulen. Um ein Aufsetzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Dies führt zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
+Induktiv-dynamische Ladesysteme können die Batterie während der Fahrt aufladen. Wenn die ganze Strecke ausgerüstet ist, kann die Batterie sogar entfallen. Während der Fahrt kommt es durch Lenkfehler zu einer lateralen Abweichung von der Ladestrecke. Die Bewegungen der Federung führen zu einem unterschiedlichen vertikalen Abstand zwischen den Spulen. Um ein Aufsetzen auf der Straße zu vermeiden muss das System recht hoch im Bus angebracht werden. Diese drei Faktoren führen zu einer niedrigen Effizienz~\cite{5618092}. Es werden nur die jeweils direkt unter dem Bus befindlichen Segmente der Primärspule eingeschaltet, was eine Aufteilung der Spule und Schalttechnologie unter der Straße erfordert.
 
 Induktiv-dynamische Systeme könnten zukünftig eine wichtige Rolle in der Elektromobilität spielen. Sie sind jedoch aktuell nicht ausgereift genug, um einen Stadtbus im Fahrplanverkehr zu versorgen. Von daher werden sie hier nicht weiter betrachtet. 
 
 \subsection{Batteriewechselsysteme}
-Im Gegensatz zu den anderen Systemen wird bei Batteriewechselsystemen nicht nur elektrische Energie in das Fahrzeug übertragen sondern ew wird die komplette Batterie ausgewechselt. Statt Energietransport findet hier also Stofftransport zwischen Ladestation und Bus statt. 
+Im Gegensatz zu den anderen Systemen wird bei Batteriewechselsystemen nicht nur elektrische Energie in das Fahrzeug übertragen, sondern es wird die komplette Batterie ausgewechselt. Statt Energietransport findet hier also Stofftransport zwischen Ladestation und Bus statt. 
 
 In aktuellen Systemen werden die Batterien in speziellen Gebäuden durch Roboter ausgetauscht. Innerhalb von kurzer Zeit können so auch sehr große Batterien ausgewechselt werden. Die "`Ladeleistung"' ist sehr groß. Die Batterien können außerhalb des Busses mit optimaler Ladeleistung und bei optimaler Temperatur aufgeladen werden. Es muss jedoch mehr als eine Batterie pro Bus vorgehalten werden, was dieses System teuer macht.
 
-In dieser Arbeit wird ein in Qingdao eingesetztes Batteriewechselsystem betrachtet. Dieses System kann die Batterie in sieben Minuten austauschen~\cite{swapQingdao}.
+\begin{quotation}
+	In dieser Arbeit wird ein in Qingdao eingesetztes Batteriewechselsystem betrachtet. Dieses System kann die Batterie in sieben Minuten austauschen~\cite{swapQingdao}.
+\end{quotation}
 
 \section{Parameter für die Bewertung der Ladesysteme}
 \label{parameterDirekt}
@@ -134,7 +144,7 @@ Die in diesem Abschnitt aufgeführten Parameter werden zu Bewertung der Ladesyst
 	\item [Freiheitsgrade] \emph{fahrzeug- und stationsseitig}\\
 	Anzahl der Freiheitsgrade, die eine bewegliche Komponente relativ zum Fahrzeug oder zur Station hat. Null, wenn es keine beweglichen Teile gibt.
 	\item [Positionierungsgenauigkeit des Busses] \emph{fahrzeugseitig} \\
-	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus einer Fläche und einem Winkel ($x_{abweichung}\cdot y_{abweichung}$, Richtung des Busses)\\
+	Erforderliche Genauigkeit der Positionierung des Busses relativ zur Ladestation, so dass die volle Ladeleistung verfügbar ist. Besteht aus einer Fläche und einem Winkel ($x_{abweichung}\cdot y_{abweichung}$, Richtung des Busses).\\
 	Einheit: $m^2,^\circ$
 	\item [Zugänglichkeit der Schnittstelle]
 	Wo am Fahrzeug ist die Ladeschnittstelle? Wie ist sie geschützt?\\
@@ -159,16 +169,17 @@ Die in diesem Abschnitt aufgeführten Parameter fließen nicht direkt in die Bew
 	Beispiel: Elektrische Wandler\\
 	Einheit: $l$
 	\item [Masse] \emph{fahrzeugseitig}\\
-	Gesamtmasse der fahrzeugseitigen Komponenten\\
+	Gesamtmasse der fahrzeugseitigen Komponenten.\\
 	Einheit: $kg$
 	\item [Totzeit]
 	Summe aus Zeit zwischen Halt des Busses und Ladebeginn sowie Zeit zwischen Ladeschluss und Abfahrt.\\
 	Einheit: $s$
 	\item [Leistung]
-	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt. (400V Drehstrom in Europa)\\
+	Aus dem öffentlichen Stromnetz erforderliche Leistung. Die im Bus angekommene Leistung ergibt sich durch die Effizienz. Es wird angenommen, das die Leistung aus dem ortsüblichen Niederspannungsnetz kommt (400 V Drehstrom in Europa).\\
 	Einheit: $kW$
 	\item [Effizienz]
-	Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.
+	Anteil der Leistung, die im Fahrzeug am Laderegler des Energiespeichers ankommt.\\
+	Einheit: \%
 \end{description}
 
 
